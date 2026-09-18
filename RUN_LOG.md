@@ -53,3 +53,10 @@
 - I4 construct validity: PASS on proxies. MACE puts 36 of 36 observed top-EQE crystalline phases within 50 meV of the hull. MEGNet gives a gap at or below the photon energy for 30 of 36. The FM prior's location error is 0.249 vs 0.285 for a uniform guess.
 - P7: sigma_d = 0.110 at the cluster level, MDE 0.089 (t, df 13), below delta 0.17, so RESOLVABLE. The episode-level MDE is 0.081.
 - P4: C1 rules PROCEED, with positive supply (14 clusters) as the binding axis.
+- 02:10 Main run: 300/300 cells, 0 failures, $42.4 total (bare $11.0, classical $15.3, fm $16.1).
+- 02:12 A2 blind hashes written and pushed before any label was opened (commit f948d13).
+- 02:13 A3 scoring. Arm means: bare 0.695, classical 0.733, fm 0.709. Chance 0.587. Strongest floor (cls_gp) 0.740.
+  - fm − classical: −0.024 per episode (naive CI [−0.077, +0.029]); +0.029 at cluster level (CI [−0.131, +0.189], p = 0.70). **NO CLAIM.**
+  - The FM arm called an FM tool in 19 of 100 episodes. XRD was used in 20–35% of episodes, depending on arm.
+  - Observed cluster MDE is 0.225, above delta, driven by La (one plate, +0.92 in a noise-level episode). The cluster test was underpowered post hoc. The prospective MDE of 0.089 underestimated the agent-arm variance.
+  - Trace spot-check: no fabrication found. FM-using episodes show explicit cross-modal rejections, e.g. "predicted In11Sb3O24 did not form" and "La3Sb5O12's XRD did not match".
