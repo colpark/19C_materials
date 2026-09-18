@@ -12,8 +12,7 @@
     "refused",
     "guard_state",
     "envelope_after",
-    "completeness",
-    "guard_delta"
+    "completeness"
   ],
   "properties": {
     "closure": {
@@ -48,21 +47,6 @@
     },
     "completeness": {
       "type": "string"
-    },
-    "guard_delta": {
-      "type": "object",
-      "description": "the reentry and launched increments this decision made, so void can roll them back"
-    },
-    "voided": {
-      "type": "boolean"
-    },
-    "standing_applied": {
-      "type": "array",
-      "description": "reserved moves launched or refused under a standing ruling, with its source"
-    },
-    "halt": {
-      "type": "boolean",
-      "description": "true when a carded move is in halt_on and unanswered; the autonomous loop stops"
     }
   }
 }

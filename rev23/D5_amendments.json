@@ -1,0 +1,147 @@
+{
+ "amendments": [
+  {
+   "id": "A-D5-forced_consultation_lift",
+   "stage": "D5",
+   "change": "standing ruling: approve forced_consultation_lift",
+   "value": {
+    "ruling": "approve",
+    "source": "PI, 2026-09-19 (kickoff message of the rev 2.3 autonomous pass, RUN_LOG.md 2026-09-19)",
+    "scope": "pooled cohort only: rev21/pool/split.json (pilot 10, reserve 10, cohort 156); never the 102 burned run-1/rev2 items",
+    "rationale": "no pooled item appeared in run 1, and the design change predates every pooled arm outcome"
+   },
+   "provenance": {
+    "referent": "who decides the reserved move forced_consultation_lift during the autonomous pass",
+    "source": "PI, 2026-09-19 (kickoff message of the rev 2.3 autonomous pass, RUN_LOG.md 2026-09-19)",
+    "population": "every O1 decision of this pass for candidates C1 and C1x",
+    "adjudicator": "the router default (card the move to the human)",
+    "falsifier": "a pooled arm outcome recorded before 2026-09-19 would contradict the rationale; pooled mechanical floors (I1/I2/P7 provisional) did exist on 2026-09-18, and no pooled arm cell did"
+   }
+  },
+  {
+   "id": "A-D5-change_task_budget",
+   "stage": "D5",
+   "change": "standing ruling: deny change_task_budget",
+   "value": {
+    "ruling": "deny",
+    "source": "PI, 2026-09-19 (kickoff message of the rev 2.3 autonomous pass, RUN_LOG.md 2026-09-19)",
+    "note": "B_EQE stays 3"
+   },
+   "provenance": {
+    "referent": "who decides the reserved move change_task_budget during the autonomous pass",
+    "source": "PI, 2026-09-19 (kickoff message of the rev 2.3 autonomous pass, RUN_LOG.md 2026-09-19)",
+    "population": "every O1 decision of this pass for candidates C1 and C1x",
+    "adjudicator": "the router default (card the move to the human)",
+    "falsifier": "a decision record in this pass that launches a denied move, or halts on a deferred one, would show the ruling was not applied"
+   }
+  },
+  {
+   "id": "A-D5-accept_proxy_grader",
+   "stage": "D5",
+   "change": "standing ruling: deny accept_proxy_grader",
+   "value": {
+    "ruling": "deny",
+    "source": "PI, 2026-09-19 (kickoff message of the rev 2.3 autonomous pass, RUN_LOG.md 2026-09-19)"
+   },
+   "provenance": {
+    "referent": "who decides the reserved move accept_proxy_grader during the autonomous pass",
+    "source": "PI, 2026-09-19 (kickoff message of the rev 2.3 autonomous pass, RUN_LOG.md 2026-09-19)",
+    "population": "every O1 decision of this pass for candidates C1 and C1x",
+    "adjudicator": "the router default (card the move to the human)",
+    "falsifier": "a decision record in this pass that launches a denied move, or halts on a deferred one, would show the ruling was not applied"
+   }
+  },
+  {
+   "id": "A-D5-later_data",
+   "stage": "D5",
+   "change": "standing ruling: deny later_data",
+   "value": {
+    "ruling": "deny",
+    "source": "PI, 2026-09-19 (kickoff message of the rev 2.3 autonomous pass, RUN_LOG.md 2026-09-19)"
+   },
+   "provenance": {
+    "referent": "who decides the reserved move later_data during the autonomous pass",
+    "source": "PI, 2026-09-19 (kickoff message of the rev 2.3 autonomous pass, RUN_LOG.md 2026-09-19)",
+    "population": "every O1 decision of this pass for candidates C1 and C1x",
+    "adjudicator": "the router default (card the move to the human)",
+    "falsifier": "a decision record in this pass that launches a denied move, or halts on a deferred one, would show the ruling was not applied"
+   }
+  },
+  {
+   "id": "A-D5-different_scored_quantity",
+   "stage": "D5",
+   "change": "standing ruling: defer different_scored_quantity",
+   "value": {
+    "ruling": "defer",
+    "source": "PI, 2026-09-19 (kickoff message of the rev 2.3 autonomous pass, RUN_LOG.md 2026-09-19)",
+    "until": "A4"
+   },
+   "provenance": {
+    "referent": "who decides the reserved move different_scored_quantity during the autonomous pass",
+    "source": "PI, 2026-09-19 (kickoff message of the rev 2.3 autonomous pass, RUN_LOG.md 2026-09-19)",
+    "population": "every O1 decision of this pass for candidates C1 and C1x",
+    "adjudicator": "the router default (card the move to the human)",
+    "falsifier": "a decision record in this pass that launches a denied move, or halts on a deferred one, would show the ruling was not applied"
+   }
+  },
+  {
+   "id": "A-D5-request_new_libraries",
+   "stage": "D5",
+   "change": "standing ruling: defer request_new_libraries",
+   "value": {
+    "ruling": "defer",
+    "source": "PI, 2026-09-19 (kickoff message of the rev 2.3 autonomous pass, RUN_LOG.md 2026-09-19)",
+    "until": "A4"
+   },
+   "provenance": {
+    "referent": "who decides the reserved move request_new_libraries during the autonomous pass",
+    "source": "PI, 2026-09-19 (kickoff message of the rev 2.3 autonomous pass, RUN_LOG.md 2026-09-19)",
+    "population": "every O1 decision of this pass for candidates C1 and C1x",
+    "adjudicator": "the router default (card the move to the human)",
+    "falsifier": "a decision record in this pass that launches a denied move, or halts on a deferred one, would show the ruling was not applied"
+   }
+  },
+  {
+   "id": "A-D5-escalate_rung_7",
+   "stage": "D5",
+   "change": "standing ruling: approve escalate_rung_7",
+   "value": {
+    "ruling": "approve",
+    "source": "PI, 2026-09-19 (kickoff message of the rev 2.3 autonomous pass, RUN_LOG.md 2026-09-19)",
+    "scope": "write the card, then stop"
+   },
+   "provenance": {
+    "referent": "who decides the reserved move escalate_rung_7 during the autonomous pass",
+    "source": "PI, 2026-09-19 (kickoff message of the rev 2.3 autonomous pass, RUN_LOG.md 2026-09-19)",
+    "population": "every O1 decision of this pass for candidates C1 and C1x",
+    "adjudicator": "the router default (card the move to the human)",
+    "falsifier": "a decision record in this pass that launches a denied move, or halts on a deferred one, would show the ruling was not applied"
+   }
+  },
+  {
+   "id": "A-D5-envelope",
+   "stage": "D5",
+   "change": "resource envelope GPU 40 h, storage 60 GB, tokens 200 M, wall 48 h, tolerance 3",
+   "provenance": {
+    "referent": "the resources this pass may spend",
+    "source": "PI, 2026-09-19 (kickoff message of the rev 2.3 autonomous pass, RUN_LOG.md 2026-09-19); spent measured per rev23/router/manifest_live.json envelope.source",
+    "population": "the whole programme to date",
+    "adjudicator": "rev 2.1 envelope (12/10/60/24)",
+    "falsifier": "a measured spend exceeding ceiling x 3 on any resource without a card"
+   }
+  },
+  {
+   "id": "A-D5-halt_on",
+   "stage": "D5",
+   "change": "halt_on: none",
+   "provenance": {
+    "referent": "which unanswered cards stop the run",
+    "source": "PI, 2026-09-19 (kickoff message of the rev 2.3 autonomous pass, RUN_LOG.md 2026-09-19)",
+    "population": "this pass",
+    "adjudicator": "router default []",
+    "falsifier": "a halt recorded on a card not named here"
+   }
+  }
+ ],
+ "completeness": "7 standing rulings, envelope and halt_on recorded with five provenance fields each; the lift's falsifier states that pooled mechanical floors predate the ruling while no pooled arm outcome does."
+}

@@ -1,25 +1,5 @@
 # CHANGELOG
 
-## Revision 2.3 (2026-09-19): autonomous mode
-
-- Standing rulings: `decision_rights.standing` pre-rules reserved moves (approve, deny, defer) with the PI as source and a scope. The router launches an approved move under the usual envelope, preconditions and guards and records it as the PI's amendment; refuses a denied move with the PI's name; cards a deferred move without halting. `decision_rights.halt_on` names the cards that stop a run. Decision records carry `standing_applied` and `halt`; the validator requires a named source on every standing ruling applied.
-- `references/router.md` autonomous mode: the loop, the checkpoints, the terminal states, and what stays out of the agent's hands when nobody is watching. `references/kickoff.md`: the one prompt that starts a pass.
-- Simulation: with no human present, standing rulings resolved 80 percent of closures in 6.5 rounds against 76 percent in 10.7 for the router waiting on cards, and left the rest deferred to the end of the pass. No preregistration violations, no hard-limit breaches, no loops.
-- Replay cases K30M (must fire: a denied budget change stays denied in autonomous mode) and N18M (must not fire: a standing approval launches the lift with the PI as source). Suite at 48 cases, 17 sealed.
-
-
-## Revision 2.2 (2026-09-18): settle, satisfy, void
-
-Source: the 2.1 live run's decision 003, voided by hand for stale commitments, plus the three findings the run logged in `rev21/router/outcome_003_execution.md`.
-
-- `router.py report` releases a launched move's commitment, books the measured cost as spent, and records the completion. A move that succeeded is satisfied and never re-launched; its result enters the context.
-- `router.py void` rolls back a decision's commitments and guard increments from the `guard_delta` every decision record now carries.
-- Depth counts distinct chained moves. Opening another candidate, advancing the portfolio and pooling libraries the search already found are depth-free.
-- `validate.py` accepts empty `launched`, `carded` and `refused` lists on a decision record and requires `guard_delta`.
-- Simulation: the same 1000-world sets show zero stale commitments and zero re-launches of a satisfied move; resolution, rounds and human decisions unchanged. The live run's three decisions replay cleanly through the fixed router with no void needed.
-- Replay cases K29M (must fire: void and settle before re-routing) and N17M (must not fire: pool as a continuation, no re-launch). Suite at 46 cases, 16 sealed.
-
-
 ## Revision 2.1 (2026-09-18): route on closure
 
 Source: the revision 2 redo of the materials instance closed at zero cells and ended with "open for the user". Nothing mapped the binding axis to the moves that could unbind it. Revision 2.1 adds one orchestration stage and the mandate it runs under.

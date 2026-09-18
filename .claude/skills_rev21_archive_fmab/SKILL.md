@@ -26,7 +26,7 @@ Closure is the primary product by volume. In the record this derives from, four 
 
 `references/graph.md` holds the cross-module preconditions. Consult it before starting any stage.
 
-`references/router.md` holds the orchestrator's mandate, the resource envelope, the remedy table and the loop guards. Load it at D5, and run O1 whenever a stage rules CLOSE, UNDEMONSTRATED or ESCALATE. Its autonomous mode section and `references/kickoff.md` describe how a pass runs with the human at the start and at halt cards only.
+`references/router.md` holds the orchestrator's mandate, the resource envelope, the remedy table and the loop guards. Load it at D5, and run O1 whenever a stage rules CLOSE, UNDEMONSTRATED or ESCALATE.
 
 ## The 29 stages
 
@@ -128,7 +128,7 @@ The ladder itself is a gate and arms only with both controls run. Its must-not-f
 - `scripts/tau.py` sweeps the similarity cut and chooses it by measurement, refusing when the curve does not bound one.
 - `scripts/queue.py` derives Q from observed yield with an exact interval, and states when the interval is too wide to license a queue.
 - `scripts/power.py` computes chance, sigma_d, MDE and N_min from two columns of per-item scores with a cluster column. Run it twice: `--scope provisional` on the I1 compositions, `--scope final --provisional <record> --cohort-clusters <csv>` on the R3 pilot arm cells. The final pass projects the pilot's item-level arm variance onto the cohort's clusters and rules RESOLVABLE, ESCALATE_ENLARGE_PILOT, RUN_AT_LIMIT, CLOSE_UNRESOLVABLE or UNDEMONSTRATED.
-- `scripts/router.py` routes a closure: launches the delegated remedies that fit the envelope, cards the reserved ones, enforces the guards, writes the decision record, and picks the next portfolio candidate. `report` settles a move's commitment and marks it satisfied or failed; `void` rolls back a decision issued on a stale envelope.
+- `scripts/router.py` routes a closure: launches the delegated remedies that fit the envelope, cards the reserved ones, enforces the guards, writes the decision record, and picks the next portfolio candidate.
 - `scripts/simulate_router.py` drives synthetic closures through the router against a stop-and-ask baseline and a naive retry policy, reporting resolution, rounds, human decisions, envelope breaches, preregistration violations and loop caps.
 - `scripts/simulate_rev2.py` stress-tests the revision 2 gates on synthetic instances against the original pipeline and an oracle, reporting premature stops, wasted runs, false claims and termination. Run it after any change to I2, P7, R3 or R8.
 - `scripts/lift.py` computes the paired interval on the I2 channel lift from the C-1 and C columns and rules CLOSE, LIFT or ADVANCE against the manifest delta.
@@ -137,6 +137,6 @@ The ladder itself is a gate and arms only with both controls run. Its must-not-f
 
 ## Before trusting any of this
 
-`references/replay.md` describes the suite. Forty-eight cases with their rulings sealed. Most are extracted from a single construction record. Those covering the discovery module are marked SYNTHETIC where the record contains no instance, and they carry less weight than the extracted ones.
+`references/replay.md` describes the suite. Forty-four cases with their rulings sealed. Most are extracted from a single construction record. Those covering the discovery module are marked SYNTHETIC where the record contains no instance, and they carry less weight than the extracted ones.
 
 Two limits stand and belong in any write-up. The suite and the stages come from one project, so reproducing its rulings says nothing about a case outside it, and an independent corpus must be replayed before this counts as evidence of generality. One such replay now exists: the materials instance (antimonate photoanode library, 2026-09-17) ran every stage to a scored null and exposed the four gaps repaired in this revision, at I2, P7, R3 and R8. Its four cases carry the suffix M in `cases/cases.csv`, and `references/simulation_rev2.md` records the simulation that sized the repaired gates. And a procedural seal held by the same party that wrote the spec proves nothing, so have someone else hold `cases/RULINGS_SEALED.csv`.

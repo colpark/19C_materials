@@ -29,7 +29,7 @@ Two facts about your programme, not about the corpus.
 |---|---|
 | budget | hours or cells you can actually spend |
 | resource envelope | gpu_hours, storage_gb, tokens_m, wall_hours, each with a soft ceiling, plus one tolerance factor (default 3) that sets the hard limit. What the programme meters, in its own units. See `references/router.md` |
-| decision rights | which moves the orchestrator may take alone and which come to you. The default split is written in `references/router.md`; override it here. `standing` pre-rules reserved moves (approve, deny, defer) with your name as source; `halt_on` lists the cards that stop an autonomous run |
+| decision rights | which moves the orchestrator may take alone and which come to you. The default split is written in `references/router.md`; override it here |
 | cost of the action | the seeds show what others act on, not what you would act on |
 
 `delta` is the delta prior unless your cost of action overrides it. `S`, the survivor target, is budget divided by measured hours per workflow. The record repriced its own cohort twice, at roughly 17 hours and then 37, so measure it rather than estimating.

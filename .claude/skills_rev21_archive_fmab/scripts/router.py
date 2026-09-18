@@ -13,20 +13,9 @@ resource envelope's hard limit, refuses the rest with the reason, and writes one
 decision record. Reserved moves go to the human on a decision card. Nothing blocks
 on the card: the portfolio's next candidate keeps running.
 
-Three guards bound the loops the router introduces: remedy depth per candidate
-(distinct moves ever launched, portfolio moves excluded), re-entries per
-(candidate, stage), and a retired list for a move that failed twice. No
-autonomous move ever changes a preregistered element after outcomes were seen.
-
-A launched move commits its projected cost. When it reports (`report`), the
-commitment is released and the measured cost is booked as spent, and a move
-that succeeded is marked satisfied so no later routing re-launches it or counts
-it again. A decision issued on a stale envelope is voided (`void`), which rolls
-back its commitments and its guard increments.
-
-    python router.py report --portfolio portfolio.json --manifest manifest.json \
-        --candidate C1 --remedy swap_fm_checkpoint --succeeded false --measured '{"gpu_hours": 1.5, "storage_gb": 1.4}'
-    python router.py void decision_003.json --portfolio portfolio.json --manifest manifest.json
+Three guards bound the loops the router introduces: remedy depth per candidate,
+re-entries per (candidate, stage), and a retired list for a move that failed twice.
+No autonomous move ever changes a preregistered element after outcomes were seen.
 """
 import argparse, collections, json, sys
 
@@ -38,9 +27,6 @@ GUARDS = {"max_depth": 3, "max_reentry": 2, "max_failures": 2}
 # needs: context keys that must be truthy. cost: projected spend per resource.
 # prereg: True when the move changes a preregistered element; such a move is
 # autonomous only before A1, and reserved to the human after outcomes are seen.
-# depth_free: the move does not count toward the candidate's remedy depth, because it
-# opens another candidate, moves the portfolio, or completes a move already counted.
-DEPTH_FREE = {"spin_explain_candidate", "advance_next_candidate", "pool_libraries_new_tau"}
 REMEDIES = {
   "search_sibling_libraries": dict(cls="autonomous", reentry="D2",
       cost=dict(gpu_hours=0, storage_gb=5, tokens_m=5, wall_hours=3), needs=[], prereg=False,
@@ -132,19 +118,17 @@ def route(closure, candidate, ctx, manifest, portfolio):
     key = closure_key(closure, ctx)
     env = manifest["envelope"]; rights = manifest.get("decision_rights", {})
     delegated = set(rights.get("delegated", REMEDIES.keys()))
-    standing = rights.get("standing", {})          # remedy -> {"ruling": approve|deny|defer, "source": ..., "scope": ..., "until": ...}
-    halt_on = set(rights.get("halt_on", []))       # reserved moves whose unanswered card halts the run
-    state = portfolio.setdefault("guard_state", {}).setdefault(candidate, {"depth": 0, "reentry": {}, "failures": {}, "retired": [], "launched_history": [], "completed": {}})
-    state.setdefault("launched_history", []); state.setdefault("completed", {})
-    state["depth"] = len([m for m in state["launched_history"] if m not in DEPTH_FREE])
+    state = portfolio.setdefault("guard_state", {}).setdefault(candidate, {"depth": 0, "reentry": {}, "failures": {}, "retired": []})
     after_outcomes = bool(ctx.get("outcomes_seen", False))
     ctx = dict(ctx); ctx["before_a1"] = not after_outcomes
     ctx["portfolio_has_next"] = any(c["status"] == "active" and c["id"] != candidate for c in portfolio.get("candidates", []))
 
     launched, carded, refused = [], [], []
-    guard_delta = {"reentry": {}, "launched": []}
-    standing_applied, halt = [], False
-    remedies = TABLE[key]
+    if state["depth"] >= GUARDS["max_depth"]:
+        refused.append({"remedy": "*", "reason": f"remedy depth {state['depth']} reached the guard; the candidate closes as it stands"})
+        remedies = []
+    else:
+        remedies = TABLE[key]
     reentered = set()
     for rid in remedies:
         r = REMEDIES[rid]
@@ -153,29 +137,10 @@ def route(closure, candidate, ctx, manifest, portfolio):
         entry = {"remedy": rid, "class": r["cls"], "reentry": r["reentry"], "what": r["what"], "cost": r["cost"]}
         if rid in state["retired"]:
             refused.append({**entry, "reason": "retired: failed twice for this candidate"}); continue
-        done = state["completed"].get(rid)
-        if done and done.get("succeeded"):
-            refused.append({**entry, "reason": "already completed successfully for this candidate; its result is in the context"}); continue
-        if rid in state["launched_history"] and rid not in state["completed"] and r["reentry"] != "portfolio":
-            refused.append({**entry, "reason": "launched earlier and not yet reported; wait for the outcome"}); continue
-        new_move = rid not in state["launched_history"] and rid not in DEPTH_FREE
-        if new_move and state["depth"] >= GUARDS["max_depth"]:
-            refused.append({**entry, "reason": f"remedy depth {state['depth']} reached the guard for this candidate"}); continue
-        reserved_now = (r["cls"] == "reserved" or rid not in delegated) or (r["prereg"] and after_outcomes)
-        why_reserved = ("reserved to the human by the decision rights" if (r["cls"] == "reserved" or rid not in delegated)
-                        else "changes a preregistered element after outcomes were seen; reserved")
-        if reserved_now:
-            st_r = standing.get(rid)
-            if st_r and st_r.get("ruling") == "approve":
-                standing_applied.append({"remedy": rid, "ruling": "approve", "source": st_r.get("source", "unknown"), "scope": st_r.get("scope", "")})
-                entry["standing"] = f"approved by standing ruling ({st_r.get('source', 'unknown')})"
-            elif st_r and st_r.get("ruling") == "deny":
-                refused.append({**entry, "reason": f"denied by standing ruling ({st_r.get('source', 'unknown')})"}); continue
-            elif st_r and st_r.get("ruling") == "defer":
-                carded.append({**entry, "reason": f"deferred by standing ruling until {st_r.get('until', 'the end of the pass')}; does not halt"}); continue
-            else:
-                if rid in halt_on: halt = True
-                carded.append({**entry, "reason": why_reserved + (". HALTS the run" if rid in halt_on else "")}); continue
+        if r["cls"] == "reserved" or rid not in delegated:
+            carded.append({**entry, "reason": "reserved to the human by the decision rights"}); continue
+        if r["prereg"] and after_outcomes:
+            carded.append({**entry, "reason": "changes a preregistered element after outcomes were seen; reserved"}); continue
         if missing:
             refused.append({**entry, "reason": f"precondition not met: {', '.join(missing)}"}); continue
         if not fits:
@@ -184,54 +149,27 @@ def route(closure, candidate, ctx, manifest, portfolio):
             refused.append({**entry, "reason": f"stage {r['reentry']} already re-entered {GUARDS['max_reentry']} times for this candidate"}); continue
         if r["reentry"] in reentered:
             refused.append({**entry, "reason": f"stage {r['reentry']} already re-entered by an earlier move in this decision"}); continue
-        # launch: commit the cost, count the re-entry, flag soft overruns, record the delta for a possible void
+        # launch: commit the cost, count the re-entry, flag soft overruns
         for res in RESOURCES: env[res]["committed"] = env[res].get("committed", 0) + r["cost"].get(res, 0)
-        if r["reentry"] != "portfolio":
-            state["reentry"][r["reentry"]] = state["reentry"].get(r["reentry"], 0) + 1
-            guard_delta["reentry"][r["reentry"]] = guard_delta["reentry"].get(r["reentry"], 0) + 1
-        if rid not in state["launched_history"]:
-            state["launched_history"].append(rid); guard_delta["launched"].append(rid)
+        if r["reentry"] != "portfolio": state["reentry"][r["reentry"]] = state["reentry"].get(r["reentry"], 0) + 1
         reentered.add(r["reentry"])
         launched.append({**entry, "over_soft_ceiling": over_soft, "projected": projected})
-    state["depth"] = len([m for m in state["launched_history"] if m not in DEPTH_FREE])
+    if launched: state["depth"] += 1
     rec = {"closure": closure, "key": key, "candidate": candidate, "outcomes_seen": after_outcomes,
            "launched": launched, "carded": carded, "refused": refused,
-           "standing_applied": standing_applied, "halt": halt,
-           "guard_state": dict(state), "guard_delta": guard_delta, "envelope_after": {r: dict(env[r]) for r in RESOURCES},
+           "guard_state": dict(state), "envelope_after": {r: dict(env[r]) for r in RESOURCES},
            "amendments": [f"O1: {l['remedy']} re-enters {l['reentry']} for {candidate}" for l in launched],
            "completeness": (f"routed {closure} as {key} for {candidate}: {len(launched)} launched, {len(carded)} carded to the human, "
-                            f"{len(refused)} refused, {len(standing_applied)} standing rulings applied, depth {state['depth']} of {GUARDS['max_depth']}"
-                            + (", HALT" if halt else ""))}
+                            f"{len(refused)} refused, depth {state['depth']} of {GUARDS['max_depth']}")}
     return rec
 
 
-def report_outcome(portfolio, candidate, remedy, succeeded, manifest=None, measured=None):
-    """A move reports. Release its commitment, book what it measured, record the completion."""
+def report_outcome(portfolio, candidate, remedy, succeeded):
+    """R-stage feedback: a failed move counts against its retirement; a success resets nothing."""
     st = portfolio["guard_state"][candidate]
-    st.setdefault("completed", {})[remedy] = {"succeeded": bool(succeeded), "measured": measured or {}}
-    if manifest is not None:
-        env = manifest["envelope"]; cost = REMEDIES[remedy]["cost"]
-        for res in RESOURCES:
-            env[res]["committed"] = max(0.0, env[res].get("committed", 0) - cost.get(res, 0))
-            env[res]["spent"] = env[res].get("spent", 0) + (measured or {}).get(res, cost.get(res, 0))
     if not succeeded:
         st["failures"][remedy] = st["failures"].get(remedy, 0) + 1
         if st["failures"][remedy] >= GUARDS["max_failures"] and remedy not in st["retired"]: st["retired"].append(remedy)
-
-
-def void(decision, portfolio, manifest):
-    """Roll back a decision issued on a stale envelope: its commitments and its guard increments."""
-    cand = decision["candidate"]; st = portfolio["guard_state"][cand]; env = manifest["envelope"]
-    for l in decision.get("launched", []):
-        cost = REMEDIES[l["remedy"]]["cost"]
-        for res in RESOURCES: env[res]["committed"] = max(0.0, env[res].get("committed", 0) - cost.get(res, 0))
-    for stage, n in decision.get("guard_delta", {}).get("reentry", {}).items():
-        st["reentry"][stage] = max(0, st["reentry"].get(stage, 0) - n)
-    for rid in decision.get("guard_delta", {}).get("launched", []):
-        if rid in st["launched_history"] and rid not in st.get("completed", {}): st["launched_history"].remove(rid)
-    st["depth"] = len([m for m in st["launched_history"] if m not in DEPTH_FREE])
-    decision["voided"] = True
-    return decision
 
 
 def next_candidate(portfolio):
@@ -242,9 +180,7 @@ def next_candidate(portfolio):
 
 
 def card(rec):
-    lines = [f"# Decision card: {rec['closure']} on {rec['candidate']}" + ("  [RUN HALTED]" if rec.get("halt") else ""), ""]
-    if rec.get("standing_applied"):
-        lines += ["Applied from your standing rulings:"] + [f"- {s['remedy']}: {s['ruling']} ({s['source']})" for s in rec["standing_applied"]] + [""]
+    lines = [f"# Decision card: {rec['closure']} on {rec['candidate']}", ""]
     if rec["launched"]:
         lines += ["Running now, no decision needed:"] + [f"- {l['remedy']} (re-enters {l['reentry']}): {l['what']}" for l in rec["launched"]] + [""]
     if rec["carded"]:
@@ -262,10 +198,6 @@ def main():
     r.add_argument("--out")
     c = sub.add_parser("card"); c.add_argument("decision")
     n = sub.add_parser("next"); n.add_argument("--portfolio", required=True)
-    rp = sub.add_parser("report"); rp.add_argument("--portfolio", required=True); rp.add_argument("--manifest", required=True)
-    rp.add_argument("--candidate", required=True); rp.add_argument("--remedy", required=True)
-    rp.add_argument("--succeeded", required=True, choices=["true", "false"]); rp.add_argument("--measured", default="{}")
-    v = sub.add_parser("void"); v.add_argument("decision"); v.add_argument("--portfolio", required=True); v.add_argument("--manifest", required=True)
     a = p.parse_args()
     if a.cmd == "route":
         ctx = json.load(open(a.context)); man = json.load(open(a.manifest)); pf = json.load(open(a.portfolio))
@@ -280,18 +212,6 @@ def main():
     if a.cmd == "next":
         nxt = next_candidate(json.load(open(a.portfolio)))
         print(json.dumps(nxt, indent=2) if nxt else "no active candidate"); return 0
-    if a.cmd == "report":
-        pf = json.load(open(a.portfolio)); man = json.load(open(a.manifest))
-        report_outcome(pf, a.candidate, a.remedy, a.succeeded == "true", man, json.loads(a.measured))
-        json.dump(pf, open(a.portfolio, "w"), indent=2); json.dump(man, open(a.manifest, "w"), indent=2)
-        print(json.dumps({"candidate": a.candidate, "remedy": a.remedy, "succeeded": a.succeeded == "true",
-                          "envelope": {r: man["envelope"][r] for r in RESOURCES}, "guard_state": pf["guard_state"][a.candidate]}, indent=2)); return 0
-    if a.cmd == "void":
-        d = json.load(open(a.decision)); pf = json.load(open(a.portfolio)); man = json.load(open(a.manifest))
-        void(d, pf, man)
-        json.dump(pf, open(a.portfolio, "w"), indent=2); json.dump(man, open(a.manifest, "w"), indent=2)
-        json.dump(d, open(a.decision, "w"), indent=2)
-        print(json.dumps({"voided": a.decision, "guard_state": pf["guard_state"][d["candidate"]], "envelope": {r: man["envelope"][r] for r in RESOURCES}}, indent=2)); return 0
 
 
 if __name__ == "__main__": raise SystemExit(main())

@@ -1,0 +1,188 @@
+{
+  "closure": "P7_CLOSE_UNRESOLVABLE",
+  "key": "SUPPLY_CLUSTERS",
+  "candidate": "C1",
+  "outcomes_seen": true,
+  "launched": [
+    {
+      "remedy": "pool_libraries_new_tau",
+      "class": "autonomous",
+      "reentry": "D3",
+      "what": "pool the found libraries and re-measure tau; the unit may change, so the axis ledger is recounted",
+      "cost": {
+        "gpu_hours": 2,
+        "storage_gb": 10,
+        "tokens_m": 2,
+        "wall_hours": 2
+      },
+      "over_soft_ceiling": false,
+      "projected": {
+        "gpu_hours": 4.359999999999999,
+        "storage_gb": 18.259999999999998,
+        "tokens_m": 21.948,
+        "wall_hours": 16.03
+      }
+    },
+    {
+      "remedy": "advance_next_candidate",
+      "class": "autonomous",
+      "reentry": "portfolio",
+      "what": "start the next active candidate in the portfolio by priority",
+      "cost": {
+        "gpu_hours": 0,
+        "storage_gb": 0,
+        "tokens_m": 0,
+        "wall_hours": 0
+      },
+      "over_soft_ceiling": false,
+      "projected": {
+        "gpu_hours": 4.359999999999999,
+        "storage_gb": 18.259999999999998,
+        "tokens_m": 21.948,
+        "wall_hours": 16.03
+      }
+    }
+  ],
+  "carded": [
+    {
+      "remedy": "request_new_libraries",
+      "class": "reserved",
+      "reentry": "D2",
+      "what": "ask collaborators for libraries or new experiments; a scientific and programme decision",
+      "cost": {
+        "gpu_hours": 0,
+        "storage_gb": 0,
+        "tokens_m": 0,
+        "wall_hours": 0
+      },
+      "reason": "reserved to the human by the decision rights"
+    },
+    {
+      "remedy": "change_task_budget",
+      "class": "reserved",
+      "reentry": "D4",
+      "what": "set the per-item measurement budget from what a campaign affords; cost of action belongs to the PI",
+      "cost": {
+        "gpu_hours": 1,
+        "storage_gb": 1,
+        "tokens_m": 1,
+        "wall_hours": 2
+      },
+      "reason": "reserved to the human by the decision rights"
+    }
+  ],
+  "refused": [
+    {
+      "remedy": "search_sibling_libraries",
+      "class": "autonomous",
+      "reentry": "D2",
+      "what": "search the corpus sources and public deposits for sibling libraries of the same task family, read whole, log to the exclusion ledger",
+      "cost": {
+        "gpu_hours": 0,
+        "storage_gb": 5,
+        "tokens_m": 5,
+        "wall_hours": 3
+      },
+      "reason": "already completed successfully for this candidate; its result is in the context"
+    },
+    {
+      "remedy": "spin_explain_candidate",
+      "class": "autonomous",
+      "reentry": "D4",
+      "what": "open the explain candidate on the per-cluster channel effect, graded by the mechanical ablation floors at zero cells",
+      "cost": {
+        "gpu_hours": 0,
+        "storage_gb": 1,
+        "tokens_m": 3,
+        "wall_hours": 2
+      },
+      "reason": "already completed successfully for this candidate; its result is in the context"
+    }
+  ],
+  "standing_applied": [],
+  "halt": false,
+  "guard_state": {
+    "depth": 2,
+    "reentry": {
+      "D2": 1,
+      "D4": 1,
+      "I2": 1,
+      "D3": 1
+    },
+    "failures": {
+      "swap_fm_checkpoint": 1
+    },
+    "retired": [],
+    "launched_history": [
+      "search_sibling_libraries",
+      "spin_explain_candidate",
+      "swap_fm_checkpoint",
+      "advance_next_candidate",
+      "pool_libraries_new_tau"
+    ],
+    "completed": {
+      "search_sibling_libraries": {
+        "succeeded": true,
+        "measured": {
+          "tokens_m": 0.348,
+          "storage_gb": 1.0,
+          "gpu_hours": 0,
+          "wall_hours": 0.81
+        }
+      },
+      "spin_explain_candidate": {
+        "succeeded": true,
+        "measured": {
+          "tokens_m": 0,
+          "storage_gb": 0,
+          "gpu_hours": 0,
+          "wall_hours": 0
+        }
+      },
+      "swap_fm_checkpoint": {
+        "succeeded": false,
+        "measured": {
+          "tokens_m": 0,
+          "storage_gb": 0.08,
+          "gpu_hours": 1.54,
+          "wall_hours": 0.22
+        }
+      }
+    }
+  },
+  "guard_delta": {
+    "reentry": {
+      "D3": 1
+    },
+    "launched": [
+      "pool_libraries_new_tau"
+    ]
+  },
+  "envelope_after": {
+    "gpu_hours": {
+      "ceiling": 40,
+      "spent": 2.36,
+      "committed": 2.0
+    },
+    "storage_gb": {
+      "ceiling": 60,
+      "spent": 8.26,
+      "committed": 10.0
+    },
+    "tokens_m": {
+      "ceiling": 200,
+      "spent": 19.948,
+      "committed": 2.0
+    },
+    "wall_hours": {
+      "ceiling": 48,
+      "spent": 14.030000000000001,
+      "committed": 2.0
+    }
+  },
+  "amendments": [
+    "O1: pool_libraries_new_tau re-enters D3 for C1",
+    "O1: advance_next_candidate re-enters portfolio for C1"
+  ],
+  "completeness": "routed P7_CLOSE_UNRESOLVABLE as SUPPLY_CLUSTERS for C1: 2 launched, 2 carded to the human, 2 refused, 0 standing rulings applied, depth 2 of 3"
+}

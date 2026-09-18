@@ -1,0 +1,149 @@
+{
+  "closure": "I2_CLOSE",
+  "key": "I2_CLOSE",
+  "candidate": "C1",
+  "outcomes_seen": true,
+  "launched": [
+    {
+      "remedy": "swap_fm_checkpoint",
+      "class": "autonomous",
+      "reentry": "I2",
+      "what": "precompute the alternative checkpoint on the same structures, rebuild the composition, re-run lift.py",
+      "cost": {
+        "gpu_hours": 6,
+        "storage_gb": 20,
+        "tokens_m": 1,
+        "wall_hours": 4
+      },
+      "over_soft_ceiling": false,
+      "projected": {
+        "gpu_hours": 6.82,
+        "storage_gb": 28.18,
+        "tokens_m": 20.948,
+        "wall_hours": 17.810000000000002
+      }
+    },
+    {
+      "remedy": "advance_next_candidate",
+      "class": "autonomous",
+      "reentry": "portfolio",
+      "what": "start the next active candidate in the portfolio by priority",
+      "cost": {
+        "gpu_hours": 0,
+        "storage_gb": 0,
+        "tokens_m": 0,
+        "wall_hours": 0
+      },
+      "over_soft_ceiling": false,
+      "projected": {
+        "gpu_hours": 6.82,
+        "storage_gb": 28.18,
+        "tokens_m": 20.948,
+        "wall_hours": 17.810000000000002
+      }
+    }
+  ],
+  "carded": [
+    {
+      "remedy": "change_role_scorer_lift",
+      "class": "autonomous",
+      "reentry": "I1",
+      "what": "move the channel from predictor to scorer on agent-built inputs, rebuild the floor for the lifted task",
+      "cost": {
+        "gpu_hours": 1,
+        "storage_gb": 1,
+        "tokens_m": 2,
+        "wall_hours": 3
+      },
+      "reason": "changes a preregistered element after outcomes were seen; reserved"
+    },
+    {
+      "remedy": "different_scored_quantity",
+      "class": "reserved",
+      "reentry": "D4",
+      "what": "move to a task whose scored quantity the FM's construct measures; a change of scientific question",
+      "cost": {
+        "gpu_hours": 0,
+        "storage_gb": 0,
+        "tokens_m": 0,
+        "wall_hours": 0
+      },
+      "reason": "reserved to the human by the decision rights"
+    }
+  ],
+  "refused": [],
+  "standing_applied": [],
+  "halt": false,
+  "guard_state": {
+    "depth": 2,
+    "reentry": {
+      "D2": 1,
+      "D4": 1,
+      "I2": 1
+    },
+    "failures": {},
+    "retired": [],
+    "launched_history": [
+      "search_sibling_libraries",
+      "spin_explain_candidate",
+      "swap_fm_checkpoint",
+      "advance_next_candidate"
+    ],
+    "completed": {
+      "search_sibling_libraries": {
+        "succeeded": true,
+        "measured": {
+          "tokens_m": 0.348,
+          "storage_gb": 1.0,
+          "gpu_hours": 0,
+          "wall_hours": 0.81
+        }
+      },
+      "spin_explain_candidate": {
+        "succeeded": true,
+        "measured": {
+          "tokens_m": 0,
+          "storage_gb": 0,
+          "gpu_hours": 0,
+          "wall_hours": 0
+        }
+      }
+    }
+  },
+  "guard_delta": {
+    "reentry": {
+      "I2": 1
+    },
+    "launched": [
+      "swap_fm_checkpoint",
+      "advance_next_candidate"
+    ]
+  },
+  "envelope_after": {
+    "gpu_hours": {
+      "ceiling": 40,
+      "spent": 0.82,
+      "committed": 6.0
+    },
+    "storage_gb": {
+      "ceiling": 60,
+      "spent": 8.18,
+      "committed": 20.0
+    },
+    "tokens_m": {
+      "ceiling": 200,
+      "spent": 19.948,
+      "committed": 1.0
+    },
+    "wall_hours": {
+      "ceiling": 48,
+      "spent": 13.81,
+      "committed": 4.0
+    }
+  },
+  "amendments": [
+    "O1: swap_fm_checkpoint re-enters I2 for C1",
+    "O1: advance_next_candidate re-enters portfolio for C1"
+  ],
+  "completeness": "routed I2_CLOSE as I2_CLOSE for C1: 2 launched, 2 carded to the human, 0 refused, 0 standing rulings applied, depth 2 of 3"
+}

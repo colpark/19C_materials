@@ -44,17 +44,11 @@ Keyed by what closed. Supply closures split on the variance decomposition P7 alr
 
 `scripts/router.py` holds the same table as data with each move's re-entry stage, preconditions and cost, and it is the copy that runs.
 
-## Settlement
-
-A launched move commits its projected cost. When it reports, `router.py report` releases the commitment, books the measured cost as spent, and records the completion. A move that succeeded is satisfied: no later routing re-launches it, and its result enters the context (a found library is `sibling_libraries_found`, and pooling becomes launchable). A move that failed counts toward retirement and may be offered once more. A decision issued on a stale envelope is voided with `router.py void`, which rolls back its commitments and its guard increments from the `guard_delta` every decision record carries.
-
-The first live run found the need for all three: decision 003 was issued against 27 GB of commitments from moves that had already reported, re-launched a search that had already succeeded, and consumed a remedy on the re-launch. Revision 2.2 settles, satisfies and voids.
-
 ## Guards
 
 Three, and they are what make the router's re-entries bounded rather than a second stall.
 
-- Depth: at most three remedies chained on one candidate, counted as distinct moves ever launched for it. Opening another candidate, advancing the portfolio, and pooling libraries the search already found are depth-free: they open, move or complete rather than chain.
+- Depth: at most three remedies chained on one candidate. The fourth closure closes it.
 - Re-entry: a stage is re-entered at most twice for the same candidate.
 - Retirement: a move that failed twice for a candidate is never offered for it again.
 
@@ -68,27 +62,9 @@ At D4 the shape record's alternatives stop being commentary. Each becomes a cand
 
 Every routing writes one JSON record: the closure, its key, the moves launched with their projections, the moves carded with the reason they are the human's, the moves refused with the guard or precondition that refused them, the guard state, the envelope after commitment, and the amendments. `router.py card` renders the human's part as a short card: running now, your decisions, not taken. The card never blocks: the record is complete before the human reads it.
 
-## Second live run, and what it taught
-
-The 2.1 redo of the materials instance restarted at O1 on the rev2 closure. Decision 001 matched the sealed case K28M and launched the sibling search and the explain candidate. The search returned 33 MEAD plates, 92 episodes and 22 new chemistries under pooling rules frozen before any count, taking the supply from 14 chemistries to 36 against an N_min of 35. Decision 002 swapped MACE-MP-0 for MACE-MPA-0 and the swap failed informatively: both checkpoints leave the hull contributing +0.013, so the binding content is the gap channel and its PROXY construct, not the potential. Decision 003 exposed the settlement defects above and was voided by hand. The run continues on the pooled floors.
-
 ## What the simulation showed
 
-`scripts/simulate_router.py` drives synthetic closures through the router, a stop-and-ask baseline, and a naive retry policy on identical worlds with a slow human who says no half the time. Over 1000 worlds per set the router resolved 89 to 90 percent of closures in five to six rounds with 1.2 human decisions each, against 77 to 78 percent in sixteen rounds with 4.9 decisions for stop-and-ask. It launched no move that changed a preregistered element after outcomes, breached no hard limit, and hit no loop cap. With the human absent it still resolved 75 percent and left the rest waiting on a card rather than spinning. With the envelope exhausted it launched 0.09 moves per world and carded the rest, where naive retry breached the hard limit 58,000 times. Naive retry looped past the round cap in about half of all worlds. After revision 2.2's settlement, the same worlds show zero stale commitments and zero re-launches of a satisfied move, with the resolution profile unchanged.
-
-## Autonomous mode
-
-The run needs a human at two points, the start and any card you said should stop it. Everything between is the skill.
-
-Standing rulings move your part of the mandate from the chat into the manifest. `decision_rights.standing` maps a reserved move to `approve`, `deny` or `defer`, each with a source and, for approve, a scope. An approved move launches under the same envelope, preconditions and guards as a delegated one and is recorded as your amendment. A denied move is refused with your name on the refusal. A deferred move is carded, does not halt, and comes back at the point you named. `decision_rights.halt_on` lists the reserved moves whose unanswered card stops the run; anything not on it is carded and the loop continues.
-
-The loop. Run stages in cost order. After each stage: validate the ledger, commit, update STATE.md, refresh CHECKPOINT.md with the restart point. On CLOSE, UNDEMONSTRATED or ESCALATE: route through O1, execute the launched moves, report each one when it finishes, and re-route on the outcome. On a card with `halt` true: write DECISIONS_NEEDED.md with the card, commit, and stop. Terminal states: REPORT.html built from ledgers and STATE.md marked complete, a halt card, or a portfolio with no active candidate.
-
-What stays out of the agent's hands in autonomous mode is exactly what stays out in the interactive one: the seal, the labels, and any change to a preregistered element after outcomes that you did not pre-rule. The mandate does not widen because nobody is watching.
-
-Simulated with no human present, standing rulings resolved 80 percent of closures in 6.5 rounds against 76 percent in 10.7 for the same router waiting on cards, and left the remainder deferred to the end of the pass rather than waiting.
-
-`references/kickoff.md` holds the one prompt that starts an autonomous pass.
+`scripts/simulate_router.py` drives synthetic closures through the router, a stop-and-ask baseline, and a naive retry policy on identical worlds with a slow human who says no half the time. Over 1000 worlds per set the router resolved 89 to 90 percent of closures in five to six rounds with 1.2 human decisions each, against 77 to 78 percent in sixteen rounds with 4.9 decisions for stop-and-ask. It launched no move that changed a preregistered element after outcomes, breached no hard limit, and hit no loop cap. With the human absent it still resolved 75 percent and left the rest waiting on a card rather than spinning. With the envelope exhausted it launched 0.09 moves per world and carded the rest, where naive retry breached the hard limit 58,000 times. Naive retry looped past the round cap in about half of all worlds.
 
 ## What it is not
 

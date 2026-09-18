@@ -45,9 +45,6 @@ def ledger(o, kind, f):
     req = REQ.get(kind)
     if req is None: return f.append(f"unknown kind {kind!r}. Known: {sorted(REQ)}")
     for k in req:
-        if kind == "decision_record" and k in ("launched", "carded", "refused"):
-            if k not in o or not isinstance(o[k], list): f.append(f"missing {k!r} (an empty list is fine)")
-            continue
         if o.get(k) in (None, "", [], {}): f.append(f"missing or empty {k!r}")
     if len(str(o.get("completeness", ""))) < 20:
         f.append("completeness assertion too thin to name what was covered and what was not")
@@ -93,11 +90,6 @@ def ledger(o, kind, f):
         gs = o.get("guard_state", {})
         if gs.get("depth", 0) > 3: f.append("remedy depth above three. Refusal 22")
         if not o.get("launched") and not o.get("carded") and not o.get("refused"): f.append("a routing with no moves considered is 'open for the user'. Refusal 23")
-        if "guard_delta" not in o: f.append("no guard_delta recorded; the decision cannot be voided cleanly")
-        for s_ in o.get("standing_applied", []):
-            if not s_.get("source") or s_.get("source") == "unknown": f.append(f"{s_.get('remedy')}: standing ruling without a named source")
-        for res, v_ in o.get("envelope_after", {}).items():
-            if isinstance(v_, dict) and v_.get("committed", 0) < -1e-9: f.append(f"{res}: negative commitment")
     if kind == "lift_record":
         lo, hi = (o.get("ci95") or [None, None])[:2]
         if lo is not None and hi is not None and lo <= 0 <= hi and hi < o.get("delta", 0) and o.get("ruling") == "ADVANCE":

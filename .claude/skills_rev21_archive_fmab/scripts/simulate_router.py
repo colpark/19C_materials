@@ -66,41 +66,25 @@ def success_p(remedy, world, ctx):
 def run_router(world, rng, policy):
     """Drive one world to a terminal state. Returns a record of what happened."""
     ctx = dict(world["ctx"]); man = {"envelope": copy.deepcopy(world["env"]), "decision_rights": {"delegated": [k for k, v in R.REMEDIES.items() if v["cls"] == "autonomous"]}}
-    if policy == "router_standing":
-        # the PI pre-rules the reserved moves once; the run then needs no human at all
-        man["decision_rights"]["standing"] = {"change_task_budget": {"ruling": "deny", "source": "PI"},
-                                              "accept_proxy_grader": {"ruling": "deny", "source": "PI"},
-                                              "later_data": {"ruling": "deny", "source": "PI"},
-                                              "forced_consultation_lift": {"ruling": "approve", "source": "PI", "scope": "pooled cohort"},
-                                              "change_role_scorer_lift": {"ruling": "approve", "source": "PI"},
-                                              "different_scored_quantity": {"ruling": "defer", "until": "A4"},
-                                              "request_new_libraries": {"ruling": "defer", "until": "A4"},
-                                              "escalate_rung_7": {"ruling": "approve", "source": "PI"}}
-        man["decision_rights"]["halt_on"] = []
     pf = copy.deepcopy(world["portfolio"]); cand = "C1"
     rec = dict(policy=policy, key=world["key"], rounds=0, cards=0, launched=0, refused=0, human_decisions=0,
-               resolved=False, terminal=None, prereg_violation=0, hard_breach=0, soft_overruns=0, depth_trips=0, retired=0, stale_commitments=0, relaunch_of_satisfied=0)
+               resolved=False, terminal=None, prereg_violation=0, hard_breach=0, soft_overruns=0, depth_trips=0, retired=0)
     pending = []      # (round_done, remedy, kind)  kind: auto | human
     open_cards = []   # reserved moves waiting for the human
     closure = CLOSURE_OF[world["key"]]
 
     def decide():
         nonlocal closure
-        if policy in ("router", "router_standing"):
+        if policy == "router":
             d = R.route(closure, cand, ctx, man, pf)
             rec["launched"] += len(d["launched"]); rec["refused"] += len(d["refused"])
             for l in d["launched"]:
-                done = pf["guard_state"][cand].get("completed", {}).get(l["remedy"])
-                if done and done.get("succeeded"): rec["relaunch_of_satisfied"] += 1
-                if R.REMEDIES[l["remedy"]]["prereg"] and ctx.get("outcomes_seen") and not l.get("standing"): rec["prereg_violation"] += 1
+                if R.REMEDIES[l["remedy"]]["prereg"] and ctx.get("outcomes_seen"): rec["prereg_violation"] += 1
                 for res in R.RESOURCES:
                     if l["projected"][res] > man["envelope"][res]["ceiling"] * man["envelope"]["tolerance"]: rec["hard_breach"] += 1
                 if l["over_soft_ceiling"]: rec["soft_overruns"] += 1
                 pending.append((rec["rounds"] + max(1, int(round(l["cost"]["wall_hours"] / 3))), l["remedy"], "auto"))
-            live = [c for c in d["carded"] if "deferred by standing ruling" not in c["reason"]]
-            if d["carded"]: rec["cards"] += 1
-            if live: open_cards.extend(c["remedy"] for c in live if c["remedy"] not in open_cards)
-            elif d["carded"]: rec["deferred"] = True
+            if d["carded"]: rec["cards"] += 1; open_cards.extend(c["remedy"] for c in d["carded"] if c["remedy"] not in open_cards)
             if any(r["reason"].startswith("remedy depth") for r in d["refused"]): rec["depth_trips"] += 1
             rec["retired"] = len(pf["guard_state"][cand]["retired"])
             return bool(d["launched"] or d["carded"])
@@ -140,32 +124,27 @@ def run_router(world, rng, policy):
         for _, rid, kind in done:
             if rid == "search_sibling_libraries":
                 found = rng.random() < success_p(rid, world, ctx); ctx["sibling_libraries_found"] = found
-                if policy in ("router", "router_standing"): R.report_outcome(pf, cand, rid, found, man if kind == "auto" else None)
+                if not found and policy == "router": R.report_outcome(pf, cand, rid, False)
                 new_closure = True; continue          # pooling is the move that resolves
             unmet = [n for n in R.REMEDIES[rid]["needs"] if n not in ("before_a1", "portfolio_has_next") and not ctx.get(n)]
             ok = (not unmet) and rng.random() < success_p(rid, world, ctx)
-            if policy in ("router", "router_standing"): R.report_outcome(pf, cand, rid, ok, man if kind == "auto" else None)
             if ok: rec["resolved"] = True; rec["terminal"] = f"resolved_by_{rid}"; break
+            if policy == "router": R.report_outcome(pf, cand, rid, False)
             if rid == "advance_next_candidate":
                 for c in pf["candidates"]:
                     if c["status"] == "active" and c["id"] != cand: c["status"] = "closed"; break
             new_closure = True
         if rec["resolved"]: break
-        if policy in ("router", "router_standing"):
-            expected = {res: sum(R.REMEDIES[rid]["cost"][res] for _, rid, k in pending if k == "auto") for res in R.RESOURCES}
-            for res in R.RESOURCES:
-                if abs(man["envelope"][res]["committed"] - expected[res]) > 1e-6: rec["stale_commitments"] = rec.get("stale_commitments", 0) + 1
-            if rec["launched"] != len(set(l for l in pf["guard_state"][cand]["launched_history"])) + rec.get("relaunches", 0): pass
         if not pending and not open_cards:
             if new_closure or not acted:
                 acted = decide()
                 if not pending and not open_cards:
                     rec["terminal"] = "closed_no_moves_left"; break
-        elif new_closure and policy in ("router", "router_standing") and not pending:
+        elif new_closure and policy == "router" and not pending:
             acted = decide()
     if rec["rounds"] >= ROUND_CAP and not rec["resolved"]:
-        rec["terminal"] = "LOOP_CAP" if pending else ("waiting_on_human" if open_cards else ("deferred_to_end" if rec.get("deferred") else "closed_no_moves_left"))
-    if rec["terminal"] is None: rec["terminal"] = "deferred_to_end" if rec.get("deferred") else "closed_no_moves_left"
+        rec["terminal"] = "LOOP_CAP" if pending else ("waiting_on_human" if open_cards else "closed_no_moves_left")
+    if rec["terminal"] is None: rec["terminal"] = "closed_no_moves_left"
     return rec
 
 
@@ -177,18 +156,17 @@ def main():
     lo, hi = (float(x) for x in a.spent.split(","))
     worlds = [draw_world(rng, a.human_p, lo, hi) for _ in range(a.n)]
     print(f"human answers with p={a.human_p} per round; envelope spent {lo}-{hi} of ceiling; tolerance 3.0")
-    out = {pol: [run_router(w, np.random.default_rng(1000 + i), pol) for i, w in enumerate(worlds)] for pol in ("router", "router_standing", "stop_and_ask", "naive_retry")}
+    out = {pol: [run_router(w, np.random.default_rng(1000 + i), pol) for i, w in enumerate(worlds)] for pol in ("router", "stop_and_ask", "naive_retry")}
     print(f"\n{a.n} worlds, seed {a.seed}\n")
-    print(f"{'policy':16s}{'resolved':>10s}{'rounds':>8s}{'cards':>7s}{'human':>7s}{'launched':>10s}{'prereg':>8s}{'hard':>6s}{'soft':>6s}{'depth':>7s}{'retired':>9s}{'loop-cap':>9s}{'waiting':>9s}{'stale':>7s}{'relaunch':>10s}")
+    print(f"{'policy':13s}{'resolved':>10s}{'rounds':>8s}{'cards':>7s}{'human':>7s}{'launched':>10s}{'prereg':>8s}{'hard':>6s}{'soft':>6s}{'depth':>7s}{'retired':>9s}{'loop-cap':>9s}{'waiting':>9s}")
     for pol, recs in out.items():
         n = len(recs)
-        print(f"{pol:16s}{sum(r['resolved'] for r in recs)/n:10.2f}{np.mean([r['rounds'] for r in recs]):8.1f}"
+        print(f"{pol:13s}{sum(r['resolved'] for r in recs)/n:10.2f}{np.mean([r['rounds'] for r in recs]):8.1f}"
               f"{np.mean([r['cards'] for r in recs]):7.2f}{np.mean([r['human_decisions'] for r in recs]):7.2f}"
               f"{np.mean([r['launched'] for r in recs]):10.2f}{sum(r['prereg_violation'] for r in recs):8d}"
               f"{sum(r['hard_breach'] for r in recs):6d}{sum(r['soft_overruns'] for r in recs):6d}"
               f"{sum(r['depth_trips'] for r in recs):7d}{sum(1 for r in recs if r['retired']):9d}"
-              f"{sum(1 for r in recs if r['terminal']=='LOOP_CAP'):9d}{sum(1 for r in recs if r['terminal']=='waiting_on_human'):9d}"
-              f"{sum(r.get('stale_commitments',0) for r in recs):7d}{sum(r.get('relaunch_of_satisfied',0) for r in recs):10d}")
+              f"{sum(1 for r in recs if r['terminal']=='LOOP_CAP'):9d}{sum(1 for r in recs if r['terminal']=='waiting_on_human'):9d}")
     print("\nrouter, by closure key: resolved rate, mean cards, mean launched, terminal states")
     recs = out["router"]
     for key in KEYS:

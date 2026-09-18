@@ -1,8 +1,8 @@
 # The replay suite
 
-Forty-eight cases with their rulings sealed. Thirty must fire, eighteen must not.
+Forty-four cases with their rulings sealed. Twenty-eight must fire, sixteen must not.
 
-Twenty-eight are extracted from a single construction record. Ten, suffixed M, are extracted from the first independent replay, the materials instance of 2026-09-17 and its revision 2 redo of 2026-09-18; six of those exercise the orchestration stage O1. Four of the ten discovery cases are marked **SYNTHETIC** in their text, because the record contains no instance of a corpus being curated from seeds under these rules. Synthetic cases carry less weight than extracted ones and should be the first replaced when a real instance appears.
+Twenty-eight are extracted from a single construction record. Six, suffixed M, are extracted from the first independent replay, the materials instance of 2026-09-17 and its revision 2 redo of 2026-09-18; two of those exercise the orchestration stage O1. Four of the ten discovery cases are marked **SYNTHETIC** in their text, because the record contains no instance of a corpus being curated from seeds under these rules. Synthetic cases carry less weight than extracted ones and should be the first replaced when a real instance appears.
 
 The must-not-fire half is not decoration. Without it a stage that flags everything scores full marks, and the escalation ladder becomes the stall it was built to prevent.
 
@@ -13,7 +13,7 @@ The must-not-fire half is not decoration. Without it a stage that flags everythi
 | `cases/cases.csv` | the stage under test |
 | `cases/RULINGS_SEALED.csv` | held out until the stage is finished |
 
-Seventeen cases are marked sealed. Develop on the other thirty-one. Open the sealed set once, then reseal.
+Fifteen cases are marked sealed. Develop on the other twenty-nine. Open the sealed set once, then reseal.
 
 ## Running
 

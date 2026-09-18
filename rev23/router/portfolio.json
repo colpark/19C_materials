@@ -1,0 +1,113 @@
+{
+  "candidates": [
+    {
+      "id": "C1",
+      "shape": "intervene / choose next measurement (lifted: forced FM consultation)",
+      "status": "active",
+      "resolving_power": 0.0,
+      "cost_class": 3,
+      "note": "closed at rev2 P7 provisional; being routed"
+    },
+    {
+      "id": "C1x",
+      "shape": "explain / per-chemistry channel effect: will FM weighting help or hurt this chemistry's search?",
+      "status": "active",
+      "resolving_power": 0.0,
+      "cost_class": 1,
+      "note": "replay: reopened by decision R001"
+    },
+    {
+      "id": "C2",
+      "shape": "explain / phase attribution (XRD x EQE)",
+      "status": "closed",
+      "note": "Gate 2: labels are annotation"
+    },
+    {
+      "id": "C3",
+      "shape": "explain / structure solution with found negatives",
+      "status": "closed",
+      "note": "census: 2/30 with raw data"
+    },
+    {
+      "id": "C4",
+      "shape": "infer / screening thresholds",
+      "status": "closed",
+      "note": "Gate 1/2"
+    },
+    {
+      "id": "C5",
+      "shape": "synthesis / post-mortem",
+      "status": "closed",
+      "note": "no supply"
+    }
+  ],
+  "guard_state": {
+    "C1": {
+      "depth": 2,
+      "reentry": {
+        "D2": 1,
+        "D4": 1,
+        "I2": 1,
+        "D3": 1
+      },
+      "failures": {
+        "swap_fm_checkpoint": 1
+      },
+      "retired": [],
+      "launched_history": [
+        "search_sibling_libraries",
+        "spin_explain_candidate",
+        "swap_fm_checkpoint",
+        "advance_next_candidate",
+        "pool_libraries_new_tau"
+      ],
+      "completed": {
+        "search_sibling_libraries": {
+          "succeeded": true,
+          "measured": {
+            "tokens_m": 0.348,
+            "storage_gb": 1.0,
+            "gpu_hours": 0,
+            "wall_hours": 0.81
+          }
+        },
+        "spin_explain_candidate": {
+          "succeeded": true,
+          "measured": {
+            "tokens_m": 0,
+            "storage_gb": 0,
+            "gpu_hours": 0,
+            "wall_hours": 0
+          }
+        },
+        "swap_fm_checkpoint": {
+          "succeeded": false,
+          "measured": {
+            "tokens_m": 0,
+            "storage_gb": 0.08,
+            "gpu_hours": 1.54,
+            "wall_hours": 0.22
+          }
+        },
+        "pool_libraries_new_tau": {
+          "succeeded": true,
+          "measured": {
+            "tokens_m": 0.444,
+            "storage_gb": 0.57,
+            "gpu_hours": 2.99,
+            "wall_hours": 1.02
+          }
+        },
+        "advance_next_candidate": {
+          "succeeded": true,
+          "measured": {
+            "tokens_m": 0,
+            "storage_gb": 0,
+            "gpu_hours": 0,
+            "wall_hours": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "certification_record",
+  "type": "object",
+  "required": [
+    "tools",
+    "completeness"
+  ],
+  "properties": {
+    "tools": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "CERTIFIED",
+              "BLOCKED",
+              "SUBSTITUTED"
+            ]
+          },
+          "criteria": {
+            "type": "object",
+            "properties": {
+              "construct_validity": {
+                "enum": [
+                  "PASS",
+                  "FAIL",
+                  "PROXY"
+                ],
+                "description": "PASS or FAIL on the scored quantity. PROXY when checked only against a proxy of it; PROXY travels to I2 and needs lift_ruling"
+              },
+              "known_input": {
+                "type": "string"
+              },
+              "negative_control": {
+                "type": "string"
+              },
+              "reachability": {
+                "type": "string"
+              },
+              "receipt_resolution": {
+                "type": "string"
+              }
+            }
+          },
+          "lift_ruling": {
+            "enum": [
+              "ADVANCE",
+              "CLOSE",
+              "LIFT"
+            ],
+            "description": "the I2 ruling for this tool's channel, required when construct_validity is PROXY"
+          }
+        }
+      }
+    },
+    "comparator_executable_every_stage": {
+      "type": "boolean"
+    },
+    "channels": {
+      "type": "object"
+    },
+    "completeness": {
+      "type": "string"
+    }
+  }
+}
