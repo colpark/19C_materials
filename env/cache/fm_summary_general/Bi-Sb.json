@@ -1,0 +1,1288 @@
+{
+ "chem": "Bi-Sb",
+ "elements": [
+  "Bi",
+  "Sb"
+ ],
+ "n_phases": 120,
+ "rows": [
+  {
+   "id": "mp-27945",
+   "formula": "BiO",
+   "nsites": 2,
+   "ef_eV_atom": -0.6612,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.4087
+  },
+  {
+   "id": "mp-32548",
+   "formula": "BiO2",
+   "nsites": 3,
+   "ef_eV_atom": -1.0038,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0853
+  },
+  {
+   "id": "mp-37036",
+   "formula": "Bi2O3",
+   "nsites": 5,
+   "ef_eV_atom": -1.2064,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0775
+  },
+  {
+   "id": "mp-714859",
+   "formula": "Bi2O3",
+   "nsites": 5,
+   "ef_eV_atom": -1.1976,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0862
+  },
+  {
+   "id": "mp-1017551",
+   "formula": "Bi2O3",
+   "nsites": 5,
+   "ef_eV_atom": -1.1682,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.1157
+  },
+  {
+   "id": "mp-684654",
+   "formula": "Bi2O3",
+   "nsites": 5,
+   "ef_eV_atom": -1.1975,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0864
+  },
+  {
+   "id": "mp-1017552",
+   "formula": "Bi2O3",
+   "nsites": 5,
+   "ef_eV_atom": -1.2355,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0484
+  },
+  {
+   "id": "mp-673244",
+   "formula": "Bi2O3",
+   "nsites": 5,
+   "ef_eV_atom": -1.1941,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0898
+  },
+  {
+   "id": "mp-1022722",
+   "formula": "Bi3O2",
+   "nsites": 5,
+   "ef_eV_atom": -0.6575,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.1985
+  },
+  {
+   "id": "mp-1383505",
+   "formula": "Bi2O3",
+   "nsites": 5,
+   "ef_eV_atom": -1.2365,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0474
+  },
+  {
+   "id": "mp-1406596",
+   "formula": "BiO2",
+   "nsites": 6,
+   "ef_eV_atom": -0.569,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.5202
+  },
+  {
+   "id": "mp-1041983",
+   "formula": "BiO2",
+   "nsites": 6,
+   "ef_eV_atom": -0.8445,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.2447
+  },
+  {
+   "id": "mp-755137",
+   "formula": "BiO2",
+   "nsites": 6,
+   "ef_eV_atom": -1.0099,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0793
+  },
+  {
+   "id": "mp-1080122",
+   "formula": "Bi2O3",
+   "nsites": 10,
+   "ef_eV_atom": -1.1873,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0966
+  },
+  {
+   "id": "mp-1091371",
+   "formula": "Bi2O3",
+   "nsites": 10,
+   "ef_eV_atom": -1.2082,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0757
+  },
+  {
+   "id": "mp-1183524",
+   "formula": "Bi2O3",
+   "nsites": 10,
+   "ef_eV_atom": -1.2821,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0017
+  },
+  {
+   "id": "mp-22891",
+   "formula": "Bi2O3",
+   "nsites": 10,
+   "ef_eV_atom": -1.0064,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.2775
+  },
+  {
+   "id": "mp-1041597",
+   "formula": "BiO2",
+   "nsites": 12,
+   "ef_eV_atom": -1.0555,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0337
+  },
+  {
+   "id": "mp-1044722",
+   "formula": "BiO2",
+   "nsites": 12,
+   "ef_eV_atom": -1.0124,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0768
+  },
+  {
+   "id": "mp-1444985",
+   "formula": "BiO2",
+   "nsites": 12,
+   "ef_eV_atom": -0.8191,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.2701
+  },
+  {
+   "id": "mp-2019999",
+   "formula": "BiO2",
+   "nsites": 12,
+   "ef_eV_atom": -1.0559,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0333
+  },
+  {
+   "id": "mp-1402765",
+   "formula": "BiO2",
+   "nsites": 12,
+   "ef_eV_atom": -0.9826,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.1066
+  },
+  {
+   "id": "mp-1047386",
+   "formula": "BiO2",
+   "nsites": 12,
+   "ef_eV_atom": -0.8744,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.2147
+  },
+  {
+   "id": "mp-25208",
+   "formula": "BiO2",
+   "nsites": 12,
+   "ef_eV_atom": -0.6393,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.4499
+  },
+  {
+   "id": "mp-557993",
+   "formula": "BiO2",
+   "nsites": 12,
+   "ef_eV_atom": -1.045,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0442
+  },
+  {
+   "id": "mp-25333",
+   "formula": "BiO2",
+   "nsites": 12,
+   "ef_eV_atom": -0.9135,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.1757
+  },
+  {
+   "id": "mp-1391102",
+   "formula": "BiO2",
+   "nsites": 12,
+   "ef_eV_atom": -0.8502,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.239
+  },
+  {
+   "id": "mp-1410371",
+   "formula": "Bi2O5",
+   "nsites": 14,
+   "ef_eV_atom": -0.6278,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.3058
+  },
+  {
+   "id": "mp-1385941",
+   "formula": "Bi2O5",
+   "nsites": 14,
+   "ef_eV_atom": -0.663,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.2706
+  },
+  {
+   "id": "mp-1043373",
+   "formula": "Bi2O5",
+   "nsites": 14,
+   "ef_eV_atom": -0.677,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.2566
+  },
+  {
+   "id": "mp-1776732",
+   "formula": "Bi2O5",
+   "nsites": 14,
+   "ef_eV_atom": -0.6278,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.3058
+  },
+  {
+   "id": "mp-684617",
+   "formula": "Bi2O3",
+   "nsites": 15,
+   "ef_eV_atom": -1.1922,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0917
+  },
+  {
+   "id": "mp-753707",
+   "formula": "Bi3O5",
+   "nsites": 16,
+   "ef_eV_atom": -1.1876,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0305
+  },
+  {
+   "id": "mp-684589",
+   "formula": "Bi4O5",
+   "nsites": 18,
+   "ef_eV_atom": -1.0569,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.1319
+  },
+  {
+   "id": "mp-1227568",
+   "formula": "Bi4O5",
+   "nsites": 18,
+   "ef_eV_atom": -1.0664,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.1224
+  },
+  {
+   "id": "mp-556549",
+   "formula": "Bi2O3",
+   "nsites": 20,
+   "ef_eV_atom": -1.2707,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0132
+  },
+  {
+   "id": "mp-1188267",
+   "formula": "Bi2O3",
+   "nsites": 20,
+   "ef_eV_atom": -1.2156,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0683
+  },
+  {
+   "id": "mp-1046792",
+   "formula": "Bi2O3",
+   "nsites": 20,
+   "ef_eV_atom": -1.1309,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.153
+  },
+  {
+   "id": "mp-1190124",
+   "formula": "Bi2O3",
+   "nsites": 20,
+   "ef_eV_atom": -1.2722,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0117
+  },
+  {
+   "id": "mp-558953",
+   "formula": "Bi2O3",
+   "nsites": 20,
+   "ef_eV_atom": -1.138,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.1459
+  },
+  {
+   "id": "mp-1105780",
+   "formula": "Bi2O3",
+   "nsites": 20,
+   "ef_eV_atom": -1.2436,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0402
+  },
+  {
+   "id": "mp-23262",
+   "formula": "Bi2O3",
+   "nsites": 20,
+   "ef_eV_atom": -1.2839,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0
+  },
+  {
+   "id": "mp-674644",
+   "formula": "Bi2O3",
+   "nsites": 20,
+   "ef_eV_atom": -1.2518,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0321
+  },
+  {
+   "id": "mp-23195",
+   "formula": "Bi2O3",
+   "nsites": 20,
+   "ef_eV_atom": -1.2636,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0203
+  },
+  {
+   "id": "mp-637599",
+   "formula": "Bi2O3",
+   "nsites": 20,
+   "ef_eV_atom": -1.0912,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.1927
+  },
+  {
+   "id": "mp-1188316",
+   "formula": "Bi2O3",
+   "nsites": 20,
+   "ef_eV_atom": -1.2318,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0521
+  },
+  {
+   "id": "mp-30303",
+   "formula": "Bi4O7",
+   "nsites": 22,
+   "ef_eV_atom": -1.1882,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0
+  },
+  {
+   "id": "mp-1227527",
+   "formula": "Bi4O7",
+   "nsites": 22,
+   "ef_eV_atom": -1.0878,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.1004
+  },
+  {
+   "id": "mp-1343531",
+   "formula": "BiO2",
+   "nsites": 24,
+   "ef_eV_atom": -0.9865,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.1027
+  },
+  {
+   "id": "mp-1041395",
+   "formula": "BiO2",
+   "nsites": 24,
+   "ef_eV_atom": -0.8755,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.2137
+  },
+  {
+   "id": "mp-1041273",
+   "formula": "Bi4O9",
+   "nsites": 26,
+   "ef_eV_atom": -0.7562,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.2492
+  },
+  {
+   "id": "mp-1043783",
+   "formula": "Bi2O5",
+   "nsites": 28,
+   "ef_eV_atom": -0.6366,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.297
+  },
+  {
+   "id": "mp-636934",
+   "formula": "Bi2O3",
+   "nsites": 30,
+   "ef_eV_atom": -1.0714,
+   "frac": {
+    "Bi": 1.0,
+    "Sb": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.2125
+  },
+  {
+   "id": "mp-32597",
+   "formula": "Bi13O20",
+   "skipped": "33 sites > cap 30"
+  },
+  {
+   "id": "mp-1044867",
+   "formula": "BiO2",
+   "skipped": "36 sites > cap 30"
+  },
+  {
+   "id": "mp-1359489",
+   "formula": "BiO2",
+   "skipped": "36 sites > cap 30"
+  },
+  {
+   "id": "mp-1044088",
+   "formula": "Bi3O7",
+   "skipped": "40 sites > cap 30"
+  },
+  {
+   "id": "mp-1197128",
+   "formula": "Bi2O3",
+   "skipped": "40 sites > cap 30"
+  },
+  {
+   "id": "mp-1204405",
+   "formula": "Bi2O3",
+   "skipped": "40 sites > cap 30"
+  },
+  {
+   "id": "mp-757852",
+   "formula": "Bi16O25",
+   "skipped": "41 sites > cap 30"
+  },
+  {
+   "id": "mp-1351349",
+   "formula": "BiO2",
+   "skipped": "48 sites > cap 30"
+  },
+  {
+   "id": "mp-1042373",
+   "formula": "Bi2O5",
+   "skipped": "56 sites > cap 30"
+  },
+  {
+   "id": "mp-766354",
+   "formula": "Bi25O38",
+   "skipped": "63 sites > cap 30"
+  },
+  {
+   "id": "mp-759526",
+   "formula": "Bi2O3",
+   "skipped": "65 sites > cap 30"
+  },
+  {
+   "id": "mp-1196483",
+   "formula": "Bi2O3",
+   "skipped": "80 sites > cap 30"
+  },
+  {
+   "id": "mp-773884",
+   "formula": "Bi19O30",
+   "skipped": "98 sites > cap 30"
+  },
+  {
+   "id": "mp-684747",
+   "formula": "Bi2O3",
+   "skipped": "160 sites > cap 30"
+  },
+  {
+   "id": "mp-1419175",
+   "formula": "O2Sb",
+   "nsites": 3,
+   "ef_eV_atom": -1.133,
+   "frac": {
+    "Bi": 0.0,
+    "Sb": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.3213
+  },
+  {
+   "id": "mp-1398749",
+   "formula": "O2Sb",
+   "nsites": 6,
+   "ef_eV_atom": 0.1516,
+   "frac": {
+    "Bi": 0.0,
+    "Sb": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 1.606
+  },
+  {
+   "id": "mp-1041974",
+   "formula": "O2Sb",
+   "nsites": 6,
+   "ef_eV_atom": -1.0818,
+   "frac": {
+    "Bi": 0.0,
+    "Sb": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.3725
+  },
+  {
+   "id": "mp-560607",
+   "formula": "O3Sb2",
+   "nsites": 10,
+   "ef_eV_atom": -1.2725,
+   "frac": {
+    "Bi": 0.0,
+    "Sb": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.1404
+  },
+  {
+   "id": "mp-1402558",
+   "formula": "O2Sb",
+   "nsites": 12,
+   "ef_eV_atom": -1.3108,
+   "frac": {
+    "Bi": 0.0,
+    "Sb": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.1435
+  },
+  {
+   "id": "mp-1044716",
+   "formula": "O2Sb",
+   "nsites": 12,
+   "ef_eV_atom": -1.2183,
+   "frac": {
+    "Bi": 0.0,
+    "Sb": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.236
+  },
+  {
+   "id": "mp-1388164",
+   "formula": "O2Sb",
+   "nsites": 12,
+   "ef_eV_atom": -1.0854,
+   "frac": {
+    "Bi": 0.0,
+    "Sb": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.3689
+  },
+  {
+   "id": "mp-1819",
+   "formula": "O2Sb",
+   "nsites": 12,
+   "ef_eV_atom": -1.4508,
+   "frac": {
+    "Bi": 0.0,
+    "Sb": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0035
+  },
+  {
+   "id": "mp-1400172",
+   "formula": "O2Sb",
+   "nsites": 12,
+   "ef_eV_atom": -1.1559,
+   "frac": {
+    "Bi": 0.0,
+    "Sb": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.2984
+  },
+  {
+   "id": "mp-1045682",
+   "formula": "O2Sb",
+   "nsites": 12,
+   "ef_eV_atom": -1.3391,
+   "frac": {
+    "Bi": 0.0,
+    "Sb": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.1153
+  },
+  {
+   "id": "mp-1047300",
+   "formula": "O2Sb",
+   "nsites": 12,
+   "ef_eV_atom": -1.1464,
+   "frac": {
+    "Bi": 0.0,
+    "Sb": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.3079
+  },
+  {
+   "id": "mp-1399685",
+   "formula": "O5Sb2",
+   "nsites": 14,
+   "ef_eV_atom": -1.278,
+   "frac": {
+    "Bi": 0.0,
+    "Sb": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0391
+  },
+  {
+   "id": "mp-1402032",
+   "formula": "O5Sb2",
+   "nsites": 14,
+   "ef_eV_atom": -1.2731,
+   "frac": {
+    "Bi": 0.0,
+    "Sb": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0439
+  },
+  {
+   "id": "mp-1043381",
+   "formula": "O5Sb2",
+   "nsites": 14,
+   "ef_eV_atom": -1.3171,
+   "frac": {
+    "Bi": 0.0,
+    "Sb": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0
+  },
+  {
+   "id": "mp-726085",
+   "formula": "O3Sb",
+   "nsites": 16,
+   "ef_eV_atom": -0.9142,
+   "frac": {
+    "Bi": 0.0,
+    "Sb": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.2382
+  },
+  {
+   "id": "mp-1105545",
+   "formula": "O3Sb",
+   "nsites": 16,
+   "ef_eV_atom": -0.9294,
+   "frac": {
+    "Bi": 0.0,
+    "Sb": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.223
+  },
+  {
+   "id": "mp-1219528",
+   "formula": "O7Sb2",
+   "nsites": 18,
+   "ef_eV_atom": -0.8449,
+   "frac": {
+    "Bi": 0.0,
+    "Sb": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.1795
+  },
+  {
+   "id": "mp-1219481",
+   "formula": "O13Sb6",
+   "nsites": 19,
+   "ef_eV_atom": -1.3788,
+   "frac": {
+    "Bi": 0.0,
+    "Sb": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0249
+  },
+  {
+   "id": "mp-2136",
+   "formula": "O3Sb2",
+   "nsites": 20,
+   "ef_eV_atom": -1.4129,
+   "frac": {
+    "Bi": 0.0,
+    "Sb": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0
+  },
+  {
+   "id": "mp-1044095",
+   "formula": "O7Sb3",
+   "nsites": 20,
+   "ef_eV_atom": -1.2683,
+   "frac": {
+    "Bi": 0.0,
+    "Sb": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.09
+  },
+  {
+   "id": "mp-1046803",
+   "formula": "O3Sb2",
+   "nsites": 20,
+   "ef_eV_atom": -1.1639,
+   "frac": {
+    "Bi": 0.0,
+    "Sb": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.2491
+  },
+  {
+   "id": "mp-1205345",
+   "formula": "O3Sb2",
+   "nsites": 20,
+   "ef_eV_atom": -1.4025,
+   "frac": {
+    "Bi": 0.0,
+    "Sb": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0105
+  },
+  {
+   "id": "mp-1219514",
+   "formula": "O7Sb3",
+   "nsites": 20,
+   "ef_eV_atom": -1.3189,
+   "frac": {
+    "Bi": 0.0,
+    "Sb": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0394
+  },
+  {
+   "id": "mp-1219511",
+   "formula": "O4Sb",
+   "nsites": 20,
+   "ef_eV_atom": -0.7607,
+   "frac": {
+    "Bi": 0.0,
+    "Sb": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.1612
+  },
+  {
+   "id": "mp-1999",
+   "formula": "O3Sb2",
+   "nsites": 20,
+   "ef_eV_atom": -1.3923,
+   "frac": {
+    "Bi": 0.0,
+    "Sb": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0206
+  },
+  {
+   "id": "mp-1377931",
+   "formula": "O2Sb",
+   "nsites": 24,
+   "ef_eV_atom": -1.2731,
+   "frac": {
+    "Bi": 0.0,
+    "Sb": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.1812
+  },
+  {
+   "id": "mp-230",
+   "formula": "O2Sb",
+   "nsites": 24,
+   "ef_eV_atom": -1.4543,
+   "frac": {
+    "Bi": 0.0,
+    "Sb": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0
+  },
+  {
+   "id": "mp-560098",
+   "formula": "O2Sb",
+   "nsites": 24,
+   "ef_eV_atom": -1.4542,
+   "frac": {
+    "Bi": 0.0,
+    "Sb": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0002
+  },
+  {
+   "id": "mp-13866",
+   "formula": "O2Sb",
+   "nsites": 24,
+   "ef_eV_atom": -1.1197,
+   "frac": {
+    "Bi": 0.0,
+    "Sb": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.3347
+  },
+  {
+   "id": "mp-1179587",
+   "formula": "O2Sb",
+   "nsites": 24,
+   "ef_eV_atom": -1.3332,
+   "frac": {
+    "Bi": 0.0,
+    "Sb": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.1211
+  },
+  {
+   "id": "mp-22071",
+   "formula": "O2Sb",
+   "nsites": 24,
+   "ef_eV_atom": -0.9962,
+   "frac": {
+    "Bi": 0.0,
+    "Sb": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.4581
+  },
+  {
+   "id": "mp-1044574",
+   "formula": "O2Sb",
+   "nsites": 24,
+   "ef_eV_atom": -1.3458,
+   "frac": {
+    "Bi": 0.0,
+    "Sb": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.1085
+  },
+  {
+   "id": "mp-1374616",
+   "formula": "O2Sb",
+   "nsites": 24,
+   "ef_eV_atom": -1.3177,
+   "frac": {
+    "Bi": 0.0,
+    "Sb": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.1366
+  },
+  {
+   "id": "mp-1041270",
+   "formula": "O9Sb4",
+   "nsites": 26,
+   "ef_eV_atom": -1.2541,
+   "frac": {
+    "Bi": 0.0,
+    "Sb": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.1263
+  },
+  {
+   "id": "mp-771699",
+   "formula": "O5Sb2",
+   "nsites": 28,
+   "ef_eV_atom": -1.3023,
+   "frac": {
+    "Bi": 0.0,
+    "Sb": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0147
+  },
+  {
+   "id": "mp-647533",
+   "formula": "O5Sb2",
+   "nsites": 28,
+   "ef_eV_atom": -0.2384,
+   "frac": {
+    "Bi": 0.0,
+    "Sb": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 1.0786
+  },
+  {
+   "id": "mp-1203602",
+   "formula": "O14Sb3",
+   "skipped": "34 sites > cap 30"
+  },
+  {
+   "id": "mp-1179595",
+   "formula": "O14Sb3",
+   "skipped": "34 sites > cap 30"
+  },
+  {
+   "id": "mp-1356631",
+   "formula": "O2Sb",
+   "skipped": "36 sites > cap 30"
+  },
+  {
+   "id": "mp-1044869",
+   "formula": "O2Sb",
+   "skipped": "36 sites > cap 30"
+  },
+  {
+   "id": "mp-684679",
+   "formula": "O13Sb6",
+   "skipped": "38 sites > cap 30"
+  },
+  {
+   "id": "mp-1219538",
+   "formula": "O14Sb5",
+   "skipped": "38 sites > cap 30"
+  },
+  {
+   "id": "mp-1202960",
+   "formula": "O3Sb2",
+   "skipped": "40 sites > cap 30"
+  },
+  {
+   "id": "mp-1350908",
+   "formula": "O2Sb",
+   "skipped": "48 sites > cap 30"
+  },
+  {
+   "id": "mp-1197211",
+   "formula": "O8Sb3",
+   "skipped": "66 sites > cap 30"
+  },
+  {
+   "id": "mp-1173348",
+   "formula": "O53Sb26",
+   "skipped": "79 sites > cap 30"
+  },
+  {
+   "id": "mp-675957",
+   "formula": "O53Sb26",
+   "skipped": "79 sites > cap 30"
+  },
+  {
+   "id": "mp-755382",
+   "formula": "BiO3Sb",
+   "nsites": 10,
+   "ef_eV_atom": -1.3125,
+   "frac": {
+    "Bi": 0.5,
+    "Sb": 0.5
+   },
+   "mixed": true,
+   "ehull_eV_atom": 0.0493,
+   "megnet_gap_pbe_eV": 1.895,
+   "megnet_gap_hse_eV": 3.323
+  },
+  {
+   "id": "mp-23018",
+   "formula": "BiO4Sb",
+   "nsites": 12,
+   "ef_eV_atom": -1.4634,
+   "frac": {
+    "Bi": 0.5,
+    "Sb": 0.5
+   },
+   "mixed": true,
+   "ehull_eV_atom": 0.0,
+   "megnet_gap_pbe_eV": 2.549,
+   "megnet_gap_hse_eV": 3.059
+  },
+  {
+   "id": "mp-30304",
+   "formula": "Bi3O7Sb",
+   "nsites": 22,
+   "ef_eV_atom": -1.4134,
+   "frac": {
+    "Bi": 0.75,
+    "Sb": 0.25
+   },
+   "mixed": true,
+   "ehull_eV_atom": 0.0,
+   "megnet_gap_pbe_eV": 2.007,
+   "megnet_gap_hse_eV": 2.268
+  },
+  {
+   "id": "mp-1043651",
+   "formula": "BiO5Sb",
+   "nsites": 28,
+   "ef_eV_atom": -0.8719,
+   "frac": {
+    "Bi": 0.5,
+    "Sb": 0.5
+   },
+   "mixed": true,
+   "ehull_eV_atom": 0.3825,
+   "megnet_gap_pbe_eV": 0.228,
+   "megnet_gap_hse_eV": 0.877
+  },
+  {
+   "id": "mp-1214312",
+   "formula": "Bi12O20Sb",
+   "nsites": 33,
+   "ef_eV_atom": -1.2955,
+   "frac": {
+    "Bi": 0.9231,
+    "Sb": 0.0769
+   },
+   "mixed": true,
+   "ehull_eV_atom": 0.0186,
+   "megnet_gap_pbe_eV": 1.742,
+   "megnet_gap_hse_eV": 1.68
+  },
+  {
+   "id": "mp-1042388",
+   "formula": "BiO5Sb",
+   "nsites": 56,
+   "ef_eV_atom": -0.9757,
+   "frac": {
+    "Bi": 0.5,
+    "Sb": 0.5
+   },
+   "mixed": true,
+   "ehull_eV_atom": 0.2787,
+   "megnet_gap_pbe_eV": 1.281,
+   "megnet_gap_hse_eV": 1.862
+  }
+ ],
+ "model": "MACE medium float64; MEGNet-BandGap-mfi-MP-2019.4.1"
+}

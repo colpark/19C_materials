@@ -59,9 +59,16 @@ def plate_xrd(ep, j):
     p = pooled_plates()[ep["plate_id"]]; return p["Q"], p["xrd"][j]
 
 
+def col1d(elements):
+    """Index of the 1D coordinate on 2-cation plates: Sb when present (run-1 orientation), else the second sorted element."""
+    return elements.index("Sb") if "Sb" in elements else 1
+
+
 def coords(ep):
     X = np.array(ep["comp"], float)
-    return X[:, 1:2] if X.shape[1] == 2 else X      # 2 cations: 1D coordinate; else the vector
+    if X.shape[1] == 2:
+        c = col1d(ep["elements"]); return X[:, c:c + 1]
+    return X
 
 
 # ------------------------------------------------------------------ score, chance
@@ -163,7 +170,7 @@ def fm_prior(ep, use_mace=True, use_gap=True):
     for pid, r in fm_rows(ep["chem"]).items():
         if not r.get("mixed"): continue
         v = np.array([r["frac"][e] for e in ep["elements"]])
-        v = v[1:2] if len(v) == 2 else v            # same coordinate as coords(): run-1 1D bump on 2-cation plates
+        if len(v) == 2: c = col1d(ep["elements"]); v = v[c:c + 1]   # same coordinate as coords()
         w = phase_weight(ep["chem"], pid, ep["led_eV"], use_mace, use_gap)
         pr += w * np.exp(-0.5 * ((X - v) ** 2).sum(1) / BUMP_W ** 2)
     return pr / (pr.max() or 1.0)

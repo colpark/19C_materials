@@ -1,0 +1,18 @@
+{
+  "channel": "mace_hull",
+  "n": 156,
+  "mean_lift": 0.014338,
+  "sigma_d": 0.322361,
+  "ci95": [
+    -0.036249,
+    0.064925
+  ],
+  "delta": 0.169,
+  "alpha": 0.05,
+  "covers_zero": true,
+  "upper_below_delta": true,
+  "role": "agent_input",
+  "ruling": "LIFT",
+  "completeness": "paired lift of fm_xrd over fm_xrd_nomace across 156 units, interval from the I1 per-item variance at alpha 0.05, ruled against delta 0.169 with role agent_input",
+  "next": "Gate 1 fourth lift: required consultation with a written verdict. I1 rebuilds the floor against the lifted task before any arm runs"
+}

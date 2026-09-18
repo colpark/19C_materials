@@ -2,3 +2,12 @@ cuequivariance or cuequivariance_torch is not available. Cuequivariance accelera
 Using Materials Project MACE for MACECalculator with /home/aid1/.cache/mace/20231203mace128L1_epoch199model
 Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
 Bi-Cu-V 401 phases, 83 mixed-cation, 2029s
+cuequivariance or cuequivariance_torch is not available. Cuequivariance acceleration will be disabled.
+Using Materials Project MACE for MACECalculator with /home/aid1/.cache/mace/20231203mace128L1_epoch199model
+Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
+Ca-Cu-V 399 phases, 136 mixed-cation, 636s
+Cr-Fe-V 545 phases, 115 mixed-cation, 1003s
+Cr-Sb 144 phases, 8 mixed-cation, 0s
+Cu-Sb 92 phases, 8 mixed-cation, 0s
+Fe-Sb 194 phases, 11 mixed-cation, 0s
+In-Sb 64 phases, 4 mixed-cation, 0s

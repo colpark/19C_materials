@@ -99,3 +99,8 @@
 - General FM precompute: 14 of 37 summaries, then 3 workers crashed on a concurrent-write race (1 corrupt MACE cache file).
   - Cache writes are now atomic (write + rename); the corrupt file was deleted.
   - Restarted for the remaining 23 chemistries.
+- Regression: pooled floors reproduce rev2 base floors on 117 episodes × 4 compositions, 0 differences (after fixing the 1D orientation for Sb-Zn / Sb-Y).
+- Fresh tau (pool move, D3): Jaccard cut on cation sets. tau.py chose 0.5, giving 26 clusters (sensitivity 26 at 0.34, 30 at 0.6). The vanadate and Ca-Mn families merge.
+- Pooled I1 at B=3: 278 episodes. Split: pilot 10, reserve 10, cohort 156 over 26 clusters. Zero-headroom 9-13%.
+- Pooled I2 (cohort): fm_prior −0.018 [−0.081, +0.045] CLOSE; fm_xrd −0.002 [−0.061, +0.057] LIFT; MEGNet +0.011 LIFT; MACE +0.014 LIFT.
+- **Pooled P7 provisional: RESOLVABLE.** fm_xrd − cls_xrd: cluster sigma_d 0.296, MDE 0.163 ≤ delta 0.169, N_min 25 ≤ 26. fm_prior − cls_gp: MDE 0.158, RESOLVABLE. Between-cluster share 0.464.

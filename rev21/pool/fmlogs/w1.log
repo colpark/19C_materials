@@ -7,3 +7,11 @@ Using Materials Project MACE for MACECalculator with /home/aid1/.cache/mace/2023
 Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
 Bi-V 311 phases, 36 mixed-cation, 4s
 Cu-V 282 phases, 36 mixed-cation, 0s
+Ni-V 260 phases, 18 mixed-cation, 211s
+Co-V 294 phases, 30 mixed-cation, 294s
+Nb-V 261 phases, 23 mixed-cation, 149s
+V-Zr 245 phases, 9 mixed-cation, 172s
+Ag-Sb 73 phases, 8 mixed-cation, 0s
+Al-Sb 170 phases, 9 mixed-cation, 0s
+Bi-Sb 120 phases, 6 mixed-cation, 0s
+Co-Sb 128 phases, 22 mixed-cation, 0s
