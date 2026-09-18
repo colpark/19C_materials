@@ -61,3 +61,17 @@
   - Observed cluster MDE is 0.225, above delta, driven by La (one plate, +0.92 in a noise-level episode). The cluster test was underpowered post hoc. The prospective MDE of 0.089 underestimated the agent-arm variance.
   - Trace spot-check: no fabrication found. FM-using episodes show explicit cross-modal rejections, e.g. "predicted In11Sb3O24 did not form" and "La3Sb5O12's XRD did not match".
 - 02:30 Report built from ledgers (report/build_report.py → REPORT.html) and published as a private artifact.
+
+## Rev2 redo (2026-09-18)
+- 09:00 Skill rev2 vendored; rev1 archived. `rev2/CHECKPOINT.md`: the restart checkpoint is D4.
+- 09:05 Dry run of the rev2 gates on the run-1 floors (B=5). I2: fm_prior CLOSE, fm_xrd LIFT. P2: 30% of items at ceiling. Rev2 would have spent 0 of run 1's 300 cells.
+- 09:10 D4 amendment frozen (manifest_rev2 hash 43acaea4).
+  - A-04: B_EQE 3, from S2 (11% of the line). The run-1 value 5 had no seed source.
+  - Delta re-derived at B=3: 0.169. Lift band and uptake band (0.8) declared.
+  - 102 run-1 items burned. Pool: 87 episodes over 14 elements.
+- 09:20 I1 at B=3: cls_xrd 0.561 beats cls_gp 0.493 (the multimodal channel matters now); fm_xrd 0.566.
+- 09:20 I2: fm_prior CLOSE (−0.047, CI [−0.107, +0.013]); fm_xrd LIFT (+0.005, CI [−0.047, +0.056]).
+- 09:25 Split: pilot 10 (one per element), reserve 10, cohort 67.
+- 09:25 P7 provisional: cluster sigma_d 0.353, MDE 0.265 > 0.169, CLOSE_UNRESOLVABLE, N_min 35 clusters. The per-chemistry FM effect ranges from −0.51 (Co) to +0.86 (Mg).
+- Sensitivity, not adopted: at B=5 the lifted comparison would have a cohort MDE of 0.140. That would be the user's D5 override.
+- Closure. No cells spent.

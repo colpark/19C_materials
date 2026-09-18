@@ -1,21 +1,24 @@
-# STATE: run complete (2026-09-18)
+# STATE: rev2 redo complete (2026-09-18)
 
-**Outcome: runnable benchmark + scored comparison. NO CLAIM, with the resolution limit attached.**
+**Rev2 outcome: CLOSURE finding at zero cells.**
+- Binding axis: positive supply (14 element systems) under a channel effect that is heterogeneous across chemistries.
+- P7 provisional: MDE 0.265 > delta 0.169, and N_min is 35 clusters.
+- I2 closes the FM prior and lifts FM-weighted XRD. Neither reaches an unlifted arm.
 
-| # | Stage | Disposition | Artifact |
-|---|---|---|---|
-| 0 | setup | PASS | env/ |
-| R0 | replay suite | PASS by polarity 38/38. Not blind; K06 misruled | replay/ |
-| 1 | D1 seeds + branch census | PASS: 4/30 papers publish a numbered rejected model | discovery/census/, discovery/seeds/seed_ledger.json |
-| 2 | D2 corpus | PASS: 189 episodes included, 7 excluded (E1), cohort 100 | discovery/corpus_ledger.json |
-| 3 | D3 tau | REFUSE → amendment A-01: unit = element system (14) | discovery/tau/ |
-| 4 | D4 slots + shape | PASS: C1 intervene PROCEED; C2–C5 CLOSE, gates named | discovery/manifest.json, shape_record.json |
-| 5 | D5 ratification | PASS: user budget and subject; other slots delegate-ratified | discovery/D5_ratification.md |
-| 6 | R1 harness control | PASS | runtime/cells/r1 |
-| 7-11 | P1–P5 | PASS. P3: all 7 axes counted; contamination disclosed (recall probe null). P4: PROCEED, binding axis positive supply (14 clusters) | supply/axis_ledger.json, supply/recall_probe |
-| 12 | I1 floors | PASS: chance 0.59, cls_gp 0.72 (strongest), fm_prior 0.715 | instrument/floors.csv |
-| 13 | I2 channel count | PASS: FM channels add +0.003 to −0.004 mechanically | instrument/floors.csv |
-| 14-15 | P6 strata, P7 MDE | PASS: MDE 0.089 (cluster), RESOLVABLE at delta 0.17 | supply/power_record.json |
-| 16-18 | I3 cards, I4 construct, I5 cert | PASS (FM construct validity checked on proxies) | instrument/ |
-| 19-25 | R2–R8 | PASS: probe, ladder, grant (48/48 canaries), gates armed, symmetry ruled | runtime/ |
-| 26-29 | A1–A4 | PASS: preregistered, blind hashed, 300/300 scored, NO CLAIM | adjudication/ |
+Run 1 (skill rev1) is kept below and in `REPORT.html` section "Run 1". Its 300 cells are the evidence rev2 was written from.
+
+## Rev2 stage table (restart at D4)
+
+| Stage | Disposition | Artifact |
+|---|---|---|
+| D1–D3, P3 contamination | carried over unchanged | discovery/, supply/recall_probe |
+| D4 amendment | A-04 B_EQE 5→3 from seed S2; A-05 lift and uptake bands; A-06 102 items burned | rev2/discovery/manifest_rev2.json |
+| I1 floors at B=3 | PASS: chance 0.468, cls_gp 0.493, cls_xrd 0.561, fm_prior 0.447, fm_xrd 0.566 | rev2/instrument/floors_B3.csv |
+| I2 channel lift | fm_prior **CLOSE**; fm_xrd, MEGNet, MACE **LIFT** | rev2/instrument/lift_*.json |
+| I4 | MACE, MEGNet: **PROXY**, carried to I2 | rev2/instrument/certification_rev2.json |
+| P2 per item | zero-headroom 14% (was 30% at B=5); noise floor 20% | rev2/supply/p2_headroom.json |
+| P4 (8 axes) | **CLOSE**, binding positive supply under heterogeneity | rev2/supply/axis_ledger_rev2.json |
+| P7 provisional | **CLOSE_UNRESOLVABLE** (MDE 0.265, N_min 35) | rev2/supply/power_provisional.json |
+| R3 pilot, P7 final, R5, cells | not run: closed upstream (refusals 18, 19) | – |
+
+**Open for the user (D5, cost of action):** a per-episode budget of 5 would make the lifted comparison resolvable (cohort MDE 0.14), at the price of 30% of items at ceiling. It is not adopted here, because picking a budget to pass a gate is tuning to the gate.

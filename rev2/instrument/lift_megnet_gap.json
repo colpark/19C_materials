@@ -1,18 +1,18 @@
 {
   "channel": "megnet_gap",
   "n": 189,
-  "mean_lift": -0.006474,
-  "sigma_d": 0.200169,
+  "mean_lift": -0.013921,
+  "sigma_d": 0.238575,
   "ci95": [
-    -0.035011,
-    0.022064
+    -0.047934,
+    0.020092
   ],
-  "delta": 0.17,
+  "delta": 0.169,
   "alpha": 0.05,
   "covers_zero": true,
   "upper_below_delta": true,
   "role": "agent_input",
   "ruling": "LIFT",
-  "completeness": "paired lift of fm_xrd over fm_xrd_nogap across 189 units, interval from the I1 per-item variance at alpha 0.05, ruled against delta 0.17 with role agent_input",
+  "completeness": "paired lift of fm_xrd over fm_xrd_nogap across 189 units, interval from the I1 per-item variance at alpha 0.05, ruled against delta 0.169 with role agent_input",
   "next": "Gate 1 fourth lift: required consultation with a written verdict. I1 rebuilds the floor against the lifted task before any arm runs"
 }

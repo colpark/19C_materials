@@ -1,0 +1,22 @@
+{
+ "budget_eqe": 3,
+ "aggregate": {
+  "strongest_floor": "fm_xrd",
+  "mean": 0.5659,
+  "chance": 0.4683,
+  "ceiling": 1.0
+ },
+ "per_item": {
+  "zero_headroom_share": {
+   "cls_gp": 0.143,
+   "cls_xrd": 0.148,
+   "fm_xrd": 0.138
+  },
+  "noise_floor_share": 0.201
+ },
+ "run1_B5": {
+  "zero_headroom_share_cls_gp": 0.296
+ },
+ "strata": "zero-headroom (fm_xrd==1) and noise-floor (max EQE<0.01%) carried to P6, never filtered",
+ "completeness": "Floor share of ceiling in aggregate and per item over 189 included episodes at B=3, with run-1 B=5 comparison."
+}

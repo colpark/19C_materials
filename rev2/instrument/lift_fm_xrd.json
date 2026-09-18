@@ -1,18 +1,18 @@
 {
   "channel": "fm_xrd",
   "n": 189,
-  "mean_lift": 0.002514,
-  "sigma_d": 0.299593,
+  "mean_lift": 0.004524,
+  "sigma_d": 0.360888,
   "ci95": [
-    -0.040198,
-    0.045227
+    -0.046928,
+    0.055975
   ],
-  "delta": 0.17,
+  "delta": 0.169,
   "alpha": 0.05,
   "covers_zero": true,
   "upper_below_delta": true,
   "role": "agent_input",
   "ruling": "LIFT",
-  "completeness": "paired lift of fm_xrd over cls_xrd across 189 units, interval from the I1 per-item variance at alpha 0.05, ruled against delta 0.17 with role agent_input",
+  "completeness": "paired lift of fm_xrd over cls_xrd across 189 units, interval from the I1 per-item variance at alpha 0.05, ruled against delta 0.169 with role agent_input",
   "next": "Gate 1 fourth lift: required consultation with a written verdict. I1 rebuilds the floor against the lifted task before any arm runs"
 }
