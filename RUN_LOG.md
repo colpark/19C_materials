@@ -75,3 +75,20 @@
 - 09:25 P7 provisional: cluster sigma_d 0.353, MDE 0.265 > 0.169, CLOSE_UNRESOLVABLE, N_min 35 clusters. The per-chemistry FM effect ranges from −0.51 (Co) to +0.86 (Mg).
 - Sensitivity, not adopted: at B=5 the lifted comparison would have a cohort MDE of 0.140. That would be the user's D5 override.
 - Closure. No cells spent.
+
+## Rev 2.1 redo (2026-09-18, from 10:40)
+- Skill rev 2.1 vendored; replay audit OK (44 cases). Restart = O1 on the rev2 P7 closure (`rev21/CHECKPOINT.md`).
+- D5 additions: envelope (GPU 12 h, storage 10 GB, tokens 60 M, wall 24 h, tolerance 3; measured spend 2.5 / 0.6 / 19.6 / 12) and decision rights (router default; B_EQE reserved). D4 portfolio: C1 lead, C1x explain alternative, C2–C5 closed.
+- Decision 001, P7_CLOSE_UNRESOLVABLE on C1. Keyed SUPPLY_CLUSTERS: between-cluster share 0.665, N_min 35 > 14.
+  - Launched: search_sibling_libraries (D2), spin_explain_candidate (D4).
+  - Carded: request_new_libraries, change_task_budget.
+  - Refused: pool (precondition), advance (no next). Matches the sealed case K28M.
+- C1x explain candidate:
+  - Grader split-half rho 0.70 (PASS at 0.5; sign agreement 7/12).
+  - Mechanical floor Brier 0.250 vs base rate 0.284 over 14 chemistries; provisional MDE 0.142.
+  - Delta UNDEMONSTRATED (no seed source).
+- Decision 002, I2_CLOSE (fm_prior, previously unrouted).
+  - Launched: swap_fm_checkpoint (MACE-MP-0 → MACE-MPA-0; I2 re-entry).
+  - Carded: change_role_scorer_lift (prereg after outcomes), different_scored_quantity.
+  - C1 depth 2 of 3.
+- MPA-0 precompute started: 4 workers. Three initially failed on a concurrent checkpoint download and were restarted.

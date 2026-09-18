@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "cut_curve",
+  "type": "object",
+  "required": [
+    "chosen_cut",
+    "justification",
+    "curve",
+    "sensitivity",
+    "chosen_to_increase_unit_count",
+    "completeness"
+  ],
+  "properties": {
+    "chosen_cut": {
+      "type": "number"
+    },
+    "justification": {
+      "type": "string"
+    },
+    "curve": {
+      "type": "array"
+    },
+    "sensitivity": {
+      "type": "object"
+    },
+    "saturation_cut": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "collapse_cut": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "chosen_to_increase_unit_count": {
+      "type": "boolean",
+      "description": "must be false"
+    },
+    "completeness": {
+      "type": "string"
+    }
+  }
+}

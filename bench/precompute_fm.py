@@ -9,7 +9,7 @@ import fm, data
 from pymatgen.analysis.phase_diagram import PhaseDiagram, PDEntry
 from pymatgen.core import Composition
 
-OUT = os.path.join(fm.CACHE, "fm_summary")
+OUT = os.path.join(fm.CACHE, "fm_summary" + fm.MACE_TAG)
 BINARY_MAX_SITES = 30   # amendment A-02: hull ground states of the binary oxides sit in cells <= 30 sites
 os.makedirs(OUT, exist_ok=True)
 
@@ -47,7 +47,7 @@ def system_summary(M):
                 row["megnet_gap_pbe_eV"] = round(fm.megnet_gap(fm.to_structure(r), 0)["gap_eV"], 3)
                 row["megnet_gap_hse_eV"] = round(fm.megnet_gap(fm.to_structure(r), 2)["gap_eV"], 3)
     out = dict(element=M, n_phases=len(rows), rows=rows,
-               model="MACE-MP-0 medium float64 FIRE+FrechetCellFilter fmax0.05 150 steps; MEGNet-BandGap-mfi-MP-2019.4.1")
+               model=f"MACE {fm.MACE_MODEL} float64 FIRE+FrechetCellFilter fmax0.05 150 steps; MEGNet-BandGap-mfi-MP-2019.4.1")
     json.dump(out, open(path, "w"), indent=1)
     return out
 

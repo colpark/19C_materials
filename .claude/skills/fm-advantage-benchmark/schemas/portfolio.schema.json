@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "portfolio",
+  "description": "the live candidates with their priority and the router's guard state",
+  "type": "object",
+  "required": [
+    "candidates"
+  ],
+  "properties": {
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "status"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "active",
+              "closed",
+              "resolved",
+              "waiting_human"
+            ]
+          },
+          "resolving_power": {
+            "type": "number"
+          },
+          "cost_class": {
+            "type": "integer"
+          },
+          "shape": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "guard_state": {
+      "type": "object"
+    }
+  }
+}

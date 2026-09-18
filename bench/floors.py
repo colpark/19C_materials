@@ -49,7 +49,7 @@ def phase_patterns(el):
 
 
 def fm_rows(el):
-    return {r["id"]: r for r in json.load(open(os.path.join(fm.CACHE, "fm_summary", f"{el}.json")))["rows"]
+    return {r["id"]: r for r in json.load(open(os.path.join(fm.CACHE, "fm_summary" + fm.MACE_TAG, f"{el}.json")))["rows"]
             if "ef_eV_atom" in r}
 
 

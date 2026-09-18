@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "decision_record",
+  "description": "O1 output: one routing of one closure for one candidate",
+  "type": "object",
+  "required": [
+    "closure",
+    "key",
+    "candidate",
+    "launched",
+    "carded",
+    "refused",
+    "guard_state",
+    "envelope_after",
+    "completeness"
+  ],
+  "properties": {
+    "closure": {
+      "type": "string"
+    },
+    "key": {
+      "type": "string"
+    },
+    "candidate": {
+      "type": "string"
+    },
+    "outcomes_seen": {
+      "type": "boolean"
+    },
+    "launched": {
+      "type": "array"
+    },
+    "carded": {
+      "type": "array"
+    },
+    "refused": {
+      "type": "array"
+    },
+    "guard_state": {
+      "type": "object"
+    },
+    "envelope_after": {
+      "type": "object"
+    },
+    "amendments": {
+      "type": "array"
+    },
+    "completeness": {
+      "type": "string"
+    }
+  }
+}

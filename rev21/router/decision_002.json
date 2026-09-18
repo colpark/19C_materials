@@ -1,0 +1,106 @@
+{
+  "closure": "I2_CLOSE",
+  "key": "I2_CLOSE",
+  "candidate": "C1",
+  "outcomes_seen": true,
+  "launched": [
+    {
+      "remedy": "swap_fm_checkpoint",
+      "class": "autonomous",
+      "reentry": "I2",
+      "what": "precompute the alternative checkpoint on the same structures, rebuild the composition, re-run lift.py",
+      "cost": {
+        "gpu_hours": 6,
+        "storage_gb": 20,
+        "tokens_m": 1,
+        "wall_hours": 4
+      },
+      "over_soft_ceiling": true,
+      "projected": {
+        "gpu_hours": 8.5,
+        "storage_gb": 26.6,
+        "tokens_m": 28.6,
+        "wall_hours": 21
+      }
+    }
+  ],
+  "carded": [
+    {
+      "remedy": "change_role_scorer_lift",
+      "class": "autonomous",
+      "reentry": "I1",
+      "what": "move the channel from predictor to scorer on agent-built inputs, rebuild the floor for the lifted task",
+      "cost": {
+        "gpu_hours": 1,
+        "storage_gb": 1,
+        "tokens_m": 2,
+        "wall_hours": 3
+      },
+      "reason": "changes a preregistered element after outcomes were seen; reserved"
+    },
+    {
+      "remedy": "different_scored_quantity",
+      "class": "reserved",
+      "reentry": "D4",
+      "what": "move to a task whose scored quantity the FM's construct measures; a change of scientific question",
+      "cost": {
+        "gpu_hours": 0,
+        "storage_gb": 0,
+        "tokens_m": 0,
+        "wall_hours": 0
+      },
+      "reason": "reserved to the human by the decision rights"
+    }
+  ],
+  "refused": [
+    {
+      "remedy": "advance_next_candidate",
+      "class": "autonomous",
+      "reentry": "portfolio",
+      "what": "start the next active candidate in the portfolio by priority",
+      "cost": {
+        "gpu_hours": 0,
+        "storage_gb": 0,
+        "tokens_m": 0,
+        "wall_hours": 0
+      },
+      "reason": "precondition not met: portfolio_has_next"
+    }
+  ],
+  "guard_state": {
+    "depth": 2,
+    "reentry": {
+      "D2": 1,
+      "D4": 1,
+      "I2": 1
+    },
+    "failures": {},
+    "retired": []
+  },
+  "envelope_after": {
+    "gpu_hours": {
+      "ceiling": 12,
+      "spent": 2.5,
+      "committed": 6
+    },
+    "storage_gb": {
+      "ceiling": 10,
+      "spent": 0.6,
+      "committed": 26
+    },
+    "tokens_m": {
+      "ceiling": 60,
+      "spent": 19.6,
+      "committed": 9
+    },
+    "wall_hours": {
+      "ceiling": 24,
+      "spent": 12,
+      "committed": 9
+    }
+  },
+  "amendments": [
+    "O1: swap_fm_checkpoint re-enters I2 for C1"
+  ],
+  "completeness": "routed I2_CLOSE as I2_CLOSE for C1: 1 launched, 2 carded to the human, 1 refused, depth 2 of 3"
+}

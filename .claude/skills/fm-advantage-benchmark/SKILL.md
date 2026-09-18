@@ -26,9 +26,11 @@ Closure is the primary product by volume. In the record this derives from, four 
 
 `references/graph.md` holds the cross-module preconditions. Consult it before starting any stage.
 
+`references/router.md` holds the orchestrator's mandate, the resource envelope, the remedy table and the loop guards. Load it at D5, and run O1 whenever a stage rules CLOSE, UNDEMONSTRATED or ESCALATE.
+
 ## The 29 stages
 
-Five modules, partitioned by private evidence. Ordered here by execution, which is cost order and not module order.
+Five modules, partitioned by private evidence, plus one orchestration stage that reads only their ledgers. Ordered here by execution, which is cost order and not module order.
 
 | # | Stage | Module | Cost | Advances when |
 |---|---|---|---|---|
@@ -61,6 +63,7 @@ Five modules, partitioned by private evidence. Ordered here by execution, which 
 | 27 | A2 hash blind files | adjudication | zero | hashes recorded before any label opens |
 | 28 | A3 score once, paired | adjudication | zero | paired, coverage as coverage |
 | 29 | A4 report with chance and MDE | adjudication | zero | claim, or no claim |
+| O1 | route on closure | orchestration | zero | decision record written: autonomous moves launched, reserved moves carded, guards checked. Runs whenever a stage rules CLOSE, UNDEMONSTRATED or ESCALATE, at any point in the order |
 
 Stage briefs live in `references/stages/`. Read one when its stage arrives, not before.
 
@@ -72,10 +75,11 @@ Four loops. Every one has a written escape.
 |---|---|
 | stage loop, prompt to disposition to ruling | the ruling is close, or the stage advances the frontier |
 | queue loop, P5 back to P1 | survivor count reaches S, or the optimistic bound on remaining supply falls below S |
+| router re-entries, O1 back to D2, D3, D4, I1, I2 or P7 | three remedies per candidate, two re-entries per stage, a move retired after two failures |
 | surface loop, R1 back to instrument | the known-good subject completes, which indicts the subject rather than the surface |
 | amendment loop, session changes its own rule | the amendment is recorded in the ledger with its cause |
 
-The queue loop is the only cycle in the dependency graph. Everything else points forward.
+The queue loop and the router's bounded re-entries are the only cycles in the dependency graph. Everything else points forward.
 
 ## Staying unstuck
 
@@ -115,12 +119,17 @@ The ladder itself is a gate and arms only with both controls run. Its must-not-f
 18. Refuse to run an agent arm to confirm a null the mechanical count already stated. A channel closed at I2 reaches an arm only under a recorded lift.
 19. Refuse to arm a gate or score a cell on a provisional power record. The free variance is a lower bound on arm variance, never the estimate.
 20. Refuse to read a grant as a use. Count uptake in the pilot cohort, and preregister an opt-in grant as intention to treat.
+21. Refuse an autonomous move that changes a preregistered element after outcomes were seen. Card it.
+22. Refuse an autonomous move whose projected spend exceeds the envelope's hard limit, and refuse a fourth remedy, a third re-entry of the same stage, or a move that failed twice for the same candidate.
+23. Refuse to end a closure with "open for the user" alone. Route it: launch what is delegated, card what is reserved, start the next candidate.
 
 ## Scripts
 
 - `scripts/tau.py` sweeps the similarity cut and chooses it by measurement, refusing when the curve does not bound one.
 - `scripts/queue.py` derives Q from observed yield with an exact interval, and states when the interval is too wide to license a queue.
 - `scripts/power.py` computes chance, sigma_d, MDE and N_min from two columns of per-item scores with a cluster column. Run it twice: `--scope provisional` on the I1 compositions, `--scope final --provisional <record> --cohort-clusters <csv>` on the R3 pilot arm cells. The final pass projects the pilot's item-level arm variance onto the cohort's clusters and rules RESOLVABLE, ESCALATE_ENLARGE_PILOT, RUN_AT_LIMIT, CLOSE_UNRESOLVABLE or UNDEMONSTRATED.
+- `scripts/router.py` routes a closure: launches the delegated remedies that fit the envelope, cards the reserved ones, enforces the guards, writes the decision record, and picks the next portfolio candidate.
+- `scripts/simulate_router.py` drives synthetic closures through the router against a stop-and-ask baseline and a naive retry policy, reporting resolution, rounds, human decisions, envelope breaches, preregistration violations and loop caps.
 - `scripts/simulate_rev2.py` stress-tests the revision 2 gates on synthetic instances against the original pipeline and an oracle, reporting premature stops, wasted runs, false claims and termination. Run it after any change to I2, P7, R3 or R8.
 - `scripts/lift.py` computes the paired interval on the I2 channel lift from the C-1 and C columns and rules CLOSE, LIFT or ADVANCE against the manifest delta.
 - `scripts/validate.py` checks provenance records and module ledgers.
@@ -128,6 +137,6 @@ The ladder itself is a gate and arms only with both controls run. Its must-not-f
 
 ## Before trusting any of this
 
-`references/replay.md` describes the suite. Forty-two cases with their rulings sealed. Most are extracted from a single construction record. Those covering the discovery module are marked SYNTHETIC where the record contains no instance, and they carry less weight than the extracted ones.
+`references/replay.md` describes the suite. Forty-four cases with their rulings sealed. Most are extracted from a single construction record. Those covering the discovery module are marked SYNTHETIC where the record contains no instance, and they carry less weight than the extracted ones.
 
 Two limits stand and belong in any write-up. The suite and the stages come from one project, so reproducing its rulings says nothing about a case outside it, and an independent corpus must be replayed before this counts as evidence of generality. One such replay now exists: the materials instance (antimonate photoanode library, 2026-09-17) ran every stage to a scored null and exposed the four gaps repaired in this revision, at I2, P7, R3 and R8. Its four cases carry the suffix M in `cases/cases.csv`, and `references/simulation_rev2.md` records the simulation that sized the repaired gates. And a procedural seal held by the same party that wrote the spec proves nothing, so have someone else hold `cases/RULINGS_SEALED.csv`.

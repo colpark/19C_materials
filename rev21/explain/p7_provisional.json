@@ -1,0 +1,11 @@
+{
+ "candidate": "C1x",
+ "n": 14,
+ "chance_brier": 0.284,
+ "floor_brier": 0.2502,
+ "sigma_d": 0.1895,
+ "mde": 0.1419,
+ "delta": null,
+ "note": "no seed gives an acted-on effect for an explain call; delta slot UNDEMONSTRATED (rung 6b)",
+ "n_clusters": 14
+}

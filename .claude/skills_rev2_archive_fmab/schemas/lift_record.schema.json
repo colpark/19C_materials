@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "lift_record",
+  "description": "I2 output: the paired lift of the composition at C channels over C-1, its interval, and the disposition",
+  "type": "object",
+  "required": [
+    "n",
+    "mean_lift",
+    "sigma_d",
+    "ci95",
+    "delta",
+    "role",
+    "ruling",
+    "completeness"
+  ],
+  "properties": {
+    "channel": {
+      "type": "string"
+    },
+    "n": {
+      "type": "integer",
+      "minimum": 2
+    },
+    "mean_lift": {
+      "type": "number"
+    },
+    "sigma_d": {
+      "type": "number"
+    },
+    "ci95": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "number"
+      }
+    },
+    "delta": {
+      "type": "number"
+    },
+    "covers_zero": {
+      "type": "boolean"
+    },
+    "upper_below_delta": {
+      "type": "boolean"
+    },
+    "role": {
+      "enum": [
+        "fixed_input",
+        "agent_input"
+      ],
+      "description": "fixed_input: scorer or predictor on a fixed input. agent_input: scorer or simulator on an input the agent constructs"
+    },
+    "ruling": {
+      "enum": [
+        "ADVANCE",
+        "CLOSE",
+        "LIFT"
+      ],
+      "description": "CLOSE and LIFT only when the interval covers zero and its upper bound sits below delta, or the whole interval is negative"
+    },
+    "next": {
+      "type": "string"
+    },
+    "completeness": {
+      "type": "string"
+    }
+  }
+}

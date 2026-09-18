@@ -17,6 +17,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CACHE = os.path.join(ROOT, "env", "cache")
 os.makedirs(os.path.join(CACHE, "optimade"), exist_ok=True)
 MAX_SITES = 80
+MACE_MODEL = os.environ.get("FMAB_MACE_MODEL", "medium")          # rev2.1 swap: "medium-mpa-0"
+MACE_TAG = "" if MACE_MODEL == "medium" else "_" + MACE_MODEL.replace("-", "")
 _lock = threading.Lock()
 
 # ---------------------------------------------------------------- structure lookup (classical)
@@ -72,7 +74,7 @@ def _get_mace():
     if _mace is None:
         import torch
         from mace.calculators import mace_mp
-        _mace = mace_mp(model="medium", device="cuda" if torch.cuda.is_available() else "cpu",
+        _mace = mace_mp(model=MACE_MODEL, device="cuda" if torch.cuda.is_available() else "cpu",
                         default_dtype="float64")
     return _mace
 
@@ -98,7 +100,7 @@ def _cache_put(kind, h, obj):
 def mace_relax(s: Structure, steps=150, fmax=0.05):
     """Relaxed total energy per atom and relaxed structure (positions + cell), MACE-MP-0 medium."""
     h = struct_hash(s)
-    c = _cache_get("mace", h)
+    c = _cache_get("mace" + MACE_TAG, h)
     if c: return c
     if len(s) > MAX_SITES:
         return {"hash": h, "error": f"{len(s)} sites exceeds cap {MAX_SITES}"}
@@ -114,7 +116,7 @@ def mace_relax(s: Structure, steps=150, fmax=0.05):
         rs = AseAtomsAdaptor.get_structure(atoms)
     out = {"hash": h, "energy_per_atom_eV": e, "n_sites": len(s), "steps": steps,
            "relaxed": rs.as_dict(), "formula": s.composition.reduced_formula}
-    _cache_put("mace", h, out)
+    _cache_put("mace" + MACE_TAG, h, out)
     return out
 
 
@@ -137,7 +139,7 @@ O2_REF = None
 
 def ref_energy(el):
     """Elemental reference energy per atom (MACE), lowest over MP elemental structures <= MAX_SITES."""
-    p = _cache_get("ref", el)
+    p = _cache_get("ref" + MACE_TAG, el)
     if p: return p["e"]
     if el == "O":
         from ase import Atoms
@@ -155,7 +157,7 @@ def ref_energy(el):
                 m = mace_relax(to_structure(r))
                 if "energy_per_atom_eV" in m: es.append(m["energy_per_atom_eV"])
         e = min(es)
-    _cache_put("ref", el, {"e": e})
+    _cache_put("ref" + MACE_TAG, el, {"e": e})
     return e
 
 

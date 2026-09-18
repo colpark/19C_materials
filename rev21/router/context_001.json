@@ -1,0 +1,12 @@
+{
+ "var_between_share": 0.665,
+ "n_min_clusters": 35,
+ "n_clusters": 14,
+ "heterogeneity_detected": true,
+ "explain_grader_available": true,
+ "outcomes_seen": true,
+ "sibling_libraries_found": false,
+ "items_bound": false,
+ "unburned_supply": true,
+ "source": "rev2/supply/power_provisional.json; decomposition over rev2/supply/cohort_floors_B3.csv; run-1 outcomes were seen"
+}

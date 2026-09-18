@@ -1,5 +1,20 @@
 # CHANGELOG
 
+## Revision 2.1 (2026-09-18): route on closure
+
+Source: the revision 2 redo of the materials instance closed at zero cells and ended with "open for the user". Nothing mapped the binding axis to the moves that could unbind it. Revision 2.1 adds one orchestration stage and the mandate it runs under.
+
+### O1 route on closure
+- `references/router.md`: the orchestrator's mandate (what the executing agent decides alone, what it brings to the human), the resource envelope in the programme's own units with a soft ceiling and one tolerance factor per resource, the remedy table keyed by what closed, three loop guards, the portfolio rule for the D4 alternatives, the decision record and card.
+- `scripts/router.py`: the table as data with re-entry stage, preconditions and projected cost per move; `route` launches delegated moves that fit the hard limit, cards reserved ones, refuses on guards and preconditions, writes the decision record; `next` starts the highest-ranked active candidate; `card` renders the human's part.
+- `scripts/simulate_router.py`: 1000 synthetic closures per set through the router, a stop-and-ask baseline and a naive retry policy. Router: 89 to 90 percent resolved in five to six rounds with 1.2 human decisions, zero preregistration violations, zero hard-limit breaches, zero loop caps. Stop-and-ask: 77 to 78 percent in sixteen rounds with 4.9 decisions. Naive retry: loops in half of all worlds and breached the hard limit 58,000 times on an exhausted envelope. With the human absent the router resolved 75 percent alone and parked the rest on cards.
+- Manifest slots: resource envelope and decision rights at D5; the portfolio at D4. Graph: O1's bounded re-entries are the second cycle class. Loop: rung 7 passes through O1. Global refusals 21 to 23. Schemas `decision_record` and `portfolio`; validator checks for both.
+- Replay cases K28M (must fire, the materials closure: launch the sibling search and the explain candidate, card the budget) and N16M (must not fire: nothing to launch, card and wait). Suite at 44 cases, 15 sealed.
+
+### The two budgets, stated once
+The task's measurement budget (picks per line) is a design parameter priced by cost of action and belongs to the PI. The resource envelope (GPU, storage, tokens, wall clock) is what the orchestrator spends. The envelope buys episodes, precompute and reading; it never buys chemistries, and the router routes a cluster-bound closure to data acquisition and to the explain candidate, not to more cells.
+
+
 ## Revision 2 (2026-09-18): close at the count, not after the cells
 
 Source: the first independent replay of the skill, the materials instance at github.com/colpark/19C_materials. That run measured a zero mechanical lift for both foundation-model channels at I2, recorded PROXY-grade construct validity at I4, and then spent 300 scored cells to return a null the count had already stated. Four repairs, each reusing machinery the skill already had.

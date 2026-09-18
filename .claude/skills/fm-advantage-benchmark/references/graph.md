@@ -29,7 +29,9 @@ Consult this before starting any stage. An unmet precondition records as UNDEMON
 | R7 classify difference | A3 score paired | classify cosmetic or substantive before discarding any cell |
 | R8 arm symmetry | A4 report | an unruled per-arm difference is a confound, not a result |
 
-## The one cycle
+## The cycles
+
+O1 re-enters D2, D3, D4, I1, I2 or P7 on a closure, and each re-entry is bounded by the router's guards: three remedies per candidate, two re-entries per stage, retirement after two failures. A re-entry is an amendment and recounts every axis downstream of the stage it enters.
 
 R3 → P7 is not a cycle. P7 reads from I1 at its first pass and from R3 at its second, and points forward to A4 on both. P5 returns to P1. The queue is re-derived from observed yield and enumeration continues. Every other edge points forward.
 

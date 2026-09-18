@@ -18,6 +18,7 @@ AXES = {"positive_supply","negative_supply","contamination_exposure","tool_cover
         "cluster_structure","split_integrity","unprocessable_units"}
 REQ = {"axis_ledger":["candidate","axes","ruling","completeness"],
        "lift_record":["n","mean_lift","ci95","delta","role","ruling","completeness"],
+       "decision_record":["closure","key","candidate","launched","carded","refused","guard_state","envelope_after","completeness"],
        "power_record":["chance","n","sigma_d","mde","n_min","ruling","completeness"],
        "tool_card":["quantity_returned","served_checkpoint","disagreements","written_from"],
        "certification_record":["tools","completeness"],
@@ -77,6 +78,18 @@ def ledger(o, kind, f):
             NOTES.append("power record scope is provisional: R5 arms nothing and A3 scores nothing on it")
             if o.get("ruling") in ("ESCALATE_ENLARGE_PILOT", "UNDEMONSTRATED"):
                 NOTES.append(f"{o.get('ruling')}: the second pass has not finished")
+    if kind == "decision_record":
+        for l in o.get("launched", []):
+            if l.get("class") != "autonomous": f.append(f"{l.get('remedy')}: launched but not autonomous")
+            if o.get("outcomes_seen") and l.get("remedy") in ("change_role_scorer_lift", "forced_consultation_lift", "change_task_budget", "different_scored_quantity", "accept_proxy_grader"):
+                f.append(f"{l.get('remedy')}: changes a preregistered element after outcomes were seen. Refusal 21")
+            env = o.get("envelope_after", {})
+            for res, v in env.items():
+                if isinstance(v, dict) and v.get("ceiling") and (v.get("spent", 0) + v.get("committed", 0)) > v["ceiling"] * 3.0 + 1e-9:
+                    f.append(f"{res}: committed past the hard limit. Refusal 22")
+        gs = o.get("guard_state", {})
+        if gs.get("depth", 0) > 3: f.append("remedy depth above three. Refusal 22")
+        if not o.get("launched") and not o.get("carded") and not o.get("refused"): f.append("a routing with no moves considered is 'open for the user'. Refusal 23")
     if kind == "lift_record":
         lo, hi = (o.get("ci95") or [None, None])[:2]
         if lo is not None and hi is not None and lo <= 0 <= hi and hi < o.get("delta", 0) and o.get("ruling") == "ADVANCE":

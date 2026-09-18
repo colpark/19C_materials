@@ -12,7 +12,7 @@ from collections import defaultdict
 HERE = os.path.dirname(os.path.abspath(__file__))
 CASES = os.path.join(HERE, "..", "cases", "cases.csv")
 RULINGS = os.path.join(HERE, "..", "cases", "RULINGS_SEALED.csv")
-MODULE = {"D": "discovery", "P": "supply", "I": "instrument", "R": "runtime", "A": "adjudication", "L": "ladder"}
+MODULE = {"D": "discovery", "P": "supply", "I": "instrument", "R": "runtime", "A": "adjudication", "L": "ladder", "O": "orchestration"}
 
 def load(path=CASES):
     with open(path, newline="") as fh:

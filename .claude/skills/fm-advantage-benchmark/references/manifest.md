@@ -28,6 +28,8 @@ Two facts about your programme, not about the corpus.
 | Input | Why the corpus cannot supply it |
 |---|---|
 | budget | hours or cells you can actually spend |
+| resource envelope | gpu_hours, storage_gb, tokens_m, wall_hours, each with a soft ceiling, plus one tolerance factor (default 3) that sets the hard limit. What the programme meters, in its own units. See `references/router.md` |
+| decision rights | which moves the orchestrator may take alone and which come to you. The default split is written in `references/router.md`; override it here |
 | cost of the action | the seeds show what others act on, not what you would act on |
 
 `delta` is the delta prior unless your cost of action overrides it. `S`, the survivor target, is budget divided by measured hours per workflow. The record repriced its own cohort twice, at roughly 17 hours and then 37, so measure it rather than estimating.
@@ -43,6 +45,10 @@ Two facts about your programme, not about the corpus.
 | channel uptake per arm | R3 pilot cohort, read against the band declared at D4 |
 
 Q is not a slot. The record's end-to-end yield of one in six carries an exact interval from 0.004 to 0.641. Do not derive a queue from a batch whose pessimistic estimate is more than ten times its point estimate. Count more first.
+
+## The portfolio
+
+The D4 shape record's alternatives are candidates, not commentary. Each carries a status, a resolving power (yield over the MDE that yield implies) and a cost class. `scripts/router.py next` starts the highest-ranked active one when the lead closes. The survivor target S caps the portfolio.
 
 ## Per candidate
 

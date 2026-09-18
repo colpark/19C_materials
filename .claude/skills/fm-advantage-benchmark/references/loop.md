@@ -45,7 +45,7 @@ Each rung fires on a different signature. This is not five retries with a delay,
 | 6 | declared blocked with no edge in graph.md from the blocker | wait | run now, in parallel |
 | 6b | a seed is unreadable or a slot cannot be derived | guess a conventional value | mark the slot UNDEMONSTRATED, name which stages cannot run, escalate |
 | 6c | a refusal whose only instruction is to gather more evidence, with the interval not narrowing | keep gathering, or cap the loop at a declared count | derive the stop from the pool. Escape when counting everything left would still not settle it, and record UNDEMONSTRATED with the bound. A counter stops on itself rather than on the threat, and a null under a small count licenses nothing |
-| 7 | none of the above | anything automatic | escalate to the human |
+| 7 | none of the above | anything automatic | route through O1, which cards it to the human with the options priced |
 
 Evidence for each rung, all from the source record. Rung 2: six consecutive stages blocked on a parameter, each resolved by a ruling and none by a retry. Rung 3: two schema repairs relocated the same failure twice before anyone concluded it was not a schema problem. Rung 4: eight stages alternating between suspecting surface and subject, settled by one cell with a capable model. Rung 5: eight stages of debugging ran on a diagnostic item with zero usable homologs out of 199. Rung 6: a track was listed as blocked on reachability when it was a script needing no subject model at all.
 
