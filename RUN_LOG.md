@@ -60,3 +60,4 @@
   - The FM arm called an FM tool in 19 of 100 episodes. XRD was used in 20–35% of episodes, depending on arm.
   - Observed cluster MDE is 0.225, above delta, driven by La (one plate, +0.92 in a noise-level episode). The cluster test was underpowered post hoc. The prospective MDE of 0.089 underestimated the agent-arm variance.
   - Trace spot-check: no fabrication found. FM-using episodes show explicit cross-modal rejections, e.g. "predicted In11Sb3O24 did not form" and "La3Sb5O12's XRD did not match".
+- 02:30 Report built from ledgers (report/build_report.py → REPORT.html) and published as a private artifact.
