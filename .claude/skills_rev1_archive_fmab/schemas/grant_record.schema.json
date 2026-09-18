@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "grant_record",
+  "type": "object",
+  "required": [
+    "verified_from",
+    "model_side_catalog",
+    "canaries",
+    "completeness"
+  ],
+  "properties": {
+    "verified_from": {
+      "enum": [
+        "model_side"
+      ]
+    },
+    "model_side_catalog": {
+      "type": "array"
+    },
+    "subtraction_passes": {
+      "type": "integer"
+    },
+    "canaries": {
+      "type": "array"
+    },
+    "auxiliary_models": {
+      "type": "array"
+    },
+    "arm_symmetry": {
+      "type": "array"
+    },
+    "completeness": {
+      "type": "string"
+    }
+  }
+}

@@ -16,8 +16,6 @@ A slot whose `source` field reads assumed, conventional or standard fails valida
 | tool inventory | seeds for what exists, local code for what runs, with a readiness census | D4 |
 | subject set | availability plus any stated rung the collaboration requires | D4 |
 | delta prior | effect sizes the seeds show practitioners acting on | D4 |
-| channel lift band | the interval condition under which I2 closes a channel: covers zero, upper bound below delta | D4 |
-| uptake band | the minimum share of pilot episodes in which an arm must call the channel before its grant counts as use | D4 |
 
 The label distinction carries weight. Measured truth from an experimental loop and annotation read off another model's output are different objects, and the second inherits whatever defect its pipeline carries. The record raised this explicitly against a plan claiming seventeen measured tasks.
 
@@ -38,9 +36,7 @@ Two facts about your programme, not about the corpus.
 |---|---|
 | p_free, p_paid, Q | P5, re-derived after every batch |
 | chance | P6, k over candidates per item |
-| sigma_d, MDE, N_min | P7, provisional from the free paired variance, final from the R3 pilot cohort projected onto the cohort's clusters |
-| channel lift, with its interval | I2, read against the band declared at D4 |
-| channel uptake per arm | R3 pilot cohort, read against the band declared at D4 |
+| sigma_d, MDE, N_min | P7, from the free paired variance |
 
 Q is not a slot. The record's end-to-end yield of one in six carries an exact interval from 0.004 to 0.641. Do not derive a queue from a batch whose pessimistic estimate is more than ten times its point estimate. Count more first.
 

@@ -13,11 +13,9 @@ ID = re.compile(r"(::|/|\bcommit\b|\brevision\b|\bsha\b|\bhash\b|\bpinned\b|\bv\
 OBS = re.compile(r"\b(rerun|re-run|permut|shuffl|invert|swap|replac|remov|withhold|ablat|exceed"
                  r"|below|outside|differ|fail|match|reproduc|resolve|return|measur)\w*", re.I)
 HEDGE = re.compile(r"\b(probably|presumably|should be|seems|appears to be|roughly)\b", re.I)
-NOTES = []  # informational, never a failure
 AXES = {"positive_supply","negative_supply","contamination_exposure","tool_coverage",
         "cluster_structure","split_integrity","unprocessable_units"}
 REQ = {"axis_ledger":["candidate","axes","ruling","completeness"],
-       "lift_record":["n","mean_lift","ci95","delta","role","ruling","completeness"],
        "power_record":["chance","n","sigma_d","mde","n_min","ruling","completeness"],
        "tool_card":["quantity_returned","served_checkpoint","disagreements","written_from"],
        "certification_record":["tools","completeness"],
@@ -52,37 +50,8 @@ def ledger(o, kind, f):
         for m in sorted(AXES - seen): f.append(f"axis {m!r} not counted. P4 refuses an incomplete ledger")
         if o.get("definition_widened"): f.append("a definition was widened after a low count")
         if o.get("ruling") and not o.get("binding_axis"): f.append("ruling without naming the binding axis")
-        scope = o.get("scope", "provisional")
-        if scope == "final" and "channel_lift" not in seen:
-            f.append("final ruling without the eighth axis, channel lift from I2. No arm runs on this ledger")
-        if scope != "final":
-            NOTES.append("axis ledger scope is provisional: licenses I1 and I2 only, never an arm")
     if kind == "power_record" and o.get("ruling") == "RESOLVABLE" and o.get("mde", 1) > o.get("delta", 0):
         f.append("ruled RESOLVABLE while MDE exceeds delta")
-    if kind == "power_record":
-        scope = o.get("scope", "provisional")
-        if scope == "final":
-            if o.get("mde_pilot") is None or o.get("n_pilot") is None:
-                f.append("final power record without pilot arm variance. The free variance is a lower bound, never the estimate")
-            elif o.get("mde", 0) < max(o.get("mde_pilot", 0), o.get("mde_provisional", 0)) - 1e-9:
-                f.append("final MDE is smaller than one of its two passes. The final record carries the larger")
-            if o.get("n_pilot", 0) < 10: f.append("final power record on a pilot below ten items")
-            if o.get("ruling") == "RUN_AT_LIMIT":
-                if o.get("n_pilot", 0) < 20: f.append("RUN_AT_LIMIT before the pilot was enlarged to twenty")
-                if o.get("mde_lower", 1) > o.get("delta", 0): f.append("RUN_AT_LIMIT while the lower bound exceeds delta. That is CLOSE")
-                if o.get("mde", 0) <= o.get("delta", 1): f.append("RUN_AT_LIMIT with point MDE at or below delta. That is RESOLVABLE")
-            if o.get("ruling") == "CLOSE_UNRESOLVABLE" and o.get("mde_lower") is not None and o.get("mde_lower") <= o.get("delta", 0):
-                f.append("closed on a point estimate whose lower bound sits at or below delta. Enlarge the pilot or run at limit")
-        else:
-            NOTES.append("power record scope is provisional: R5 arms nothing and A3 scores nothing on it")
-            if o.get("ruling") in ("ESCALATE_ENLARGE_PILOT", "UNDEMONSTRATED"):
-                NOTES.append(f"{o.get('ruling')}: the second pass has not finished")
-    if kind == "lift_record":
-        lo, hi = (o.get("ci95") or [None, None])[:2]
-        if lo is not None and hi is not None and lo <= 0 <= hi and hi < o.get("delta", 0) and o.get("ruling") == "ADVANCE":
-            f.append("interval covers zero and its upper bound sits below delta, yet the channel ADVANCED. I2 closes or lifts it")
-        if o.get("ruling") == "LIFT" and o.get("role") != "agent_input":
-            f.append("LIFT recorded for a channel that scores a fixed input. Only a channel on an agent-built input earns a lift")
     if kind == "power_record" and o.get("items_filtered_on_outcome"):
         f.append("items filtered on the outcome variable. Stratify instead")
     if kind == "tool_card":
@@ -95,10 +64,8 @@ def ledger(o, kind, f):
     if kind == "certification_record":
         for t in o.get("tools", []):
             cr = t.get("criteria", {})
-            if t.get("status") == "CERTIFIED" and cr.get("construct_validity") not in ("PASS", "PROXY"):
+            if t.get("status") == "CERTIFIED" and cr.get("construct_validity") != "PASS":
                 f.append(f"{t.get('name')}: CERTIFIED without construct validity")
-            if cr.get("construct_validity") == "PROXY" and not t.get("lift_ruling"):
-                f.append(f"{t.get('name')}: PROXY on the scored quantity with no I2 ruling attached. A proxy pass travels to I2")
             if str(t.get("status", "")).upper() == "READY": f.append(f"{t.get('name')}: reported READY")
     if kind == "gate_register":
         for g in o.get("gates", []):
@@ -176,8 +143,6 @@ def main():
             for r in o.get("provenance", []): prov(r, f, r.get("id", ""))
         print(("FAIL " if f else "PASS ") + path)
         for x in f: print(f"  - {x}")
-        for x in NOTES: print(f"  ~ {x}")
-        NOTES.clear()
         worst |= 1 if f else 0
     return worst
 

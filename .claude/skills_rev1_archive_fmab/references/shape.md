@@ -36,9 +36,6 @@ An infer candidate is lifted or closed. A lift adds a constraint the agent must 
 | a budget spanning more than one criterion | generation of alternatives, then comparison |
 | a required rejection with a written reason | explicit evaluation rather than a sort |
 | a declared stopping rule | a decision about when evidence suffices |
-| a required consultation of a channel, with a written verdict | use of the tool rather than possession of it |
-
-The fourth lift exists for one case: a channel that closes at I2 on mechanical lift while acting on an input the agent constructs. It converts a grant into a use, and its floor is the consultation run mechanically on the same inputs.
 
 A lift is honest only when I1 rebuilds the mechanical floor against the lifted task. Lifting the task and floor-testing the original inflates every downstream effect.
 

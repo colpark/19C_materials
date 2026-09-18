@@ -22,8 +22,7 @@
     },
     "axes": {
       "type": "array",
-      "minItems": 7,
-      "description": "seven corpus axes counted at P3, plus channel_lift from I2 on a final ledger. Each entry carries axis, raw, clustered, status"
+      "minItems": 7
     },
     "ruling": {
       "enum": [
@@ -41,13 +40,6 @@
     },
     "completeness": {
       "type": "string"
-    },
-    "scope": {
-      "enum": [
-        "provisional",
-        "final"
-      ],
-      "description": "provisional: seven corpus axes counted, licenses I1 and I2 only. final: channel_lift from I2 counted, licenses an arm"
     }
   }
 }

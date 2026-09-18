@@ -1,0 +1,18 @@
+{
+  "channel": "fm_prior",
+  "n": 189,
+  "mean_lift": -0.004449,
+  "sigma_d": 0.291977,
+  "ci95": [
+    -0.046076,
+    0.037178
+  ],
+  "delta": 0.17,
+  "alpha": 0.05,
+  "covers_zero": true,
+  "upper_below_delta": true,
+  "role": "fixed_input",
+  "ruling": "CLOSE",
+  "completeness": "paired lift of fm_prior over cls_gp across 189 units, interval from the I1 per-item variance at alpha 0.05, ruled against delta 0.17 with role fixed_input",
+  "next": "record the null at instrument cost. No agent arm runs to confirm it. The channel enters the axis ledger as channel_lift with status CLOSED"
+}

@@ -41,10 +41,64 @@
     "ruling": {
       "enum": [
         "RESOLVABLE",
-        "CLOSE_UNRESOLVABLE"
-      ]
+        "CLOSE_UNRESOLVABLE",
+        "ESCALATE_ENLARGE_PILOT",
+        "RUN_AT_LIMIT",
+        "UNDEMONSTRATED"
+      ],
+      "description": "provisional: RESOLVABLE or CLOSE_UNRESOLVABLE. final: RESOLVABLE, RUN_AT_LIMIT or CLOSE_UNRESOLVABLE; ESCALATE_ENLARGE_PILOT and UNDEMONSTRATED leave the scope provisional"
     },
     "completeness": {
+      "type": "string"
+    },
+    "scope": {
+      "enum": [
+        "provisional",
+        "final"
+      ],
+      "description": "provisional: free I1 variance, a lower bound. final: R3 pilot arm variance, carries the larger MDE"
+    },
+    "sigma_d_source": {
+      "enum": [
+        "free_compositions",
+        "pilot_arms"
+      ]
+    },
+    "n_pilot": {
+      "type": "integer",
+      "minimum": 10
+    },
+    "sigma_d_pilot": {
+      "type": "number"
+    },
+    "mde_pilot": {
+      "type": "number"
+    },
+    "mde_provisional": {
+      "type": "number"
+    },
+    "sigma_d_provisional": {
+      "type": "number"
+    },
+    "licenses": {
+      "type": "string"
+    },
+    "mde_lower": {
+      "type": "number"
+    },
+    "k_cohort": {
+      "type": "integer"
+    },
+    "inv_m_cohort": {
+      "type": "number"
+    },
+    "var_between_free": {
+      "type": "number"
+    },
+    "sigma_item": {
+      "type": "number"
+    },
+    "not_priced": {
       "type": "string"
     }
   }

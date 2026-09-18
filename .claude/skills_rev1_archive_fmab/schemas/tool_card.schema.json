@@ -1,0 +1,76 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "tool_card",
+  "type": "object",
+  "required": [
+    "name",
+    "role",
+    "quantity_returned",
+    "defining_paper",
+    "what_it_is_not",
+    "served_checkpoint",
+    "disagreements",
+    "written_from"
+  ],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "role": {
+      "enum": [
+        "encoder",
+        "predictor",
+        "scorer",
+        "generator",
+        "simulator"
+      ]
+    },
+    "quantity_returned": {
+      "type": "string"
+    },
+    "defining_paper": {
+      "type": "string"
+    },
+    "accuracy_against_scored_measurement": {
+      "type": "string"
+    },
+    "what_it_is_not": {
+      "type": "string"
+    },
+    "conventions": {
+      "type": "array"
+    },
+    "served_checkpoint": {
+      "type": "object",
+      "required": [
+        "identifier",
+        "pin"
+      ],
+      "properties": {
+        "identifier": {
+          "type": "string"
+        },
+        "pin": {
+          "type": "string"
+        },
+        "matches_adjudicating_composition": {
+          "type": "boolean"
+        }
+      }
+    },
+    "substitution": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "disagreements": {
+      "type": "array"
+    },
+    "written_from": {
+      "enum": [
+        "code"
+      ]
+    }
+  }
+}

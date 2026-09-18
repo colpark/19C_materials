@@ -1,6 +1,6 @@
 # The dependency graph
 
-Twenty-two cross-module edges. Eleven of the twenty-nine stages carry none and chain only within their module, which is correct.
+Nineteen cross-module edges. Twelve of the twenty-nine stages carry none and chain only within their module, which is correct.
 
 Consult this before starting any stage. An unmet precondition records as UNDEMONSTRATED. It is never skipped.
 
@@ -17,9 +17,6 @@ Consult this before starting any stage. An unmet precondition records as UNDEMON
 | P2 prior floor estimate | I1 build compositions | a floor that already takes the ceiling means there is nothing to build toward |
 | I1 compositions | P6 separation | per-item separation is read off the two compositions |
 | I1 compositions | P7 resolution | **the free variance estimate needs compositions in hand. Absent in the record, and the resolution limit went uncomputed for fourteen stages** |
-| I2 channel count | P4 rule against bands | channel lift is the eighth axis. P4 refuses its final ruling while the axis is uncounted, and no arm runs on a provisional ruling |
-| I2 channel count | R5 author gates | a grant carrying a channel closed at I2 arms only with a recorded lift |
-| R3 load ladder | P7 resolution | the free variance is a lower bound on arm variance. The pilot cohort re-derives sigma_d, and R5 arms nothing on the provisional record |
 | P6 separation | I5 certification | certify only the tools the surviving strata actually use |
 | I5 certification | R4 grant verification | the grant advertises what certification admitted |
 | I5 certification | R8 arm symmetry | **a current card must front the run. Absent in the record, and the scored comparison ran on a checkpoint 81 times too small** |
@@ -31,7 +28,7 @@ Consult this before starting any stage. An unmet precondition records as UNDEMON
 
 ## The one cycle
 
-R3 → P7 is not a cycle. P7 reads from I1 at its first pass and from R3 at its second, and points forward to A4 on both. P5 returns to P1. The queue is re-derived from observed yield and enumeration continues. Every other edge points forward.
+P5 returns to P1. The queue is re-derived from observed yield and enumeration continues. Every other edge points forward.
 
 Escape: the survivor count reaches S, or the optimistic bound on remaining supply falls below S.
 
