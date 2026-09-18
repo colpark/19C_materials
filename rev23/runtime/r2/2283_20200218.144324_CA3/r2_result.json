@@ -1,0 +1,52 @@
+{
+ "catalog": [
+  "episode_info",
+  "gp_suggest",
+  "list_phases",
+  "mace_stability",
+  "match_xrd",
+  "measure_eqe",
+  "measure_xrd",
+  "megnet_bandgap",
+  "record_consultation",
+  "simulate_xrd",
+  "submit",
+  "substitute_structure"
+ ],
+ "gate_must_fire": {
+  "error": "forced consultation: call record_consultation for this index first, citing an FM receipt obtained since your previous merit measurement",
+  "receipt": "3c2158333189"
+ },
+ "mace": {
+  "id": "mp-1186113",
+  "formula": "NiSbO3",
+  "formation_energy_eV_atom": -0.1862,
+  "e_above_hull_eV_atom": 0.8299,
+  "receipt": "6211abc9444a"
+ },
+ "forged_receipt": {
+  "error": "no valid FM receipt since the previous merit measurement; call mace_stability or megnet_bandgap first and cite its receipt",
+  "receipt": "2eab14766614"
+ },
+ "consult_ok": {
+  "ok": true,
+  "index": 3,
+  "cleared_to_measure": 3,
+  "receipt": "56f6644bf9f0"
+ },
+ "gate_must_not_fire": {
+  "index": 3,
+  "cation_fractions": {
+   "Ni": 0.8391,
+   "Sb": 0.1609
+  },
+  "merit": 0.00696813,
+  "merit_name": "EQE_pct",
+  "budget_remaining": 2,
+  "receipt": "ca7ac2b8f487"
+ },
+ "gate_refires_after_measure": {
+  "error": "forced consultation: call record_consultation for this index first, citing an FM receipt obtained since your previous merit measurement",
+  "receipt": "b6033179da29"
+ }
+}

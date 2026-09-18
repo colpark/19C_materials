@@ -16,7 +16,9 @@ DISALLOWED = ("Task,Agent,Bash,CronCreate,CronDelete,CronList,DesignSync,Edit,En
               "ScheduleWakeup,SendMessage,Skill,TaskOutput,TaskStop,TaskCreate,TaskGet,TaskList,TaskUpdate,"
               "ToolSearch,WebFetch,WebSearch,Workflow,Write,Glob,Grep,ListMcpResourcesTool,"
               "ReadMcpResourceTool,ReadMcpResourceDirTool,Artifact,ArtifactComments,ArtifactData,AskUserQuestion,EnterPlanMode,ExitPlanMode")
-PROMPT = (ROOT / "runtime/prompt.md").read_text() if (ROOT / "runtime/prompt.md").exists() else ""
+PROMPT_PATH = ROOT / os.environ.get("FMAB_PROMPT", "runtime/prompt.md")
+PROMPT = PROMPT_PATH.read_text() if PROMPT_PATH.exists() else ""
+SERVER = ROOT / os.environ.get("FMAB_SERVER", "runtime/mcp/server.py")
 
 
 def sha(s: str) -> str:
@@ -28,8 +30,9 @@ def run(episode: str, arm: str, tag: str, timeout: int = 1500) -> dict:
     if cell.exists():
         raise SystemExit(f"refusing to retry {cell}")
     (cell / "workdir").mkdir(parents=True)
-    cfg = {"mcpServers": {"env": {"command": str(PY), "args": [str(ROOT / "runtime/mcp/server.py"),
-            "--episode", episode, "--arm", arm, "--out", str(cell)]}}}
+    cfg = {"mcpServers": {"env": {"command": str(PY), "args": [str(SERVER),
+            "--episode", episode, "--arm", arm, "--out", str(cell)],
+            "env": {k: v for k, v in os.environ.items() if k.startswith("FMAB_") or k in ("PATH", "HOME", "LD_LIBRARY_PATH", "CUDA_VISIBLE_DEVICES", "HF_HOME", "XDG_CACHE_HOME")}}}}   # allowlist: mcp.json is committed
     (cell / "mcp.json").write_text(json.dumps(cfg, indent=1))
     prompt = PROMPT
     cmd = ["claude", "-p", "--model", MODEL, "--strict-mcp-config", "--mcp-config", str(cell / "mcp.json"),
@@ -40,7 +43,7 @@ def run(episode: str, arm: str, tag: str, timeout: int = 1500) -> dict:
     env["CLAUDE_CODE_DISABLE_AUTO_MEMORY"] = "1"
     env["CLAUDE_CODE_DISABLE_CLAUDE_MDS"] = "1"
     (cell / "launch.json").write_text(json.dumps({"cmd": cmd, "prompt_sha256": sha(prompt),
-        "prompt_bytes": len(prompt.encode()), "model": MODEL, "arm": arm, "episode": episode,
+        "prompt_bytes": len(prompt.encode()), "prompt_path": str(PROMPT_PATH), "server": str(SERVER), "model": MODEL, "arm": arm, "episode": episode,
         "labels_opened": False}, indent=1))
     t0 = time.monotonic()
     try:
