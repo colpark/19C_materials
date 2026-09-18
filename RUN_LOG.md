@@ -27,3 +27,8 @@
   - Amendment A-01: the independent unit is the element system (categorical, 14 units). Cause: the XRD similarity measures the substrate, and the FM prior is a function of the element alone.
 - 23:55 D2 corpus frozen: 196 episodes, 7 excluded under E1 (answer in the S1 main text), 189 included, arm cohort of 100 (LED-stratified hash sample, 14 elements).
 - 00:05 P3 contamination probe (opus-5, no tools, 28 prompts per framing). Recall 3/28 within 0.05 (MAE 0.230), predict 4/28 (MAE 0.246). No memorization signal. Exposure is disclosed, not binding.
+- 00:40 R2 isolating probe via a direct MCP client: PASS (`runtime/r2/*/r2_result.json`).
+  - One FM call read back correctly: MACE AlSbO3 ehull 0.347, MEGNet HSE gap 0.093.
+  - A forged phase id returned a structured error, and a 6th EQE call was refused.
+  - Defect found and fixed: `mace_stability` crashed on a hypothetical containing an element outside the plate system. It now adds that elemental reference and a lower-bound caveat. All tools now return structured errors instead of raising.
+- 00:40 P3 unprocessable axis: 0 episodes with max EQE ≤ 0, 1 with a tie for best, 38 of 189 with max EQE < 0.01% (20 in the cohort). These form the low-signal stratum and are kept.

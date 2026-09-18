@@ -1,0 +1,43 @@
+{
+ "catalog": [
+  "episode_info",
+  "gp_suggest",
+  "list_phases",
+  "mace_stability",
+  "match_xrd",
+  "measure_eqe",
+  "measure_xrd",
+  "megnet_bandgap",
+  "simulate_xrd",
+  "submit",
+  "substitute_structure"
+ ],
+ "mace": {
+  "id": "mp-1183134",
+  "formula": "AlSbO3",
+  "formation_energy_eV_atom": -1.8966,
+  "e_above_hull_eV_atom": 0.3471,
+  "receipt": "98cf06281932"
+ },
+ "gap": {
+  "id": "mp-1183134",
+  "gap_eV": 0.093,
+  "fidelity": "hse",
+  "receipt": "1df75d61efe3"
+ },
+ "forged": {
+  "is_error": false,
+  "text": "{\n  \"error\": \"ValueError: unknown phase id mp-FORGED-999\",\n  \"receipt\": \"81dcdc65d65a\"\n}"
+ },
+ "budget_6th_eqe": {
+  "error": "EQE budget exhausted",
+  "receipt": "0a78b16d45a4"
+ },
+ "hyp": {
+  "id": "hyp-abb62660",
+  "formula": "AlBiO3",
+  "nsites": 5,
+  "receipt": "f3f286aed8c0"
+ },
+ "hyp_mace": "{\n  \"id\": \"hyp-abb62660\",\n  \"formula\": \"AlBiO3\",\n  \"formation_energy_eV_atom\": -2.0719,\n  \"e_above_hull_eV_atom\": 0.0,\n  \"caveat\": \"elements ['Bi'] are outside the plate system; their oxides are not in the hull, so e_above_hull is a lower bound\",\n  \"receipt\": \"d9d3ea4d4d1b\"\n}"
+}

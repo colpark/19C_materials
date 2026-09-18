@@ -1,0 +1,12 @@
+{"t": 1789704108.2384732, "n": 1, "tool": "list_phases", "args": {}, "receipt": "7e00bc79a860", "result": "<large>"}
+{"t": 1789704108.245682, "n": 2, "tool": "mace_stability", "args": {"phase_id": "mp-1183134"}, "receipt": "98cf06281932", "result": {"id": "mp-1183134", "formula": "AlSbO3", "formation_energy_eV_atom": -1.8966, "e_above_hull_eV_atom": 0.3471}}
+{"t": 1789704108.8974972, "n": 3, "tool": "megnet_bandgap", "args": {"phase_id": "mp-1183134", "fidelity": "hse"}, "receipt": "1df75d61efe3", "result": {"id": "mp-1183134", "gap_eV": 0.093, "fidelity": "hse"}}
+{"t": 1789704108.9037163, "n": 4, "tool": "mace_stability", "args": {"args": [], "phase_id": "mp-FORGED-999"}, "receipt": "81dcdc65d65a", "result": {"error": "ValueError: unknown phase id mp-FORGED-999"}}
+{"t": 1789704108.909524, "n": 5, "tool": "measure_eqe", "args": {"index": 0}, "receipt": "b64bb9a021a2", "result": {"index": 0, "sb_fraction": 0.1015, "eqe_pct": 4e-05, "eqe_budget_remaining": 4}}
+{"t": 1789704108.9120257, "n": 6, "tool": "measure_eqe", "args": {"index": 1}, "receipt": "588d016a71f4", "result": {"index": 1, "sb_fraction": 0.1202, "eqe_pct": 0.00083, "eqe_budget_remaining": 3}}
+{"t": 1789704108.913838, "n": 7, "tool": "measure_eqe", "args": {"index": 2}, "receipt": "59876e3c1d3f", "result": {"index": 2, "sb_fraction": 0.1426, "eqe_pct": 0.00237, "eqe_budget_remaining": 2}}
+{"t": 1789704108.915272, "n": 8, "tool": "measure_eqe", "args": {"index": 3}, "receipt": "cd61ebce451a", "result": {"index": 3, "sb_fraction": 0.1677, "eqe_pct": 0.00219, "eqe_budget_remaining": 1}}
+{"t": 1789704108.9170911, "n": 9, "tool": "measure_eqe", "args": {"index": 4}, "receipt": "6e35f1cf8edc", "result": {"index": 4, "sb_fraction": 0.2018, "eqe_pct": 0.0003, "eqe_budget_remaining": 0}}
+{"t": 1789704108.9184558, "n": 10, "tool": "measure_eqe", "args": {"index": 5}, "receipt": "0a78b16d45a4", "result": {"error": "EQE budget exhausted"}}
+{"t": 1789704108.9246109, "n": 11, "tool": "substitute_structure", "args": {"phase_id": "mp-1183134", "from_element": "Sb", "to_element": "Bi"}, "receipt": "f3f286aed8c0", "result": {"id": "hyp-abb62660", "formula": "AlBiO3", "nsites": 5}}
+{"t": 1789704108.9305034, "n": 12, "tool": "mace_stability", "args": {"phase_id": "hyp-abb62660"}, "receipt": "d9d3ea4d4d1b", "result": {"id": "hyp-abb62660", "formula": "AlBiO3", "formation_energy_eV_atom": -2.0719, "e_above_hull_eV_atom": 0.0, "caveat": "elements ['Bi'] are outside the plate system; their oxides are not in the hull, so e_above_hull is a lower bound"}}

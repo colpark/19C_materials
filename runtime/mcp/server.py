@@ -30,6 +30,25 @@ else:
 STATE = dict(eqe={}, xrd={}, submitted=None, hypos={}, n_calls=0)
 B_EQE, B_XRD = floors.B_EQE, floors.B_XRD
 mcp = MCPServer(f"env-{A.arm}", version="1.0.0")
+_orig_tool = mcp.tool
+
+
+def _safe_tool(*targs, **tkw):
+    deco = _orig_tool(*targs, **tkw)
+    def wrap(fn):
+        import functools
+        @functools.wraps(fn)
+        def inner(*a, **k):
+            try:
+                return fn(*a, **k)
+            except Exception as ex:
+                return _log(tkw.get("name", fn.__name__), dict(args=[str(x) for x in a], **{kk: str(v) for kk, v in k.items()}),
+                            dict(error=f"{type(ex).__name__}: {str(ex)[:300]}"))
+        return deco(inner)
+    return wrap
+
+
+mcp.tool = _safe_tool
 
 
 def _log(tool, args, result):
@@ -131,7 +150,7 @@ if A.arm in ("classical", "fm"):
 
     @mcp.tool(name="substitute_structure")
     def substitute_structure(phase_id: str, from_element: str, to_element: str) -> dict:
-        """Build a hypothetical structure by replacing every `from_element` site of a known phase (any chemical system) with `to_element`. Returns a new id usable by other tools."""
+        """Build a hypothetical structure by replacing every `from_element` site of a phase from list_phases (or an earlier hypothetical id) with `to_element`. Returns a new id usable by other tools."""
         s = None
         for sysl in ([EP["el"], "Sb", "O"], [EP["el"], "O"], ["Sb", "O"]):
             for r in fm.chemsys_structures(sysl):
@@ -190,11 +209,15 @@ if A.arm == "fm":
         ef = fm.formation_energy(s, m["energy_per_atom_eV"])
         rows = floors.fm_rows(EP["el"])
         ents = [PDEntry(Composition(r["formula"]), r["ef_eV_atom"] * Composition(r["formula"]).num_atoms, name=pid) for pid, r in rows.items()]
-        ents += [PDEntry(Composition(e), 0.0, name="ref_" + e) for e in (EP["el"], "Sb", "O")]
+        extra = sorted({str(e) for e in s.composition.elements} - {EP["el"], "Sb", "O"})
+        ents += [PDEntry(Composition(e), 0.0, name="ref_" + e) for e in [EP["el"], "Sb", "O"] + extra]
         me = PDEntry(s.composition, ef * s.composition.num_atoms, name="query")
         pd_ = PhaseDiagram(ents + [me])
-        return _log("mace_stability", dict(phase_id=phase_id), dict(id=phase_id, formula=s.composition.reduced_formula,
-                    formation_energy_eV_atom=round(ef, 4), e_above_hull_eV_atom=round(float(pd_.get_e_above_hull(me)), 4)))
+        r = dict(id=phase_id, formula=s.composition.reduced_formula,
+                 formation_energy_eV_atom=round(ef, 4), e_above_hull_eV_atom=round(float(pd_.get_e_above_hull(me)), 4))
+        if extra:
+            r["caveat"] = f"elements {extra} are outside the plate system; their oxides are not in the hull, so e_above_hull is a lower bound"
+        return _log("mace_stability", dict(phase_id=phase_id), r)
 
     @mcp.tool(name="megnet_bandgap")
     def megnet_bandgap(phase_id: str, fidelity: str = "hse") -> dict:
