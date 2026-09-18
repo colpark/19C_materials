@@ -5,4 +5,4 @@
   - Skill vendored; audit shows 48 cases.
   - Router settled by replaying decisions 001–003 through rev 2.3: `rev23/router/decision_R00*.json`. Envelope reconciled to measured spend; C1 depth 2 of 3.
   - D5 standing rulings recorded: `rev23/D5_amendments.json`.
-- **Next:** build the lifted-arm server (forced consultation), then R1/R2/R4, the R3 pilot (10 items × 3 arms), P7 final, R5, R8, A1. C1x runs in parallel.
+- **Next:** main run in progress (rev23_main, 468 cells), then A2 blind hash, A3 score, A4 report. Restart: re-run run_batch with the same tag; existing cells are skipped.
