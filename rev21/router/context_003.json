@@ -1,0 +1,3 @@
+{"var_between_share":0.665,"n_min_clusters":35,"n_clusters":14,"heterogeneity_detected":true,"explain_grader_available":true,
+ "outcomes_seen":true,"sibling_libraries_found":true,"unburned_supply":true,
+ "source":"discovery/siblings/sibling_ledger.json: 23 new ADMIT chemistries (36 library entries); rev21/pool/POOL_RULES.md frozen before counting"}

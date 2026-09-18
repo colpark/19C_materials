@@ -1,0 +1,770 @@
+{
+ "record": "gt06c-8t911",
+ "zips": [
+  {
+   "key": "20170225.202547.copied-20190301221354051PST.zip",
+   "size": 5983434,
+   "n": 5,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "13990"
+   ]
+  },
+  {
+   "key": "20170609.163451.copied-20170609172313141PDT.zip",
+   "size": 1066437,
+   "n": 65,
+   "technique": "eche"
+  },
+  {
+   "key": "20170609.172808.copied-20170609220502904PDT.zip",
+   "size": 528371,
+   "n": 60,
+   "experiment_type": "eche"
+  },
+  {
+   "key": "20170621.150010.copied-20170621222526409PDT.zip",
+   "size": 448579,
+   "n": 230,
+   "analysis_type": "eche",
+   "experiment_path": "/eche/20170621.173337.copied-20170621220637603PDT.zip"
+  },
+  {
+   "key": "20170621.161851.copied-20170621172419360PDT.zip",
+   "size": 663530,
+   "n": 8,
+   "technique": "eche"
+  },
+  {
+   "key": "20170621.162328.copied-20170621172359639PDT.zip",
+   "size": 1171252,
+   "n": 77,
+   "technique": "eche"
+  },
+  {
+   "key": "20170621.171521.copied-20170621172950100PDT.zip",
+   "size": 629914,
+   "n": 7,
+   "technique": "eche"
+  },
+  {
+   "key": "20170621.173337.copied-20170621220637603PDT.zip",
+   "size": 532528,
+   "n": 56,
+   "experiment_type": "eche"
+  },
+  {
+   "key": "20170621.173528.copied-20170621222526409PDT.zip",
+   "size": 125240,
+   "n": 28,
+   "analysis_type": "eche",
+   "experiment_path": "/eche/20170621.174110.copied-20170621220637603PDT.zip"
+  },
+  {
+   "key": "20170621.174110.copied-20170621220637603PDT.zip",
+   "size": 7423,
+   "n": 6,
+   "experiment_type": "eche"
+  },
+  {
+   "key": "20190301.135404.copied-20190301223002119PST.zip",
+   "size": 8985,
+   "n": 2,
+   "experiment_type": "xrds"
+  },
+  {
+   "key": "20190301.135404.copied-20190301231211259PST.zip",
+   "size": 209317691,
+   "n": 39,
+   "analysis_type": "xrds"
+  },
+  {
+   "key": "20190829.154649.copied-20190830085751817PDT.zip",
+   "size": 869250,
+   "n": 88,
+   "technique": "xrfs"
+  },
+  {
+   "key": "20170225.202524.copied-20190301221354051PST.zip",
+   "size": 11927858,
+   "n": 8,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "13972",
+    "13981"
+   ]
+  },
+  {
+   "key": "20170225.203045.copied-20190301221354051PST.zip",
+   "size": 6040893,
+   "n": 5,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "19572"
+   ]
+  },
+  {
+   "key": "20170225.203104.copied-20190301221354051PST.zip",
+   "size": 6070996,
+   "n": 5,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "19590"
+   ]
+  },
+  {
+   "key": "20170225.203120.copied-20190301221354051PST.zip",
+   "size": 6107463,
+   "n": 5,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "19607"
+   ]
+  },
+  {
+   "key": "20170225.203140.copied-20190301221354051PST.zip",
+   "size": 12288027,
+   "n": 8,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "19625",
+    "19643"
+   ]
+  },
+  {
+   "key": "20170225.203200.copied-20190301221354051PST.zip",
+   "size": 12477535,
+   "n": 8,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "19661",
+    "19678"
+   ]
+  },
+  {
+   "key": "20170225.203220.copied-20190301221354051PST.zip",
+   "size": 6269161,
+   "n": 5,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "19687"
+   ]
+  },
+  {
+   "key": "20170508.130238.copied-20170508220257628PDT.zip",
+   "size": 21482360,
+   "n": 1534,
+   "technique": "DR_UVVIS"
+  },
+  {
+   "key": "20170515.173650.copied-20170515220958377PDT.zip",
+   "size": 76092,
+   "n": 2,
+   "experiment_type": "uvis"
+  },
+  {
+   "key": "20170515.173659.copied-20170517221744507PDT.zip",
+   "size": 146218465,
+   "n": 9192,
+   "analysis_type": "uvis"
+  },
+  {
+   "key": "20170608.105541.copied-20170609221322100PDT.zip",
+   "size": 1250163,
+   "n": 392,
+   "analysis_type": "eche",
+   "experiment_path": "/eche/20170609.172808.copied-20170609220502904PDT.zip"
+  },
+  {
+   "key": "20170609.161730.copied-20170609172544839PDT.zip",
+   "size": 643693,
+   "n": 5,
+   "technique": "eche"
+  },
+  {
+   "key": "20170609.161944.copied-20170609172332493PDT.zip",
+   "size": 760427,
+   "n": 23,
+   "technique": "eche"
+  },
+  {
+   "key": "20190829.154649.copied-20190830091742928PDT.zip",
+   "size": 1472,
+   "n": 1,
+   "experiment_type": "xrfs"
+  },
+  {
+   "key": "20190829.154649.copied-20190830113003948PDT.zip",
+   "size": 2445,
+   "n": 2,
+   "analysis_type": null
+  },
+  {
+   "key": "20190830.121043.copied-20190831003629668PDT.zip",
+   "size": 5854,
+   "n": 4,
+   "analysis_type": "xrfs"
+  },
+  {
+   "key": "20191209.162411.copied-20191209220455733PST.zip",
+   "size": 690051,
+   "n": 7,
+   "technique": "eche"
+  },
+  {
+   "key": "20191209.162558.copied-20191209220455733PST.zip",
+   "size": 690027,
+   "n": 7,
+   "technique": "eche"
+  },
+  {
+   "key": "20191211.095606.copied-20191211223057545PST.zip",
+   "size": 101294,
+   "n": 42,
+   "analysis_type": "eche",
+   "experiment_path": "/eche/20191211.095723.done"
+  },
+  {
+   "key": "20191211.095723.copied-20191211221215455PST.zip",
+   "size": 4820,
+   "n": 2,
+   "experiment_type": "eche"
+  },
+  {
+   "key": "3112.zip",
+   "size": 26081837,
+   "n": 8
+  },
+  {
+   "key": "20170225.202606.copied-20190301221354051PST.zip",
+   "size": 5981802,
+   "n": 5,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "13998"
+   ]
+  },
+  {
+   "key": "20170225.202623.copied-20190301221354051PST.zip",
+   "size": 5979295,
+   "n": 5,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "14007"
+   ]
+  },
+  {
+   "key": "20170225.202657.copied-20190301221354051PST.zip",
+   "size": 11959308,
+   "n": 8,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "14016",
+    "14025"
+   ]
+  },
+  {
+   "key": "20170225.202721.copied-20190301221354051PST.zip",
+   "size": 6010627,
+   "n": 5,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "14034"
+   ]
+  },
+  {
+   "key": "20170225.202748.copied-20190301221354051PST.zip",
+   "size": 18021145,
+   "n": 11,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "14043",
+    "14052",
+    "14060"
+   ]
+  },
+  {
+   "key": "20170225.202810.copied-20190301221354051PST.zip",
+   "size": 6048673,
+   "n": 5,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "14069"
+   ]
+  },
+  {
+   "key": "20170225.202831.copied-20190301221354051PST.zip",
+   "size": 12116087,
+   "n": 8,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "14078",
+    "14087"
+   ]
+  },
+  {
+   "key": "20170225.202911.copied-20190301221354051PST.zip",
+   "size": 30441854,
+   "n": 17,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "14096",
+    "14105",
+    "14114",
+    "14122",
+    "14131"
+   ]
+  },
+  {
+   "key": "20170225.202932.copied-20190301221354051PST.zip",
+   "size": 12292794,
+   "n": 8,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "14140",
+    "14149"
+   ]
+  },
+  {
+   "key": "20170225.203007.copied-20190301221354051PST.zip",
+   "size": 12004720,
+   "n": 8,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "19528",
+    "19537"
+   ]
+  },
+  {
+   "key": "20170225.203029.copied-20190301221354051PST.zip",
+   "size": 6022776,
+   "n": 5,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "19554"
+   ]
+  }
+ ],
+ "xrd_samples": [
+  13972,
+  13981,
+  13990,
+  13998,
+  14007,
+  14016,
+  14025,
+  14034,
+  14043,
+  14052,
+  14060,
+  14069,
+  14078,
+  14087,
+  14096,
+  14105,
+  14114,
+  14122,
+  14131,
+  14140,
+  14149,
+  19528,
+  19537,
+  19554,
+  19572,
+  19590,
+  19607,
+  19625,
+  19643,
+  19661,
+  19678,
+  19687
+ ],
+ "xrd_ana": [
+  {
+   "key": "20190301.135404.copied-20190301231211259PST.zip",
+   "n_patterns": 32,
+   "desc": "Analysis__XRDS_Bruker_Process,Analysis__Bruker_Eva,Analysis__User_Notes on plate_id 3112"
+  }
+ ],
+ "photo": [
+  {
+   "key": "20170621.150010.copied-20170621222526409PDT.zip",
+   "file": "ana__1__I.A_photo-I.A_photo_ill-I.A_photo_dark.csv",
+   "n_rows": 27,
+   "samples": [
+    17748,
+    17802,
+    17784,
+    17831,
+    17796,
+    17725,
+    17813,
+    17701,
+    17778,
+    17837,
+    17713,
+    17819,
+    17772,
+    17825,
+    17807,
+    17766,
+    17742,
+    17731,
+    17707,
+    17695,
+    17754,
+    17737,
+    17790,
+    17719,
+    17760,
+    17689,
+    17683
+   ],
+   "cols": [
+    "sample_no",
+    "runint",
+    "plate_id",
+    "I.A_photo",
+    "I.A_photo_ill",
+    "I.A_photo_dark"
+   ]
+  },
+  {
+   "key": "20170621.150010.copied-20170621222526409PDT.zip",
+   "file": "ana__2__I.A_photo-I.A_photo_ill-I.A_photo_dark.csv",
+   "n_rows": 27,
+   "samples": [
+    17719,
+    17737,
+    17819,
+    17831,
+    17772,
+    17731,
+    17813,
+    17790,
+    17825,
+    17742,
+    17707,
+    17807,
+    17695,
+    17725,
+    17748,
+    17701,
+    17713,
+    17760,
+    17784,
+    17802,
+    17754,
+    17778,
+    17766,
+    17837,
+    17796,
+    17683,
+    17689
+   ],
+   "cols": [
+    "sample_no",
+    "runint",
+    "plate_id",
+    "I.A_photo",
+    "I.A_photo_ill",
+    "I.A_photo_dark"
+   ]
+  },
+  {
+   "key": "20170621.173528.copied-20170621222526409PDT.zip",
+   "file": "ana__1__I.A_photo-I.A_photo_ill-I.A_photo_dark.csv",
+   "n_rows": 1,
+   "samples": [
+    17766
+   ],
+   "cols": [
+    "sample_no",
+    "runint",
+    "plate_id",
+    "I.A_photo",
+    "I.A_photo_ill",
+    "I.A_photo_dark"
+   ]
+  },
+  {
+   "key": "20170621.173528.copied-20170621222526409PDT.zip",
+   "file": "ana__2__I.A_photo-I.A_photo_ill-I.A_photo_dark.csv",
+   "n_rows": 1,
+   "samples": [
+    17766
+   ],
+   "cols": [
+    "sample_no",
+    "runint",
+    "plate_id",
+    "I.A_photo",
+    "I.A_photo_ill",
+    "I.A_photo_dark"
+   ]
+  },
+  {
+   "key": "20170621.173528.copied-20170621222526409PDT.zip",
+   "file": "ana__3__I.A_photo-I.A_photo_ill-I.A_photo_dark.csv",
+   "n_rows": 1,
+   "samples": [
+    17766
+   ],
+   "cols": [
+    "sample_no",
+    "runint",
+    "plate_id",
+    "I.A_photo",
+    "I.A_photo_ill",
+    "I.A_photo_dark"
+   ]
+  },
+  {
+   "key": "20170621.173528.copied-20170621222526409PDT.zip",
+   "file": "ana__4__I.A_photo-I.A_photo_ill-I.A_photo_dark.csv",
+   "n_rows": 1,
+   "samples": [
+    17766
+   ],
+   "cols": [
+    "sample_no",
+    "runint",
+    "plate_id",
+    "I.A_photo",
+    "I.A_photo_ill",
+    "I.A_photo_dark"
+   ]
+  },
+  {
+   "key": "20170608.105541.copied-20170609221322100PDT.zip",
+   "file": "ana__1__I.A_photo-I.A_photo_ill-I.A_photo_dark.csv",
+   "n_rows": 29,
+   "samples": [
+    14042,
+    14143,
+    14066,
+    14102,
+    14090,
+    14037,
+    14119,
+    14025,
+    14096,
+    14137,
+    14060,
+    14054,
+    14131,
+    14125,
+    14084,
+    14078,
+    14107,
+    14031,
+    14113,
+    14072,
+    14048,
+    14019,
+    13995,
+    13983,
+    14013,
+    14007,
+    13989,
+    14001,
+    13978
+   ],
+   "cols": [
+    "sample_no",
+    "runint",
+    "plate_id",
+    "I.A_photo",
+    "I.A_photo_ill",
+    "I.A_photo_dark"
+   ]
+  },
+  {
+   "key": "20170608.105541.copied-20170609221322100PDT.zip",
+   "file": "ana__2__I.A_photo-I.A_photo_ill-I.A_photo_dark.csv",
+   "n_rows": 29,
+   "samples": [
+    14072,
+    14107,
+    14042,
+    14137,
+    14060,
+    14090,
+    14113,
+    14066,
+    14037,
+    14125,
+    14054,
+    14102,
+    14119,
+    14025,
+    14084,
+    14096,
+    14143,
+    14031,
+    14078,
+    14131,
+    14048,
+    14019,
+    13989,
+    14001,
+    13983,
+    13995,
+    14007,
+    14013,
+    13978
+   ],
+   "cols": [
+    "sample_no",
+    "runint",
+    "plate_id",
+    "I.A_photo",
+    "I.A_photo_ill",
+    "I.A_photo_dark"
+   ]
+  },
+  {
+   "key": "20191211.095606.copied-20191211223057545PST.zip",
+   "file": "ana__1__I.A_photo-I.A_photo_ill-I.A_photo_dark.csv",
+   "n_rows": 2,
+   "samples": [
+    8020,
+    9118
+   ],
+   "cols": [
+    "sample_no",
+    "runint",
+    "plate_id",
+    "I.A_photo",
+    "I.A_photo_ill",
+    "I.A_photo_dark"
+   ]
+  },
+  {
+   "key": "20191211.095606.copied-20191211223057545PST.zip",
+   "file": "ana__2__I.A_photo-I.A_photo_ill-I.A_photo_dark.csv",
+   "n_rows": 2,
+   "samples": [
+    8020,
+    9118
+   ],
+   "cols": [
+    "sample_no",
+    "runint",
+    "plate_id",
+    "I.A_photo",
+    "I.A_photo_ill",
+    "I.A_photo_dark"
+   ]
+  },
+  {
+   "key": "20191211.095606.copied-20191211223057545PST.zip",
+   "file": "ana__3__I.A_photo-I.A_photo_ill-I.A_photo_dark.csv",
+   "n_rows": 2,
+   "samples": [
+    8020,
+    9118
+   ],
+   "cols": [
+    "sample_no",
+    "runint",
+    "plate_id",
+    "I.A_photo",
+    "I.A_photo_ill",
+    "I.A_photo_dark"
+   ]
+  },
+  {
+   "key": "20191211.095606.copied-20191211223057545PST.zip",
+   "file": "ana__4__I.A_photo-I.A_photo_ill-I.A_photo_dark.csv",
+   "n_rows": 2,
+   "samples": [
+    8020,
+    9118
+   ],
+   "cols": [
+    "sample_no",
+    "runint",
+    "plate_id",
+    "I.A_photo",
+    "I.A_photo_ill",
+    "I.A_photo_dark"
+   ]
+  }
+ ],
+ "eche_conditions": [
+  {
+   "solution_ph": "9.7",
+   "solution_description": "0.1 M boric acid + 0.085 M potassium hydroxide + 0.25 M sodium sulfate",
+   "illumination_wavelength": "385",
+   "illumination_intensity": "5.000",
+   "reference_vrhe": "-0.784",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\20161031_v52\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_ecat6.vi",
+   "key": "20170609.163451.copied-20170609172313141PDT.zip"
+  },
+  {
+   "solution_ph": "13",
+   "solution_description": "0.1 M sodium hydroxide + 0.25 M sodium sulfate",
+   "illumination_wavelength": "385",
+   "illumination_intensity": "5.000",
+   "reference_vrhe": "-0.986",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\20161031_v52\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_ecat6.vi",
+   "key": "20170621.161851.copied-20170621172419360PDT.zip"
+  },
+  {
+   "solution_ph": "13",
+   "solution_description": "0.1 M sodium hydroxide + 0.25 M sodium sulfate",
+   "illumination_wavelength": "385",
+   "illumination_intensity": "5.000",
+   "reference_vrhe": "-0.986",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\20161031_v52\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_ecat6.vi",
+   "key": "20170621.162328.copied-20170621172359639PDT.zip"
+  },
+  {
+   "solution_ph": "13",
+   "solution_description": "0.1 M sodium hydroxide + 0.25 M sodium sulfate",
+   "illumination_wavelength": "387,455,516,602",
+   "illumination_intensity": "2.140,1.900,0.790,0.500",
+   "reference_vrhe": "-0.986",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\20161031_v52\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_Photo7_5CA_2CV.vi",
+   "key": "20170621.171521.copied-20170621172950100PDT.zip"
+  },
+  {
+   "solution_ph": "9.7",
+   "solution_description": "0.1 M boric acid + 0.085 M potassium hydroxide + 0.25 M sodium sulfate",
+   "illumination_wavelength": "385",
+   "illumination_intensity": "5.000",
+   "reference_vrhe": "-0.784",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\20161031_v52\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_ecat6.vi",
+   "key": "20170609.161730.copied-20170609172544839PDT.zip"
+  },
+  {
+   "solution_ph": "9.7",
+   "solution_description": "0.1 M boric acid + 0.085 M potassium hydroxide + 0.25 M sodium sulfate",
+   "illumination_wavelength": "385",
+   "illumination_intensity": "5.000",
+   "reference_vrhe": "-0.784",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\20161031_v52\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_ecat6.vi",
+   "key": "20170609.161944.copied-20170609172332493PDT.zip"
+  },
+  {
+   "solution_ph": "10.000",
+   "solution_description": "0.1M boric acid + 0.085M pottassium hydoxide + 0.25M sodium sulfate",
+   "illumination_wavelength": "387,455,516,602",
+   "illumination_intensity": "2.100,2.000,0.800,0.500",
+   "reference_vrhe": "-0.799",
+   "experiment_params_vi_path": "C\\INST\\CODE\\LibraryScreenLV\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_Photo7_5CA_3CV.vi",
+   "key": "20191209.162411.copied-20191209220455733PST.zip"
+  },
+  {
+   "solution_ph": "10.000",
+   "solution_description": "0.1M boric acid + 0.085M pottassium hydoxide + 0.25M sodium sulfate",
+   "illumination_wavelength": "387,455,516,602",
+   "illumination_intensity": "2.100,2.000,0.800,0.500",
+   "reference_vrhe": "-0.799",
+   "experiment_params_vi_path": "C\\INST\\CODE\\LibraryScreenLV\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_Photo7_5CA_3CV.vi",
+   "key": "20191209.162558.copied-20191209220455733PST.zip"
+  }
+ ],
+ "errors": []
+}

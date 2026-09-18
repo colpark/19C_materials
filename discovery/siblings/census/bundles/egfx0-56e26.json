@@ -1,0 +1,621 @@
+{
+ "record": "egfx0-56e26",
+ "zips": [
+  {
+   "key": "20170421.095733.copied-20190301221354051PST.zip",
+   "size": 6360025,
+   "n": 5,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "13972"
+   ]
+  },
+  {
+   "key": "20170421.095946.copied-20190301221354051PST.zip",
+   "size": 6399666,
+   "n": 5,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "14096"
+   ]
+  },
+  {
+   "key": "20170421.100003.copied-20190301221354051PST.zip",
+   "size": 6419825,
+   "n": 5,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "14114"
+   ]
+  },
+  {
+   "key": "20170421.100017.copied-20190301221354051PST.zip",
+   "size": 6440704,
+   "n": 5,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "14131"
+   ]
+  },
+  {
+   "key": "20170421.100030.copied-20190301221354051PST.zip",
+   "size": 6505209,
+   "n": 5,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "14149"
+   ]
+  },
+  {
+   "key": "20170421.100235.copied-20190301221354051PST.zip",
+   "size": 31773940,
+   "n": 17,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "14043",
+    "14052",
+    "14060",
+    "14069",
+    "14078"
+   ]
+  },
+  {
+   "key": "20170502.141529.copied-20170502220414794PDT.zip",
+   "size": 628215,
+   "n": 5,
+   "technique": "eche"
+  },
+  {
+   "key": "20170502.141701.copied-20170502220414794PDT.zip",
+   "size": 643944,
+   "n": 5,
+   "technique": "eche"
+  },
+  {
+   "key": "20170502.142128.copied-20170502220414794PDT.zip",
+   "size": 643851,
+   "n": 5,
+   "technique": "eche"
+  },
+  {
+   "key": "20170502.142409.copied-20170502220414794PDT.zip",
+   "size": 662659,
+   "n": 8,
+   "technique": "eche"
+  },
+  {
+   "key": "20170502.142823.copied-20170502220414794PDT.zip",
+   "size": 644272,
+   "n": 5,
+   "technique": "eche"
+  },
+  {
+   "key": "20170502.143030.copied-20170502220414794PDT.zip",
+   "size": 684458,
+   "n": 11,
+   "technique": "eche"
+  },
+  {
+   "key": "20170502.143627.copied-20170502220414794PDT.zip",
+   "size": 684755,
+   "n": 11,
+   "technique": "eche"
+  },
+  {
+   "key": "20170502.144235.copied-20170502220414794PDT.zip",
+   "size": 684091,
+   "n": 11,
+   "technique": "eche"
+  },
+  {
+   "key": "20170502.145144.copied-20170502220414794PDT.zip",
+   "size": 644525,
+   "n": 5,
+   "technique": "eche"
+  },
+  {
+   "key": "20170502.145354.copied-20170502220414794PDT.zip",
+   "size": 683786,
+   "n": 11,
+   "technique": "eche"
+  },
+  {
+   "key": "20170502.150317.copied-20170502220414794PDT.zip",
+   "size": 666205,
+   "n": 8,
+   "technique": "eche"
+  },
+  {
+   "key": "20170502.150726.copied-20170502220414794PDT.zip",
+   "size": 666201,
+   "n": 8,
+   "technique": "eche"
+  },
+  {
+   "key": "20170502.151147.copied-20170502220414794PDT.zip",
+   "size": 645212,
+   "n": 5,
+   "technique": "eche"
+  },
+  {
+   "key": "20170502.151404.copied-20170502220414794PDT.zip",
+   "size": 645215,
+   "n": 5,
+   "technique": "eche"
+  },
+  {
+   "key": "20170502.151613.copied-20170502220414794PDT.zip",
+   "size": 645120,
+   "n": 5,
+   "technique": "eche"
+  },
+  {
+   "key": "20170502.151824.copied-20170502220414794PDT.zip",
+   "size": 645158,
+   "n": 5,
+   "technique": "eche"
+  },
+  {
+   "key": "20170502.152026.copied-20170502220414794PDT.zip",
+   "size": 645340,
+   "n": 5,
+   "technique": "eche"
+  },
+  {
+   "key": "20170502.152235.copied-20170502220414794PDT.zip",
+   "size": 645430,
+   "n": 5,
+   "technique": "eche"
+  },
+  {
+   "key": "20170502.152434.copied-20170502220414794PDT.zip",
+   "size": 645383,
+   "n": 5,
+   "technique": "eche"
+  },
+  {
+   "key": "20170503.141322.copied-20170503221428485PDT.zip",
+   "size": 861596,
+   "n": 341,
+   "analysis_type": "eche",
+   "experiment_path": "/eche/20170503.143507.copied-20170503220655016PDT.zip"
+  },
+  {
+   "key": "20170503.143507.copied-20170503220655016PDT.zip",
+   "size": 526032,
+   "n": 58,
+   "experiment_type": "eche"
+  },
+  {
+   "key": "20170504.122646.copied-20170504221436407PDT.zip",
+   "size": 266042,
+   "n": 216,
+   "analysis_type": "eche",
+   "experiment_path": "/eche/20170504.172957.copied-20170504220706403PDT.zip"
+  },
+  {
+   "key": "20170504.140830.copied-20170504171117635PDT.zip",
+   "size": 685204,
+   "n": 11,
+   "technique": "eche"
+  },
+  {
+   "key": "20170504.141454.copied-20170504163713283PDT.zip",
+   "size": 1010537,
+   "n": 62,
+   "technique": "eche"
+  },
+  {
+   "key": "20170504.145231.copied-20170504163735419PDT.zip",
+   "size": 684308,
+   "n": 11,
+   "technique": "eche"
+  },
+  {
+   "key": "20170504.172957.copied-20170504220706403PDT.zip",
+   "size": 455989,
+   "n": 54,
+   "experiment_type": "eche"
+  },
+  {
+   "key": "20170421.095751.copied-20190301221354051PST.zip",
+   "size": 6385096,
+   "n": 5,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "13990"
+   ]
+  },
+  {
+   "key": "20170421.095808.copied-20190301221354051PST.zip",
+   "size": 6373077,
+   "n": 5,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "14007"
+   ]
+  },
+  {
+   "key": "20170421.095910.copied-20190301221354051PST.zip",
+   "size": 6363521,
+   "n": 5,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "14025"
+   ]
+  }
+ ],
+ "xrd_samples": [],
+ "xrd_ana": [],
+ "photo": [
+  {
+   "key": "20170503.141322.copied-20170503221428485PDT.zip",
+   "file": "ana__1__I.A_photo-I.A_photo_ill-I.A_photo_dark.csv",
+   "n_rows": 28,
+   "samples": [
+    14137,
+    14066,
+    14072,
+    14060,
+    14054,
+    14037,
+    14042,
+    14048,
+    14025,
+    14019,
+    14031,
+    14013,
+    14007,
+    14001,
+    13995,
+    13989,
+    13983,
+    13978,
+    14131,
+    14125,
+    14119,
+    14113,
+    14107,
+    14102,
+    14096,
+    14090,
+    14078,
+    14084
+   ],
+   "cols": [
+    "sample_no",
+    "runint",
+    "plate_id",
+    "I.A_photo",
+    "I.A_photo_ill",
+    "I.A_photo_dark"
+   ]
+  },
+  {
+   "key": "20170503.141322.copied-20170503221428485PDT.zip",
+   "file": "ana__2__I.A_photo-I.A_photo_ill-I.A_photo_dark.csv",
+   "n_rows": 28,
+   "samples": [
+    14137,
+    14066,
+    14060,
+    14072,
+    14054,
+    14037,
+    14042,
+    14048,
+    14025,
+    14031,
+    14019,
+    14013,
+    14001,
+    14007,
+    13995,
+    13989,
+    13983,
+    13978,
+    14131,
+    14125,
+    14119,
+    14113,
+    14107,
+    14102,
+    14096,
+    14090,
+    14078,
+    14084
+   ],
+   "cols": [
+    "sample_no",
+    "runint",
+    "plate_id",
+    "I.A_photo",
+    "I.A_photo_ill",
+    "I.A_photo_dark"
+   ]
+  },
+  {
+   "key": "20170504.122646.copied-20170504221436407PDT.zip",
+   "file": "ana__1__I.A_photo-I.A_photo_ill-I.A_photo_dark.csv",
+   "n_rows": 26,
+   "samples": [
+    10431,
+    10425,
+    10437,
+    10360,
+    10407,
+    10396,
+    10366,
+    10325,
+    10348,
+    10413,
+    10378,
+    10390,
+    10419,
+    10402,
+    10354,
+    10313,
+    10307,
+    10342,
+    10384,
+    10331,
+    10319,
+    10337,
+    10372,
+    10289,
+    10301,
+    10295
+   ],
+   "cols": [
+    "sample_no",
+    "runint",
+    "plate_id",
+    "I.A_photo",
+    "I.A_photo_ill",
+    "I.A_photo_dark"
+   ]
+  },
+  {
+   "key": "20170504.122646.copied-20170504221436407PDT.zip",
+   "file": "ana__2__I.A_photo-I.A_photo_ill-I.A_photo_dark.csv",
+   "n_rows": 26,
+   "samples": [
+    10431,
+    10425,
+    10437,
+    10407,
+    10337,
+    10384,
+    10354,
+    10360,
+    10413,
+    10348,
+    10419,
+    10307,
+    10372,
+    10402,
+    10366,
+    10325,
+    10378,
+    10313,
+    10390,
+    10396,
+    10342,
+    10319,
+    10331,
+    10295,
+    10301,
+    10289
+   ],
+   "cols": [
+    "sample_no",
+    "runint",
+    "plate_id",
+    "I.A_photo",
+    "I.A_photo_ill",
+    "I.A_photo_dark"
+   ]
+  }
+ ],
+ "eche_conditions": [
+  {
+   "solution_ph": "6.5",
+   "solution_description": "0.05 M potassium phosphate monobasic + 0.05 M potassium phosphate dibasic + 0.25 M sodium sulfate",
+   "illumination_wavelength": "385",
+   "illumination_intensity": "5.000",
+   "reference_vrhe": "-0.593",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\20161031_v52\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_ecat6.vi",
+   "key": "20170502.141529.copied-20170502220414794PDT.zip"
+  },
+  {
+   "solution_ph": "6.5",
+   "solution_description": "0.05 M potassium phosphate monobasic + 0.05 M potassium phosphate dibasic + 0.25 M sodium sulfate",
+   "illumination_wavelength": "385",
+   "illumination_intensity": "5.000",
+   "reference_vrhe": "-0.593",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\20161031_v52\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_ecat6.vi",
+   "key": "20170502.141701.copied-20170502220414794PDT.zip"
+  },
+  {
+   "solution_ph": "6.5",
+   "solution_description": "0.05 M potassium phosphate monobasic + 0.05 M potassium phosphate dibasic + 0.25 M sodium sulfate",
+   "illumination_wavelength": "385",
+   "illumination_intensity": "5.000",
+   "reference_vrhe": "-0.593",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\20161031_v52\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_ecat6.vi",
+   "key": "20170502.142128.copied-20170502220414794PDT.zip"
+  },
+  {
+   "solution_ph": "6.5",
+   "solution_description": "0.05 M potassium phosphate monobasic + 0.05 M potassium phosphate dibasic + 0.25 M sodium sulfate",
+   "illumination_wavelength": "385",
+   "illumination_intensity": "5.000",
+   "reference_vrhe": "-0.593",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\20161031_v52\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_ecat6.vi",
+   "key": "20170502.142409.copied-20170502220414794PDT.zip"
+  },
+  {
+   "solution_ph": "6.5",
+   "solution_description": "0.05 M potassium phosphate monobasic + 0.05 M potassium phosphate dibasic + 0.25 M sodium sulfate",
+   "illumination_wavelength": "385",
+   "illumination_intensity": "5.000",
+   "reference_vrhe": "-0.593",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\20161031_v52\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_ecat6.vi",
+   "key": "20170502.142823.copied-20170502220414794PDT.zip"
+  },
+  {
+   "solution_ph": "6.5",
+   "solution_description": "0.05 M potassium phosphate monobasic + 0.05 M potassium phosphate dibasic + 0.25 M sodium sulfate",
+   "illumination_wavelength": "385",
+   "illumination_intensity": "5.000",
+   "reference_vrhe": "-0.593",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\20161031_v52\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_ecat6.vi",
+   "key": "20170502.143030.copied-20170502220414794PDT.zip"
+  },
+  {
+   "solution_ph": "6.5",
+   "solution_description": "0.05 M potassium phosphate monobasic + 0.05 M potassium phosphate dibasic + 0.25 M sodium sulfate",
+   "illumination_wavelength": "385",
+   "illumination_intensity": "5.000",
+   "reference_vrhe": "-0.593",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\20161031_v52\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_ecat6.vi",
+   "key": "20170502.143627.copied-20170502220414794PDT.zip"
+  },
+  {
+   "solution_ph": "6.5",
+   "solution_description": "0.05 M potassium phosphate monobasic + 0.05 M potassium phosphate dibasic + 0.25 M sodium sulfate",
+   "illumination_wavelength": "385",
+   "illumination_intensity": "5.000",
+   "reference_vrhe": "-0.593",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\20161031_v52\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_ecat6.vi",
+   "key": "20170502.144235.copied-20170502220414794PDT.zip"
+  },
+  {
+   "solution_ph": "6.5",
+   "solution_description": "0.05 M potassium phosphate monobasic + 0.05 M potassium phosphate dibasic + 0.25 M sodium sulfate",
+   "illumination_wavelength": "385",
+   "illumination_intensity": "5.000",
+   "reference_vrhe": "-0.593",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\20161031_v52\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_ecat6.vi",
+   "key": "20170502.145144.copied-20170502220414794PDT.zip"
+  },
+  {
+   "solution_ph": "6.5",
+   "solution_description": "0.05 M potassium phosphate monobasic + 0.05 M potassium phosphate dibasic + 0.25 M sodium sulfate",
+   "illumination_wavelength": "385",
+   "illumination_intensity": "5.000",
+   "reference_vrhe": "-0.593",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\20161031_v52\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_ecat6.vi",
+   "key": "20170502.145354.copied-20170502220414794PDT.zip"
+  },
+  {
+   "solution_ph": "6.5",
+   "solution_description": "0.05 M potassium phosphate monobasic + 0.05 M potassium phosphate dibasic + 0.25 M sodium sulfate",
+   "illumination_wavelength": "385",
+   "illumination_intensity": "5.000",
+   "reference_vrhe": "-0.593",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\20161031_v52\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_ecat6.vi",
+   "key": "20170502.150317.copied-20170502220414794PDT.zip"
+  },
+  {
+   "solution_ph": "6.5",
+   "solution_description": "0.05 M potassium phosphate monobasic + 0.05 M potassium phosphate dibasic + 0.25 M sodium sulfate",
+   "illumination_wavelength": "385",
+   "illumination_intensity": "5.000",
+   "reference_vrhe": "-0.593",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\20161031_v52\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_ecat6.vi",
+   "key": "20170502.150726.copied-20170502220414794PDT.zip"
+  },
+  {
+   "solution_ph": "6.5",
+   "solution_description": "0.05 M potassium phosphate monobasic + 0.05 M potassium phosphate dibasic + 0.25 M sodium sulfate",
+   "illumination_wavelength": "385",
+   "illumination_intensity": "5.000",
+   "reference_vrhe": "-0.593",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\20161031_v52\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_ecat6.vi",
+   "key": "20170502.151147.copied-20170502220414794PDT.zip"
+  },
+  {
+   "solution_ph": "6.5",
+   "solution_description": "0.05 M potassium phosphate monobasic + 0.05 M potassium phosphate dibasic + 0.25 M sodium sulfate",
+   "illumination_wavelength": "385",
+   "illumination_intensity": "5.000",
+   "reference_vrhe": "-0.593",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\20161031_v52\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_ecat6.vi",
+   "key": "20170502.151404.copied-20170502220414794PDT.zip"
+  },
+  {
+   "solution_ph": "6.5",
+   "solution_description": "0.05 M potassium phosphate monobasic + 0.05 M potassium phosphate dibasic + 0.25 M sodium sulfate",
+   "illumination_wavelength": "385",
+   "illumination_intensity": "5.000",
+   "reference_vrhe": "-0.593",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\20161031_v52\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_ecat6.vi",
+   "key": "20170502.151613.copied-20170502220414794PDT.zip"
+  },
+  {
+   "solution_ph": "6.5",
+   "solution_description": "0.05 M potassium phosphate monobasic + 0.05 M potassium phosphate dibasic + 0.25 M sodium sulfate",
+   "illumination_wavelength": "385",
+   "illumination_intensity": "5.000",
+   "reference_vrhe": "-0.593",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\20161031_v52\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_ecat6.vi",
+   "key": "20170502.151824.copied-20170502220414794PDT.zip"
+  },
+  {
+   "solution_ph": "6.5",
+   "solution_description": "0.05 M potassium phosphate monobasic + 0.05 M potassium phosphate dibasic + 0.25 M sodium sulfate",
+   "illumination_wavelength": "385",
+   "illumination_intensity": "5.000",
+   "reference_vrhe": "-0.593",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\20161031_v52\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_ecat6.vi",
+   "key": "20170502.152026.copied-20170502220414794PDT.zip"
+  },
+  {
+   "solution_ph": "6.5",
+   "solution_description": "0.05 M potassium phosphate monobasic + 0.05 M potassium phosphate dibasic + 0.25 M sodium sulfate",
+   "illumination_wavelength": "385",
+   "illumination_intensity": "5.000",
+   "reference_vrhe": "-0.593",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\20161031_v52\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_ecat6.vi",
+   "key": "20170502.152235.copied-20170502220414794PDT.zip"
+  },
+  {
+   "solution_ph": "6.5",
+   "solution_description": "0.05 M potassium phosphate monobasic + 0.05 M potassium phosphate dibasic + 0.25 M sodium sulfate",
+   "illumination_wavelength": "385",
+   "illumination_intensity": "5.000",
+   "reference_vrhe": "-0.593",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\20161031_v52\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_ecat6.vi",
+   "key": "20170502.152434.copied-20170502220414794PDT.zip"
+  },
+  {
+   "solution_ph": "6.5",
+   "solution_description": "0.05 M potassium phosphate monobasic + 0.05 M potassium phosphate dibasic + 0.25 M sodium sulfate + 0.01 M sodium sulfite",
+   "illumination_wavelength": "385",
+   "illumination_intensity": "5.000",
+   "reference_vrhe": "-0.591",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\20161031_v52\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_ecat6.vi",
+   "key": "20170504.140830.copied-20170504171117635PDT.zip"
+  },
+  {
+   "solution_ph": "6.5",
+   "solution_description": "0.05 M potassium phosphate monobasic + 0.05 M potassium phosphate dibasic + 0.25 M sodium sulfate + 0.01 M sodium sulfite",
+   "illumination_wavelength": "385",
+   "illumination_intensity": "5.000",
+   "reference_vrhe": "-0.591",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\20161031_v52\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_ecat6.vi",
+   "key": "20170504.141454.copied-20170504163713283PDT.zip"
+  },
+  {
+   "solution_ph": "6.5",
+   "solution_description": "0.05 M potassium phosphate monobasic + 0.05 M potassium phosphate dibasic + 0.25 M sodium sulfate + 0.01 M sodium sulfite",
+   "illumination_wavelength": "385",
+   "illumination_intensity": "5.000",
+   "reference_vrhe": "-0.591",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\20161031_v52\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_ecat6.vi",
+   "key": "20170504.145231.copied-20170504163735419PDT.zip"
+  }
+ ],
+ "errors": []
+}

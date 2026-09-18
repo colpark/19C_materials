@@ -1,0 +1,152 @@
+{
+  "closure": "P7_CLOSE_UNRESOLVABLE",
+  "key": "SUPPLY_CLUSTERS",
+  "candidate": "C1",
+  "outcomes_seen": true,
+  "launched": [
+    {
+      "remedy": "spin_explain_candidate",
+      "class": "autonomous",
+      "reentry": "D4",
+      "what": "open the explain candidate on the per-cluster channel effect, graded by the mechanical ablation floors at zero cells",
+      "cost": {
+        "gpu_hours": 0,
+        "storage_gb": 1,
+        "tokens_m": 3,
+        "wall_hours": 2
+      },
+      "over_soft_ceiling": true,
+      "projected": {
+        "gpu_hours": 8.5,
+        "storage_gb": 27.6,
+        "tokens_m": 31.6,
+        "wall_hours": 23
+      }
+    },
+    {
+      "remedy": "advance_next_candidate",
+      "class": "autonomous",
+      "reentry": "portfolio",
+      "what": "start the next active candidate in the portfolio by priority",
+      "cost": {
+        "gpu_hours": 0,
+        "storage_gb": 0,
+        "tokens_m": 0,
+        "wall_hours": 0
+      },
+      "over_soft_ceiling": true,
+      "projected": {
+        "gpu_hours": 8.5,
+        "storage_gb": 27.6,
+        "tokens_m": 31.6,
+        "wall_hours": 23
+      }
+    }
+  ],
+  "carded": [
+    {
+      "remedy": "search_sibling_libraries",
+      "class": "autonomous",
+      "reentry": "D2",
+      "what": "search the corpus sources and public deposits for sibling libraries of the same task family, read whole, log to the exclusion ledger",
+      "cost": {
+        "gpu_hours": 0,
+        "storage_gb": 5,
+        "tokens_m": 5,
+        "wall_hours": 3
+      },
+      "reason": "projected spend exceeds the envelope's hard limit; needs a human",
+      "projected": {
+        "gpu_hours": 8.5,
+        "storage_gb": 31.6,
+        "tokens_m": 33.6,
+        "wall_hours": 24
+      }
+    },
+    {
+      "remedy": "pool_libraries_new_tau",
+      "class": "autonomous",
+      "reentry": "D3",
+      "what": "pool the found libraries and re-measure tau; the unit may change, so the axis ledger is recounted",
+      "cost": {
+        "gpu_hours": 2,
+        "storage_gb": 10,
+        "tokens_m": 2,
+        "wall_hours": 2
+      },
+      "reason": "projected spend exceeds the envelope's hard limit; needs a human",
+      "projected": {
+        "gpu_hours": 10.5,
+        "storage_gb": 36.6,
+        "tokens_m": 30.6,
+        "wall_hours": 23
+      }
+    },
+    {
+      "remedy": "request_new_libraries",
+      "class": "reserved",
+      "reentry": "D2",
+      "what": "ask collaborators for libraries or new experiments; a scientific and programme decision",
+      "cost": {
+        "gpu_hours": 0,
+        "storage_gb": 0,
+        "tokens_m": 0,
+        "wall_hours": 0
+      },
+      "reason": "reserved to the human by the decision rights"
+    },
+    {
+      "remedy": "change_task_budget",
+      "class": "reserved",
+      "reentry": "D4",
+      "what": "set the per-item measurement budget from what a campaign affords; cost of action belongs to the PI",
+      "cost": {
+        "gpu_hours": 1,
+        "storage_gb": 1,
+        "tokens_m": 1,
+        "wall_hours": 2
+      },
+      "reason": "reserved to the human by the decision rights"
+    }
+  ],
+  "refused": [],
+  "guard_state": {
+    "depth": 3,
+    "reentry": {
+      "D2": 1,
+      "D4": 2,
+      "I2": 1
+    },
+    "failures": {
+      "swap_fm_checkpoint": 1
+    },
+    "retired": []
+  },
+  "envelope_after": {
+    "gpu_hours": {
+      "ceiling": 12,
+      "spent": 2.5,
+      "committed": 6
+    },
+    "storage_gb": {
+      "ceiling": 10,
+      "spent": 0.6,
+      "committed": 27
+    },
+    "tokens_m": {
+      "ceiling": 60,
+      "spent": 19.6,
+      "committed": 12
+    },
+    "wall_hours": {
+      "ceiling": 24,
+      "spent": 12,
+      "committed": 11
+    }
+  },
+  "amendments": [
+    "O1: spin_explain_candidate re-enters D4 for C1",
+    "O1: advance_next_candidate re-enters portfolio for C1"
+  ],
+  "completeness": "routed P7_CLOSE_UNRESOLVABLE as SUPPLY_CLUSTERS for C1: 2 launched, 4 carded to the human, 0 refused, depth 3 of 3"
+}

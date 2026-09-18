@@ -1,0 +1,1366 @@
+{
+ "record": "aghed-7w812",
+ "zips": [
+  {
+   "key": "1381.zip",
+   "size": 120344,
+   "n": 2
+  },
+  {
+   "key": "20140904.224020.copied-20161216223042157PST.zip",
+   "size": 2105693,
+   "n": 2,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "1052"
+   ]
+  },
+  {
+   "key": "20140904.230314.copied-20161216223042157PST.zip",
+   "size": 2321712,
+   "n": 2,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "1301"
+   ]
+  },
+  {
+   "key": "20140904.230315.copied-20161216223042157PST.zip",
+   "size": 2252861,
+   "n": 2,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "1301"
+   ]
+  },
+  {
+   "key": "20140904.233832.copied-20161216223042157PST.zip",
+   "size": 2322463,
+   "n": 2,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "1265"
+   ]
+  },
+  {
+   "key": "20140904.233833.copied-20161216223042157PST.zip",
+   "size": 2251744,
+   "n": 2,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "1265"
+   ]
+  },
+  {
+   "key": "20140905.000332.copied-20161216223042157PST.zip",
+   "size": 2317691,
+   "n": 2,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "1227"
+   ]
+  },
+  {
+   "key": "20140905.000333.copied-20161216223042157PST.zip",
+   "size": 2256215,
+   "n": 2,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "1227"
+   ]
+  },
+  {
+   "key": "20140905.004510.copied-20161216223042157PST.zip",
+   "size": 2311212,
+   "n": 2,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "1303"
+   ]
+  },
+  {
+   "key": "20140905.004511.copied-20161216223042157PST.zip",
+   "size": 2254910,
+   "n": 2,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "1303"
+   ]
+  },
+  {
+   "key": "20141002.113119.copied-20151020220217814PDT.zip",
+   "size": 28098480,
+   "n": 1576,
+   "technique": "T_UVVIS"
+  },
+  {
+   "key": "20141002.115034.copied-20160211220352415PST.zip",
+   "size": 41340,
+   "n": 1,
+   "experiment_type": "uvis"
+  },
+  {
+   "key": "20141002.115034.copied-20160212010847935PST.zip",
+   "size": 24662789,
+   "n": 3048,
+   "analysis_type": "uvis"
+  },
+  {
+   "key": "20141002.115244.copied-20160211220352415PST.zip",
+   "size": 41343,
+   "n": 1,
+   "experiment_type": "uvis"
+  },
+  {
+   "key": "20141002.115244.copied-20160212010847935PST.zip",
+   "size": 37475427,
+   "n": 3050,
+   "analysis_type": "uvis"
+  },
+  {
+   "key": "20141002.122125.copied-20151020220217814PDT.zip",
+   "size": 224793,
+   "n": 12,
+   "technique": "T_UVVIS"
+  },
+  {
+   "key": "20141002.132845.copied-20150131000000000PST.zip",
+   "size": 109171,
+   "n": 6,
+   "technique": null
+  },
+  {
+   "key": "20141002.133059.copied-20150131000000000PST.zip",
+   "size": 109331,
+   "n": 5,
+   "technique": null
+  },
+  {
+   "key": "20141002.133324.copied-20150131000000000PST.zip",
+   "size": 109277,
+   "n": 5,
+   "technique": null
+  },
+  {
+   "key": "20141002.133547.copied-20150131000000000PST.zip",
+   "size": 109118,
+   "n": 5,
+   "technique": null
+  },
+  {
+   "key": "20141002.133800.copied-20150131000000000PST.zip",
+   "size": 299316,
+   "n": 17,
+   "technique": null
+  },
+  {
+   "key": "20141002.134854.copied-20150131000000000PST.zip",
+   "size": 199658,
+   "n": 11,
+   "technique": null
+  },
+  {
+   "key": "20141002.135529.copied-20150131000000000PST.zip",
+   "size": 102386,
+   "n": 5,
+   "technique": null
+  },
+  {
+   "key": "20141002.135750.copied-20150131000000000PST.zip",
+   "size": 108958,
+   "n": 5,
+   "technique": null
+  },
+  {
+   "key": "20141002.140008.copied-20150131000000000PST.zip",
+   "size": 415878,
+   "n": 26,
+   "technique": null
+  },
+  {
+   "key": "20141002.141852.copied-20150131000000000PST.zip",
+   "size": 109642,
+   "n": 5,
+   "technique": null
+  },
+  {
+   "key": "20141002.142329.copied-20150131000000000PST.zip",
+   "size": 102865,
+   "n": 5,
+   "technique": null
+  },
+  {
+   "key": "20141002.142549.copied-20150131000000000PST.zip",
+   "size": 87621,
+   "n": 5,
+   "technique": null
+  },
+  {
+   "key": "20141002.142816.copied-20150131000000000PST.zip",
+   "size": 108726,
+   "n": 5,
+   "technique": null
+  },
+  {
+   "key": "20141003.141642.copied-20150131000000000PST.zip",
+   "size": 155738,
+   "n": 9,
+   "technique": null
+  },
+  {
+   "key": "20141003.142341.copied-20150131000000000PST.zip",
+   "size": 61049,
+   "n": 2,
+   "technique": null
+  },
+  {
+   "key": "20141003.142607.copied-20150131000000000PST.zip",
+   "size": 975251,
+   "n": 62,
+   "technique": null
+  },
+  {
+   "key": "20141003.160205.copied-20150131000000000PST.zip",
+   "size": 1318010,
+   "n": 91,
+   "technique": null
+  },
+  {
+   "key": "20141003.165437.copied-20150131000000000PST.zip",
+   "size": 154746,
+   "n": 3,
+   "technique": null
+  },
+  {
+   "key": "20141003.172321.copied-20150131000000000PST.zip",
+   "size": 61308,
+   "n": 2,
+   "technique": null
+  },
+  {
+   "key": "20141003.172340.copied-20150131000000000PST.zip",
+   "size": 70014,
+   "n": 4,
+   "technique": null
+  },
+  {
+   "key": "20141003.172717.copied-20150131000000000PST.zip",
+   "size": 134943,
+   "n": 5,
+   "technique": null
+  },
+  {
+   "key": "20141006.111130.copied-20150131000000000PST.zip",
+   "size": 138942,
+   "n": 5,
+   "technique": null
+  },
+  {
+   "key": "20141006.111131.copied-20150923155502428PDT.zip",
+   "size": 139331,
+   "n": 6,
+   "technique": null
+  },
+  {
+   "key": "20141006.121134.copied-20150131000000000PST.zip",
+   "size": 61336,
+   "n": 2,
+   "technique": null
+  },
+  {
+   "key": "20141006.121224.copied-20150131000000000PST.zip",
+   "size": 71610,
+   "n": 5,
+   "technique": null
+  },
+  {
+   "key": "20141006.121404.copied-20150131000000000PST.zip",
+   "size": 71265,
+   "n": 5,
+   "technique": null
+  },
+  {
+   "key": "20141006.121750.copied-20150131000000000PST.zip",
+   "size": 70508,
+   "n": 5,
+   "technique": null
+  },
+  {
+   "key": "20141006.121751.copied-20150923155502428PDT.zip",
+   "size": 70791,
+   "n": 6,
+   "technique": null
+  },
+  {
+   "key": "20141006.122218.copied-20150131000000000PST.zip",
+   "size": 70567,
+   "n": 5,
+   "technique": null
+  },
+  {
+   "key": "20141006.122219.copied-20150923155502428PDT.zip",
+   "size": 70849,
+   "n": 6,
+   "technique": null
+  },
+  {
+   "key": "20141006.122445.copied-20150131000000000PST.zip",
+   "size": 69578,
+   "n": 5,
+   "technique": null
+  },
+  {
+   "key": "20141006.122446.copied-20150923155502428PDT.zip",
+   "size": 69863,
+   "n": 6,
+   "technique": null
+  },
+  {
+   "key": "20141007.112821.copied-20150131000000000PST.zip",
+   "size": 119726,
+   "n": 7,
+   "technique": null
+  },
+  {
+   "key": "20141007.113000.copied-20150131000000000PST.zip",
+   "size": 118394,
+   "n": 6,
+   "technique": null
+  },
+  {
+   "key": "20141007.113315.copied-20150131000000000PST.zip",
+   "size": 119678,
+   "n": 6,
+   "technique": null
+  },
+  {
+   "key": "20141007.113457.copied-20150131000000000PST.zip",
+   "size": 176748,
+   "n": 10,
+   "technique": null
+  },
+  {
+   "key": "20141007.113814.copied-20150131000000000PST.zip",
+   "size": 61345,
+   "n": 2,
+   "technique": null
+  },
+  {
+   "key": "20141007.113900.copied-20150131000000000PST.zip",
+   "size": 74778,
+   "n": 6,
+   "technique": null
+  },
+  {
+   "key": "20141007.114005.copied-20150131000000000PST.zip",
+   "size": 175094,
+   "n": 10,
+   "technique": null
+  },
+  {
+   "key": "20141007.114419.copied-20150131000000000PST.zip",
+   "size": 65953,
+   "n": 6,
+   "technique": null
+  },
+  {
+   "key": "20141007.114448.copied-20150131000000000PST.zip",
+   "size": 121028,
+   "n": 6,
+   "technique": null
+  },
+  {
+   "key": "20141007.114635.copied-20150131000000000PST.zip",
+   "size": 120516,
+   "n": 6,
+   "technique": null
+  },
+  {
+   "key": "20141007.114823.copied-20150131000000000PST.zip",
+   "size": 121703,
+   "n": 6,
+   "technique": null
+  },
+  {
+   "key": "20141007.115006.copied-20150131000000000PST.zip",
+   "size": 120579,
+   "n": 6,
+   "technique": null
+  },
+  {
+   "key": "20141007.115228.copied-20150131000000000PST.zip",
+   "size": 112441,
+   "n": 6,
+   "technique": null
+  },
+  {
+   "key": "20141007.115443.copied-20150131000000000PST.zip",
+   "size": 264567,
+   "n": 18,
+   "technique": null
+  },
+  {
+   "key": "20141007.120128.copied-20150131000000000PST.zip",
+   "size": 64863,
+   "n": 4,
+   "technique": null
+  },
+  {
+   "key": "20141007.120211.copied-20150131000000000PST.zip",
+   "size": 104891,
+   "n": 4,
+   "technique": null
+  },
+  {
+   "key": "20141007.120855.copied-20150131000000000PST.zip",
+   "size": 107260,
+   "n": 4,
+   "technique": null
+  },
+  {
+   "key": "20141007.122331.copied-20150131000000000PST.zip",
+   "size": 320384,
+   "n": 22,
+   "technique": null
+  },
+  {
+   "key": "20141013.162906.copied-20150131000000000PST.zip",
+   "size": 115803,
+   "n": 7,
+   "technique": null
+  },
+  {
+   "key": "20141013.163317.copied-20150131000000000PST.zip",
+   "size": 113752,
+   "n": 6,
+   "technique": null
+  },
+  {
+   "key": "20141013.163645.copied-20150131000000000PST.zip",
+   "size": 113294,
+   "n": 6,
+   "technique": null
+  },
+  {
+   "key": "20141013.165710.copied-20150131000000000PST.zip",
+   "size": 171830,
+   "n": 11,
+   "technique": null
+  },
+  {
+   "key": "20141013.170131.copied-20150131000000000PST.zip",
+   "size": 115940,
+   "n": 6,
+   "technique": null
+  },
+  {
+   "key": "20141124.114846.copied-20150131000000000PST.zip",
+   "size": 71657,
+   "n": 5,
+   "technique": null
+  },
+  {
+   "key": "20141124.115005.copied-20150131000000000PST.zip",
+   "size": 239506,
+   "n": 4,
+   "technique": null
+  },
+  {
+   "key": "20141124.134025.copied-20150131000000000PST.zip",
+   "size": 70691,
+   "n": 5,
+   "technique": null
+  },
+  {
+   "key": "20141124.134127.copied-20150131000000000PST.zip",
+   "size": 228381,
+   "n": 4,
+   "technique": null
+  },
+  {
+   "key": "20141204.003136.copied-20161216223042157PST.zip",
+   "size": 2095630,
+   "n": 2,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "816"
+   ]
+  },
+  {
+   "key": "20141204.003137.copied-20161216223042157PST.zip",
+   "size": 2044887,
+   "n": 2,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "816"
+   ]
+  },
+  {
+   "key": "20141204.004655.copied-20161216223042157PST.zip",
+   "size": 2100220,
+   "n": 2,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "814"
+   ]
+  },
+  {
+   "key": "20141204.004656.copied-20161216223042157PST.zip",
+   "size": 2043864,
+   "n": 2,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "814"
+   ]
+  },
+  {
+   "key": "20141204.012457.copied-20161216223042157PST.zip",
+   "size": 2116551,
+   "n": 2,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "794"
+   ]
+  },
+  {
+   "key": "20141204.012458.copied-20161216223042157PST.zip",
+   "size": 2048248,
+   "n": 2,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "794"
+   ]
+  },
+  {
+   "key": "20150323.144350.copied-20150324220029297PDT.zip",
+   "size": 112511171,
+   "n": 379,
+   "technique": null
+  },
+  {
+   "key": "20150323.151731.copied-20150324220029297PDT.zip",
+   "size": 5814353,
+   "n": 23,
+   "technique": null
+  },
+  {
+   "key": "20150323.151956.copied-20150324220029297PDT.zip",
+   "size": 3115836,
+   "n": 14,
+   "technique": null
+  },
+  {
+   "key": "20150323.152555.copied-20150324220029297PDT.zip",
+   "size": 108366115,
+   "n": 378,
+   "technique": null
+  },
+  {
+   "key": "20150323.155756.copied-20150324220029297PDT.zip",
+   "size": 5580437,
+   "n": 23,
+   "technique": null
+  },
+  {
+   "key": "20150324.115216.copied-20150324220029297PDT.zip",
+   "size": 9946852,
+   "n": 45,
+   "technique": null
+  },
+  {
+   "key": "20160621.171020.copied-20160621220608136PDT.zip",
+   "size": 60229,
+   "n": 5,
+   "experiment_type": "eche"
+  },
+  {
+   "key": "20160621.171625.copied-20160621220608136PDT.zip",
+   "size": 118587,
+   "n": 8,
+   "experiment_type": "eche"
+  },
+  {
+   "key": "20161216.155045.copied-20161216223326371PST.zip",
+   "size": 5339,
+   "n": 2,
+   "experiment_type": "xrds"
+  },
+  {
+   "key": "20161216.155045.copied-20161216223734169PST.zip",
+   "size": 83698473,
+   "n": 44,
+   "analysis_type": "xrds"
+  },
+  {
+   "key": "20170227.152345.copied-20170227175450942PST.zip",
+   "size": 636071,
+   "n": 227,
+   "analysis_type": "eche",
+   "experiment_path": "/eche/20170227.170538.copied-20170227175829167PST.zip"
+  },
+  {
+   "key": "20170227.170538.copied-20170227175829167PST.zip",
+   "size": 1092265,
+   "n": 80,
+   "experiment_type": "eche"
+  },
+  {
+   "key": "20170228.130437.copied-20170301220342337PST.zip",
+   "size": 1257202,
+   "n": 70,
+   "experiment_type": "eche"
+  },
+  {
+   "key": "20170228.130441.copied-20170301221948576PST.zip",
+   "size": 951712,
+   "n": 211,
+   "analysis_type": "eche",
+   "experiment_path": "/eche/20170228.130437.copied-20170301220342337PST.zip"
+  },
+  {
+   "key": "20170228.130638.copied-20170301221948576PST.zip",
+   "size": 230020,
+   "n": 39,
+   "analysis_type": "eche",
+   "experiment_path": "/eche/20170228.134809.copied-20170301220342337PST.zip"
+  },
+  {
+   "key": "20170228.134809.copied-20170301220342337PST.zip",
+   "size": 79739,
+   "n": 9,
+   "experiment_type": "eche"
+  },
+  {
+   "key": "20170228.134915.copied-20170301221948576PST.zip",
+   "size": 493260,
+   "n": 194,
+   "analysis_type": "eche",
+   "experiment_path": "/eche/20170228.140228.copied-20170301220342337PST.zip"
+  },
+  {
+   "key": "20170228.140228.copied-20170301220342337PST.zip",
+   "size": 939924,
+   "n": 68,
+   "experiment_type": "eche"
+  },
+  {
+   "key": "20170228.140325.copied-20170301221948576PST.zip",
+   "size": 130482,
+   "n": 16,
+   "analysis_type": "eche",
+   "experiment_path": "/eche/20170228.141427.copied-20170301220342337PST.zip"
+  },
+  {
+   "key": "20170228.141427.copied-20170301220342337PST.zip",
+   "size": 150292,
+   "n": 4,
+   "experiment_type": "eche"
+  },
+  {
+   "key": "20170228.141456.copied-20170301221948576PST.zip",
+   "size": 745787,
+   "n": 252,
+   "analysis_type": "eche",
+   "experiment_path": "/eche/20170228.143201.copied-20170301220342337PST.zip"
+  },
+  {
+   "key": "20170228.143201.copied-20170301220342337PST.zip",
+   "size": 1397950,
+   "n": 86,
+   "experiment_type": "eche"
+  },
+  {
+   "key": "20170228.144329.copied-20170301221948576PST.zip",
+   "size": 287376,
+   "n": 60,
+   "analysis_type": "eche",
+   "experiment_path": "/eche/20170228.152249.copied-20170301220342337PST.zip"
+  },
+  {
+   "key": "20170228.152249.copied-20170301220342337PST.zip",
+   "size": 268436,
+   "n": 16,
+   "experiment_type": "eche"
+  },
+  {
+   "key": "20140811.123120.copied-20161216223042157PST.zip",
+   "size": 18200127,
+   "n": 10,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "1296",
+    "226"
+   ]
+  },
+  {
+   "key": "20140811.123151.copied-20161216223042157PST.zip",
+   "size": 18213323,
+   "n": 10,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "1143",
+    "379"
+   ]
+  },
+  {
+   "key": "20140811.123431.copied-20161216223042157PST.zip",
+   "size": 27379803,
+   "n": 14,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "546",
+    "761",
+    "933"
+   ]
+  },
+  {
+   "key": "20140811.123541.copied-20161216223042157PST.zip",
+   "size": 18189070,
+   "n": 10,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "1454",
+    "68"
+   ]
+  },
+  {
+   "key": "20140904.220845.copied-20161216223042157PST.zip",
+   "size": 2414024,
+   "n": 2,
+   "technique": "xrds",
+   "xrd_raw_samples": []
+  },
+  {
+   "key": "20140904.220846.copied-20161216223042157PST.zip",
+   "size": 2268889,
+   "n": 2,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "880"
+   ]
+  },
+  {
+   "key": "20140904.220847.copied-20161216223042157PST.zip",
+   "size": 2105813,
+   "n": 2,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "880"
+   ]
+  },
+  {
+   "key": "20140904.224018.copied-20161216223042157PST.zip",
+   "size": 2400878,
+   "n": 2,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "1052"
+   ]
+  },
+  {
+   "key": "20140904.224019.copied-20161216223042157PST.zip",
+   "size": 2268430,
+   "n": 2,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "1052"
+   ]
+  }
+ ],
+ "xrd_samples": [
+  68,
+  226,
+  379,
+  546,
+  761,
+  794,
+  814,
+  816,
+  880,
+  933,
+  1052,
+  1143,
+  1227,
+  1265,
+  1296,
+  1301,
+  1303,
+  1454
+ ],
+ "xrd_ana": [
+  {
+   "key": "20161216.155045.copied-20161216223734169PST.zip",
+   "n_patterns": 18,
+   "desc": "Analysis__XRDS_Bruker_Process,Analysis__Bruker_Eva,Analysis__User_Notes on plate_id 1381"
+  }
+ ],
+ "photo": [
+  {
+   "key": "20170227.152345.copied-20170227175450942PST.zip",
+   "file": "ana__1__I.A_photo-I.A_photo_ill-I.A_photo_dark.csv",
+   "n_rows": 26,
+   "samples": [
+    25286,
+    24078,
+    22779,
+    21407,
+    19976,
+    18504,
+    17024,
+    15544,
+    14064,
+    12584,
+    11804,
+    11064,
+    11104,
+    9624,
+    8120,
+    8152,
+    6721,
+    5349,
+    4689,
+    4050,
+    4070,
+    3433,
+    2842,
+    2278,
+    1746,
+    1251
+   ],
+   "cols": [
+    "sample_no",
+    "runint",
+    "plate_id",
+    "I.A_photo",
+    "I.A_photo_ill",
+    "I.A_photo_dark"
+   ]
+  },
+  {
+   "key": "20170227.152345.copied-20170227175450942PST.zip",
+   "file": "ana__2__I.A_photo-I.A_photo_ill-I.A_photo_dark.csv",
+   "n_rows": 26,
+   "samples": [
+    25286,
+    24078,
+    22779,
+    21407,
+    19976,
+    18504,
+    17024,
+    15544,
+    14064,
+    12584,
+    11804,
+    11064,
+    11104,
+    9624,
+    8120,
+    8152,
+    6721,
+    5349,
+    4689,
+    4050,
+    4070,
+    3433,
+    2842,
+    2278,
+    1746,
+    1251
+   ],
+   "cols": [
+    "sample_no",
+    "runint",
+    "plate_id",
+    "I.A_photo",
+    "I.A_photo_ill",
+    "I.A_photo_dark"
+   ]
+  },
+  {
+   "key": "20170228.130441.copied-20170301221948576PST.zip",
+   "file": "ana__1__I.A_photo-I.A_photo_ill-I.A_photo_dark.csv",
+   "n_rows": 22,
+   "samples": [
+    25286,
+    24078,
+    22779,
+    21407,
+    19976,
+    18504,
+    17024,
+    15544,
+    14064,
+    12584,
+    11104,
+    9624,
+    8152,
+    6721,
+    5349,
+    4689,
+    4050,
+    3433,
+    2842,
+    2278,
+    1746,
+    1251
+   ],
+   "cols": [
+    "sample_no",
+    "runint",
+    "plate_id",
+    "I.A_photo",
+    "I.A_photo_ill",
+    "I.A_photo_dark"
+   ]
+  },
+  {
+   "key": "20170228.130441.copied-20170301221948576PST.zip",
+   "file": "ana__2__I.A_photo-I.A_photo_ill-I.A_photo_dark.csv",
+   "n_rows": 22,
+   "samples": [
+    25286,
+    24078,
+    22779,
+    21407,
+    19976,
+    18504,
+    17024,
+    15544,
+    14064,
+    12584,
+    11104,
+    9624,
+    8152,
+    6721,
+    5349,
+    4689,
+    4050,
+    3433,
+    2842,
+    2278,
+    1746,
+    1251
+   ],
+   "cols": [
+    "sample_no",
+    "runint",
+    "plate_id",
+    "I.A_photo",
+    "I.A_photo_ill",
+    "I.A_photo_dark"
+   ]
+  },
+  {
+   "key": "20170228.130441.copied-20170301221948576PST.zip",
+   "file": "ana__3__I.A_photo-I.A_photo_ill-I.A_photo_dark.csv",
+   "n_rows": 2,
+   "samples": [
+    22779,
+    22783
+   ],
+   "cols": [
+    "sample_no",
+    "runint",
+    "plate_id",
+    "I.A_photo",
+    "I.A_photo_ill",
+    "I.A_photo_dark"
+   ]
+  },
+  {
+   "key": "20170228.130441.copied-20170301221948576PST.zip",
+   "file": "ana__4__I.A_photo-I.A_photo_ill-I.A_photo_dark.csv",
+   "n_rows": 22,
+   "samples": [
+    504,
+    1428,
+    1366,
+    340,
+    848,
+    1297,
+    676,
+    1332,
+    934,
+    192,
+    1184,
+    1261,
+    1103,
+    590,
+    762,
+    126,
+    1398,
+    263,
+    1479,
+    1020,
+    1455,
+    421
+   ],
+   "cols": [
+    "sample_no",
+    "runint",
+    "plate_id",
+    "I.A_photo",
+    "I.A_photo_ill",
+    "I.A_photo_dark"
+   ]
+  },
+  {
+   "key": "20170228.130638.copied-20170301221948576PST.zip",
+   "file": "ana__1__I.A_photo-I.A_photo_ill-I.A_photo_dark.csv",
+   "n_rows": 3,
+   "samples": [
+    23431,
+    23447,
+    23451
+   ],
+   "cols": [
+    "sample_no",
+    "runint",
+    "plate_id",
+    "I.A_photo",
+    "I.A_photo_ill",
+    "I.A_photo_dark"
+   ]
+  },
+  {
+   "key": "20170228.130638.copied-20170301221948576PST.zip",
+   "file": "ana__2__I.A_photo-I.A_photo_ill-I.A_photo_dark.csv",
+   "n_rows": 3,
+   "samples": [
+    23431,
+    23447,
+    23451
+   ],
+   "cols": [
+    "sample_no",
+    "runint",
+    "plate_id",
+    "I.A_photo",
+    "I.A_photo_ill",
+    "I.A_photo_dark"
+   ]
+  },
+  {
+   "key": "20170228.130638.copied-20170301221948576PST.zip",
+   "file": "ana__3__I.A_photo-I.A_photo_ill-I.A_photo_dark.csv",
+   "n_rows": 1,
+   "samples": [
+    22771
+   ],
+   "cols": [
+    "sample_no",
+    "runint",
+    "plate_id",
+    "I.A_photo",
+    "I.A_photo_ill",
+    "I.A_photo_dark"
+   ]
+  },
+  {
+   "key": "20170228.134915.copied-20170301221948576PST.zip",
+   "file": "ana__1__I.A_photo-I.A_photo_ill-I.A_photo_dark.csv",
+   "n_rows": 22,
+   "samples": [
+    25286,
+    24078,
+    22779,
+    21407,
+    19976,
+    18504,
+    17024,
+    15544,
+    14064,
+    12584,
+    11104,
+    9624,
+    8152,
+    6721,
+    5349,
+    4689,
+    4050,
+    3433,
+    2842,
+    2278,
+    1746,
+    1251
+   ],
+   "cols": [
+    "sample_no",
+    "runint",
+    "plate_id",
+    "I.A_photo",
+    "I.A_photo_ill",
+    "I.A_photo_dark"
+   ]
+  },
+  {
+   "key": "20170228.134915.copied-20170301221948576PST.zip",
+   "file": "ana__2__I.A_photo-I.A_photo_ill-I.A_photo_dark.csv",
+   "n_rows": 22,
+   "samples": [
+    25286,
+    24078,
+    22779,
+    21407,
+    19976,
+    18504,
+    17024,
+    15544,
+    14064,
+    12584,
+    11104,
+    9624,
+    8152,
+    6721,
+    5349,
+    4689,
+    4050,
+    3433,
+    2842,
+    2278,
+    1746,
+    1251
+   ],
+   "cols": [
+    "sample_no",
+    "runint",
+    "plate_id",
+    "I.A_photo",
+    "I.A_photo_ill",
+    "I.A_photo_dark"
+   ]
+  },
+  {
+   "key": "20170228.134915.copied-20170301221948576PST.zip",
+   "file": "ana__3__I.A_photo-I.A_photo_ill-I.A_photo_dark.csv",
+   "n_rows": 22,
+   "samples": [
+    126,
+    1332,
+    1366,
+    1428,
+    1398,
+    590,
+    1184,
+    263,
+    1103,
+    1297,
+    1261,
+    1020,
+    504,
+    934,
+    676,
+    192,
+    848,
+    340,
+    421,
+    762,
+    1479,
+    1455
+   ],
+   "cols": [
+    "sample_no",
+    "runint",
+    "plate_id",
+    "I.A_photo",
+    "I.A_photo_ill",
+    "I.A_photo_dark"
+   ]
+  },
+  {
+   "key": "20170228.140325.copied-20170301221948576PST.zip",
+   "file": "ana__1__I.A_photo-I.A_photo_ill-I.A_photo_dark.csv",
+   "n_rows": 1,
+   "samples": [
+    14000
+   ],
+   "cols": [
+    "sample_no",
+    "runint",
+    "plate_id",
+    "I.A_photo",
+    "I.A_photo_ill",
+    "I.A_photo_dark"
+   ]
+  },
+  {
+   "key": "20170228.140325.copied-20170301221948576PST.zip",
+   "file": "ana__2__I.A_photo-I.A_photo_ill-I.A_photo_dark.csv",
+   "n_rows": 1,
+   "samples": [
+    14000
+   ],
+   "cols": [
+    "sample_no",
+    "runint",
+    "plate_id",
+    "I.A_photo",
+    "I.A_photo_ill",
+    "I.A_photo_dark"
+   ]
+  },
+  {
+   "key": "20170228.141456.copied-20170301221948576PST.zip",
+   "file": "ana__1__I.A_photo-I.A_photo_ill-I.A_photo_dark.csv",
+   "n_rows": 27,
+   "samples": [
+    27737,
+    27331,
+    26382,
+    25286,
+    24078,
+    22779,
+    21407,
+    19976,
+    18504,
+    18508,
+    17024,
+    17028,
+    15544,
+    15548,
+    15552,
+    14064,
+    14068,
+    12520,
+    12584,
+    12588,
+    11104,
+    9624,
+    8152,
+    6721,
+    5349,
+    4050,
+    2842
+   ],
+   "cols": [
+    "sample_no",
+    "runint",
+    "plate_id",
+    "I.A_photo",
+    "I.A_photo_ill",
+    "I.A_photo_dark"
+   ]
+  },
+  {
+   "key": "20170228.141456.copied-20170301221948576PST.zip",
+   "file": "ana__2__I.A_photo-I.A_photo_ill-I.A_photo_dark.csv",
+   "n_rows": 27,
+   "samples": [
+    27737,
+    27331,
+    26382,
+    25286,
+    24078,
+    22779,
+    21407,
+    19976,
+    18504,
+    18508,
+    17024,
+    17028,
+    15544,
+    15548,
+    15552,
+    14064,
+    14068,
+    12520,
+    12584,
+    12588,
+    11104,
+    9624,
+    8152,
+    6721,
+    5349,
+    4050,
+    2842
+   ],
+   "cols": [
+    "sample_no",
+    "runint",
+    "plate_id",
+    "I.A_photo",
+    "I.A_photo_ill",
+    "I.A_photo_dark"
+   ]
+  },
+  {
+   "key": "20170228.141456.copied-20170301221948576PST.zip",
+   "file": "ana__3__I.A_photo-I.A_photo_ill-I.A_photo_dark.csv",
+   "n_rows": 4,
+   "samples": [
+    22783,
+    22787,
+    22791,
+    12520
+   ],
+   "cols": [
+    "sample_no",
+    "runint",
+    "plate_id",
+    "I.A_photo",
+    "I.A_photo_ill",
+    "I.A_photo_dark"
+   ]
+  },
+  {
+   "key": "20170228.144329.copied-20170301221948576PST.zip",
+   "file": "ana__1__I.A_photo-I.A_photo_ill-I.A_photo_dark.csv",
+   "n_rows": 5,
+   "samples": [
+    112,
+    115,
+    114,
+    750,
+    288
+   ],
+   "cols": [
+    "sample_no",
+    "runint",
+    "plate_id",
+    "I.A_photo",
+    "I.A_photo_ill",
+    "I.A_photo_dark"
+   ]
+  },
+  {
+   "key": "20170228.144329.copied-20170301221948576PST.zip",
+   "file": "ana__2__I.A_photo-I.A_photo_ill-I.A_photo_dark.csv",
+   "n_rows": 5,
+   "samples": [
+    114,
+    112,
+    115,
+    750,
+    288
+   ],
+   "cols": [
+    "sample_no",
+    "runint",
+    "plate_id",
+    "I.A_photo",
+    "I.A_photo_ill",
+    "I.A_photo_dark"
+   ]
+  },
+  {
+   "key": "20170228.144329.copied-20170301221948576PST.zip",
+   "file": "ana__3__I.A_photo-I.A_photo_ill-I.A_photo_dark.csv",
+   "n_rows": 2,
+   "samples": [
+    750,
+    288
+   ],
+   "cols": [
+    "sample_no",
+    "runint",
+    "plate_id",
+    "I.A_photo",
+    "I.A_photo_ill",
+    "I.A_photo_dark"
+   ]
+  }
+ ],
+ "eche_conditions": [],
+ "errors": []
+}

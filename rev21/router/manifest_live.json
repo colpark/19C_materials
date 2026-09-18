@@ -506,26 +506,27 @@
   "envelope": {
     "gpu_hours": {
       "ceiling": 12,
-      "spent": 2.5,
-      "committed": 6
+      "spent": 4.04,
+      "committed": 2
     },
     "storage_gb": {
       "ceiling": 10,
-      "spent": 0.6,
-      "committed": 26
+      "spent": 2.0,
+      "committed": 16
     },
     "tokens_m": {
       "ceiling": 60,
-      "spent": 19.6,
-      "committed": 9
+      "spent": 20.35,
+      "committed": 10
     },
     "wall_hours": {
       "ceiling": 24,
-      "spent": 12,
-      "committed": 9
+      "spent": 14.0,
+      "committed": 7
     },
     "tolerance": 3.0,
-    "source": "user 2026-09-18: 'budget is not a problem, do as you please but under discipline'; ceilings declared by the orchestrator, spent measured (traces: 18.1M tokens over 305 cells; reading ~1.5M; precompute ~2.5 GPU h)"
+    "source": "user 2026-09-18: 'budget is not a problem, do as you please but under discipline'; ceilings declared by the orchestrator, spent measured (traces: 18.1M tokens over 305 cells; reading ~1.5M; precompute ~2.5 GPU h)",
+    "reconciled": "2026-09-18: decisions 001-002 moves reported; committed released to measured spend (du, precompute logs, subagent usage). Decision 003 voided: routed on unreconciled commitments."
   },
   "decision_rights": {
     "delegated": [

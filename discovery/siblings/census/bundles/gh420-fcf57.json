@@ -1,0 +1,675 @@
+{
+ "record": "gh420-fcf57",
+ "zips": [
+  {
+   "key": "20160810.152608.copied-20161205221206752PST.zip",
+   "size": 22485369,
+   "n": 14,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "14025",
+    "14031",
+    "14037"
+   ]
+  },
+  {
+   "key": "20160810.152636.copied-20161205221206752PST.zip",
+   "size": 30004559,
+   "n": 18,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "14043",
+    "14049",
+    "14055",
+    "14060"
+   ]
+  },
+  {
+   "key": "20160810.152700.copied-20161205221206752PST.zip",
+   "size": 30194264,
+   "n": 18,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "14066",
+    "14072",
+    "14076",
+    "14080"
+   ]
+  },
+  {
+   "key": "20160810.152726.copied-20161205221206752PST.zip",
+   "size": 30265231,
+   "n": 18,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "14084",
+    "14090",
+    "14096",
+    "14098"
+   ]
+  },
+  {
+   "key": "20160810.152747.copied-20161205221206752PST.zip",
+   "size": 22861458,
+   "n": 14,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "14102",
+    "14108",
+    "14114"
+   ]
+  },
+  {
+   "key": "20160810.152848.copied-20161205221206752PST.zip",
+   "size": 30771058,
+   "n": 18,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "14119",
+    "14125",
+    "14127",
+    "14131"
+   ]
+  },
+  {
+   "key": "20160810.152939.copied-20161205221206752PST.zip",
+   "size": 15468109,
+   "n": 10,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "14137",
+    "14143"
+   ]
+  },
+  {
+   "key": "20160810.153000.copied-20161205221206752PST.zip",
+   "size": 7729567,
+   "n": 6,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "14149"
+   ]
+  },
+  {
+   "key": "20160818.120630.copied-20160818162346787PDT.zip",
+   "size": 22775822,
+   "n": 1534,
+   "technique": "DR_UVVIS"
+  },
+  {
+   "key": "20160818.151752.copied-20160818162331012PDT.zip",
+   "size": 928716,
+   "n": 47,
+   "technique": "eche"
+  },
+  {
+   "key": "20160818.154658.copied-20160818162331012PDT.zip",
+   "size": 991830,
+   "n": 53,
+   "technique": "eche"
+  },
+  {
+   "key": "20160818.171634.copied-20160913220531756PDT.zip",
+   "size": 1881881,
+   "n": 429,
+   "analysis_type": "eche",
+   "experiment_path": "/eche/20160818.173325.copied-20160818220502539PDT.zip"
+  },
+  {
+   "key": "20160818.173325.copied-20160818220502539PDT.zip",
+   "size": 613834,
+   "n": 66,
+   "experiment_type": "eche"
+  },
+  {
+   "key": "20160909.123200.copied-20160909142148857PDT.zip",
+   "size": 647591,
+   "n": 14,
+   "technique": "eche"
+  },
+  {
+   "key": "20160909.123513.copied-20160909141949530PDT.zip",
+   "size": 714818,
+   "n": 48,
+   "technique": "eche"
+  },
+  {
+   "key": "20160909.143157.copied-20160909220516383PDT.zip",
+   "size": 312508,
+   "n": 129,
+   "analysis_type": "eche",
+   "experiment_path": "/eche/20160909.143914.copied-20160909220412434PDT.zip"
+  },
+  {
+   "key": "20160909.143914.copied-20160909220412434PDT.zip",
+   "size": 81863,
+   "n": 31,
+   "experiment_type": "eche"
+  },
+  {
+   "key": "20160909.144214.copied-20160912220521095PDT.zip",
+   "size": 724679,
+   "n": 84,
+   "analysis_type": "eche",
+   "experiment_path": "/eche/20160912.103410.copied-20160912220415714PDT.zip"
+  },
+  {
+   "key": "20160909.165302.copied-20160909220226182PDT.zip",
+   "size": 627886,
+   "n": 4,
+   "technique": "eche"
+  },
+  {
+   "key": "20160909.165454.copied-20160909220226182PDT.zip",
+   "size": 642923,
+   "n": 5,
+   "technique": "eche"
+  },
+  {
+   "key": "20160909.165847.copied-20160909220226182PDT.zip",
+   "size": 631421,
+   "n": 5,
+   "technique": "eche"
+  },
+  {
+   "key": "20160909.170024.copied-20160909220226182PDT.zip",
+   "size": 644377,
+   "n": 5,
+   "technique": "eche"
+  },
+  {
+   "key": "20160909.170155.copied-20160909220226182PDT.zip",
+   "size": 639689,
+   "n": 5,
+   "technique": "eche"
+  },
+  {
+   "key": "20160909.170319.copied-20160909220226182PDT.zip",
+   "size": 643064,
+   "n": 5,
+   "technique": "eche"
+  },
+  {
+   "key": "20160909.170500.copied-20160909220226182PDT.zip",
+   "size": 643910,
+   "n": 6,
+   "technique": "eche"
+  },
+  {
+   "key": "20160912.103410.copied-20160912220415714PDT.zip",
+   "size": 87266,
+   "n": 12,
+   "experiment_type": "eche"
+  },
+  {
+   "key": "20160913.175503.copied-20161117220426598PST.zip",
+   "size": 31284819,
+   "n": 3049,
+   "technique": "xrfs"
+  },
+  {
+   "key": "20160913.175503.copied-20161117221025505PST.zip",
+   "size": 30363,
+   "n": 1,
+   "experiment_type": "xrfs"
+  },
+  {
+   "key": "20160913.175503.copied-20161117222335465PST.zip",
+   "size": 67083,
+   "n": 2,
+   "analysis_type": "xrfs"
+  },
+  {
+   "key": "20160914.115635.copied-20161222084211162PST.zip",
+   "size": 146053648,
+   "n": 9180,
+   "analysis_type": "uvis"
+  },
+  {
+   "key": "20160914.115652.copied-20160914220413667PDT.zip",
+   "size": 78648,
+   "n": 2,
+   "experiment_type": "uvis"
+  },
+  {
+   "key": "20161205.164039.copied-20161205223449004PST.zip",
+   "size": 7249,
+   "n": 2,
+   "experiment_type": "xrds"
+  },
+  {
+   "key": "20161205.164039.copied-20161205225149621PST.zip",
+   "size": 264055566,
+   "n": 42,
+   "analysis_type": "xrds"
+  },
+  {
+   "key": "20170615.142740.copied-20170615154301588PDT.zip",
+   "size": 812547,
+   "n": 30,
+   "technique": "eche"
+  },
+  {
+   "key": "20170615.144204.copied-20170615154803833PDT.zip",
+   "size": 787742,
+   "n": 28,
+   "technique": "eche"
+  },
+  {
+   "key": "20170615.145646.copied-20170615154715312PDT.zip",
+   "size": 636790,
+   "n": 4,
+   "technique": "eche"
+  },
+  {
+   "key": "20170615.145756.copied-20170615155121758PDT.zip",
+   "size": 648326,
+   "n": 6,
+   "technique": "eche"
+  },
+  {
+   "key": "20170615.155901.copied-20170615220748404PDT.zip",
+   "size": 350390,
+   "n": 31,
+   "experiment_type": "eche"
+  },
+  {
+   "key": "20170615.155905.copied-20170615221355890PDT.zip",
+   "size": 216489,
+   "n": 9,
+   "analysis_type": "eche",
+   "experiment_path": "/eche/20170615.155901.copied-20170615220748404PDT.zip"
+  },
+  {
+   "key": "3072.zip",
+   "size": 22771854,
+   "n": 6
+  },
+  {
+   "key": "20160810.152521.copied-20161205221206752PST.zip",
+   "size": 29819243,
+   "n": 18,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "14001",
+    "14007",
+    "14013",
+    "14019"
+   ]
+  },
+  {
+   "key": "20160810.152539.copied-20161205221206752PST.zip",
+   "size": 37414728,
+   "n": 22,
+   "technique": "xrds",
+   "xrd_raw_samples": [
+    "13972",
+    "13978",
+    "13984",
+    "13990",
+    "13995"
+   ]
+  }
+ ],
+ "xrd_samples": [
+  13972,
+  13978,
+  13984,
+  13990,
+  13995,
+  14001,
+  14007,
+  14013,
+  14019,
+  14025,
+  14031,
+  14037,
+  14043,
+  14049,
+  14055,
+  14060,
+  14066,
+  14072,
+  14076,
+  14080,
+  14084,
+  14090,
+  14096,
+  14098,
+  14102,
+  14108,
+  14114,
+  14119,
+  14125,
+  14127,
+  14131,
+  14137,
+  14143,
+  14149
+ ],
+ "xrd_ana": [
+  {
+   "key": "20161205.164039.copied-20161205225149621PST.zip",
+   "n_patterns": 34,
+   "desc": "Analysis__XRDS_Bruker_Process,Analysis__Bruker_Eva,Analysis__User_Notes on plate_id 3072"
+  }
+ ],
+ "photo": [
+  {
+   "key": "20160818.171634.copied-20160913220531756PDT.zip",
+   "file": "ana__1__I.A_photo-I.A_photo_ill-I.A_photo_dark.csv",
+   "n_rows": 32,
+   "samples": [
+    14107,
+    14149,
+    14113,
+    14072,
+    14084,
+    14078,
+    14137,
+    14066,
+    14102,
+    14119,
+    14060,
+    14239,
+    14096,
+    14125,
+    14090,
+    14143,
+    14131,
+    13978,
+    14031,
+    13972,
+    14007,
+    14001,
+    13989,
+    13983,
+    14054,
+    14048,
+    14042,
+    14025,
+    14037,
+    13995,
+    14019,
+    14013
+   ],
+   "cols": [
+    "sample_no",
+    "runint",
+    "plate_id",
+    "I.A_photo",
+    "I.A_photo_ill",
+    "I.A_photo_dark"
+   ]
+  },
+  {
+   "key": "20160818.171634.copied-20160913220531756PDT.zip",
+   "file": "ana__2__I.A_photo-I.A_photo_ill-I.A_photo_dark.csv",
+   "n_rows": 32,
+   "samples": [
+    14149,
+    14090,
+    14119,
+    14113,
+    14066,
+    14137,
+    14060,
+    14084,
+    14102,
+    14072,
+    14239,
+    14078,
+    14107,
+    14125,
+    14131,
+    14096,
+    14143,
+    14042,
+    13995,
+    14054,
+    13978,
+    13983,
+    13989,
+    14037,
+    14031,
+    14001,
+    14007,
+    13972,
+    14019,
+    14025,
+    14048,
+    14013
+   ],
+   "cols": [
+    "sample_no",
+    "runint",
+    "plate_id",
+    "I.A_photo",
+    "I.A_photo_ill",
+    "I.A_photo_dark"
+   ]
+  },
+  {
+   "key": "20160909.143157.copied-20160909220516383PDT.zip",
+   "file": "ana__1__I.A_photo-I.A_photo_ill-I.A_photo_dark.csv",
+   "n_rows": 29,
+   "samples": [
+    10396,
+    10325,
+    10413,
+    10384,
+    10378,
+    10354,
+    10342,
+    10443,
+    10348,
+    10331,
+    10402,
+    10419,
+    10372,
+    10360,
+    10431,
+    10366,
+    10425,
+    10437,
+    10337,
+    10390,
+    10313,
+    10319,
+    10407,
+    10307,
+    10295,
+    10283,
+    10289,
+    10301,
+    10278
+   ],
+   "cols": [
+    "sample_no",
+    "runint",
+    "plate_id",
+    "I.A_photo",
+    "I.A_photo_ill",
+    "I.A_photo_dark"
+   ]
+  },
+  {
+   "key": "20160909.144214.copied-20160912220521095PDT.zip",
+   "file": "ana__1__I.A_photo-I.A_photo_ill-I.A_photo_dark.csv",
+   "n_rows": 5,
+   "samples": [
+    10307,
+    10354,
+    10384,
+    10378,
+    10396
+   ],
+   "cols": [
+    "sample_no",
+    "runint",
+    "plate_id",
+    "I.A_photo",
+    "I.A_photo_ill",
+    "I.A_photo_dark"
+   ]
+  },
+  {
+   "key": "20160909.144214.copied-20160912220521095PDT.zip",
+   "file": "ana__2__I.A_photo-I.A_photo_ill-I.A_photo_dark.csv",
+   "n_rows": 5,
+   "samples": [
+    10307,
+    10354,
+    10384,
+    10378,
+    10396
+   ],
+   "cols": [
+    "sample_no",
+    "runint",
+    "plate_id",
+    "I.A_photo",
+    "I.A_photo_ill",
+    "I.A_photo_dark"
+   ]
+  }
+ ],
+ "eche_conditions": [
+  {
+   "solution_ph": "13",
+   "solution_description": "0.1 M sodium hydroxide + 0.25 M sodium sulfate",
+   "illumination_wavelength": "385,455,515,590,660,740,850",
+   "illumination_intensity": "2.958,2.370,0.960,0.800,3.930,3.390,3.900",
+   "reference_vrhe": "-0.980",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\LibraryScreenLV\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_ecat6.vi",
+   "key": "20160818.151752.copied-20160818162331012PDT.zip"
+  },
+  {
+   "solution_ph": "13",
+   "solution_description": "0.1 M sodium hydroxide + 0.25 M sodium sulfate",
+   "illumination_wavelength": "385,455,515,590,660,740,850",
+   "illumination_intensity": "2.958,2.370,0.960,0.800,3.930,3.390,3.900",
+   "reference_vrhe": "-0.980",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\LibraryScreenLV\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_ecat6.vi",
+   "key": "20160818.154658.copied-20160818162331012PDT.zip"
+  },
+  {
+   "solution_ph": "13",
+   "solution_description": "0.1 M sodium hydroxide + 0.25 M sodium sulfate + 0.01 M sodium sulfite",
+   "illumination_wavelength": "385",
+   "illumination_intensity": "5.000",
+   "reference_vrhe": "-0.977",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\LibraryScreenLV\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_Photo3.vi",
+   "key": "20160909.123200.copied-20160909142148857PDT.zip"
+  },
+  {
+   "solution_ph": "13",
+   "solution_description": "0.1 M sodium hydroxide + 0.25 M sodium sulfate + 0.01 M sodium sulfite",
+   "illumination_wavelength": "385",
+   "illumination_intensity": "5.000",
+   "reference_vrhe": "-0.977",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\LibraryScreenLV\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_Photo3.vi",
+   "key": "20160909.123513.copied-20160909141949530PDT.zip"
+  },
+  {
+   "solution_ph": "13",
+   "solution_description": "0.1 M sodium hydroxide + 0.25 M sodium sulfate + 0.01 M sodium sulfite",
+   "illumination_wavelength": "385",
+   "illumination_intensity": "5.000",
+   "reference_vrhe": "-0.975",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\LibraryScreenLV\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_Photo3.vi",
+   "key": "20160909.165302.copied-20160909220226182PDT.zip"
+  },
+  {
+   "solution_ph": "13",
+   "solution_description": "0.1 M sodium hydroxide + 0.25 M sodium sulfate + 0.01 M sodium sulfite",
+   "illumination_wavelength": "385",
+   "illumination_intensity": "5.000",
+   "reference_vrhe": "-0.975",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\LibraryScreenLV\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_Photo3.vi",
+   "key": "20160909.165454.copied-20160909220226182PDT.zip"
+  },
+  {
+   "solution_ph": "13",
+   "solution_description": "0.1 M sodium hydroxide + 0.25 M sodium sulfate + 0.01 M sodium sulfite",
+   "illumination_wavelength": "385",
+   "illumination_intensity": "5.000",
+   "reference_vrhe": "-0.975",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\LibraryScreenLV\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_Photo3.vi",
+   "key": "20160909.165847.copied-20160909220226182PDT.zip"
+  },
+  {
+   "solution_ph": "13",
+   "solution_description": "0.1 M sodium hydroxide + 0.25 M sodium sulfate + 0.01 M sodium sulfite",
+   "illumination_wavelength": "385",
+   "illumination_intensity": "5.000",
+   "reference_vrhe": "-0.975",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\LibraryScreenLV\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_Photo3.vi",
+   "key": "20160909.170024.copied-20160909220226182PDT.zip"
+  },
+  {
+   "solution_ph": "13",
+   "solution_description": "0.1 M sodium hydroxide + 0.25 M sodium sulfate + 0.01 M sodium sulfite",
+   "illumination_wavelength": "385",
+   "illumination_intensity": "5.000",
+   "reference_vrhe": "-0.975",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\LibraryScreenLV\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_Photo3.vi",
+   "key": "20160909.170155.copied-20160909220226182PDT.zip"
+  },
+  {
+   "solution_ph": "13",
+   "solution_description": "0.1 M sodium hydroxide + 0.25 M sodium sulfate + 0.01 M sodium sulfite",
+   "illumination_wavelength": "385",
+   "illumination_intensity": "5.000",
+   "reference_vrhe": "-0.975",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\LibraryScreenLV\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_Photo3.vi",
+   "key": "20160909.170319.copied-20160909220226182PDT.zip"
+  },
+  {
+   "solution_ph": "13",
+   "solution_description": "0.1 M sodium hydroxide + 0.25 M sodium sulfate + 0.01 M sodium sulfite",
+   "illumination_wavelength": "385",
+   "illumination_intensity": "5.000",
+   "reference_vrhe": "-0.975",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\LibraryScreenLV\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_Photo3.vi",
+   "key": "20160909.170500.copied-20160909220226182PDT.zip"
+  },
+  {
+   "solution_ph": "0",
+   "solution_description": "0.1 M sulfuric acid",
+   "illumination_wavelength": "385",
+   "illumination_intensity": "5.000",
+   "reference_vrhe": "-0.197",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\LibraryScreenLV\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_ecat6.vi",
+   "key": "20170615.142740.copied-20170615154301588PDT.zip"
+  },
+  {
+   "solution_ph": "0",
+   "solution_description": "0.1 M sulfuric acid",
+   "illumination_wavelength": "385",
+   "illumination_intensity": "5.000",
+   "reference_vrhe": "-0.197",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\LibraryScreenLV\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_ecat6.vi",
+   "key": "20170615.144204.copied-20170615154803833PDT.zip"
+  },
+  {
+   "solution_ph": "0",
+   "solution_description": "0.1 M sulfuric acid",
+   "illumination_wavelength": "385",
+   "illumination_intensity": "5.000",
+   "reference_vrhe": "-0.197",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\LibraryScreenLV\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_ecat6.vi",
+   "key": "20170615.145646.copied-20170615154715312PDT.zip"
+  },
+  {
+   "solution_ph": "0",
+   "solution_description": "0.1 M sulfuric acid",
+   "illumination_wavelength": "385",
+   "illumination_intensity": "5.000",
+   "reference_vrhe": "-0.197",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\LibraryScreenLV\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_ecat6.vi",
+   "key": "20170615.145756.copied-20170615155121758PDT.zip"
+  }
+ ],
+ "errors": []
+}

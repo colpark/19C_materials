@@ -1,0 +1,155 @@
+{
+  "closure": "P7_CLOSE_UNRESOLVABLE",
+  "key": "SUPPLY_CLUSTERS",
+  "candidate": "C1",
+  "outcomes_seen": true,
+  "launched": [
+    {
+      "remedy": "search_sibling_libraries",
+      "class": "autonomous",
+      "reentry": "D2",
+      "what": "search the corpus sources and public deposits for sibling libraries of the same task family, read whole, log to the exclusion ledger",
+      "cost": {
+        "gpu_hours": 0,
+        "storage_gb": 5,
+        "tokens_m": 5,
+        "wall_hours": 3
+      },
+      "over_soft_ceiling": false,
+      "projected": {
+        "gpu_hours": 4.04,
+        "storage_gb": 7.0,
+        "tokens_m": 25.35,
+        "wall_hours": 17.0
+      }
+    },
+    {
+      "remedy": "pool_libraries_new_tau",
+      "class": "autonomous",
+      "reentry": "D3",
+      "what": "pool the found libraries and re-measure tau; the unit may change, so the axis ledger is recounted",
+      "cost": {
+        "gpu_hours": 2,
+        "storage_gb": 10,
+        "tokens_m": 2,
+        "wall_hours": 2
+      },
+      "over_soft_ceiling": true,
+      "projected": {
+        "gpu_hours": 6.04,
+        "storage_gb": 17.0,
+        "tokens_m": 27.35,
+        "wall_hours": 19.0
+      }
+    },
+    {
+      "remedy": "spin_explain_candidate",
+      "class": "autonomous",
+      "reentry": "D4",
+      "what": "open the explain candidate on the per-cluster channel effect, graded by the mechanical ablation floors at zero cells",
+      "cost": {
+        "gpu_hours": 0,
+        "storage_gb": 1,
+        "tokens_m": 3,
+        "wall_hours": 2
+      },
+      "over_soft_ceiling": true,
+      "projected": {
+        "gpu_hours": 6.04,
+        "storage_gb": 18.0,
+        "tokens_m": 30.35,
+        "wall_hours": 21.0
+      }
+    },
+    {
+      "remedy": "advance_next_candidate",
+      "class": "autonomous",
+      "reentry": "portfolio",
+      "what": "start the next active candidate in the portfolio by priority",
+      "cost": {
+        "gpu_hours": 0,
+        "storage_gb": 0,
+        "tokens_m": 0,
+        "wall_hours": 0
+      },
+      "over_soft_ceiling": true,
+      "projected": {
+        "gpu_hours": 6.04,
+        "storage_gb": 18.0,
+        "tokens_m": 30.35,
+        "wall_hours": 21.0
+      }
+    }
+  ],
+  "carded": [
+    {
+      "remedy": "request_new_libraries",
+      "class": "reserved",
+      "reentry": "D2",
+      "what": "ask collaborators for libraries or new experiments; a scientific and programme decision",
+      "cost": {
+        "gpu_hours": 0,
+        "storage_gb": 0,
+        "tokens_m": 0,
+        "wall_hours": 0
+      },
+      "reason": "reserved to the human by the decision rights"
+    },
+    {
+      "remedy": "change_task_budget",
+      "class": "reserved",
+      "reentry": "D4",
+      "what": "set the per-item measurement budget from what a campaign affords; cost of action belongs to the PI",
+      "cost": {
+        "gpu_hours": 1,
+        "storage_gb": 1,
+        "tokens_m": 1,
+        "wall_hours": 2
+      },
+      "reason": "reserved to the human by the decision rights"
+    }
+  ],
+  "refused": [],
+  "guard_state": {
+    "depth": 3,
+    "reentry": {
+      "D2": 2,
+      "D4": 2,
+      "I2": 1,
+      "D3": 1
+    },
+    "failures": {
+      "swap_fm_checkpoint": 1
+    },
+    "retired": []
+  },
+  "envelope_after": {
+    "gpu_hours": {
+      "ceiling": 12,
+      "spent": 4.04,
+      "committed": 2
+    },
+    "storage_gb": {
+      "ceiling": 10,
+      "spent": 2.0,
+      "committed": 16
+    },
+    "tokens_m": {
+      "ceiling": 60,
+      "spent": 20.35,
+      "committed": 10
+    },
+    "wall_hours": {
+      "ceiling": 24,
+      "spent": 14.0,
+      "committed": 7
+    }
+  },
+  "amendments": [
+    "O1: search_sibling_libraries re-enters D2 for C1",
+    "O1: pool_libraries_new_tau re-enters D3 for C1",
+    "O1: spin_explain_candidate re-enters D4 for C1",
+    "O1: advance_next_candidate re-enters portfolio for C1"
+  ],
+  "completeness": "routed P7_CLOSE_UNRESOLVABLE as SUPPLY_CLUSTERS for C1: 4 launched, 2 carded to the human, 0 refused, depth 3 of 3"
+}

@@ -1,0 +1,122 @@
+{
+ "record": "gf4ez-afa19",
+ "zips": [
+  {
+   "key": "20160818.123521.copied-20160818162346787PDT.zip",
+   "size": 22641822,
+   "n": 1534,
+   "technique": "DR_UVVIS"
+  },
+  {
+   "key": "20160819.165247.copied-20160819222700196PDT.zip",
+   "size": 628134,
+   "n": 5,
+   "technique": "eche"
+  },
+  {
+   "key": "20160819.165314.copied-20160819222700196PDT.zip",
+   "size": 653102,
+   "n": 8,
+   "technique": "eche"
+  },
+  {
+   "key": "20160819.165536.copied-20160819222700196PDT.zip",
+   "size": 787282,
+   "n": 38,
+   "technique": "eche"
+  },
+  {
+   "key": "20160819.171129.copied-20160819222700196PDT.zip",
+   "size": 712068,
+   "n": 32,
+   "technique": "eche"
+  },
+  {
+   "key": "20160819.171833.copied-20160819222700196PDT.zip",
+   "size": 696919,
+   "n": 11,
+   "technique": "eche"
+  },
+  {
+   "key": "20160819.172504.copied-20160819222700196PDT.zip",
+   "size": 642537,
+   "n": 8,
+   "technique": "eche"
+  },
+  {
+   "key": "20160819.172739.copied-20160819222700196PDT.zip",
+   "size": 646533,
+   "n": 8,
+   "technique": "eche"
+  }
+ ],
+ "xrd_samples": [],
+ "xrd_ana": [],
+ "photo": [],
+ "eche_conditions": [
+  {
+   "solution_ph": "13",
+   "solution_description": "0.1 M sodium hydroxide + 0.25 M sodium sulfate",
+   "illumination_wavelength": "385,455,515,590,660,740,850",
+   "illumination_intensity": "2.958,2.370,0.960,0.800,3.930,3.390,3.900",
+   "reference_vrhe": "-0.971",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\LibraryScreenLV\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_ecat6.vi",
+   "key": "20160819.165247.copied-20160819222700196PDT.zip"
+  },
+  {
+   "solution_ph": "13",
+   "solution_description": "0.1 M sodium hydroxide + 0.25 M sodium sulfate",
+   "illumination_wavelength": "385,455,515,590,660,740,850",
+   "illumination_intensity": "2.958,2.370,0.960,0.800,3.930,3.390,3.900",
+   "reference_vrhe": "-0.971",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\LibraryScreenLV\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_ecat6.vi",
+   "key": "20160819.165314.copied-20160819222700196PDT.zip"
+  },
+  {
+   "solution_ph": "13",
+   "solution_description": "0.1 M sodium hydroxide + 0.25 M sodium sulfate",
+   "illumination_wavelength": "385,455,515,590,660,740,850",
+   "illumination_intensity": "2.958,2.370,0.960,0.800,3.930,3.390,3.900",
+   "reference_vrhe": "-0.971",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\LibraryScreenLV\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_ecat6.vi",
+   "key": "20160819.165536.copied-20160819222700196PDT.zip"
+  },
+  {
+   "solution_ph": "13",
+   "solution_description": "0.1 M sodium hydroxide + 0.25 M sodium sulfate",
+   "illumination_wavelength": "385,455,515,590,660,740,850",
+   "illumination_intensity": "2.958,2.370,0.960,0.800,3.930,3.390,3.900",
+   "reference_vrhe": "-0.971",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\LibraryScreenLV\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_ecat6.vi",
+   "key": "20160819.171129.copied-20160819222700196PDT.zip"
+  },
+  {
+   "solution_ph": "13",
+   "solution_description": "0.1 M sodium hydroxide + 0.25 M sodium sulfate",
+   "illumination_wavelength": "385,455,515,590,660,740,850",
+   "illumination_intensity": "2.958,2.370,0.960,0.800,3.930,3.390,3.900",
+   "reference_vrhe": "-0.971",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\LibraryScreenLV\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_ecat6.vi",
+   "key": "20160819.171833.copied-20160819222700196PDT.zip"
+  },
+  {
+   "solution_ph": "13",
+   "solution_description": "0.1 M sodium hydroxide + 0.25 M sodium sulfate",
+   "illumination_wavelength": "385,455,515,590,660,740,850",
+   "illumination_intensity": "2.958,2.370,0.960,0.800,3.930,3.390,3.900",
+   "reference_vrhe": "-0.971",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\LibraryScreenLV\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_ecat6.vi",
+   "key": "20160819.172504.copied-20160819222700196PDT.zip"
+  },
+  {
+   "solution_ph": "13",
+   "solution_description": "0.1 M sodium hydroxide + 0.25 M sodium sulfate",
+   "illumination_wavelength": "385,455,515,590,660,740,850",
+   "illumination_intensity": "2.958,2.370,0.960,0.800,3.930,3.390,3.900",
+   "reference_vrhe": "-0.971",
+   "experiment_params_vi_path": "C:\\INST\\CODE\\LibraryScreenLV\\ExperimentLibrary\\ScanningDropGamry\\ParamsLibrary\\ECHE_Params_ecat6.vi",
+   "key": "20160819.172739.copied-20160819222700196PDT.zip"
+  }
+ ],
+ "errors": []
+}
