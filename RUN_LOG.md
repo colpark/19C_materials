@@ -123,3 +123,4 @@
 - R4: catalogs match in all 3 arms; 50/50 canaries absent; model claude-opus-5.
 - R5: G1–G5 armed with both controls. G1's controls were run with a real probe after first being asserted; the correction is recorded.
 - R6: emitted prompt hash = declared. R8: symmetry ruled, uptake row route = LIFT use (enforced by G4).
+- Main run: 468/468 cells, 0 failures. A2: blind files hashed and committed before labels open.
