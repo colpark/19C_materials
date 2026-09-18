@@ -32,3 +32,9 @@
   - A forged phase id returned a structured error, and a 6th EQE call was refused.
   - Defect found and fixed: `mace_stability` crashed on a hypothetical containing an element outside the plate system. It now adds that elemental reference and a lower-bound caveat. All tools now return structured errors instead of raising.
 - 00:40 P3 unprocessable axis: 0 episodes with max EQE ≤ 0, 1 with a tie for best, 38 of 189 with max EQE < 0.01% (20 in the cohort). These form the low-signal stratum and are kept.
+- 00:55 R3 load ladder.
+  - Step 1: 1 FM cell, 21 s, $0.19. Step 2: 3 arms concurrently, 21-29 s, $0.12-0.25 per cell. Step 3 is the main run at 4 workers, declared here.
+  - **Process observation.** In both pilot cells the FM arm made no FM calls and no XRD calls. It reasoned from chemistry knowledge (e.g. "AgSbO3 absorbs visible light") and spent its EQE budget directly. The prompt is not changed.
+- 00:58 R4 grant verified from the model side (the init event): each arm's catalog matches its declaration, and 48 of 48 canaries are absent.
+- 01:00 R5 gates armed with both controls: G1 EQE budget, G2 no-retry, G3 blind hash.
+- 01:02 R8 symmetry table. The only differences are function count and tool descriptions, both ruled part of the intended treatment.

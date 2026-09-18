@@ -6,3 +6,8 @@ Bi 120 phases, 6 ternary, 165s
     mp-30304 Bi3O7Sb sb 0.25 ehull 0.0 gap(pbe,hse) 2.007 2.268
     mp-1214312 Bi12O20Sb sb 0.0769 ehull 0.0186 gap(pbe,hse) 1.742 1.68
     mp-755382 BiO3Sb sb 0.5 ehull 0.0493 gap(pbe,hse) 1.895 3.323
+Cu 92 phases, 8 ternary, 253s
+    mp-1188790 CuO6Sb2 sb 0.6667 ehull 0.0 gap(pbe,hse) 0.022 0.017
+    mp-5831 CuO6Sb2 sb 0.6667 ehull 0.0001 gap(pbe,hse) 0.021 0.017
+    mp-554658 CuO6Sb2 sb 0.6667 ehull 0.0005 gap(pbe,hse) 0.017 0.021
+    mp-1042691 Cu3O12Sb4 sb 0.5714 ehull 0.0331 gap(pbe,hse) 0.036 0.505

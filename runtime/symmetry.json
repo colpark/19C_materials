@@ -1,0 +1,73 @@
+{
+ "per_arm": [
+  {
+   "arm": "bare",
+   "prompt_bytes": 1115,
+   "prompt_sha256": "4912d6e762448ef55444389b7dbaeb6b63b07531d2a7d8a5b0571384666e5b3a",
+   "function_count": 4,
+   "max_turns": 60,
+   "timeout_s": 1500,
+   "presentation": "identical task prompt; tool descriptions from MCP docstrings",
+   "reference_material": "none",
+   "model": "claude-opus-5"
+  },
+  {
+   "arm": "classical",
+   "prompt_bytes": 1115,
+   "prompt_sha256": "4912d6e762448ef55444389b7dbaeb6b63b07531d2a7d8a5b0571384666e5b3a",
+   "function_count": 9,
+   "max_turns": 60,
+   "timeout_s": 1500,
+   "presentation": "identical task prompt; tool descriptions from MCP docstrings",
+   "reference_material": "none",
+   "model": "claude-opus-5"
+  },
+  {
+   "arm": "fm",
+   "prompt_bytes": 1115,
+   "prompt_sha256": "4912d6e762448ef55444389b7dbaeb6b63b07531d2a7d8a5b0571384666e5b3a",
+   "function_count": 11,
+   "max_turns": 60,
+   "timeout_s": 1500,
+   "presentation": "identical task prompt; tool descriptions from MCP docstrings",
+   "reference_material": "none",
+   "model": "claude-opus-5"
+  }
+ ],
+ "arm_symmetry": [
+  {
+   "field": "prompt_bytes",
+   "differs": false
+  },
+  {
+   "field": "function_count",
+   "differs": true,
+   "values": {
+    "bare": 4,
+    "classical": 9,
+    "fm": 11
+   },
+   "ruling": "intended treatment: bare=env(4), classical=env+classical(9), fm=classical+MACE+MEGNet(11); FM arm is a strict superset of classical, so classical-vs-fm isolates the two FM channels"
+  },
+  {
+   "field": "tool description text",
+   "differs": true,
+   "ruling": "docstrings of extra tools are extra text in the fm/classical catalogs; accepted as part of the treatment, since a tool cannot be granted without its description"
+  },
+  {
+   "field": "output cap / max turns / timeout",
+   "differs": false
+  },
+  {
+   "field": "reference material",
+   "differs": false
+  },
+  {
+   "field": "episode order and concurrency",
+   "differs": false,
+   "ruling": "arms interleaved per episode in a fixed per-episode shuffle (run_batch.py), 4 workers; same time window"
+  }
+ ],
+ "all_ruled": true,
+ "completeness": "Per-arm prompt bytes, function count, output cap, presentation and reference material tabulated; every difference ruled."
+}

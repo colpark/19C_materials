@@ -1,0 +1,3 @@
+{"episode": "3531_20200218.162319_CA1", "arm": "fm", "t": 1789704240.972312, "wall_s": 21.5, "exit_code": 0, "timed_out": false, "result_subtype": "success", "num_turns": 9, "cost_usd": 0.1160185, "error": null, "skipped": null}
+{"episode": "3531_20200218.162319_CA1", "arm": "bare", "t": 1789704244.728906, "wall_s": 25.3, "exit_code": 0, "timed_out": false, "result_subtype": "success", "num_turns": 11, "cost_usd": 0.15369750000000001, "error": null, "skipped": null}
+{"episode": "3531_20200218.162319_CA1", "arm": "classical", "t": 1789704248.4905474, "wall_s": 29.1, "exit_code": 0, "timed_out": false, "result_subtype": "success", "num_turns": 12, "cost_usd": 0.25156249999999997, "error": null, "skipped": null}

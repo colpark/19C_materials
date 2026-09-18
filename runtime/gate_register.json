@@ -1,0 +1,47 @@
+{
+ "gates": [
+  {
+   "id": "G1_eqe_budget",
+   "named_threat": "an arm spending more measurements than its budget inflates realized value",
+   "must_fire_control": {
+    "input": "6th measure_eqe call (R2 probe)",
+    "fired": true
+   },
+   "must_not_fire_control": {
+    "input": "5th measure_eqe call (R2 probe)",
+    "fired": false
+   },
+   "duplicates_platform_protection": false,
+   "armed": true
+  },
+  {
+   "id": "G2_no_retry",
+   "named_threat": "re-running a cell after seeing its outcome (selection on outcome)",
+   "must_fire_control": {
+    "input": "re-run existing cell r1/synthetic__stub",
+    "fired": true
+   },
+   "must_not_fire_control": {
+    "input": "fresh cell r3_step1 ran (runtime/cells/r3_step1)",
+    "fired": false
+   },
+   "duplicates_platform_protection": false,
+   "armed": true
+  },
+  {
+   "id": "G3_blind_hash",
+   "named_threat": "a blind prediction file changed after labels open",
+   "must_fire_control": {
+    "input": "blind file appended after hashing",
+    "fired": true
+   },
+   "must_not_fire_control": {
+    "input": "unchanged blind file",
+    "fired": false
+   },
+   "duplicates_platform_protection": false,
+   "armed": true
+  }
+ ],
+ "completeness": "Three validity gates (budget, no-retry, blind hash) each run with a must-fire and must-not-fire control; tool-arm separation is covered by the R4 grant canaries, not duplicated here."
+}

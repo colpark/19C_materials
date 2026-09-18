@@ -1,0 +1,8 @@
+cuequivariance or cuequivariance_torch is not available. Cuequivariance acceleration will be disabled.
+Using Materials Project MACE for MACECalculator with /home/aid1/.cache/mace/20231203mace128L1_epoch199model
+Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
+Cr 144 phases, 8 ternary, 429s
+    mp-33857 CrO4Sb sb 0.5 ehull 0.0 gap(pbe,hse) 1.445 1.713
+    mp-756024 CrO6Sb2 sb 0.6667 ehull 0.0149 gap(pbe,hse) 0.0 0.749
+    mp-755493 CrO4Sb sb 0.5 ehull 0.0647 gap(pbe,hse) 1.551 1.975
+    mp-771316 Cr5O16Sb3 sb 0.375 ehull 0.0818 gap(pbe,hse) 0.073 1.982

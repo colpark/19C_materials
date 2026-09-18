@@ -1,0 +1,344 @@
+{
+ "verified_from": "model_side",
+ "verified_from_detail": "stream-json system/init event of each pilot cell (runtime/cells/r3_step2/*/meta.json), not configuration",
+ "model_side_catalog": [
+  {
+   "arm": "bare",
+   "model": "claude-opus-5",
+   "tools": [
+    "mcp__env__episode_info",
+    "mcp__env__measure_eqe",
+    "mcp__env__measure_xrd",
+    "mcp__env__submit"
+   ],
+   "matches_declared": true
+  },
+  {
+   "arm": "classical",
+   "model": "claude-opus-5",
+   "tools": [
+    "mcp__env__episode_info",
+    "mcp__env__gp_suggest",
+    "mcp__env__list_phases",
+    "mcp__env__match_xrd",
+    "mcp__env__measure_eqe",
+    "mcp__env__measure_xrd",
+    "mcp__env__simulate_xrd",
+    "mcp__env__submit",
+    "mcp__env__substitute_structure"
+   ],
+   "matches_declared": true
+  },
+  {
+   "arm": "fm",
+   "model": "claude-opus-5",
+   "tools": [
+    "mcp__env__episode_info",
+    "mcp__env__gp_suggest",
+    "mcp__env__list_phases",
+    "mcp__env__mace_stability",
+    "mcp__env__match_xrd",
+    "mcp__env__measure_eqe",
+    "mcp__env__measure_xrd",
+    "mcp__env__megnet_bandgap",
+    "mcp__env__simulate_xrd",
+    "mcp__env__submit",
+    "mcp__env__substitute_structure"
+   ],
+   "matches_declared": true
+  }
+ ],
+ "subtraction_passes": 2,
+ "canaries": [
+  {
+   "arm": "bare",
+   "capability": "Bash",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "bare",
+   "capability": "Read",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "bare",
+   "capability": "Write",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "bare",
+   "capability": "Edit",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "bare",
+   "capability": "WebFetch",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "bare",
+   "capability": "WebSearch",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "bare",
+   "capability": "Task",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "bare",
+   "capability": "Agent",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "bare",
+   "capability": "Glob",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "bare",
+   "capability": "Grep",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "bare",
+   "capability": "ReadMcpResourceDirTool",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "bare",
+   "capability": "ListMcpResourcesTool",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "bare",
+   "capability": "ReadMcpResourceTool",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "bare",
+   "capability": "mcp__env__mace_stability",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "bare",
+   "capability": "mcp__env__megnet_bandgap",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "bare",
+   "capability": "mcp__env__match_xrd",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "bare",
+   "capability": "mcp__env__simulate_xrd",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "bare",
+   "capability": "mcp__env__substitute_structure",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "bare",
+   "capability": "mcp__env__gp_suggest",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "bare",
+   "capability": "mcp__env__list_phases",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "classical",
+   "capability": "Bash",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "classical",
+   "capability": "Read",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "classical",
+   "capability": "Write",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "classical",
+   "capability": "Edit",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "classical",
+   "capability": "WebFetch",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "classical",
+   "capability": "WebSearch",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "classical",
+   "capability": "Task",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "classical",
+   "capability": "Agent",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "classical",
+   "capability": "Glob",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "classical",
+   "capability": "Grep",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "classical",
+   "capability": "ReadMcpResourceDirTool",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "classical",
+   "capability": "ListMcpResourcesTool",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "classical",
+   "capability": "ReadMcpResourceTool",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "classical",
+   "capability": "mcp__env__mace_stability",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "classical",
+   "capability": "mcp__env__megnet_bandgap",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "fm",
+   "capability": "Bash",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "fm",
+   "capability": "Read",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "fm",
+   "capability": "Write",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "fm",
+   "capability": "Edit",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "fm",
+   "capability": "WebFetch",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "fm",
+   "capability": "WebSearch",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "fm",
+   "capability": "Task",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "fm",
+   "capability": "Agent",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "fm",
+   "capability": "Glob",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "fm",
+   "capability": "Grep",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "fm",
+   "capability": "ReadMcpResourceDirTool",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "fm",
+   "capability": "ListMcpResourcesTool",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "fm",
+   "capability": "ReadMcpResourceTool",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  }
+ ],
+ "auxiliary_models": [],
+ "completeness": "Model-side catalog enumerated for bare, classical and fm arms from init events; 13 native canaries and cross-arm FM/classical canaries checked absent; model id checked. Not covered: per-cell re-verification (done at R8 over all main cells). Subtraction pass 1 (R1) found ReadMcpResourceDirTool leaking; pass 2 (R3 step 2) shows none."
+}
