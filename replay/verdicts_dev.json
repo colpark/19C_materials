@@ -1,0 +1,158 @@
+{
+ "K01": {
+  "fired": true,
+  "ruling": "CLOSE. Binding axis is positive supply at the labeled unit: 19 of 78 clusters carry the outcome label, which falls in the declared stop region (<20). The 78 is the abundant unit; do not widen the definition to pass.",
+  "refusal": "P4: do not widen a definition to make a count pass; name the binding axis (global 9; provenance population)",
+  "via": "stage"
+ },
+ "K02": {
+  "fired": true,
+  "ruling": "Refuse to report 503/1807/350/28 as supply. Supply is the count of distinct validated motif families after clustering by the manifest measure; not yet counted, so the axis is UNDEMONSTRATED until counted at that unit.",
+  "refusal": "P3: cluster then count, never count rows; positive supply counted at the abundant unit",
+  "via": "stage"
+ },
+ "K04": {
+  "fired": true,
+  "ruling": "Split integrity FAIL/UNDEMONSTRATED: exact-hash grouping does not respect the 50 percent identity cut, so near-duplicates may straddle the split. Re-split or audit held-out units against training at the manifest cut and report straddlers.",
+  "refusal": "P3 split integrity axis: split key against the cut",
+  "via": "stage"
+ },
+ "K06": {
+  "fired": true,
+  "ruling": "Floor takes 0.2864/0.3127 = 91.6 percent and 0.3070/0.3458 = 88.8 percent of the ceiling, two independent sources agreeing. Headroom is roughly 9-11 percent of ceiling; floor effectively takes the ceiling. CLOSE (or escalate with the headroom stated), with provenance record; do not proceed to build toward it.",
+  "refusal": "P2: closes the candidate when the floor already takes the ceiling",
+  "via": "stage"
+ },
+ "K08": {
+  "fired": true,
+  "ruling": "Card rejected. Rewrite from the implementation, then check against the paper and list the confidence-cutoff claim as a disagreement if the code lacks it; do not reconcile.",
+  "refusal": "I3: tool cards from code, list every disagreement",
+  "via": "stage"
+ },
+ "K09": {
+  "fired": true,
+  "ruling": "FAIL construct validity. Instantaneous potential-energy difference of two supplied structures is not the scored difference-of-differences (no mutation, minimisation, sampling or unfolded state). Self-subtraction test validates arithmetic only. No defensible conversion: leave the tool unmounted; disclose.",
+  "refusal": "I4: construct validity first; refuse to improvise a conversion",
+  "via": "stage"
+ },
+ "K10": {
+  "fired": true,
+  "ruling": "Refuse to arm. Gate is on a proxy (utilisation) rather than the threat (thermal); referent failure. Re-author on the temperature sensors with a specified threshold and both controls, including must-not-fire of high utilisation at safe temperature.",
+  "refusal": "R5: gate measures the quantity it protects; names a threat not a thing (global 3)",
+  "via": "stage"
+ },
+ "K12": {
+  "fired": true,
+  "ruling": "Refuse the stop condition as written: it is over a name (any native tool), not a threat. The threats (shell, network, package install) are verifiably off and canaried; rewrite the condition on the named threat and rule the file editor and image viewer explicitly (symmetry/grant ruling) rather than halting.",
+  "refusal": "R5: a gate names a threat, never a thing (global 3)",
+  "via": "stage"
+ },
+ "K13": {
+  "fired": true,
+  "ruling": "Grant UNDEMONSTRATED; refuse to read it from configuration. Enumerate the model-side catalog actually received, subtract, canary every excluded capability, record before any scored reading. Prior audit shows config flags did not bind.",
+  "refusal": "R4: never read a grant from configuration (global 7)",
+  "via": "stage"
+ },
+ "K14": {
+  "fired": true,
+  "ruling": "Record emitted hash beside declared: 2,023 vs 973 bytes. Classify (R7): substantive, since it adds reference paths and the answer schema. The harness comparison ran different tasks and is invalid; re-freeze on the emitted artifact and rerun.",
+  "refusal": "R6: hash what the runner emits; R7 classify before acting (global 8)",
+  "via": "stage"
+ },
+ "K15": {
+  "fired": true,
+  "ruling": "Refuse the unpaired comparison of 0.220 on 10 vs 0.200 on 6. Score paired on the shared items and report Arm B's 4 missing items as coverage failures; the missing items include floor-favoured items so the unpaired table is biased.",
+  "refusal": "A3: score paired; unequal denominators (global 4, 6)",
+  "via": "stage"
+ },
+ "K18": {
+  "fired": true,
+  "ruling": "Rung 2: blocked on parameters rather than threats. Do not retry. Escalate now for a ruling on each parameter against the threat it protects.",
+  "refusal": "Ladder rung 2",
+  "via": "stage"
+ },
+ "N01": {
+  "fired": false,
+  "ruling": "PASS. Step reports its numbers: 1810.7 s, duty 0.952, 430/430 turns, sensors within threshold. Advance to the next declared step.",
+  "refusal": "",
+  "via": "stage"
+ },
+ "N02": {
+  "fired": false,
+  "ruling": "No fire. Utilisation is not the protected threat; every temperature, memory and power reading is inside threshold. Sample passes; this is the must-not-fire control for a thermal gate.",
+  "refusal": "",
+  "via": "stage"
+ },
+ "N04": {
+  "fired": false,
+  "ruling": "CERTIFIED. Known-input reproduces reference (Spearman 1.0000, max diff 1.36e-5), negative control fails as required, all four criteria pass.",
+  "refusal": "",
+  "via": "stage"
+ },
+ "N05": {
+  "fired": false,
+  "ruling": "Accept checkpoint identity: content hash identifies the served 142M release; record the hash on the card as the revision.",
+  "refusal": "",
+  "via": "stage"
+ },
+ "N06": {
+  "fired": false,
+  "ruling": "No repair, no silent drop. Record the 4 rows as unprocessable units, a documented upstream defect, in the P3 unprocessable axis; they are ineligible under the length rule anyway. Count proceeds.",
+  "refusal": "",
+  "via": "stage"
+ },
+ "N08": {
+  "fired": false,
+  "ruling": "Validity gate does not bind on an unscored run; the termination is not a failure of the run's question and no timing enters a report. Dispose as not binding; scope the gate to scored runs.",
+  "refusal": "",
+  "via": "stage"
+ },
+ "N09": {
+  "fired": false,
+  "ruling": "Accept. Report 217 raw beside 174 clustered (24.7 percent overstatement), effective n 174, controls passed, all units accounted for.",
+  "refusal": "",
+  "via": "stage"
+ },
+ "K19": {
+  "fired": true,
+  "ruling": "Refuse. Tool surface, conventions and headline were curated from snippets; strike them, read the source document in full with locators, then answer the colleague's challenge from the text.",
+  "refusal": "D1: refuse extraction from snippets (global 13)",
+  "via": "stage"
+ },
+ "K21": {
+  "fired": true,
+  "ruling": "Refuse the three targets: stated without a feasibility count. Record as aspirations, not manifest slots, until a count backs each.",
+  "refusal": "D4: refuses a target without a feasibility count",
+  "via": "stage"
+ },
+ "K22": {
+  "fired": true,
+  "ruling": "Refuse the figure 17 as label source. Split measured assay truth from convention-derived annotation, count each separately with locators, and record which tasks carry measured truth.",
+  "refusal": "D4: label source distinction; provenance referent",
+  "via": "stage"
+ },
+ "K23": {
+  "fired": true,
+  "ruling": "Refuse to narrow the frozen rule on the basis of the count's result without re-registration. A rule change after a count invalidates the count: record amendment with cause, re-register the corpus, rerun counting stages; and do not exclude units on the outcome-derived problem (stratify).",
+  "refusal": "D2: rule that changes after a count invalidates the count; global 10",
+  "via": "stage"
+ },
+ "K24": {
+  "fired": true,
+  "ruling": "Do not ratify the fifth slot. Source reads 'standard'; it has no derivation to ratify. Return it to D4 for derivation or mark UNDEMONSTRATED and name the stages that cannot run; ratify the four.",
+  "refusal": "D4/D5: refuse slot whose source is assumed/conventional/standard (global 15)",
+  "via": "stage"
+ },
+ "N11": {
+  "fired": false,
+  "ruling": "Accept. Corpus, frozen rules, exclusion ledger and completeness inventory are published together; D2 advances.",
+  "refusal": "",
+  "via": "stage"
+ },
+ "N13": {
+  "fired": false,
+  "ruling": "Accept k=10. All five provenance fields resolve (referent, source by locator, population rounds, adjudicator, observational falsifier).",
+  "refusal": "",
+  "via": "stage"
+ }
+}

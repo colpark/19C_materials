@@ -1,0 +1,37 @@
+set=development
+  K01  P4     must_fire     ok   
+  K02  P3     must_fire     ok   
+  K04  P3     must_fire     ok   
+  K06  P2     must_fire     ok   
+  K08  I3     must_fire     ok   
+  K09  I4     must_fire     ok   
+  K10  R5     must_fire     ok   
+  K12  R5     must_fire     ok   
+  K13  R4     must_fire     ok   
+  K14  R6     must_fire     ok   
+  K15  A3     must_fire     ok   
+  K18  LADDER must_fire     ok   
+  K19  D1     must_fire     ok   
+  K21  D4     must_fire     ok   
+  K22  D4     must_fire     ok   
+  K23  D2     must_fire     ok   
+  K24  D5     must_fire     ok   
+  N01  R3     must_not_fire ok   
+  N02  R5     must_not_fire ok   
+  N04  I5     must_not_fire ok   
+  N05  I3     must_not_fire ok   
+  N06  P3     must_not_fire ok   
+  N08  R5     must_not_fire ok   
+  N09  P3     must_not_fire ok   
+  N11  D2     must_not_fire ok   
+  N13  D4     must_not_fire ok   
+
+must_fire     17 of 17
+must_not_fire 9 of 9
+
+  adjudication  1 of 1
+  discovery     7 of 7
+  instrument    4 of 4
+  ladder        1 of 1
+  runtime       7 of 7
+  supply        6 of 6

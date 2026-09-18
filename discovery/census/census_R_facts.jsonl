@@ -1,0 +1,147 @@
+{"pmcid": "PMC13191734", "kind": "chain_step", "text": "Solid-state synthesis of LiMn2O4 from Mn3O4+LiOH (500 then 750 C), then NMP-derived carbon coating at 400 C", "locator": "Sec 2.1", "metric": null}
+{"pmcid": "PMC13191734", "kind": "chain_step", "text": "Lab XRD 10-80 deg, Rietveld in FullProf; lattice parameters reported vs carbon amount", "locator": "Sec 2.2; Sec 3.1; Fig 1b-f", "metric": null}
+{"pmcid": "PMC13191734", "kind": "chain_step", "text": "Only acceptance criterion stated is Rwp<10 and chi2<10 for all four fits", "locator": "Sec 3.1", "metric": null}
+{"pmcid": "PMC13191734", "kind": "chain_step", "text": "Post-cycling XRD compared qualitatively (111 intensity), no refinement", "locator": "Sec 3.4; Fig 7", "metric": null}
+{"pmcid": "PMC13191734", "kind": "branch", "text": "No carbon reflections; carbon layer called amorphous (low content), later supported by HAADF-STEM; crystalline alternative not named", "locator": "Sec 3.1; Sec 3.2; Fig 4", "metric": null}
+{"pmcid": "PMC13191734", "kind": "channel", "text": "XRD used for structural/coating conclusion", "locator": "Sec 3.1", "metric": null}
+{"pmcid": "PMC13191734", "kind": "channel", "text": "SEM/EDS used for structural/coating conclusion", "locator": "Fig 2", "metric": null}
+{"pmcid": "PMC13191734", "kind": "channel", "text": "XPS used for structural/coating conclusion", "locator": "Fig 3", "metric": null}
+{"pmcid": "PMC13191734", "kind": "channel", "text": "HAADF-STEM used for structural/coating conclusion", "locator": "Sec 3.2; Fig 4", "metric": null}
+{"pmcid": "PMC13191734", "kind": "raw_data", "text": "Data available from corresponding author on request; no deposit", "locator": "Data availability", "metric": null}
+{"pmcid": "PMC12899607", "kind": "chain_step", "text": "Commercial NCM811 wet-impregnated with sol-gel LNMO, calcined 850 C in air", "locator": "Sec 2", "metric": null}
+{"pmcid": "PMC12899607", "kind": "chain_step", "text": "Lab XRD; GSAS-II Rietveld with R-3m NCM + Fd-3m LNMO models, Chebyshev background, pseudo-Voigt", "locator": "Sec 2", "metric": null}
+{"pmcid": "PMC12899607", "kind": "chain_step", "text": "Fresh fits Rwp 2.900 (NCM811) and 2.811 (4 wt%)", "locator": "Sec 3.2; Table 1", "metric": "Rwp 2.900%; 2.811%"}
+{"pmcid": "PMC12899607", "kind": "chain_step", "text": "Cycled electrodes refined, Rwp 1.469 and 3.562; Table 2 columns misaligned (Rwp absent)", "locator": "Sec 3.2; Table 2", "metric": "Rwp 1.469%; 3.562%"}
+{"pmcid": "PMC12899607", "kind": "branch", "text": "Spinel reflections absent in 4 wt% composite; attributed to low shell fraction and peak overlap rather than absence of spinel", "locator": "Sec 3.1; Fig 1a", "metric": null}
+{"pmcid": "PMC12899607", "kind": "chain_step", "text": "[non-structural, not counted] F1 kinetic model chosen over four named alternatives by correlation; rejected models' R2 not printed", "locator": "Sec 3.6; Table 4; Table 5; Fig 6c,d", "metric": null}
+{"pmcid": "PMC12899607", "kind": "channel", "text": "XRD cited for structural/interfacial conclusion", "locator": "Sec 3.1-3.2", "metric": null}
+{"pmcid": "PMC12899607", "kind": "channel", "text": "XPS cited for structural/interfacial conclusion", "locator": "Sec 3.4; Fig 4", "metric": null}
+{"pmcid": "PMC12899607", "kind": "channel", "text": "SEM/EDS cited for structural/interfacial conclusion", "locator": "Fig 3; Figs S2-S3", "metric": null}
+{"pmcid": "PMC12899607", "kind": "channel", "text": "dQ/dV cited for structural/interfacial conclusion", "locator": "Sec 3.5; Fig 5", "metric": null}
+{"pmcid": "PMC12899607", "kind": "raw_data", "text": "Raw data available on request only", "locator": "Data Availability Statement", "metric": null}
+{"pmcid": "PMC13244472", "kind": "chain_step", "text": "NaNiO2 solid-state synthesis; desodiated phases made electrochemically with 100 h voltage holds", "locator": "Experimental; Results Fig 1", "metric": null}
+{"pmcid": "PMC13244472", "kind": "chain_step", "text": "Ex situ SXRD (I11) and NPD (WISH); Pawley cells; ISODISTORT or literature starting models", "locator": "ISODISTORT + TOPAS section", "metric": null}
+{"pmcid": "PMC13244472", "kind": "chain_step", "text": "Combined SXRD+NPD Rietveld in TOPAS; Rwp/chi2 1.901/1.111, 1.230/2.829, 2.175/5.652", "locator": "Fig 2; Tables S2-S4", "metric": "Rwp 1.901%,1.230%,2.175%"}
+{"pmcid": "PMC13244472", "kind": "chain_step", "text": "BVS and van Vleck distortion analysis; operando sequential Rietveld", "locator": "Discussion; Fig 3; Fig 5", "metric": null}
+{"pmcid": "PMC13244472", "kind": "branch", "text": "Operando slice: two-phase P'3+P''3 model versus three-phase model adding transient P'''3; two-phase rejected", "locator": "SI S-7; Fig S5", "metric": "Rwp 8.423% vs 4.640%"}
+{"pmcid": "PMC13244472", "kind": "rejected_model", "text": "Two-phase (P'3 + P''3 only) refinement rejected as poor fit; third transient phase included", "locator": "SI S-7; Fig S5", "metric": "Rwp 8.423% (rejected) vs 4.640% (accepted)"}
+{"pmcid": "PMC13244472", "kind": "branch", "text": "Na occupancies first refined freely on all allowed sites; converged to one full site, then fixed 1/0", "locator": "Results: Combined Rietveld Refinement", "metric": null}
+{"pmcid": "PMC13244472", "kind": "rejected_model", "text": "Unconstrained multi-site Na occupancy model replaced by fixed single-site occupancy; no metric for unconstrained fit", "locator": "Results: Combined Rietveld Refinement", "metric": null}
+{"pmcid": "PMC13244472", "kind": "branch", "text": "Operando O'''3 fit: atomic positions deliberately not refined to avoid unwarranted degrees of freedom", "locator": "Results: Sequential Rietveld Refinement; SI S-9", "metric": null}
+{"pmcid": "PMC13244472", "kind": "rejected_model", "text": "Refining O, Na, Ni positions against operando SXRD rejected (SXRD insensitive to O); no metric given for that alternative", "locator": "Results: Sequential Rietveld Refinement", "metric": null}
+{"pmcid": "PMC13244472", "kind": "branch", "text": "Prior literature structures (Chen et al.) rejected: superstructure peaks poorly reproduced, unphysical Ni-O and Na-O bond lengths", "locator": "Introduction", "metric": null}
+{"pmcid": "PMC13244472", "kind": "rejected_model", "text": "Chen et al. Rietveld structures for NaxNiO2 phases rejected for bad superstructure fit and bond lengths; no number", "locator": "Introduction", "metric": null}
+{"pmcid": "PMC13244472", "kind": "branch", "text": "Na2/5CrO2 disordered starting model (partial 2/5 occupancies, no b expansion) replaced by 5-fold b supercell", "locator": "ISODISTORT + TOPAS section", "metric": null}
+{"pmcid": "PMC13244472", "kind": "rejected_model", "text": "Unexpanded site-disordered Na2/5CrO2-type cell rejected in favour of 5b ordered supercell; no metric", "locator": "ISODISTORT + TOPAS section", "metric": null}
+{"pmcid": "PMC13244472", "kind": "branch", "text": "O''3delta region: simple solid solution versus new discrete ordering; no new superstructure peaks, but some cation order persists", "locator": "Results: Sequential Rietveld; SI S-8; Fig S7", "metric": null}
+{"pmcid": "PMC13244472", "kind": "rejected_model", "text": "New discrete Na-ordered phase in 1/3<x<2/5 rejected (no new superstructure peaks); solid-solution proxy used", "locator": "SI S-8; Fig S7", "metric": null}
+{"pmcid": "PMC13244472", "kind": "branch", "text": "P'''3 broad feature: devil's-staircase series of discrete orderings considered and rejected", "locator": "Discussion", "metric": null}
+{"pmcid": "PMC13244472", "kind": "rejected_model", "text": "Series of closely spaced discrete orderings rejected: would give unique superstructure peaks and voltage steps", "locator": "Discussion", "metric": null}
+{"pmcid": "PMC13244472", "kind": "channel", "text": "SXRD combined for structural conclusion", "locator": "Methods", "metric": null}
+{"pmcid": "PMC13244472", "kind": "channel", "text": "NPD combined for structural conclusion", "locator": "Methods", "metric": null}
+{"pmcid": "PMC13244472", "kind": "channel", "text": "XANES Ni K-edge combined for structural conclusion", "locator": "SI S-2", "metric": null}
+{"pmcid": "PMC13244472", "kind": "channel", "text": "electrochemistry (Na content) combined for structural conclusion", "locator": "Results; Discussion", "metric": null}
+{"pmcid": "PMC13244472", "kind": "channel", "text": "BVS combined for structural conclusion", "locator": "Discussion", "metric": null}
+{"pmcid": "PMC13244472", "kind": "raw_data", "text": "ISIS NPD experiment DOI 10.5286/ISIS.E.RB2410019 cited; SXRD not deposited; TOPAS macro in SI zip", "locator": "Acknowledgments; SI S-4", "metric": null}
+{"pmcid": "PMC13123467", "kind": "chain_step", "text": "Coprecipitated Ni0.9Mn0.05Co0.05(OH)2 fired with LiOH plus B2O3/SnO2 dopants", "locator": "Sec 2.1", "metric": null}
+{"pmcid": "PMC13123467", "kind": "chain_step", "text": "Lab XRD Rietveld; lattice, Ni-on-Li; Rwp 5.29/5.02/2.01", "locator": "Table 1", "metric": "Rwp 5.29%,5.02%,2.01%"}
+{"pmcid": "PMC13123467", "kind": "chain_step", "text": "XANES edge positions and unfitted k3 EXAFS Fourier transforms compared qualitatively", "locator": "Sec 3.1; Fig 3; Table S1", "metric": null}
+{"pmcid": "PMC13123467", "kind": "chain_step", "text": "Ex situ electrode XRD Rietveld at 4.3/2.5 V; Rwp 8.41-16.17", "locator": "Sec 3.4; Table S6", "metric": "Rwp 8.41-16.17%"}
+{"pmcid": "PMC13123467", "kind": "branch", "text": "Four literature hypotheses for B site (3a TM site, Li-layer tetrahedral, surface Li-B-O, trigonal in Ni layer); authors leave unresolved", "locator": "Sec 3.1; Conclusions", "metric": null}
+{"pmcid": "PMC13123467", "kind": "branch", "text": "I(003)/I(104) implies least mixing in SB25 but Rietveld Ni-on-Li larger; ratio reading discounted (Sn in Li layer, scattering)", "locator": "Sec 3.1; Table 1", "metric": null}
+{"pmcid": "PMC13123467", "kind": "rejected_model", "text": "Peak-ratio conclusion that SB25 has lowest cation mixing rejected in favour of refined Ni-on-Li; no fit metric for alternative", "locator": "Sec 3.1; Table 1", "metric": null}
+{"pmcid": "PMC13123467", "kind": "branch", "text": "At 4.3 V no (003) splitting; H2+H3 coexistence model rejected, average structure assigned H2", "locator": "Sec 3.4; Fig S5; Table S5", "metric": null}
+{"pmcid": "PMC13123467", "kind": "rejected_model", "text": "H2+H3 two-phase coexistence at 4.3 V rejected (no 003 splitting); not refined, no metric", "locator": "Sec 3.4", "metric": null}
+{"pmcid": "PMC13123467", "kind": "branch", "text": "Co EXAFS reduced Co-O/Co-TM intensity; oxygen-vacancy explanation judged unlikely (not seen at other edges)", "locator": "Sec 3.1; Fig 3", "metric": null}
+{"pmcid": "PMC13123467", "kind": "rejected_model", "text": "Oxygen vacancies rejected from qualitative EXAFS comparison; no EXAFS fit performed", "locator": "Sec 3.1", "metric": null}
+{"pmcid": "PMC13123467", "kind": "channel", "text": "XRD in combined analysis of dopant incorporation", "locator": "Sec 3.1", "metric": null}
+{"pmcid": "PMC13123467", "kind": "channel", "text": "XPS in combined analysis of dopant incorporation", "locator": "Sec 3.1; Fig S1", "metric": null}
+{"pmcid": "PMC13123467", "kind": "channel", "text": "XANES in combined analysis of dopant incorporation", "locator": "Fig 3", "metric": null}
+{"pmcid": "PMC13123467", "kind": "channel", "text": "EXAFS in combined analysis of dopant incorporation", "locator": "Fig 3; Fig 9", "metric": null}
+{"pmcid": "PMC13123467", "kind": "channel", "text": "dQ/dV in combined analysis of dopant incorporation", "locator": "Fig 6-7", "metric": null}
+{"pmcid": "PMC13123467", "kind": "channel", "text": "SEM in combined analysis of dopant incorporation", "locator": "Fig 2", "metric": null}
+{"pmcid": "PMC13123467", "kind": "raw_data", "text": "Raw datasets available from authors on request", "locator": "Data availability", "metric": null}
+{"pmcid": "PMC13579521", "kind": "chain_step", "text": "Li2O+NiO(+TiO2) solid-state synthesis at 700 C under Ar", "locator": "Sec 2.2", "metric": null}
+{"pmcid": "PMC13579521", "kind": "chain_step", "text": "GSAS Rietveld of LNO and Ti2-LNO: Li2NiO2+Li2CO3+NiO phases; Rwp 9.38/8.23", "locator": "Table S1; Figs S1-S2", "metric": "Rwp 9.38%, 8.23%; chi2 1.86, 1.45"}
+{"pmcid": "PMC13579521", "kind": "chain_step", "text": "TEM FFT spacings and in situ XRD used for structural statements", "locator": "Fig 2c-d; Fig S5", "metric": null}
+{"pmcid": "PMC13579521", "kind": "channel", "text": "XRD cited for structure/doping claims", "locator": "Fig 2a", "metric": null}
+{"pmcid": "PMC13579521", "kind": "channel", "text": "TEM/FFT cited for structure/doping claims", "locator": "Fig 2c-d", "metric": null}
+{"pmcid": "PMC13579521", "kind": "channel", "text": "XPS cited for structure/doping claims", "locator": "Fig 2b", "metric": null}
+{"pmcid": "PMC13579521", "kind": "channel", "text": "EDS cited for structure/doping claims", "locator": "Fig 2e", "metric": null}
+{"pmcid": "PMC13579521", "kind": "channel", "text": "in situ XRD cited for structure/doping claims", "locator": "Fig 5; Fig S5", "metric": null}
+{"pmcid": "PMC13579521", "kind": "channel", "text": "DFT cited for structure/doping claims", "locator": "Fig 6", "metric": null}
+{"pmcid": "PMC13579521", "kind": "raw_data", "text": "Data stated to be in SI; SI holds figures/tables only", "locator": "Data availability", "metric": null}
+{"pmcid": "PMC13336001", "kind": "chain_step", "text": "Solvothermal LFP with Ni or Cr substitution, citric acid carbon coat at 700 C", "locator": "SI Experimental", "metric": null}
+{"pmcid": "PMC13336001", "kind": "chain_step", "text": "Lab XRD; Rietveld in Materials Studio; olivine cell volumes; Rwp 1.73-1.87", "locator": "Sec 2.2; Table S1", "metric": "Rwp 1.73-1.87%"}
+{"pmcid": "PMC13336001", "kind": "chain_step", "text": "DFT formation energies for Fe-site substitution (Ni 0.103 eV, Cr 1.214 eV)", "locator": "Sec 2.1; Table 1", "metric": null}
+{"pmcid": "PMC13336001", "kind": "branch", "text": "Cr-containing samples fitted with single-phase olivine model; Rwp rises with Cr; Cr2O3 segregation inferred instead of lattice incorporation", "locator": "Sec 2.3; Fig S6", "metric": "Rwp 1.79 -> 2.24, 2.72, 2.83"}
+{"pmcid": "PMC13336001", "kind": "rejected_model", "text": "Single-phase olivine (Cr-incorporated) model rejected via rising Rwp; accepted two-phase model not refined (Cr2O3 too weak)", "locator": "Sec 2.3; Fig S6", "metric": "Rwp 2.24/2.72/2.83% (Cr1/3/5) vs 1.79% pristine"}
+{"pmcid": "PMC13336001", "kind": "branch", "text": "Ni: Fe-site substitution chosen over surface segregation, amorphous or NiO/Ni2P secondary phases", "locator": "Sec 2.2; Fig 1-2", "metric": null}
+{"pmcid": "PMC13336001", "kind": "rejected_model", "text": "Surface segregation/amorphous Ni phase and NiO/Ni2P rejected from EDS, TEM, XRD shifts; no fit metric", "locator": "Sec 2.2", "metric": null}
+{"pmcid": "PMC13336001", "kind": "branch", "text": "DFT restricted to Fe-site substitution; Li-site occupation explicitly not considered (future work)", "locator": "Sec 2.1", "metric": null}
+{"pmcid": "PMC13336001", "kind": "channel", "text": "XRD combined for incorporation/segregation conclusion", "locator": "Fig 2; Fig 6c", "metric": null}
+{"pmcid": "PMC13336001", "kind": "channel", "text": "SEM-EDS combined for incorporation/segregation conclusion", "locator": "Fig 1; Fig 6b", "metric": null}
+{"pmcid": "PMC13336001", "kind": "channel", "text": "TEM combined for incorporation/segregation conclusion", "locator": "Fig 2a-b", "metric": null}
+{"pmcid": "PMC13336001", "kind": "channel", "text": "FT-IR combined for incorporation/segregation conclusion", "locator": "Fig 3a-b", "metric": null}
+{"pmcid": "PMC13336001", "kind": "channel", "text": "XPS combined for incorporation/segregation conclusion", "locator": "Fig 3c-f", "metric": null}
+{"pmcid": "PMC13336001", "kind": "channel", "text": "DFT combined for incorporation/segregation conclusion", "locator": "Table 1; Fig 4", "metric": null}
+{"pmcid": "PMC13336001", "kind": "raw_data", "text": "Data available from corresponding author on request", "locator": "Data Availability Statement", "metric": null}
+{"pmcid": "PMC13223887", "kind": "chain_step", "text": "Mn acetate + PEG calcined 400 C in air", "locator": "Preparation section", "metric": null}
+{"pmcid": "PMC13223887", "kind": "chain_step", "text": "Lab XRD; Rietveld phase fractions Mn3O4/Mn2O3/Mn5O8; Rwp 5.61-10.63", "locator": "XRD analysis; Table 1", "metric": "Rwp 5.61-10.63%; GOF 0.77-2.71"}
+{"pmcid": "PMC13223887", "kind": "channel", "text": "XRD used to confirm Mn3O4 phase", "locator": "Fig 5", "metric": null}
+{"pmcid": "PMC13223887", "kind": "channel", "text": "FTIR used to confirm Mn3O4 phase", "locator": "Fig 2", "metric": null}
+{"pmcid": "PMC13223887", "kind": "channel", "text": "EDX used to confirm Mn3O4 phase", "locator": "Fig 4", "metric": null}
+{"pmcid": "PMC13223887", "kind": "channel", "text": "TEM used to confirm Mn3O4 phase", "locator": "Fig 6", "metric": null}
+{"pmcid": "PMC13223887", "kind": "channel", "text": "Raman used to confirm Mn3O4 phase", "locator": "Fig 8", "metric": null}
+{"pmcid": "PMC13223887", "kind": "channel", "text": "XPS used to confirm Mn3O4 phase", "locator": "Fig 9", "metric": null}
+{"pmcid": "PMC13223887", "kind": "raw_data", "text": "Data available on request", "locator": "Data availability", "metric": null}
+{"pmcid": "PMC13165210", "kind": "chain_step", "text": "Oxalic-acid liquid-phase precursors versus ball-milled precursor; 740 C Ar anneal", "locator": "Sec 3.1", "metric": null}
+{"pmcid": "PMC13165210", "kind": "chain_step", "text": "GSAS-II Rietveld for S4 and G only; Rwp 6.65/6.76, chi2 1.21/1.23", "locator": "Sec 2.1; Table 1", "metric": "Rwp 6.65%, 6.76%"}
+{"pmcid": "PMC13165210", "kind": "channel", "text": "XRD used for structural comparison", "locator": "Fig 1", "metric": null}
+{"pmcid": "PMC13165210", "kind": "channel", "text": "SEM/EDS used for structural comparison", "locator": "Fig 2", "metric": null}
+{"pmcid": "PMC13165210", "kind": "channel", "text": "TEM used for structural comparison", "locator": "Fig 3", "metric": null}
+{"pmcid": "PMC13165210", "kind": "channel", "text": "ICP-OES used for structural comparison", "locator": "Table 2", "metric": null}
+{"pmcid": "PMC13165210", "kind": "channel", "text": "XPS used for structural comparison", "locator": "Fig 6", "metric": null}
+{"pmcid": "PMC13165210", "kind": "raw_data", "text": "Data available on request", "locator": "Data Availability Statement", "metric": null}
+{"pmcid": "PMC12895389", "kind": "chain_step", "text": "Precursor mixtures, pairwise solid-state reactions, one ambiguous Li-Na-Al-Si-Co-O sample", "locator": "Results; SI S1-S3", "metric": null}
+{"pmcid": "PMC12895389", "kind": "chain_step", "text": "Dara: database filtering, peak matching, tree search with BGMN Rietveld per phase set", "locator": "Methods; Fig 1", "metric": null}
+{"pmcid": "PMC12895389", "kind": "chain_step", "text": "Solutions ranked by Rwp/FoM; Jenks break discards poor fits; human expert TOPAS comparison", "locator": "Methods; SI S4.3", "metric": null}
+{"pmcid": "PMC12895389", "kind": "branch", "text": "2Fe3O4+3Y2O3: Dara top solution used Fm-3m Y2O3; judged wrong polymorph versus ground-state Ia-3", "locator": "Results: Pairwise Reaction; SI S7.1; Figs S137-138", "metric": "Rwp 3.18% (Dara) vs 3.07% (manual)"}
+{"pmcid": "PMC12895389", "kind": "rejected_model", "text": "Dara solution with Fm-3m Y2O3 rejected (unmatched peaks near 20 deg); manual Ia-3 accepted", "locator": "SI S7.1; Figs S137-138", "metric": "Rwp 3.18% (rejected) vs 3.07% (accepted)"}
+{"pmcid": "PMC12895389", "kind": "branch", "text": "V2O5/La(OH)3/ZrO2 2-min scan: Dara top result missed V2O5, scored incorrect vs ground truth", "locator": "Fig 2b; SI S6.23; Table S3", "metric": "Rwp 8.09% vs 6.48%"}
+{"pmcid": "PMC12895389", "kind": "rejected_model", "text": "Dara phase set La(OH)3 + Zr3.88V0.12O8 judged incorrect (missing V2O5)", "locator": "SI S6.23; Table S3", "metric": "Rwp 8.09% (rejected) vs 6.48% ground truth"}
+{"pmcid": "PMC12895389", "kind": "branch", "text": "V2O5/MnCO3 2-min scan: Dara top result V2O5 only, missed MnCO3, scored incorrect", "locator": "Fig 2b; SI S6.35; Table S3", "metric": "Rwp 8.85% vs 4.11%"}
+{"pmcid": "PMC12895389", "kind": "rejected_model", "text": "Dara single-phase V2O5 solution judged incorrect (missing MnCO3)", "locator": "SI S6.35; Table S3", "metric": "Rwp 8.85% (rejected) vs 4.11% ground truth"}
+{"pmcid": "PMC12895389", "kind": "branch", "text": "Minor Bi2O2(CO3) (~3 wt%) found by Dara and Jade excluded from evaluation for lack of non-XRD evidence", "locator": "Results: Precursor Mixtures; SI S6.11-S6.12", "metric": null}
+{"pmcid": "PMC12895389", "kind": "rejected_model", "text": "Bi2O2(CO3) phase excluded from scored answer; Dara result Rwp exists but rejection not fit-based", "locator": "Results: Precursor Mixtures", "metric": null}
+{"pmcid": "PMC12895389", "kind": "branch", "text": "Cr2O3+2MnO: MnCr2O4 vs CrMn1.5O4 indistinguishable; intermediate composition suggested, neither rejected", "locator": "Results: Pairwise Reaction", "metric": null}
+{"pmcid": "PMC12895389", "kind": "branch", "text": "Ambiguous sample: four 3-phase solutions (third phase SiO2, Co11O16/Co2SiO4, Al2CoO4, NaCo3O4) all retained", "locator": "Fig 4; SI S8", "metric": "Rwp 2.20-2.33%"}
+{"pmcid": "PMC12895389", "kind": "branch", "text": "Bi2O3+Nb2O5: human rejects Dara-added Bi3NbO7-type phase despite better fit (implausible occupancy/structure)", "locator": "SI S7.4; SI xlsx notes", "metric": "Rwp 5.77% (Dara) vs 7.80% (manual)"}
+{"pmcid": "PMC12895389", "kind": "rejected_model", "text": "Dara solution with Nb0.888Bi3.112O6.88 rejected by expert on chemistry despite lower Rwp", "locator": "SI S7.4; Fig S147; xlsx sheet2", "metric": "Rwp 5.77% (rejected) vs 7.80% (accepted)"}
+{"pmcid": "PMC12895389", "kind": "branch", "text": "Bi2O3+2MoO3: preferred orientation on MoO3 improved manual fit but still below Dara fit; Dara phase kept", "locator": "SI xlsx sheet2; SI S7.3", "metric": "Rwp 8.20% manual vs 7.58% Dara"}
+{"pmcid": "PMC12895389", "kind": "branch", "text": "Cr2O3+2PbO: expert critiques Dara best fit (crystallite size misfits peak shape); unidentified phase kept", "locator": "SI S7.10; xlsx sheet2", "metric": "Rwp 9.33% (Dara) vs 10.06% (manual)"}
+{"pmcid": "PMC12895389", "kind": "rejected_model", "text": "Dara best PbCrO4/Pb2CrO5 fit rejected for unrealistic small crystallite size", "locator": "SI S7.10; Fig S165; xlsx sheet2", "metric": "Rwp 9.33% (rejected) vs 10.06% (accepted)"}
+{"pmcid": "PMC12895389", "kind": "branch", "text": "CuO+MnO: refining Mn/Cu site disorder considered, declined for time", "locator": "SI xlsx sheet2", "metric": null}
+{"pmcid": "PMC12895389", "kind": "rejected_model", "text": "Mn/Cu site-disorder spinel model not pursued (time), unrefined", "locator": "SI xlsx sheet2", "metric": null}
+{"pmcid": "PMC12895389", "kind": "branch", "text": "Cr2O3+V2O5: V2Cr0.11O5.16 plausibility doubted then accepted (Cr filling V2O5 vacancy)", "locator": "SI xlsx sheet2", "metric": null}
+{"pmcid": "PMC12895389", "kind": "branch", "text": "Fe3O4+3SrCO3: Dara solutions (Sr8Fe8O23 only) miss SrCO3 and unknown phase", "locator": "SI S7.16; xlsx sheet2", "metric": "Rwp 4.07% (Dara) vs 3.54% (manual)"}
+{"pmcid": "PMC12895389", "kind": "rejected_model", "text": "Dara single-phase Sr8Fe8O23 solution rejected as incomplete", "locator": "SI S7.16; Fig S183", "metric": "Rwp 4.07% (rejected) vs 3.54% (accepted)"}
+{"pmcid": "PMC12895389", "kind": "branch", "text": "V2O5+2ZnO: original PDF structure files replaced by Dara-suggested ICSD cifs with different atomic positions", "locator": "SI xlsx sheet2", "metric": null}
+{"pmcid": "PMC12895389", "kind": "rejected_model", "text": "Original V2O5/Zn2V2O7 reference structures replaced; their Rwp not given", "locator": "SI xlsx sheet2", "metric": null}
+{"pmcid": "PMC12895389", "kind": "channel", "text": "XRD used or proposed in phase identification", "locator": "Methods", "metric": null}
+{"pmcid": "PMC12895389", "kind": "channel", "text": "SEM/EDS suggested used or proposed in phase identification", "locator": "Discussion", "metric": null}
+{"pmcid": "PMC12895389", "kind": "channel", "text": "thermodynamic DB (Materials Project) used or proposed in phase identification", "locator": "Methods", "metric": null}
+{"pmcid": "PMC12895389", "kind": "raw_data", "text": "xrdml patterns for both benchmarks and xlsx summaries deposited in SI zip; code on GitHub", "locator": "SI zip; Supplementary Material", "metric": null}
+{"pmcid": "PMC13108580", "kind": "chain_step", "text": "Pechini synthesis, 750 C Ar, then sucrose ex situ carbon coat 500 C", "locator": "Sec 2.1", "metric": null}
+{"pmcid": "PMC13108580", "kind": "chain_step", "text": "FullProf Rietveld R-3c; Rwp 5.517, chi2 1.58; occupancies and BVS", "locator": "Sec 3.1; Tables 1-2", "metric": "Rwp 5.517%; chi2 1.58"}
+{"pmcid": "PMC13108580", "kind": "chain_step", "text": "ICP ratios checked against refined composition", "locator": "Sec 3.1; Table S1", "metric": null}
+{"pmcid": "PMC13108580", "kind": "branch", "text": "Fe/Mn/V occupancies fixed at nominal after simultaneous refinement diverged from correlation", "locator": "Sec 3.1", "metric": null}
+{"pmcid": "PMC13108580", "kind": "rejected_model", "text": "Simultaneous free refinement of Fe/Mn/V occupancies rejected (divergence); no metric for that attempt", "locator": "Sec 3.1", "metric": null}
+{"pmcid": "PMC13108580", "kind": "branch", "text": "No carbon reflections; coated carbon called amorphous; HR-TEM shows ~3.5 nm amorphous shell", "locator": "Sec 3.1; Fig 1i", "metric": null}
+{"pmcid": "PMC13108580", "kind": "channel", "text": "XRD cited for phase purity/structure", "locator": "Fig 1a", "metric": null}
+{"pmcid": "PMC13108580", "kind": "channel", "text": "FT-IR cited for phase purity/structure", "locator": "Fig 1c", "metric": null}
+{"pmcid": "PMC13108580", "kind": "channel", "text": "Raman cited for phase purity/structure", "locator": "Fig 1d-f", "metric": null}
+{"pmcid": "PMC13108580", "kind": "channel", "text": "TGA cited for phase purity/structure", "locator": "Fig S1b", "metric": null}
+{"pmcid": "PMC13108580", "kind": "channel", "text": "SEM/TEM/EDS cited for phase purity/structure", "locator": "Fig 1g-j", "metric": null}
+{"pmcid": "PMC13108580", "kind": "channel", "text": "ICP cited for phase purity/structure", "locator": "Table S1", "metric": null}
+{"pmcid": "PMC13108580", "kind": "raw_data", "text": "Data in SI or on request; no repository", "locator": "Data availability", "metric": null}

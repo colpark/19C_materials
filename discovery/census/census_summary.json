@@ -1,0 +1,41 @@
+{
+ "per_set": {
+  "E": {
+   "papers": 10,
+   "chain_med": 6.0,
+   "alt": 25,
+   "named": 14,
+   "numbered": 3,
+   "papers_numbered": 1,
+   "raw_any": 0
+  },
+  "R": {
+   "papers": 10,
+   "chain_med": 5.5,
+   "alt": 31,
+   "named": 22,
+   "numbered": 8,
+   "papers_numbered": 3,
+   "raw_any": 2
+  },
+  "Z": {
+   "papers": 10,
+   "chain_med": 8.0,
+   "alt": 31,
+   "named": 13,
+   "numbered": 0,
+   "papers_numbered": 0,
+   "raw_any": 2
+  }
+ },
+ "total": {
+  "papers": 30,
+  "alt": 87,
+  "named": 49,
+  "numbered": 11,
+  "papers_with_numbered": 4,
+  "papers_raw": 4,
+  "papers_numbered_and_raw": 2,
+  "chain_median": 6.0
+ }
+}

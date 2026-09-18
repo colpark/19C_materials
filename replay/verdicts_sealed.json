@@ -1,0 +1,74 @@
+{
+ "K03": {
+  "fired": true,
+  "ruling": "Report effective supply as 8 measured constructs (predominantly one family, so fewer independent clusters) and negative supply as zero usable labels from 327 pairs; 43 nominal contrasts is the abundant unit. Record raw beside clustered; negative supply zero likely binds.",
+  "refusal": "P3: count at the independent unit, negative supply counted",
+  "via": "stage"
+ },
+ "K05": {
+  "fired": true,
+  "ruling": "Refuse to rule. Negative supply and contamination exposure are uncounted; the axis ledger is incomplete. Count all seven axes first.",
+  "refusal": "P4: refuses to rule when any axis is missing",
+  "via": "stage"
+ },
+ "K07": {
+  "fired": true,
+  "ruling": "BLOCKED. Served checkpoint S is not the tool certified against variant L (81x larger; rho 0.558, sign flips). Repairing the composition path does not repair the served endpoint. Serve L or substitute and disclose; recertify before any scored comparison.",
+  "refusal": "I5: served checkpoint is part of the tool's identity",
+  "via": "stage"
+ },
+ "K11": {
+  "fired": true,
+  "ruling": "Refuse the 85 gate: threshold from one observation of 84.4 (source failure), no readable trip points, and it duplicates the vendor firmware shutdown. Record the aborted run as UNDEMONSTRATED, not a failure; rerun without the invented gate or ask what it protected.",
+  "refusal": "R5: no invented specs, no duplicating platform protection; global 1, 11",
+  "via": "stage"
+ },
+ "K16": {
+  "fired": true,
+  "ruling": "Refuse 0 of 10. Unparsed answers are coverage failures, not zeros; 9 answers carry valid unique selections. Wire the precision-only extraction path into the scorer and rescore; report coverage separately.",
+  "refusal": "A3: invalid answers are coverage failures (global 6)",
+  "via": "stage"
+ },
+ "K17": {
+  "fired": true,
+  "ruling": "No directional claim. The MDE 0.030 is at the full cohort of 146; at 9 paired items MDE is roughly 0.130*2.8/sqrt(9) ~ 0.12, so -0.033 is well inside it. Report: no claim; the null establishes only that no effect larger than ~0.12 is hiding; print chance baseline beside it.",
+  "refusal": "A4: refuse directional claim at or below MDE (global 5)",
+  "via": "stage"
+ },
+ "N03": {
+  "fired": false,
+  "ruling": "Cosmetic. One capital letter in a heading is not a changed instruction, message, version or policy; keep all three cells and score them.",
+  "refusal": "",
+  "via": "stage"
+ },
+ "N07": {
+  "fired": false,
+  "ruling": "Not burned. No scored element changed in response to any item; return all 8 to the pool and supersede the stale freeze by re-registration.",
+  "refusal": "",
+  "via": "stage"
+ },
+ "N10": {
+  "fired": false,
+  "ruling": "Do not interrupt. Long legitimate stage with sustained progress and sensors in threshold; matches no ladder signature. Silence.",
+  "refusal": "",
+  "via": "stage"
+ },
+ "K20": {
+  "fired": true,
+  "ruling": "Refuse relaxation to 0.7: a cut chosen to increase unit count, and 70 percent identity lands in the separation-collapse band. Choose the cut from the measured curve; report the unit count low if it is low.",
+  "refusal": "D3: refuse a cut chosen to increase unit count (global 16, 9)",
+  "via": "stage"
+ },
+ "K25": {
+  "fired": true,
+  "ruling": "Refuse admission. The answer sits in the text of its own source and the paper predates every subject cutoff, so the exposure exception does not apply.",
+  "refusal": "D2: exposure refusal (global 14)",
+  "via": "stage"
+ },
+ "N12": {
+  "fired": false,
+  "ruling": "Accept the cut: chosen by measurement at cluster-gain saturation with separation held, with looser and tighter sensitivity reported.",
+  "refusal": "",
+  "via": "stage"
+ }
+}

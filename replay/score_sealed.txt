@@ -1,0 +1,23 @@
+set=sealed
+  K03  P3     must_fire     ok   
+  K05  P4     must_fire     ok   
+  K07  I5     must_fire     ok   
+  K11  R5     must_fire     ok   
+  K16  A3     must_fire     ok   
+  K17  A4     must_fire     ok   
+  K20  D3     must_fire     ok   
+  K25  D2     must_fire     ok   
+  N03  R7     must_not_fire ok   
+  N07  A1     must_not_fire ok   
+  N10  LADDER must_not_fire ok   
+  N12  D3     must_not_fire ok   
+
+must_fire     8 of 8
+must_not_fire 4 of 4
+
+  adjudication  3 of 3
+  discovery     3 of 3
+  instrument    1 of 1
+  ladder        1 of 1
+  runtime       2 of 2
+  supply        2 of 2
