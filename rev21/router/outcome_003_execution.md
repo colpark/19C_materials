@@ -1,0 +1,1 @@
+- Skill findings for rev 2.2: (1) router.py never releases committed spend when a move reports; (2) the TABLE re-launches moves already completed; (3) validate.py requires a non-empty 'refused' list even when nothing was refused.
