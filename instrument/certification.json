@@ -1,0 +1,167 @@
+{
+ "tools": [
+  {
+   "name": "mace_stability",
+   "status": "CERTIFIED",
+   "criteria": {
+    "construct_validity": "PASS",
+    "construct_note": "PASS (proxy: 36/36 observed phases on hull)",
+    "known_input": "PASS",
+    "negative_control": "PASS",
+    "reachability": "PASS",
+    "receipt_resolution": "PASS"
+   },
+   "evidence": {
+    "known_input": "R2: value read back matches cache (runtime/r2/*/r2_result.json)",
+    "negative_control": "R2: forged phase id returned structured error",
+    "reachability": "R4: in model-side catalog of intended arms",
+    "receipt": "R2: receipt ids resolve in calls.jsonl"
+   }
+  },
+  {
+   "name": "megnet_bandgap",
+   "status": "CERTIFIED",
+   "criteria": {
+    "construct_validity": "PASS",
+    "construct_note": "PASS (proxy, weak: 30/36; NiSb2O6 0 eV outlier)",
+    "known_input": "PASS",
+    "negative_control": "PASS",
+    "reachability": "PASS",
+    "receipt_resolution": "PASS"
+   },
+   "evidence": {
+    "known_input": "R2: value read back matches cache (runtime/r2/*/r2_result.json)",
+    "negative_control": "R2: forged phase id returned structured error",
+    "reachability": "R4: in model-side catalog of intended arms",
+    "receipt": "R2: receipt ids resolve in calls.jsonl"
+   }
+  },
+  {
+   "name": "list_phases",
+   "status": "CERTIFIED",
+   "criteria": {
+    "construct_validity": "PASS",
+    "construct_note": "PASS",
+    "known_input": "PASS",
+    "negative_control": "PASS",
+    "reachability": "PASS",
+    "receipt_resolution": "PASS"
+   },
+   "evidence": {
+    "known_input": "R2: value read back matches cache (runtime/r2/*/r2_result.json)",
+    "negative_control": "R2: forged phase id returned structured error",
+    "reachability": "R4: in model-side catalog of intended arms",
+    "receipt": "R2: receipt ids resolve in calls.jsonl"
+   }
+  },
+  {
+   "name": "simulate_xrd",
+   "status": "CERTIFIED",
+   "criteria": {
+    "construct_validity": "PASS",
+    "construct_note": "PASS",
+    "known_input": "PASS",
+    "negative_control": "PASS",
+    "reachability": "PASS",
+    "receipt_resolution": "PASS"
+   },
+   "evidence": {
+    "known_input": "R2: value read back matches cache (runtime/r2/*/r2_result.json)",
+    "negative_control": "R2: forged phase id returned structured error",
+    "reachability": "R4: in model-side catalog of intended arms",
+    "receipt": "R2: receipt ids resolve in calls.jsonl"
+   }
+  },
+  {
+   "name": "match_xrd",
+   "status": "CERTIFIED",
+   "criteria": {
+    "construct_validity": "PASS",
+    "construct_note": "PASS",
+    "known_input": "PASS",
+    "negative_control": "PASS",
+    "reachability": "PASS",
+    "receipt_resolution": "PASS"
+   },
+   "evidence": {
+    "known_input": "R2: value read back matches cache (runtime/r2/*/r2_result.json)",
+    "negative_control": "R2: forged phase id returned structured error",
+    "reachability": "R4: in model-side catalog of intended arms",
+    "receipt": "R2: receipt ids resolve in calls.jsonl"
+   }
+  },
+  {
+   "name": "gp_suggest",
+   "status": "CERTIFIED",
+   "criteria": {
+    "construct_validity": "PASS",
+    "construct_note": "PASS",
+    "known_input": "PASS",
+    "negative_control": "PASS",
+    "reachability": "PASS",
+    "receipt_resolution": "PASS"
+   },
+   "evidence": {
+    "known_input": "R2: value read back matches cache (runtime/r2/*/r2_result.json)",
+    "negative_control": "R2: forged phase id returned structured error",
+    "reachability": "R4: in model-side catalog of intended arms",
+    "receipt": "R2: receipt ids resolve in calls.jsonl"
+   }
+  },
+  {
+   "name": "substitute_structure",
+   "status": "CERTIFIED",
+   "criteria": {
+    "construct_validity": "PASS",
+    "construct_note": "PASS",
+    "known_input": "PASS",
+    "negative_control": "PASS",
+    "reachability": "PASS",
+    "receipt_resolution": "PASS"
+   },
+   "evidence": {
+    "known_input": "R2: value read back matches cache (runtime/r2/*/r2_result.json)",
+    "negative_control": "R2: forged phase id returned structured error",
+    "reachability": "R4: in model-side catalog of intended arms",
+    "receipt": "R2: receipt ids resolve in calls.jsonl"
+   }
+  },
+  {
+   "name": "measure_eqe",
+   "status": "CERTIFIED",
+   "criteria": {
+    "construct_validity": "PASS",
+    "construct_note": "PASS",
+    "known_input": "PASS",
+    "negative_control": "PASS",
+    "reachability": "PASS",
+    "receipt_resolution": "PASS"
+   },
+   "evidence": {
+    "known_input": "R2: value read back matches cache (runtime/r2/*/r2_result.json)",
+    "negative_control": "R2: forged phase id returned structured error",
+    "reachability": "R4: in model-side catalog of intended arms",
+    "receipt": "R2: receipt ids resolve in calls.jsonl"
+   }
+  },
+  {
+   "name": "measure_xrd",
+   "status": "CERTIFIED",
+   "criteria": {
+    "construct_validity": "PASS",
+    "construct_note": "PASS",
+    "known_input": "PASS",
+    "negative_control": "PASS",
+    "reachability": "PASS",
+    "receipt_resolution": "PASS"
+   },
+   "evidence": {
+    "known_input": "R2: value read back matches cache (runtime/r2/*/r2_result.json)",
+    "negative_control": "R2: forged phase id returned structured error",
+    "reachability": "R4: in model-side catalog of intended arms",
+    "receipt": "R2: receipt ids resolve in calls.jsonl"
+   }
+  }
+ ],
+ "completeness": "9 tools certified on construct (I4) plus four functional criteria from R2/R4; FM construct validity is on proxies (stability, gap), not EQE."
+}
