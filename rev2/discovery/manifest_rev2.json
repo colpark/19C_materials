@@ -1,0 +1,507 @@
+{
+ "tau": {
+  "value": "element system (categorical); 14 units",
+  "status": "amended",
+  "override_reason": "A-01: XRD-map similarity clusters by substrate (FTO vs Pt); tau.py refused an unbounded curve",
+  "provenance": {
+   "referent": "independent unit for clustering episodes",
+   "source": "discovery/tau/plate_cut_curve.csv + tau.py REFUSE; bench/floors.py::fm_prior depends only on (element, LED)",
+   "population": "22 plates, 196 episodes",
+   "adjudicator": "plate XRD cosine at 8 cuts (rejected: substrate referent)",
+   "falsifier": "two same-element plates whose paired floor differences are uncorrelated would show element is too coarse; measure at P6"
+  }
+ },
+ "decision_shape": {
+  "value": {
+   "root": "intervene",
+   "subtype": {
+    "name": "choose the next measurement under a budget (EQE and XRD), realized value of the best measured composition",
+    "derived": false
+   },
+   "grader": {
+    "kind": "replayable environment: full measured EQE map per episode (CaltechDATA 42gwd-8wg77), revealed per query",
+    "in_tool_inventory": true,
+    "certification_stage": "I4/I5 (runtime/mcp/server.py measure_eqe returns the recorded value; known-input and negative controls)"
+   },
+   "yield_per_unit": {
+    "scalars": 1,
+    "thresholded": false,
+    "arithmetic": "one graded realized value per episode = max measured EQE / max EQE on the line in [0,1]; 5 per-round values recorded as secondary"
+   },
+   "role_floor": {
+    "role": "simulator (the environment answers an action the agent chose); FM tools act as scorer on agent-built hypotheses (substitute_structure -> mace_stability / megnet_bandgap)",
+    "below_predictor_line": true
+   },
+   "alternatives_considered": [
+    {
+     "root": "infer",
+     "binding_gate": "Gate 1 role floor",
+     "note": "predicting the best composition (pick 1 of M) sits on the predictor line; the seeds' action is committing measurements (S1 commits PEC/stability to 5 phases; S2, S3 one measurement per iteration), so the realized value, not the prediction, is the governed decision"
+    },
+    {
+     "root": "explain",
+     "binding_gate": "Gate 2 grader",
+     "note": "phase-identity labels are analyst XRD annotation in Bruker EVA (S1 methods), and the mpid mapping is a post-hoc nearest-structure mapping; no certified judge; answers also sit in S1 Fig. 3"
+    },
+    {
+     "root": "generate",
+     "binding_gate": "Gate 2 grader",
+     "note": "no oracle predicts EQE for a designed composition or structure; MEGNet gap is not EQE (I4)"
+    }
+   ],
+   "disposition": "PROCEED",
+   "item_template": {
+    "description": "one M-Sb-O composition line, conditions (substrate, anneal T, pH, photon energy), ~29 candidates by Sb fraction; 5 EQE + 5 XRD measurements; submit best measured index with rejections",
+    "locator": "runtime/prompt.md, runtime/mcp/server.py"
+   },
+   "branch_census": {
+    "chain_length": "S1 ~12 steps (deposit, anneal, XRF, XRD, PEC at 4 LEDs x 3 pH, phase ID, down-select, Pourbaix, stability, SEM); S2 ~9; S3 ~6",
+    "branch_points": "S1 ~10, S2 ~9, S3 ~5 (seed_ledger.json facts)",
+    "branches_with_named_rejection": "S1: excluded phases and substituted MP entries named; S2: SbTe vs Sb2Te2/Sb2Te3 named and settled by electron diffraction",
+    "branches_per_episode": "10 sequential choices (5 EQE + 5 XRD), so multi-turn",
+    "locators": [
+     "discovery/seeds/seed_ledger.json",
+     "discovery/census/CENSUS_RESULT.md"
+    ]
+   },
+   "depth_census": {
+    "claimed_channels": [
+     "XRF composition",
+     "XRD",
+     "PEC/EQE",
+     "(stability: Pourbaix, CA, SEM)"
+    ],
+    "measured_depth": "measured at I2 by leave-one-out over the fixed compositions: EQE-only (cls_gp) vs +XRD (cls_xrd) vs +FM (fm_xrd, fm_prior); see instrument/i2_channels.json",
+    "method": "leave-one-out on mechanical compositions",
+    "supply_at_this_depth": "all 189 included episodes carry XRD and EQE at every point",
+    "unmounted_channels": [
+     "XRF raw spectra (composition given directly)",
+     "optical absorption (not in deposit for 22 plates)"
+    ]
+   }
+  },
+  "status": "derived",
+  "provenance": {
+   "referent": "root and subtype of the governed decision",
+   "source": "discovery/seeds/seed_ledger.json (S1 Results/Conclusions, S2 Methods, S3 Methods) + references/shape.md gates",
+   "population": "4 seeds read in full, 30 census papers",
+   "adjudicator": "infer (Gate 1), explain (Gate 2), generate (Gate 2)",
+   "falsifier": "an S1-S3 passage showing practitioners publish a prediction without committing a measurement would move the root to infer"
+  }
+ },
+ "k": {
+  "value": 1,
+  "status": "derived",
+  "provenance": {
+   "referent": "candidates committed per round",
+   "source": "seed_ledger.json S2 (one XRD per iteration), S3 (k=1 by design, batch rejected)",
+   "population": "S2, S3 methods",
+   "adjudicator": "S1 commits 5 phases at down-select (k=5, a different action)",
+   "falsifier": "a seed passage showing batch rounds measured as the norm for PEC screening would differ from k=1"
+  }
+ },
+ "budget_per_episode": {
+  "value": {
+   "eqe": 3,
+   "xrd": 5
+  },
+  "status": "amended A-04",
+  "override_reason": "run-1 value (5) had no seed source; declared at I1 authoring",
+  "provenance": {
+   "referent": "EQE measurements an agent may spend per episode",
+   "source": "seed_ledger.json S2: optimum at iteration 19 of 177 (10.7%) x median 29 candidates = 3.1 -> 3",
+   "population": "189 included episodes, median 29 candidates",
+   "adjudicator": "S3: top candidate found at ~5% (1.5 of 29); run-1 value 5 (17%)",
+   "falsifier": "P2 per-item: a share of items at ceiling above 1/3 at B=3 would show the budget still saturates"
+  }
+ },
+ "label_source": {
+  "value": "measured truth: EQE_pct per sample (photocurrent, LED power) in Fig1c_allEQE_withcriteria.csv; phase labels are annotation and are NOT scored",
+  "status": "derived",
+  "provenance": {
+   "referent": "what the score is computed from",
+   "source": "seed_ledger.json S1 methods (EQE from photocurrent and LED power) + env/raw/.../Fig1c_ allEQE_withcriteria.csv",
+   "population": "5608 EQE rows, 1402 samples",
+   "adjudicator": "phase labels: analyst EVA/ICDD annotation, mpid post-hoc",
+   "falsifier": "a re-measurement of the same sample differing beyond the between-sample spread would indict EQE as the truth"
+  }
+ },
+ "exposure_key": {
+  "value": "CaltechDATA deposition 2022-11-09, article online 2022-11-22; all units predate claude-opus-5 cutoff; text-level answers excluded (E1), figure-level disclosed; recall probe shows no memorization (recall MAE 0.230 vs predict 0.246)",
+  "status": "derived",
+  "provenance": {
+   "referent": "whether the answer was visible to the subject",
+   "source": "CaltechDATA record 42gwd-8wg77 metadata; supply/recall_probe/responses.json",
+   "population": "189 included episodes, 14 elements x 2 LEDs probed",
+   "adjudicator": "predict-framed probe (no citation)",
+   "falsifier": "recall-framed accuracy exceeding predict-framed accuracy on a rerun"
+  }
+ },
+ "tool_inventory": {
+  "value": {
+   "env": [
+    "episode_info",
+    "measure_eqe",
+    "measure_xrd",
+    "submit"
+   ],
+   "classical": [
+    "list_phases (MP via OPTIMADE)",
+    "substitute_structure",
+    "simulate_xrd (pymatgen)",
+    "match_xrd",
+    "gp_suggest (GP-UCB)"
+   ],
+   "fm": [
+    "mace_stability (MACE-MP-0 medium, relaxed E and e_above_hull)",
+    "megnet_bandgap (MEGNet-BandGap-mfi-MP-2019.4.1)"
+   ],
+   "readiness": "all run locally on GB10 (R1 PASS with env tools; FM channels executed in precompute)",
+   "not_in_inventory": [
+    "DFT",
+    "EQE simulator",
+    "EXAFS fitting (larch) with raw spectra"
+   ]
+  },
+  "status": "derived",
+  "provenance": {
+   "referent": "tools that exist and run",
+   "source": "runtime/mcp/server.py, bench/fm.py, bench/classical.py; instrument/precompute_*.log",
+   "population": "14 element systems",
+   "adjudicator": "classical-only arm (same tools minus FM)",
+   "falsifier": "a tool call that fails or returns an error on an agent-built input at R2/R3"
+  }
+ },
+ "delta": {
+  "value": 0.169,
+  "status": "derived",
+  "provenance": {
+   "referent": "smallest effect practitioners act on, in realized-value units",
+   "source": "seed_ledger.json S3 (>=2x acceleration) translated at B=3: E[best of 6 random]-E[best of 3 random] via bench/floors.py::chance over 189 included episodes = 0.1694",
+   "population": "196 episodes",
+   "adjudicator": "S2: 31% vs 10% runs within 1% of optimum at 20 iterations",
+   "falsifier": "a practitioner source whose measured acted-on gain falls below 0.17 in these units (e.g. 1.2x acceleration)"
+  }
+ },
+ "S": {
+  "value": 100,
+  "status": "derived from supplied budget",
+  "provenance": {
+   "referent": "paired episodes per arm",
+   "source": "supplied_by_human.budget=300 agent episodes / 3 agent arms",
+   "population": "arm cohort in corpus_ledger.json",
+   "adjudicator": "n_min from power.py at P7",
+   "falsifier": "measured cost per episode making 300 unaffordable"
+  }
+ },
+ "subject_set": {
+  "value": [
+   "claude-opus-5"
+  ],
+  "status": "supplied",
+  "provenance": {
+   "referent": "subject models",
+   "source": "RUN_LOG.md entry 22:40 (plan-mode AskUserQuestion answer: Opus 5)",
+   "population": "one subject",
+   "adjudicator": "Sonnet 5 offered and declined",
+   "falsifier": "init event model field differing from claude-opus-5 at R4"
+  }
+ },
+ "supplied_by_human": {
+  "budget": "~300 agent episodes (user, plan-mode Q&A 2026-09-17)",
+  "cost_of_action": "not supplied; delta taken from seeds (override invited)"
+ },
+ "candidates": [
+  {
+   "id": "C1",
+   "family": "combinatorial multimodal library (seed00 'asset I would not overlook')",
+   "shape": "intervene / choose next measurement",
+   "disposition": "PROCEED"
+  },
+  {
+   "id": "C2",
+   "family": "multimodal constraint satisfaction (XRD x EQE phase attribution)",
+   "shape": "explain / hypothesis set",
+   "disposition": "CLOSE",
+   "binding_gate": "Gate 2 grader: labels are analyst annotation; answers in S1 Fig. 3"
+  },
+  {
+   "id": "C3",
+   "family": "structure solution from EXAFS/Rietveld with found negatives",
+   "shape": "explain / hypothesis set under frozen likelihood (re-fit)",
+   "disposition": "CLOSE",
+   "binding_gate": "Gate 2 grader + negative supply: 4/30 papers publish a numbered rejected model, 2/30 also deposit raw data (census)"
+  },
+  {
+   "id": "C4",
+   "family": "computational screening thresholds",
+   "shape": "infer / pick k of M",
+   "disposition": "CLOSE",
+   "binding_gate": "Gate 1 (on predictor line); lift 'escalate MLIP->DFT' needs a DFT grader not in inventory (Gate 2)"
+  },
+  {
+   "id": "C5",
+   "family": "synthesis optimization; battery post-mortem",
+   "shape": "intervene / explain",
+   "disposition": "CLOSE",
+   "binding_gate": "supply: no replayable episodes in any reachable corpus (seed00 'almost entirely unpublished')"
+  }
+ ],
+ "completeness": "All 11 required slots carry a value and five provenance fields; decision shape ruled over 4 roots for C1 and over C1-C5; tau amended (A-01). Budget/B declared before P2; cost of action not supplied.",
+ "channel_lift_band": {
+  "value": "CLOSE/LIFT when the paired 95% CI of the C vs C-1 lift covers 0 and its upper bound < delta (0.169); ADVANCE otherwise",
+  "status": "declared at D4 before the rev2 I1/I2 count",
+  "provenance": {
+   "referent": "condition under which I2 closes a channel",
+   "source": "skill rev2 references/stages/instrument.md I2 + scripts/lift.py",
+   "population": "189 included episodes at B=3",
+   "adjudicator": "run-1 I2 recorded without a disposition",
+   "falsifier": "a channel whose mechanical lift CI clears zero at B=3 would ADVANCE"
+  }
+ },
+ "uptake_band": {
+  "value": 0.8,
+  "status": "declared at D4",
+  "provenance": {
+   "referent": "minimum share of pilot episodes in which an arm calls the channel under test before its grant counts as use",
+   "source": "skill rev2 runtime.md R8; run-1 observed uptake 19/100 as the failure case",
+   "population": "R3 pilot cohort, per arm",
+   "adjudicator": "run-1 FM-arm uptake 0.19",
+   "falsifier": "pilot uptake measured below 0.8 in an arm whose consultation is required would indict the harness"
+  }
+ },
+ "item_ledger": {
+  "burned": [
+   "2283_20200218.144324_CA3",
+   "2283_20200218.162104_CA2",
+   "2283_20200218.162104_CA3",
+   "2283_20200302.142435_CA1",
+   "2283_20200302.142435_CA2",
+   "2283_20200302.142435_CA3",
+   "2283_20200302.142435_CA4",
+   "2286_20200218.144917_CA3",
+   "2286_20200218.144917_CA4",
+   "2286_20200218.160907_CA1",
+   "2286_20200218.160907_CA2",
+   "2286_20200218.160907_CA3",
+   "2286_20200218.160907_CA4",
+   "2286_20200302.142526_CA1",
+   "2286_20200302.142526_CA3",
+   "2297_20200218.144632_CA1",
+   "2297_20200218.144632_CA2",
+   "2297_20200218.16201_CA1",
+   "2297_20200218.16201_CA2",
+   "2297_20200218.16201_CA3",
+   "2297_20200218.16201_CA4",
+   "2297_20200302.142608_CA2",
+   "2297_20200302.142608_CA4",
+   "2298_20200218.144149_CA1",
+   "2298_20200218.162149_CA2",
+   "2298_20200302.142742_CA4",
+   "2300_20200218.144726_CA1",
+   "2300_20200218.144726_CA2",
+   "2300_20200218.144726_CA3",
+   "3519_20200218.150107_CA3",
+   "3519_20200218.16241_CA1",
+   "3531_20200218.145313_CA2",
+   "3531_20200218.145313_CA4",
+   "3531_20200218.162319_CA1",
+   "3531_20200218.162319_CA2",
+   "4014_20200218.15024_CA2",
+   "4014_20200218.15024_CA3",
+   "4014_20200318.204926_CA3",
+   "4014_20200318.204926_CA4",
+   "4130_20200218.144235_CA1",
+   "4130_20200218.144235_CA2",
+   "4130_20200218.163122_CA1",
+   "4130_20200218.163122_CA4",
+   "4130_20220623.180314_CA2",
+   "4130_20220623.180314_CA3",
+   "4130_20220623.180314_CA4",
+   "5406_20200218.143845_CA2",
+   "5406_20200218.143845_CA3",
+   "5406_20200218.162452_CA3",
+   "5406_20200218.162452_CA4",
+   "5407_20200218.144415_CA1",
+   "5407_20200218.144415_CA2",
+   "5407_20200218.144415_CA3",
+   "5407_20200218.162628_CA2",
+   "5407_20200218.162628_CA4",
+   "5415_20200218.143926_CA3",
+   "5415_20200218.161125_CA1",
+   "5415_20200218.161125_CA3",
+   "5415_20220623.175729_CA1",
+   "5415_20220623.175729_CA3",
+   "5415_20220623.175729_CA4",
+   "5417_20200218.145212_CA1",
+   "5417_20200218.145212_CA2",
+   "5417_20200218.16281_CA1",
+   "5417_20200218.16281_CA3",
+   "5417_20200218.16281_CA4",
+   "5418_20200218.145757_CA1",
+   "5418_20200218.162858_CA2",
+   "5435_20200218.14454_CA1",
+   "5435_20200218.14454_CA2",
+   "5435_20200218.14454_CA4",
+   "5435_20200218.163032_CA1",
+   "5435_20200218.163032_CA2",
+   "5435_20200218.163032_CA4",
+   "5435_20220623.112423_CA4",
+   "5436_20200218.145045_CA1",
+   "5436_20200218.145045_CA2",
+   "5436_20200218.145045_CA3",
+   "5439_20200325.131306_CA3",
+   "5439_20200325.131306_CA4",
+   "5439_20220623.17371_CA1",
+   "5439_20220623.17371_CA2",
+   "5439_20220623.17371_CA3",
+   "5439_20220623.17371_CA4",
+   "5440_20200218.144829_CA2",
+   "5440_20200218.144829_CA3",
+   "5440_20200218.144829_CA4",
+   "5440_20200218.162947_CA1",
+   "5440_20200218.162947_CA2",
+   "5440_20200218.162947_CA4",
+   "5445_20220623.175015_CA1",
+   "5445_20220623.175015_CA2",
+   "5717_20200218.145716_CA1",
+   "5717_20200218.145716_CA2",
+   "5717_20200218.145716_CA4",
+   "5717_20200218.161211_CA1",
+   "5717_20200218.161211_CA3",
+   "5717_20200218.161211_CA4",
+   "5929_20220623.1809_CA2",
+   "5929_20220623.1809_CA3",
+   "5930_20200325.131034_CA3",
+   "5930_20200325.131034_CA4"
+  ],
+  "burn_reason": "run-1 scored cohort (100) and run-1 R3 pilots (2): the budget and the arm design change in response to what they showed (A1 rule)",
+  "pool": [
+   "2283_20200218.144324_CA1",
+   "2283_20200218.144324_CA2",
+   "2283_20200218.144324_CA4",
+   "2283_20200218.162104_CA1",
+   "2283_20200218.162104_CA4",
+   "2286_20200218.144917_CA1",
+   "2286_20200218.144917_CA2",
+   "2286_20200302.142526_CA2",
+   "2286_20200302.142526_CA4",
+   "2297_20200218.144632_CA3",
+   "2297_20200218.144632_CA4",
+   "2297_20200302.142608_CA1",
+   "2297_20200302.142608_CA3",
+   "2298_20200218.144149_CA2",
+   "2298_20200218.144149_CA3",
+   "2298_20200218.144149_CA4",
+   "2298_20200218.162149_CA1",
+   "2298_20200218.162149_CA3",
+   "2298_20200218.162149_CA4",
+   "2298_20200302.142742_CA1",
+   "2298_20200302.142742_CA2",
+   "2298_20200302.142742_CA3",
+   "2300_20200218.144726_CA4",
+   "2300_20200218.162234_CA1",
+   "2300_20200218.162234_CA2",
+   "2300_20200218.162234_CA3",
+   "2300_20200218.162234_CA4",
+   "3519_20200218.150107_CA1",
+   "3519_20200218.150107_CA2",
+   "3519_20200218.16241_CA2",
+   "3519_20200218.16241_CA3",
+   "3531_20200218.145313_CA1",
+   "3531_20200218.145313_CA3",
+   "3531_20200218.162319_CA3",
+   "3531_20200218.162319_CA4",
+   "4014_20200218.15024_CA4",
+   "4014_20200218.161037_CA2",
+   "4014_20200218.161037_CA3",
+   "4014_20200218.161037_CA4",
+   "4014_20200318.204926_CA2",
+   "4130_20200218.144235_CA3",
+   "4130_20200218.144235_CA4",
+   "4130_20200218.163122_CA2",
+   "4130_20200218.163122_CA3",
+   "4130_20220623.180314_CA1",
+   "5406_20200218.143845_CA1",
+   "5406_20200218.143845_CA4",
+   "5406_20200218.162452_CA1",
+   "5406_20200218.162452_CA2",
+   "5407_20200218.144415_CA4",
+   "5407_20200218.162628_CA1",
+   "5407_20200218.162628_CA3",
+   "5415_20200218.143926_CA1",
+   "5415_20200218.143926_CA2",
+   "5415_20200218.143926_CA4",
+   "5415_20200218.161125_CA2",
+   "5415_20200218.161125_CA4",
+   "5415_20220623.175729_CA2",
+   "5417_20200218.145212_CA3",
+   "5417_20200218.145212_CA4",
+   "5417_20200218.16281_CA2",
+   "5418_20200218.145757_CA2",
+   "5418_20200218.145757_CA3",
+   "5418_20200218.162858_CA1",
+   "5418_20200218.162858_CA3",
+   "5435_20200218.14454_CA3",
+   "5435_20200218.163032_CA3",
+   "5435_20220623.112423_CA1",
+   "5435_20220623.112423_CA2",
+   "5435_20220623.112423_CA3",
+   "5436_20200218.145045_CA4",
+   "5436_20220623.173226_CA1",
+   "5436_20220623.173226_CA2",
+   "5436_20220623.173226_CA3",
+   "5436_20220623.173226_CA4",
+   "5439_20200325.131306_CA1",
+   "5439_20200325.131306_CA2",
+   "5440_20200218.144829_CA1",
+   "5440_20200218.162947_CA3",
+   "5445_20220623.175015_CA3",
+   "5445_20220623.175015_CA4",
+   "5717_20200218.145716_CA3",
+   "5717_20200218.161211_CA2",
+   "5929_20220623.1809_CA1",
+   "5929_20220623.1809_CA4",
+   "5930_20200325.131034_CA1",
+   "5930_20200325.131034_CA2"
+  ],
+  "n_pool": 87,
+  "pool_elements": {
+   "Ni": 5,
+   "Fe": 12,
+   "Pb": 9,
+   "Co": 11,
+   "Zn": 8,
+   "In": 8,
+   "Bi": 4,
+   "Ag": 5,
+   "Cu": 5,
+   "Cr": 7,
+   "Y": 5,
+   "Mg": 4,
+   "Al": 2,
+   "La": 2
+  }
+ },
+ "amendments": [
+  {
+   "id": "A-04",
+   "stage": "D4",
+   "change": "B_EQE 5 -> 3",
+   "cause": "provenance: run-1 budget had no seed source (refusal 15); seeds bracket 5-11% of the line"
+  },
+  {
+   "id": "A-05",
+   "stage": "D4",
+   "change": "channel lift band and uptake band declared (rev2 slots)",
+   "cause": "skill revision 2"
+  },
+  {
+   "id": "A-06",
+   "stage": "A1",
+   "change": "102 run-1 items burned; new cohort and pilot drawn from the 87-episode unburned pool",
+   "cause": "scored elements changed in response to run-1 items"
+  }
+ ],
+ "frozen_hash": "43acaea4212997f171623848e2145aa1568f7dc69d2751ab15df23f4e2f3dacd"
+}

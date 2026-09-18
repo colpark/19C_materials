@@ -10,7 +10,8 @@ import numpy as np
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import data, classical, fm
 
-B_EQE, B_XRD = 5, 5
+B_EQE = int(os.environ.get("FMAB_B_EQE", "5"))   # run 1: 5; rev2 amendment A-04: 3 (from seed S2, 11% of the line)
+B_XRD = int(os.environ.get("FMAB_B_XRD", "5"))
 BETA, LENGTH = 2.0, 0.08
 EHULL_T, BUMP_W = 0.05, 0.05      # eV/atom stability temperature, Sb-fraction bump width
 
@@ -117,7 +118,7 @@ def code_hash():
 
 if __name__ == "__main__":
     import csv
-    out = os.path.join(data.ROOT, "instrument", "floors.csv")
+    out = os.environ.get("FMAB_FLOORS_OUT", os.path.join(data.ROOT, "instrument", "floors.csv"))
     rows = []
     for ep in data.episodes():
         r = dict(episode_id=ep["episode_id"], el=ep["el"], plate=ep["plate_id"], led=ep["rtech"],
