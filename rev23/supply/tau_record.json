@@ -1,0 +1,44 @@
+{
+  "chosen_cut": 0.5,
+  "justification": "cluster gain falls below 5% at 0.5; separation not supplied",
+  "sensitivity": {
+    "looser": 0.34,
+    "tighter": 0.6
+  },
+  "saturation_cut": 0.5,
+  "collapse_cut": null,
+  "curve": [
+    {
+      "cut": 0.34,
+      "n_clusters": 26.0,
+      "separation": 0.18
+    },
+    {
+      "cut": 0.5,
+      "n_clusters": 26.0,
+      "separation": 0.18
+    },
+    {
+      "cut": 0.6,
+      "n_clusters": 30.0,
+      "separation": 0.194
+    },
+    {
+      "cut": 0.67,
+      "n_clusters": 36.0,
+      "separation": 0.1851
+    },
+    {
+      "cut": 0.75,
+      "n_clusters": 36.0,
+      "separation": 0.1851
+    },
+    {
+      "cut": 1.0,
+      "n_clusters": 36.0,
+      "separation": 0.1851
+    }
+  ],
+  "chosen_to_increase_unit_count": false,
+  "completeness": "swept 6 cuts from 0.34 to 1.0, separation measured at each"
+}

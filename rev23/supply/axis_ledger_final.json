@@ -1,0 +1,97 @@
+{
+ "candidate": "C1",
+ "branch": "intervene / choose next measurement, lifted: forced FM consultation",
+ "axes": [
+  {
+   "axis": "positive_supply",
+   "raw": 176,
+   "clustered": 26,
+   "unit": "tau-0.5 cation-set cluster",
+   "band": "clusters >= N_min (25, P7 provisional) PROCEED; < N_min CLOSE",
+   "status": "PASS",
+   "note": "cohort 156 episodes, pilot 10, reserve 10; margin 1 cluster"
+  },
+  {
+   "axis": "negative_supply",
+   "raw": 13333,
+   "clustered": 26,
+   "status": "PASS",
+   "note": "counterfactual outcomes recorded for every unmeasured candidate"
+  },
+  {
+   "axis": "contamination_exposure",
+   "raw": "pooled recall 0/28 vs predict 3/28 within 0.05; mean dist 0.2908 vs 0.2457",
+   "clustered": 26,
+   "status": "DISCLOSED",
+   "note": "all units predate the subject; no memorization signal (run-1 protocol)"
+  },
+  {
+   "axis": "tool_coverage",
+   "raw": "37/37 chemistries have MACE+MEGNet summaries and MP phase libraries; the XRD composition is FAIL on spreads (56 of 176 unburned episodes, I4)",
+   "clustered": 26,
+   "status": "PARTIAL",
+   "note": "classical XRD floor uncertified on the spread stratum; not repaired this pass (PI)"
+  },
+  {
+   "axis": "cluster_structure",
+   "raw": 176,
+   "clustered": 26,
+   "overstatement_pct": 577,
+   "status": "REPORTED"
+  },
+  {
+   "axis": "split_integrity",
+   "raw": "no model fit on any merit label; MACE/MEGNet trained on MP DFT only",
+   "clustered": "n/a",
+   "status": "PASS"
+  },
+  {
+   "axis": "unprocessable_units",
+   "raw": "low-signal band (declared first): 27 low_signal, 68 signal, 81 no_flag; 0 dropped",
+   "clustered": 26,
+   "status": "PASS",
+   "note": "stratum, never filtered"
+  },
+  {
+   "axis": "channel_lift",
+   "raw": {
+    "fm_prior": {
+     "ci95": [
+      -0.080862,
+      0.044702
+     ],
+     "ruling": "CLOSE"
+    },
+    "fm_xrd": {
+     "ci95": [
+      -0.060559,
+      0.057381
+     ],
+     "ruling": "LIFT"
+    },
+    "megnet_gap": {
+     "ci95": [
+      -0.03044,
+      0.052026
+     ],
+     "ruling": "LIFT"
+    },
+    "mace_hull": {
+     "ci95": [
+      -0.036249,
+      0.064925
+     ],
+     "ruling": "LIFT"
+    }
+   },
+   "clustered": 26,
+   "status": "LIFT (approved)",
+   "note": "fm_prior CLOSE on a fixed input: no arm uses it. fm_xrd/MEGNet/MACE LIFT: forced_consultation_lift approved by standing ruling (PI 2026-09-19), scope pooled cohort"
+  }
+ ],
+ "ruling": "PROCEED",
+ "binding_axis": "positive_supply: 26 clusters against N_min 25 (P7 provisional MDE 0.163 vs delta 0.169)",
+ "definition_widened": false,
+ "scope": "final",
+ "completeness": "All eight axes recounted on the pooled units (176 unburned episodes, 26 clusters): low-signal band declared before counting, contamination probe on pooled units with the run-1 protocol, I4 per geometry; strata reported, none filtered."
+}

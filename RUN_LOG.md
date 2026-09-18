@@ -104,3 +104,15 @@
 - Pooled I1 at B=3: 278 episodes. Split: pilot 10, reserve 10, cohort 156 over 26 clusters. Zero-headroom 9-13%.
 - Pooled I2 (cohort): fm_prior −0.018 [−0.081, +0.045] CLOSE; fm_xrd −0.002 [−0.061, +0.057] LIFT; MEGNet +0.011 LIFT; MACE +0.014 LIFT.
 - **Pooled P7 provisional: RESOLVABLE.** fm_xrd − cls_xrd: cluster sigma_d 0.296, MDE 0.163 ≤ delta 0.169, N_min 25 ≤ 26. fm_prior − cls_gp: MDE 0.158, RESOLVABLE. Between-cluster share 0.464.
+
+## Rev 2.3 autonomous pass (2026-09-19)
+- Vendored rev 2.3; audit shows 48 cases.
+- Router settled by replaying decisions 001–003 (R001–R003) with `report` between them. The envelope reconciles exactly to measured spend (GPU 5.35 h, storage 8.83 GB, tokens 20.39 M, wall 15.05 h). C1 depth 2 of 3.
+- D5 standing rulings (PI 2026-09-19) recorded with provenance.
+- C1x amendment A2 committed before any pooled explain floor.
+- P3 recount on pooled units (176 unburned, 26 clusters):
+  - Low-signal band declared first: 27 low / 68 signal / 81 no-flag.
+  - Contamination recall 0/28 vs predict 3/28.
+  - I4 per geometry: all compositions PASS on lines; the XRD compositions FAIL on spreads (PI ruling; cls_xrd also significantly below chance there).
+  - Tau separation flat 0.18–0.19; collapse undefined, conservative 0.5 (26 clusters).
+- **P4 final: PROCEED.** Binding axis: positive supply (26 clusters vs N_min 25). Channel lift: LIFT, approved by standing ruling.

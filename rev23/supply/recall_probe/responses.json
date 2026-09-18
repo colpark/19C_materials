@@ -1,0 +1,1006 @@
+[
+ {
+  "episode_id": "P3108_20170802.114808_455nm",
+  "chem": "Ca-Fe-Mn",
+  "framing": "recall",
+  "truth": [
+   0.368,
+   0.2771,
+   0.3549
+  ],
+  "fractions": {
+   "Ca": 0.3,
+   "Fe": 0.6,
+   "Mn": 0.1
+  },
+  "phase": "CaFe2O4",
+  "confidence": 0.12,
+  "usage_tokens": 2333,
+  "dist": 0.32288
+ },
+ {
+  "episode_id": "P3108_20170802.114808_455nm",
+  "chem": "Ca-Fe-Mn",
+  "framing": "predict",
+  "truth": [
+   0.368,
+   0.2771,
+   0.3549
+  ],
+  "fractions": {
+   "Ca": 0.1,
+   "Fe": 0.85,
+   "Mn": 0.05
+  },
+  "phase": "Fe2O3",
+  "confidence": 0.3,
+  "usage_tokens": 3260,
+  "dist": 0.5728800000000001
+ },
+ {
+  "episode_id": "P3051_20170427.113107_385nm",
+  "chem": "Mn-Sr",
+  "framing": "recall",
+  "truth": [
+   0.5276,
+   0.4724
+  ],
+  "fractions": {
+   "Mn": 0.9,
+   "Sr": 0.1
+  },
+  "phase": "Mn2O3",
+  "confidence": 0.1,
+  "usage_tokens": 2189,
+  "dist": 0.372405
+ },
+ {
+  "episode_id": "P3051_20170427.113107_385nm",
+  "chem": "Mn-Sr",
+  "framing": "predict",
+  "truth": [
+   0.5276,
+   0.4724
+  ],
+  "fractions": {
+   "Mn": 0.65,
+   "Sr": 0.35
+  },
+  "phase": "SrMnO3",
+  "confidence": 0.2,
+  "usage_tokens": 2298,
+  "dist": 0.12240500000000001
+ },
+ {
+  "episode_id": "P3557_20170802.130408_455nm",
+  "chem": "Ca-Cu-V",
+  "framing": "recall",
+  "truth": [
+   0.187,
+   0.1866,
+   0.6264
+  ],
+  "fractions": {
+   "Ca": 0.1,
+   "Cu": 0.5,
+   "V": 0.4
+  },
+  "phase": "Cu3V2O8",
+  "confidence": 0.15,
+  "usage_tokens": 2662,
+  "dist": 0.313405
+ },
+ {
+  "episode_id": "P3557_20170802.130408_455nm",
+  "chem": "Ca-Cu-V",
+  "framing": "predict",
+  "truth": [
+   0.187,
+   0.1866,
+   0.6264
+  ],
+  "fractions": {
+   "Ca": 0.08,
+   "Cu": 0.46,
+   "V": 0.46
+  },
+  "phase": "Cu2V2O7",
+  "confidence": 0.3,
+  "usage_tokens": 2542,
+  "dist": 0.273405
+ },
+ {
+  "episode_id": "P3212_20160216.181333_385nm",
+  "chem": "Ag-V",
+  "framing": "recall",
+  "truth": [
+   0.8723,
+   0.1277
+  ],
+  "fractions": {
+   "Ag": 0.5,
+   "V": 0.5
+  },
+  "phase": "AgVO3",
+  "confidence": 0.3,
+  "usage_tokens": 2574,
+  "dist": 0.37234599999999995
+ },
+ {
+  "episode_id": "P3212_20160216.181333_385nm",
+  "chem": "Ag-V",
+  "framing": "predict",
+  "truth": [
+   0.8723,
+   0.1277
+  ],
+  "fractions": {
+   "Ag": 0.67,
+   "V": 0.33
+  },
+  "phase": "Ag4V2O7",
+  "confidence": 0.3,
+  "usage_tokens": 2452,
+  "dist": 0.20234599999999997
+ },
+ {
+  "episode_id": "P3925_20171026.105605_602nm",
+  "chem": "Bi-Cu-V",
+  "framing": "recall",
+  "truth": [
+   0.0709,
+   0.5389,
+   0.3903
+  ],
+  "fractions": {
+   "Bi": 0.45,
+   "Cu": 0.05,
+   "V": 0.5
+  },
+  "phase": "BiVO4",
+  "confidence": 0.2,
+  "usage_tokens": 2538,
+  "dist": 0.48887300000000006
+ },
+ {
+  "episode_id": "P3925_20171026.105605_602nm",
+  "chem": "Bi-Cu-V",
+  "framing": "predict",
+  "truth": [
+   0.0709,
+   0.5389,
+   0.3903
+  ],
+  "fractions": {
+   "Bi": 0.1,
+   "Cu": 0.5,
+   "V": 0.4
+  },
+  "phase": "\u03b2-Cu2V2O7",
+  "confidence": 0.25,
+  "usage_tokens": 2761,
+  "dist": 0.03887300000000005
+ },
+ {
+  "episode_id": "P3224_20160412.145824_385nm",
+  "chem": "Nb-V",
+  "framing": "recall",
+  "truth": [
+   0.5846,
+   0.4154
+  ],
+  "fractions": {
+   "Nb": 0.3,
+   "V": 0.7
+  },
+  "phase": "NbVO5",
+  "confidence": 0.15,
+  "usage_tokens": 2387,
+  "dist": 0.284639
+ },
+ {
+  "episode_id": "P3224_20160412.145824_385nm",
+  "chem": "Nb-V",
+  "framing": "predict",
+  "truth": [
+   0.5846,
+   0.4154
+  ],
+  "fractions": {
+   "Nb": 0.5,
+   "V": 0.5
+  },
+  "phase": "NbVO5",
+  "confidence": 0.3,
+  "usage_tokens": 2235,
+  "dist": 0.08463900000000002
+ },
+ {
+  "episode_id": "P3588_20170802.131816_602nm",
+  "chem": "Cu-Fe-V",
+  "framing": "recall",
+  "truth": [
+   0.5403,
+   0.2287,
+   0.2309
+  ],
+  "fractions": {
+   "Cu": 0.35,
+   "Fe": 0.1,
+   "V": 0.55
+  },
+  "phase": "Cu2V2O7",
+  "confidence": 0.15,
+  "usage_tokens": 2656,
+  "dist": 0.31906
+ },
+ {
+  "episode_id": "P3588_20170802.131816_602nm",
+  "chem": "Cu-Fe-V",
+  "framing": "predict",
+  "truth": [
+   0.5403,
+   0.2287,
+   0.2309
+  ],
+  "fractions": {
+   "Cu": 0.5,
+   "Fe": 0.1,
+   "V": 0.4
+  },
+  "phase": "Cu3V2O8",
+  "confidence": 0.3,
+  "usage_tokens": 2544,
+  "dist": 0.16906
+ },
+ {
+  "episode_id": "P3455_20160307.141318_385nm",
+  "chem": "Co-V",
+  "framing": "recall",
+  "truth": [
+   0.2895,
+   0.7105
+  ],
+  "fractions": {
+   "Co": 0.6,
+   "V": 0.4
+  },
+  "phase": "Co3V2O8",
+  "confidence": 0.2,
+  "usage_tokens": 2313,
+  "dist": 0.31053200000000003
+ },
+ {
+  "episode_id": "P3455_20160307.141318_385nm",
+  "chem": "Co-V",
+  "framing": "predict",
+  "truth": [
+   0.2895,
+   0.7105
+  ],
+  "fractions": {
+   "Co": 0.6,
+   "V": 0.4
+  },
+  "phase": "Co3V2O8",
+  "confidence": 0.35,
+  "usage_tokens": 2225,
+  "dist": 0.31053200000000003
+ },
+ {
+  "episode_id": "P4135_20170727.133340_516nm",
+  "chem": "Ca-Co-Mn",
+  "framing": "recall",
+  "truth": [
+   0.2314,
+   0.2718,
+   0.4968
+  ],
+  "fractions": {
+   "Ca": 0.1,
+   "Co": 0.6,
+   "Mn": 0.3
+  },
+  "phase": "(Co,Mn)3O4",
+  "confidence": 0.08,
+  "usage_tokens": 2225,
+  "dist": 0.32816799999999996
+ },
+ {
+  "episode_id": "P4135_20170727.133340_516nm",
+  "chem": "Ca-Co-Mn",
+  "framing": "predict",
+  "truth": [
+   0.2314,
+   0.2718,
+   0.4968
+  ],
+  "fractions": {
+   "Ca": 0.1,
+   "Co": 0.3,
+   "Mn": 0.6
+  },
+  "phase": "CoMn2O4",
+  "confidence": 0.25,
+  "usage_tokens": 2279,
+  "dist": 0.13136699999999996
+ },
+ {
+  "episode_id": "P3574_20170802.123609_387nm",
+  "chem": "Fe-Ni-V",
+  "framing": "recall",
+  "truth": [
+   0.2089,
+   0.2413,
+   0.5499
+  ],
+  "fractions": {
+   "Fe": 0.45,
+   "Ni": 0.05,
+   "V": 0.5
+  },
+  "phase": "FeVO4",
+  "confidence": 0.15,
+  "usage_tokens": 2232,
+  "dist": 0.241142
+ },
+ {
+  "episode_id": "P3574_20170802.123609_387nm",
+  "chem": "Fe-Ni-V",
+  "framing": "predict",
+  "truth": [
+   0.2089,
+   0.2413,
+   0.5499
+  ],
+  "fractions": {
+   "Fe": 0.45,
+   "Ni": 0.08,
+   "V": 0.47
+  },
+  "phase": "FeVO4",
+  "confidence": 0.3,
+  "usage_tokens": 2329,
+  "dist": 0.24114200000000002
+ },
+ {
+  "episode_id": "P3071_20171207.112942_385nm",
+  "chem": "Ge-Mn",
+  "framing": "recall",
+  "truth": [
+   0.7631,
+   0.2369
+  ],
+  "fractions": {
+   "Ge": 0.1,
+   "Mn": 0.9
+  },
+  "phase": "Mn2O3",
+  "confidence": 0.15,
+  "usage_tokens": 2153,
+  "dist": 0.663127
+ },
+ {
+  "episode_id": "P3071_20171207.112942_385nm",
+  "chem": "Ge-Mn",
+  "framing": "predict",
+  "truth": [
+   0.7631,
+   0.2369
+  ],
+  "fractions": {
+   "Ge": 0.25,
+   "Mn": 0.75
+  },
+  "phase": "Mn2O3",
+  "confidence": 0.3,
+  "usage_tokens": 2254,
+  "dist": 0.513127
+ },
+ {
+  "episode_id": "P3072_20160818.173325_385nm",
+  "chem": "Mn-Sb",
+  "framing": "recall",
+  "truth": [
+   0.1015,
+   0.8985
+  ],
+  "fractions": {
+   "Mn": 0.33,
+   "Sb": 0.67
+  },
+  "phase": "MnSb2O6",
+  "confidence": 0.25,
+  "usage_tokens": 2418,
+  "dist": 0.22854699999999997
+ },
+ {
+  "episode_id": "P3072_20160818.173325_385nm",
+  "chem": "Mn-Sb",
+  "framing": "predict",
+  "truth": [
+   0.1015,
+   0.8985
+  ],
+  "fractions": {
+   "Mn": 0.35,
+   "Sb": 0.65
+  },
+  "phase": "MnSb2O6",
+  "confidence": 0.4,
+  "usage_tokens": 2350,
+  "dist": 0.24854699999999996
+ },
+ {
+  "episode_id": "P3594_20170802.122251_387nm",
+  "chem": "Cr-Fe-V",
+  "framing": "recall",
+  "truth": [
+   0.0705,
+   0.4528,
+   0.4766
+  ],
+  "fractions": {
+   "Cr": 0.1,
+   "Fe": 0.4,
+   "V": 0.5
+  },
+  "phase": "(Fe0.8Cr0.2)VO4",
+  "confidence": 0.15,
+  "usage_tokens": 2558,
+  "dist": 0.05282699999999998
+ },
+ {
+  "episode_id": "P3594_20170802.122251_387nm",
+  "chem": "Cr-Fe-V",
+  "framing": "predict",
+  "truth": [
+   0.0705,
+   0.4528,
+   0.4766
+  ],
+  "fractions": {
+   "Cr": 0.08,
+   "Fe": 0.42,
+   "V": 0.5
+  },
+  "phase": "(Fe,Cr)VO4",
+  "confidence": 0.35,
+  "usage_tokens": 2329,
+  "dist": 0.032826999999999995
+ },
+ {
+  "episode_id": "P3050_20160613.162428_385nm",
+  "chem": "Ca-Mn",
+  "framing": "recall",
+  "truth": [
+   0.314,
+   0.686
+  ],
+  "fractions": {
+   "Ca": 0.4,
+   "Mn": 0.6
+  },
+  "phase": "Ca2Mn3O8",
+  "confidence": 0.2,
+  "usage_tokens": 2426,
+  "dist": 0.08597000000000002
+ },
+ {
+  "episode_id": "P3050_20160613.162428_385nm",
+  "chem": "Ca-Mn",
+  "framing": "predict",
+  "truth": [
+   0.314,
+   0.686
+  ],
+  "fractions": {
+   "Ca": 0.4,
+   "Mn": 0.6
+  },
+  "phase": "Ca2Mn3O8",
+  "confidence": 0.3,
+  "usage_tokens": 2239,
+  "dist": 0.08597000000000002
+ },
+ {
+  "episode_id": "P3112_20170621.173337_385nm",
+  "chem": "Mn-Y",
+  "framing": "recall",
+  "truth": [
+   0.5066,
+   0.4934
+  ],
+  "fractions": {
+   "Mn": 0.6,
+   "Y": 0.4
+  },
+  "phase": "YMnO3",
+  "confidence": 0.15,
+  "usage_tokens": 2317,
+  "dist": 0.09341199999999997
+ },
+ {
+  "episode_id": "P3112_20170621.173337_385nm",
+  "chem": "Mn-Y",
+  "framing": "predict",
+  "truth": [
+   0.5066,
+   0.4934
+  ],
+  "fractions": {
+   "Mn": 0.55,
+   "Y": 0.45
+  },
+  "phase": "YMnO3",
+  "confidence": 0.3,
+  "usage_tokens": 2189,
+  "dist": 0.043412000000000006
+ },
+ {
+  "episode_id": "P3202_20160229.105032_385nm",
+  "chem": "Bi-V",
+  "framing": "recall",
+  "truth": [
+   0.2368,
+   0.7632
+  ],
+  "fractions": {
+   "Bi": 0.5,
+   "V": 0.5
+  },
+  "phase": "BiVO4",
+  "confidence": 0.4,
+  "usage_tokens": 2220,
+  "dist": 0.26322999999999996
+ },
+ {
+  "episode_id": "P3202_20160229.105032_385nm",
+  "chem": "Bi-V",
+  "framing": "predict",
+  "truth": [
+   0.2368,
+   0.7632
+  ],
+  "fractions": {
+   "Bi": 0.52,
+   "V": 0.48
+  },
+  "phase": "BiVO4",
+  "confidence": 0.55,
+  "usage_tokens": 2246,
+  "dist": 0.28323
+ },
+ {
+  "episode_id": "P3454_20160412.112433_385nm",
+  "chem": "Ni-V",
+  "framing": "recall",
+  "truth": [
+   0.131,
+   0.869
+  ],
+  "fractions": {
+   "Ni": 0.4,
+   "V": 0.6
+  },
+  "phase": "Ni3V2O8",
+  "confidence": 0.15,
+  "usage_tokens": 2251,
+  "dist": 0.26896700000000007
+ },
+ {
+  "episode_id": "P3454_20160412.112433_385nm",
+  "chem": "Ni-V",
+  "framing": "predict",
+  "truth": [
+   0.131,
+   0.869
+  ],
+  "fractions": {
+   "Ni": 0.6,
+   "V": 0.4
+  },
+  "phase": "Ni3V2O8",
+  "confidence": 0.3,
+  "usage_tokens": 2390,
+  "dist": 0.468967
+ },
+ {
+  "episode_id": "P3446_20160310.183323_385nm",
+  "chem": "V-Zr",
+  "framing": "recall",
+  "truth": [
+   0.8583,
+   0.1417
+  ],
+  "fractions": {
+   "V": 0.67,
+   "Zr": 0.33
+  },
+  "phase": "ZrV2O7",
+  "confidence": 0.2,
+  "usage_tokens": 2302,
+  "dist": 0.188311
+ },
+ {
+  "episode_id": "P3446_20160310.183323_385nm",
+  "chem": "V-Zr",
+  "framing": "predict",
+  "truth": [
+   0.8583,
+   0.1417
+  ],
+  "fractions": {
+   "V": 0.67,
+   "Zr": 0.33
+  },
+  "phase": "ZrV2O7",
+  "confidence": 0.35,
+  "usage_tokens": 2203,
+  "dist": 0.188311
+ },
+ {
+  "episode_id": "P3592_20170802.125607_387nm",
+  "chem": "Bi-Fe-V",
+  "framing": "recall",
+  "truth": [
+   0.34,
+   0.1957,
+   0.4643
+  ],
+  "fractions": {
+   "Bi": 0.46,
+   "Fe": 0.06,
+   "V": 0.48
+  },
+  "phase": "BiVO4",
+  "confidence": 0.3,
+  "usage_tokens": 2425,
+  "dist": 0.13568
+ },
+ {
+  "episode_id": "P3592_20170802.125607_387nm",
+  "chem": "Bi-Fe-V",
+  "framing": "predict",
+  "truth": [
+   0.34,
+   0.1957,
+   0.4643
+  ],
+  "fractions": {
+   "Bi": 0.47,
+   "Fe": 0.05,
+   "V": 0.48
+  },
+  "phase": "BiVO4",
+  "confidence": 0.4,
+  "usage_tokens": 2325,
+  "dist": 0.14567999999999998
+ },
+ {
+  "episode_id": "P3059_20170427.114426_385nm",
+  "chem": "Mg-Mn",
+  "framing": "recall",
+  "truth": [
+   0.7754,
+   0.2246
+  ],
+  "fractions": {
+   "Mg": 0.33,
+   "Mn": 0.67
+  },
+  "phase": "MgMn2O4",
+  "confidence": 0.2,
+  "usage_tokens": 2330,
+  "dist": 0.44538600000000006
+ },
+ {
+  "episode_id": "P3059_20170427.114426_385nm",
+  "chem": "Mg-Mn",
+  "framing": "predict",
+  "truth": [
+   0.7754,
+   0.2246
+  ],
+  "fractions": {
+   "Mg": 0.33,
+   "Mn": 0.67
+  },
+  "phase": "MgMn2O4",
+  "confidence": 0.35,
+  "usage_tokens": 2142,
+  "dist": 0.44538600000000006
+ },
+ {
+  "episode_id": "P3046_20170421.180200_385nm",
+  "chem": "Ba-Mn",
+  "framing": "recall",
+  "truth": [
+   0.2723,
+   0.7277
+  ],
+  "fractions": {
+   "Ba": 0.5,
+   "Mn": 0.5
+  },
+  "phase": "BaMnO3",
+  "confidence": 0.12,
+  "usage_tokens": 2310,
+  "dist": 0.22769099999999998
+ },
+ {
+  "episode_id": "P3046_20170421.180200_385nm",
+  "chem": "Ba-Mn",
+  "framing": "predict",
+  "truth": [
+   0.2723,
+   0.7277
+  ],
+  "fractions": {
+   "Ba": 0.33,
+   "Mn": 0.67
+  },
+  "phase": "BaMn2O4",
+  "confidence": 0.3,
+  "usage_tokens": 2022,
+  "dist": 0.057690999999999965
+ },
+ {
+  "episode_id": "P3933_20180830.102805_455nm",
+  "chem": "Bi-Cu",
+  "framing": "recall",
+  "truth": [
+   0.3114,
+   0.6886
+  ],
+  "fractions": {
+   "Bi": 0.67,
+   "Cu": 0.33
+  },
+  "phase": "CuBi2O4",
+  "confidence": 0.25,
+  "usage_tokens": 2258,
+  "dist": 0.358559
+ },
+ {
+  "episode_id": "P3933_20180830.102805_455nm",
+  "chem": "Bi-Cu",
+  "framing": "predict",
+  "truth": [
+   0.3114,
+   0.6886
+  ],
+  "fractions": {
+   "Bi": 0.65,
+   "Cu": 0.35
+  },
+  "phase": "CuBi2O4",
+  "confidence": 0.5,
+  "usage_tokens": 2223,
+  "dist": 0.33855900000000005
+ },
+ {
+  "episode_id": "P3108_20170802.114808_387nm",
+  "chem": "Ca-Fe-Mn",
+  "framing": "recall",
+  "truth": [
+   0.3945,
+   0.2731,
+   0.3324
+  ],
+  "fractions": {
+   "Ca": 0.3,
+   "Fe": 0.6,
+   "Mn": 0.1
+  },
+  "phase": "CaFe2O4",
+  "confidence": 0.1,
+  "usage_tokens": 2385,
+  "dist": 0.32688700000000004
+ },
+ {
+  "episode_id": "P3108_20170802.114808_387nm",
+  "chem": "Ca-Fe-Mn",
+  "framing": "predict",
+  "truth": [
+   0.3945,
+   0.2731,
+   0.3324
+  ],
+  "fractions": {
+   "Ca": 0.1,
+   "Fe": 0.8,
+   "Mn": 0.1
+  },
+  "phase": "Fe2O3",
+  "confidence": 0.3,
+  "usage_tokens": 2212,
+  "dist": 0.526887
+ },
+ {
+  "episode_id": "P4376_20171130.114752_516nm",
+  "chem": "Bi-Cu-V",
+  "framing": "recall",
+  "truth": [
+   0.2795,
+   0.2372,
+   0.4833
+  ],
+  "fractions": {
+   "Bi": 0.45,
+   "Cu": 0.05,
+   "V": 0.5
+  },
+  "phase": "BiVO4",
+  "confidence": 0.25,
+  "usage_tokens": 2580,
+  "dist": 0.187171
+ },
+ {
+  "episode_id": "P4376_20171130.114752_516nm",
+  "chem": "Bi-Cu-V",
+  "framing": "predict",
+  "truth": [
+   0.2795,
+   0.2372,
+   0.4833
+  ],
+  "fractions": {
+   "Bi": 0.46,
+   "Cu": 0.06,
+   "V": 0.48
+  },
+  "phase": "BiVO4",
+  "confidence": 0.35,
+  "usage_tokens": 2484,
+  "dist": 0.180497
+ },
+ {
+  "episode_id": "P3925_20171026.105605_516nm",
+  "chem": "Bi-Cu-V",
+  "framing": "recall",
+  "truth": [
+   0.0861,
+   0.4761,
+   0.4377
+  ],
+  "fractions": {
+   "Bi": 0.44,
+   "Cu": 0.06,
+   "V": 0.5
+  },
+  "phase": "BiVO4",
+  "confidence": 0.2,
+  "usage_tokens": 2692,
+  "dist": 0.4161195
+ },
+ {
+  "episode_id": "P3925_20171026.105605_516nm",
+  "chem": "Bi-Cu-V",
+  "framing": "predict",
+  "truth": [
+   0.0861,
+   0.4761,
+   0.4377
+  ],
+  "fractions": {
+   "Bi": 0.47,
+   "Cu": 0.05,
+   "V": 0.48
+  },
+  "phase": "BiVO4",
+  "confidence": 0.4,
+  "usage_tokens": 2459,
+  "dist": 0.4261195
+ },
+ {
+  "episode_id": "P3557_20170802.130408_602nm",
+  "chem": "Ca-Cu-V",
+  "framing": "recall",
+  "truth": [
+   0.1554,
+   0.1475,
+   0.6971
+  ],
+  "fractions": {
+   "Ca": 0.1,
+   "Cu": 0.45,
+   "V": 0.45
+  },
+  "phase": "Cu2V2O7",
+  "confidence": 0.15,
+  "usage_tokens": 2641,
+  "dist": 0.30252900000000005
+ },
+ {
+  "episode_id": "P3557_20170802.130408_602nm",
+  "chem": "Ca-Cu-V",
+  "framing": "predict",
+  "truth": [
+   0.1554,
+   0.1475,
+   0.6971
+  ],
+  "fractions": {
+   "Ca": 0.1,
+   "Cu": 0.45,
+   "V": 0.45
+  },
+  "phase": "Cu2V2O7",
+  "confidence": 0.25,
+  "usage_tokens": 2584,
+  "dist": 0.30252900000000005
+ },
+ {
+  "episode_id": "P3051_20160610.163705_385nm",
+  "chem": "Mn-Sr",
+  "framing": "recall",
+  "truth": [
+   0.4921,
+   0.5079
+  ],
+  "fractions": {
+   "Mn": 0.7,
+   "Sr": 0.3
+  },
+  "phase": "SrMnO3",
+  "confidence": 0.1,
+  "usage_tokens": 2180,
+  "dist": 0.207916
+ },
+ {
+  "episode_id": "P3051_20160610.163705_385nm",
+  "chem": "Mn-Sr",
+  "framing": "predict",
+  "truth": [
+   0.4921,
+   0.5079
+  ],
+  "fractions": {
+   "Mn": 0.6,
+   "Sr": 0.4
+  },
+  "phase": "SrMnO3",
+  "confidence": 0.2,
+  "usage_tokens": 2168,
+  "dist": 0.10791599999999998
+ },
+ {
+  "episode_id": "P3925_20171026.105605_387nm",
+  "chem": "Bi-Cu-V",
+  "framing": "recall",
+  "truth": [
+   0.1148,
+   0.3878,
+   0.4975
+  ],
+  "fractions": {
+   "Bi": 0.45,
+   "Cu": 0.05,
+   "V": 0.5
+  },
+  "phase": "BiVO4",
+  "confidence": 0.2,
+  "usage_tokens": 2450,
+  "dist": 0.3377570000000001
+ },
+ {
+  "episode_id": "P3925_20171026.105605_387nm",
+  "chem": "Bi-Cu-V",
+  "framing": "predict",
+  "truth": [
+   0.1148,
+   0.3878,
+   0.4975
+  ],
+  "fractions": {
+   "Bi": 0.45,
+   "Cu": 0.05,
+   "V": 0.5
+  },
+  "phase": "BiVO4",
+  "confidence": 0.35,
+  "usage_tokens": 2478,
+  "dist": 0.3377570000000001
+ }
+]

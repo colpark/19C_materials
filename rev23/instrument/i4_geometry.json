@@ -1,0 +1,269 @@
+{
+ "tools": [
+  {
+   "name": "cls_gp@line",
+   "status": "CERTIFIED",
+   "criteria": {
+    "construct_validity": "PASS",
+    "known_input": "PASS"
+   },
+   "detail": {
+    "geometry": "line",
+    "composition": "cls_gp",
+    "n": 120,
+    "mean": 0.4819,
+    "minus_chance": -0.0046,
+    "ci95": [
+     -0.0589,
+     0.0497
+    ],
+    "functional": true,
+    "status": "PASS",
+    "note": ""
+   }
+  },
+  {
+   "name": "cls_xrd@line",
+   "status": "CERTIFIED",
+   "criteria": {
+    "construct_validity": "PASS",
+    "known_input": "PASS"
+   },
+   "detail": {
+    "geometry": "line",
+    "composition": "cls_xrd",
+    "n": 120,
+    "mean": 0.5999,
+    "minus_chance": 0.1135,
+    "ci95": [
+     0.0604,
+     0.1665
+    ],
+    "functional": true,
+    "status": "PASS",
+    "note": ""
+   }
+  },
+  {
+   "name": "fm_prior@line",
+   "status": "CERTIFIED",
+   "criteria": {
+    "construct_validity": "PASS",
+    "known_input": "PASS"
+   },
+   "detail": {
+    "geometry": "line",
+    "composition": "fm_prior",
+    "n": 120,
+    "mean": 0.4951,
+    "minus_chance": 0.0087,
+    "ci95": [
+     -0.0464,
+     0.0637
+    ],
+    "functional": true,
+    "status": "PASS",
+    "note": ""
+   }
+  },
+  {
+   "name": "fm_xrd@line",
+   "status": "CERTIFIED",
+   "criteria": {
+    "construct_validity": "PASS",
+    "known_input": "PASS"
+   },
+   "detail": {
+    "geometry": "line",
+    "composition": "fm_xrd",
+    "n": 120,
+    "mean": 0.5614,
+    "minus_chance": 0.075,
+    "ci95": [
+     0.0188,
+     0.1312
+    ],
+    "functional": true,
+    "status": "PASS",
+    "note": ""
+   }
+  },
+  {
+   "name": "fm_xrd_nogap@line",
+   "status": "CERTIFIED",
+   "criteria": {
+    "construct_validity": "PASS",
+    "known_input": "PASS"
+   },
+   "detail": {
+    "geometry": "line",
+    "composition": "fm_xrd_nogap",
+    "n": 120,
+    "mean": 0.5877,
+    "minus_chance": 0.1012,
+    "ci95": [
+     0.047,
+     0.1554
+    ],
+    "functional": true,
+    "status": "PASS",
+    "note": ""
+   }
+  },
+  {
+   "name": "fm_xrd_nomace@line",
+   "status": "CERTIFIED",
+   "criteria": {
+    "construct_validity": "PASS",
+    "known_input": "PASS"
+   },
+   "detail": {
+    "geometry": "line",
+    "composition": "fm_xrd_nomace",
+    "n": 120,
+    "mean": 0.5494,
+    "minus_chance": 0.0629,
+    "ci95": [
+     0.0115,
+     0.1142
+    ],
+    "functional": true,
+    "status": "PASS",
+    "note": ""
+   }
+  },
+  {
+   "name": "cls_gp@spread",
+   "status": "CERTIFIED",
+   "criteria": {
+    "construct_validity": "PASS",
+    "known_input": "PASS"
+   },
+   "detail": {
+    "geometry": "spread",
+    "composition": "cls_gp",
+    "n": 56,
+    "mean": 0.4323,
+    "minus_chance": 0.0808,
+    "ci95": [
+     0.0104,
+     0.1511
+    ],
+    "functional": true,
+    "status": "PASS",
+    "note": ""
+   }
+  },
+  {
+   "name": "cls_xrd@spread",
+   "status": "BLOCKED",
+   "criteria": {
+    "construct_validity": "FAIL",
+    "known_input": "PASS"
+   },
+   "detail": {
+    "geometry": "spread",
+    "composition": "cls_xrd",
+    "n": 56,
+    "mean": 0.2885,
+    "minus_chance": -0.063,
+    "ci95": [
+     -0.1253,
+     -0.0007
+    ],
+    "functional": true,
+    "status": "FAIL",
+    "note": "PI ruling 2026-09-19: XRD composition FAIL on spreads, not repaired this pass (criterion-2 alone would read FAIL)"
+   }
+  },
+  {
+   "name": "fm_prior@spread",
+   "status": "CERTIFIED",
+   "criteria": {
+    "construct_validity": "PASS",
+    "known_input": "PASS"
+   },
+   "detail": {
+    "geometry": "spread",
+    "composition": "fm_prior",
+    "n": 56,
+    "mean": 0.3564,
+    "minus_chance": 0.0048,
+    "ci95": [
+     -0.0583,
+     0.0679
+    ],
+    "functional": true,
+    "status": "PASS",
+    "note": ""
+   }
+  },
+  {
+   "name": "fm_xrd@spread",
+   "status": "BLOCKED",
+   "criteria": {
+    "construct_validity": "FAIL",
+    "known_input": "PASS"
+   },
+   "detail": {
+    "geometry": "spread",
+    "composition": "fm_xrd",
+    "n": 56,
+    "mean": 0.3342,
+    "minus_chance": -0.0173,
+    "ci95": [
+     -0.1008,
+     0.0662
+    ],
+    "functional": true,
+    "status": "FAIL",
+    "note": "PI ruling 2026-09-19: XRD composition FAIL on spreads, not repaired this pass (criterion-2 alone would read PASS)"
+   }
+  },
+  {
+   "name": "fm_xrd_nogap@spread",
+   "status": "BLOCKED",
+   "criteria": {
+    "construct_validity": "FAIL",
+    "known_input": "PASS"
+   },
+   "detail": {
+    "geometry": "spread",
+    "composition": "fm_xrd_nogap",
+    "n": 56,
+    "mean": 0.247,
+    "minus_chance": -0.1045,
+    "ci95": [
+     -0.169,
+     -0.04
+    ],
+    "functional": true,
+    "status": "FAIL",
+    "note": "PI ruling 2026-09-19: XRD composition FAIL on spreads, not repaired this pass (criterion-2 alone would read FAIL)"
+   }
+  },
+  {
+   "name": "fm_xrd_nomace@spread",
+   "status": "BLOCKED",
+   "criteria": {
+    "construct_validity": "FAIL",
+    "known_input": "PASS"
+   },
+   "detail": {
+    "geometry": "spread",
+    "composition": "fm_xrd_nomace",
+    "n": 56,
+    "mean": 0.3491,
+    "minus_chance": -0.0024,
+    "ci95": [
+     -0.0697,
+     0.0649
+    ],
+    "functional": true,
+    "status": "FAIL",
+    "note": "PI ruling 2026-09-19: XRD composition FAIL on spreads, not repaired this pass (criterion-2 alone would read PASS)"
+   }
+  }
+ ],
+ "completeness": "6 mechanical compositions x 2 geometries over 176 unburned pooled episodes, criteria in rev23/instrument/I4_GEOMETRY_CRITERIA.md"
+}

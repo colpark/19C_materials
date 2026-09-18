@@ -1,0 +1,15 @@
+{
+ "recall": {
+  "n": 28,
+  "within_0_05": 0,
+  "mean_dist": 0.2908
+ },
+ "predict": {
+  "n": 28,
+  "within_0_05": 3,
+  "mean_dist": 0.2457
+ },
+ "parse_failures": 0,
+ "tokens_m_measured": 0.133,
+ "units": 28
+}
