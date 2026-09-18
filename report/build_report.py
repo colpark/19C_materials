@@ -79,6 +79,64 @@ def censusplot():
     s.append("</svg>")
     return "".join(s)
 
+
+# ---------------- rev2 section
+F3 = pd.read_csv(os.path.join(ROOT, "rev2/instrument/floors_B3.csv"))
+LIFTS = {k: J(f"rev2/instrument/lift_{k}.json") for k in ("fm_prior", "fm_xrd", "megnet_gap", "mace_hull")}
+PP = J("rev2/supply/power_provisional.json"); P2 = J("rev2/supply/p2_headroom.json"); SPL = J("rev2/discovery/split.json")
+def rev2plot():
+    F3["d"] = F3.fm_xrd - F3.cls_xrd
+    g = F3.groupby("el").agg(d=("d", "mean"), n=("d", "size")).sort_values("d")
+    W, H, L, R_, T = 760, 40 + 26 * len(g), 70, 60, 20
+    lo, hi = -1.0, 1.0
+    x = lambda v: L + (v - lo) / (hi - lo) * (W - L - R_)
+    s = [f'<svg viewBox="0 0 {W} {H}" role="img" aria-label="FM-weighted minus classical XRD floor per chemistry at B=3" class="chart">']
+    for t in (-1, -0.5, 0, 0.5, 1):
+        s.append(f'<line x1="{x(t):.1f}" x2="{x(t):.1f}" y1="{T-8}" y2="{H-22}" class="{"zero" if t == 0 else "grid"}"/>'
+                 f'<text x="{x(t):.1f}" y="{H-6}" class="tick" text-anchor="middle">{t:+.1f}</text>')
+    for i, (el, row) in enumerate(g.iterrows()):
+        y = T + 6 + i * 26
+        s.append(f'<text x="{L-12}" y="{y+4}" class="lab" text-anchor="end">{el}–Sb–O</text>')
+        s.append(f'<line x1="{x(0):.1f}" x2="{x(row.d):.1f}" y1="{y}" y2="{y}" class="stem"/>')
+        s.append(f'<circle cx="{x(row.d):.1f}" cy="{y}" r="5.5" fill="var(--s1)" stroke="var(--bg)" stroke-width="2"><title>{el}: {row.d:+.3f} over {int(row.n)} episodes (no agent)</title></circle>')
+        s.append(f'<text x="{W-R_+8}" y="{y+4}" class="val">n={int(row.n)}</text>')
+    s.append("</svg>"); return "".join(s)
+lr = lambda k: f'{LIFTS[k]["mean_lift"]:+.3f}</td><td class="num">{LIFTS[k]["ci95"][0]:+.3f} – {LIFTS[k]["ci95"][1]:+.3f}</td><td><span class="chip {"close" if LIFTS[k]["ruling"]=="CLOSE" else "none"}">{LIFTS[k]["ruling"]}</span>'
+REV2 = f"""
+<h2 style="border-top:none;margin-top:40px">Rev2 redo · restarted at D4 under the revised skill</h2>
+<div class="verdict">
+<div class="eyebrow" style="color:inherit;opacity:.7">Rev2 result · closed at P7, zero cells</div>
+<div class="big">Closure finding. At a seed-sourced budget the FM channel's effect splits by chemistry, and 14 chemistries cannot resolve it.</div>
+<p>The provisional MDE is <b>{PP['mde']:.3f}</b> against delta 0.169, and N_min is <b>{PP['n_min']}</b> chemistries where 14 exist. I2 had already closed the FM prior and put FM-weighted XRD on the LIFT route. Run 1 spent 300 cells to learn less than this.</p>
+</div>
+<h3>What changed, and why D4</h3>
+<p>Rev2 adds dispositions at I2, a PROXY status at I4, a second P7 pass priced by a pilot, an uptake row at R8, and per-item headroom at P2. Run on run 1's own floors, those gates stop it before the first cell. The earliest stage rev2 touches is D4, where the lift and uptake bands must now be declared. That is also where run 1's one unsourced slot sat: <b>5 EQE per episode</b>, declared at authoring, when the seeds bracket 5–11% of a 29-point line. Re-derived from S2 (optimum at 19 of 177), the budget is 3 (amendment A-04). The census, corpus, unit, contamination probe, FM cache and harness were carried over unchanged. The 102 run-1 items were burned, which left an 87-episode pool.</p>
+<div class="tw"><table>
+<tr><th>Gate</th><th>Run 1 (rev1)</th><th>Rev2 redo</th></tr>
+<tr><td>Budget</td><td>5 of ~29, no seed source; GP floor at ceiling on 30% of items</td><td>3 of ~29 from S2; {int(100*P2['per_item']['zero_headroom_share']['fm_xrd'])}% at ceiling; chance {P2['aggregate']['chance']:.3f}</td></tr>
+<tr><td>I1 strongest floor</td><td>GP-UCB 0.740</td><td>FM-weighted XRD {P2['aggregate']['mean']:.3f}; classical XRD 0.561; GP 0.493</td></tr>
+<tr><td>I2</td><td>"both measurements exist"</td><td>FM prior CLOSE; FM-weighted XRD LIFT</td></tr>
+<tr><td>I4</td><td>PASS</td><td>PROXY, carried to I2</td></tr>
+<tr><td>P7</td><td>one pass, MDE 0.089, RESOLVABLE</td><td>provisional MDE {PP['mde']:.3f}, CLOSE_UNRESOLVABLE</td></tr>
+<tr><td>Cells spent</td><td>300 + 3 pilots, $42</td><td>0</td></tr>
+</table></div>
+<div class="tw"><table>
+<tr><th>I2 channel (B=3, 189 items)</th><th>Lift</th><th>95% CI</th><th>Ruling</th></tr>
+<tr><td>FM prior (fixed input)</td><td class="num">{lr('fm_prior')}</td></tr>
+<tr><td>FM-weighted XRD (agent-built input)</td><td class="num">{lr('fm_xrd')}</td></tr>
+<tr><td>… MEGNet gap alone</td><td class="num">{lr('megnet_gap')}</td></tr>
+<tr><td>… MACE hull alone</td><td class="num">{lr('mace_hull')}</td></tr>
+</table></div>
+<figure>{rev2plot()}<figcaption>FM-weighted minus classical XRD floor per chemistry at B=3, with no agent in the loop. The mean is near zero because large gains (Al, Mg) cancel large losses (Co, Fe). That heterogeneity is what an agent would have to exploit, by knowing when to trust MACE and MEGNet. It is also why 14 chemistries cannot price it.</figcaption></figure>
+<h3>What would reopen it</h3>
+<ul>
+<li><b>More chemistries, not more episodes.</b> N_min is {PP['n_min']} element systems at B=3. The binding axis is supply.</li>
+<li><b>Your D5 call on cost of action.</b> At 5 EQE per episode, the lifted comparison prices at a cohort MDE of 0.140 (resolvable), at the cost of 30% of items already at ceiling. That choice is recorded, not taken: picking the budget that passes the gate would be tuning to the gate.</li>
+<li><b>A channel that measures EQE, not a proxy of it.</b> Both FM tools stay PROXY at I4. The MEGNet gap channel is slightly negative on its own.</li>
+</ul>
+<h2>Run 1 · skill rev1 (for the record)</h2>
+"""
+
 def pct(v): return f"{100*v:.0f}%"
 cp, g = clusterplot()
 pm = S["process_metrics"]; arms = {a["arm"]: a for a in S["arms"]}
@@ -143,10 +201,11 @@ details{{margin:10px 0}} summary{{cursor:pointer;color:var(--ink2);font-size:14p
 <div class="wrap">
 <div class="eyebrow">FM-advantage benchmark · materials instance · run of 2026-09-17/18</div>
 <h1 style="margin-top:10px">Do materials foundation models make an agent a better experimentalist?</h1>
-<p class="lede">An intervene-root benchmark on 22 combinatorial X–Sb–O photoanode libraries. The subject is claude-opus-5, and the question is where to spend 5 EQE and 5 XRD measurements. Three arms: environment only, plus classical tools, and plus MACE-MP-0 and MEGNet. Every arm is scored against mechanical floors and chance on 100 paired episodes.</p>
+<p class="lede">An intervene-root benchmark on 22 combinatorial X–Sb–O photoanode libraries. The subject is claude-opus-5, and the question is where to spend 5 EQE and 5 XRD measurements. Three arms: environment only, plus classical tools, and plus MACE-MP-0 and MEGNet. Every arm is scored against mechanical floors and chance on 100 paired episodes. Run 1 used skill rev1. The rev2 redo restarts at D4 and closes before any cell.</p>
 
+{REV2}
 <div class="verdict">
-<div class="eyebrow" style="color:inherit;opacity:.7">Result · A4</div>
+<div class="eyebrow" style="color:inherit;opacity:.7">Run 1 result · A4</div>
 <div class="big">No claim. The FM tools did not move the decision, and no agent arm beat a plain Gaussian-process floor.</div>
 <p>FM − classical: <b>{prim['episode_mean_diff']:+.3f}</b> of the plate maximum per episode (naive 95% CI {prim['episode_ci95_naive'][0]:+.3f} to {prim['episode_ci95_naive'][1]:+.3f}). At the preregistered element-cluster level it is <b>{prim['cluster']['cluster_mean_diff']:+.3f}</b> (95% CI {prim['cluster']['ci95_cluster'][0]:+.3f} to {prim['cluster']['ci95_cluster'][1]:+.3f}, p = {prim['cluster']['p_cluster']:.2f}). The FM arm called an FM tool in only {pct(pm['fm']['share_any_fm_tool'])} of its episodes.</p>
 </div>
