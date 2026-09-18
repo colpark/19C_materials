@@ -1,0 +1,7 @@
+env/.venv/
+env/raw/
+discovery/seeds/fulltext/
+**/__pycache__/
+*.pyc
+runtime/cells/*/workdir/
+.claude/settings.local.json

@@ -1,0 +1,99 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "corpus_ledger",
+  "type": "object",
+  "required": [
+    "seeds",
+    "inclusion_rules",
+    "rules_frozen_before_count",
+    "exclusion_ledger",
+    "coverage"
+  ],
+  "properties": {
+    "seeds": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "read_in_full",
+          "contribution"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "read_in_full": {
+            "type": "boolean",
+            "description": "false blocks the stage"
+          },
+          "contribution": {
+            "type": "string"
+          },
+          "facts": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "assertion",
+                "locator"
+              ],
+              "properties": {
+                "assertion": {
+                  "type": "string"
+                },
+                "locator": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "inclusion_rules": {
+      "type": "array"
+    },
+    "rules_frozen_before_count": {
+      "type": "boolean"
+    },
+    "exclusion_ledger": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "unit",
+          "rule"
+        ],
+        "properties": {
+          "unit": {
+            "type": "string"
+          },
+          "rule": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "answer_in_own_source": {
+      "type": "array",
+      "description": "items refused, or admitted with a written exposure ruling"
+    },
+    "coverage": {
+      "type": "object",
+      "required": [
+        "seeds_read",
+        "unresolved"
+      ],
+      "description": "an inventory, never a completeness claim",
+      "properties": {
+        "seeds_read": {
+          "type": "integer"
+        },
+        "unresolved": {
+          "type": "array"
+        }
+      }
+    }
+  }
+}

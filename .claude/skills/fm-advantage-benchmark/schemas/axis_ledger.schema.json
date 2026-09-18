@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "axis_ledger",
+  "type": "object",
+  "required": [
+    "candidate",
+    "branch",
+    "axes",
+    "ruling",
+    "binding_axis",
+    "completeness"
+  ],
+  "properties": {
+    "candidate": {
+      "type": "string"
+    },
+    "branch": {
+      "enum": [
+        "prediction",
+        "design"
+      ]
+    },
+    "axes": {
+      "type": "array",
+      "minItems": 7
+    },
+    "ruling": {
+      "enum": [
+        "PROCEED",
+        "CLOSE",
+        "ESCALATE"
+      ]
+    },
+    "binding_axis": {
+      "type": "string"
+    },
+    "definition_widened": {
+      "type": "boolean",
+      "description": "must be false"
+    },
+    "completeness": {
+      "type": "string"
+    }
+  }
+}

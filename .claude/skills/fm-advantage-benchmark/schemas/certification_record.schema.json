@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "certification_record",
+  "type": "object",
+  "required": [
+    "tools",
+    "completeness"
+  ],
+  "properties": {
+    "tools": {
+      "type": "array"
+    },
+    "comparator_executable_every_stage": {
+      "type": "boolean"
+    },
+    "channels": {
+      "type": "object"
+    },
+    "completeness": {
+      "type": "string"
+    }
+  }
+}

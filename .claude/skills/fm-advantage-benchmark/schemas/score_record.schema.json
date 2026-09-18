@@ -1,0 +1,57 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "score_record",
+  "type": "object",
+  "required": [
+    "primary_metric",
+    "chance",
+    "arms",
+    "mde",
+    "claim",
+    "completeness"
+  ],
+  "properties": {
+    "primary_metric": {
+      "type": "string"
+    },
+    "secondary_metric": {
+      "type": "string"
+    },
+    "chance": {
+      "type": "number"
+    },
+    "blind_files_hashed_before_labels": {
+      "type": "boolean"
+    },
+    "arms": {
+      "type": "array"
+    },
+    "process_metrics": {
+      "type": "array"
+    },
+    "paired_comparisons": {
+      "type": "array"
+    },
+    "mde": {
+      "type": "number"
+    },
+    "claim": {
+      "enum": [
+        "SEPARATION_DETECTED",
+        "NO_SEPARATION_DETECTABLE"
+      ]
+    },
+    "post_hoc_recoveries": {
+      "type": "array"
+    },
+    "judge_error_rate": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "completeness": {
+      "type": "string"
+    }
+  }
+}

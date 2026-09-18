@@ -1,0 +1,712 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "domain_manifest",
+  "description": "A stage output, not an input. D3 and D4 derive, D5 ratifies.",
+  "type": "object",
+  "required": [
+    "tau",
+    "decision_shape",
+    "k",
+    "label_source",
+    "exposure_key",
+    "tool_inventory",
+    "delta",
+    "S",
+    "subject_set",
+    "candidates",
+    "frozen_hash"
+  ],
+  "properties": {
+    "tau": {
+      "type": "object",
+      "required": [
+        "value",
+        "provenance",
+        "status"
+      ],
+      "properties": {
+        "value": {},
+        "provenance": {
+          "type": "object",
+          "required": [
+            "referent",
+            "source",
+            "population",
+            "adjudicator",
+            "falsifier"
+          ],
+          "properties": {
+            "referent": {
+              "type": "string"
+            },
+            "source": {
+              "type": "string"
+            },
+            "population": {
+              "type": "string"
+            },
+            "adjudicator": {
+              "type": "string"
+            },
+            "falsifier": {
+              "type": "string"
+            }
+          }
+        },
+        "status": {
+          "enum": [
+            "DERIVED",
+            "RATIFIED",
+            "OVERRIDDEN",
+            "UNDEMONSTRATED"
+          ]
+        },
+        "override_reason": {
+          "type": "string"
+        }
+      }
+    },
+    "decision_shape": {
+      "type": "object",
+      "required": [
+        "value",
+        "provenance",
+        "status"
+      ],
+      "properties": {
+        "value": {
+          "type": "object",
+          "required": [
+            "root",
+            "subtype",
+            "item_template",
+            "branch_census",
+            "depth_census",
+            "grader",
+            "yield_per_unit",
+            "role_floor",
+            "alternatives_considered"
+          ],
+          "properties": {
+            "root": {
+              "enum": [
+                "infer",
+                "explain",
+                "generate",
+                "intervene"
+              ]
+            },
+            "subtype": {
+              "type": "object",
+              "required": [
+                "name",
+                "derived"
+              ],
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "derived": {
+                  "type": "boolean",
+                  "description": "true when not on the seed list in shape.md"
+                }
+              }
+            },
+            "grader": {
+              "type": "object",
+              "required": [
+                "kind",
+                "in_tool_inventory"
+              ],
+              "properties": {
+                "kind": {
+                  "enum": [
+                    "answer_key",
+                    "frozen_likelihood",
+                    "certified_oracle",
+                    "certified_judge"
+                  ]
+                },
+                "in_tool_inventory": {
+                  "type": "boolean"
+                },
+                "certification_stage": {
+                  "type": "string"
+                }
+              }
+            },
+            "yield_per_unit": {
+              "type": "object",
+              "required": [
+                "scalars",
+                "thresholded",
+                "arithmetic"
+              ],
+              "properties": {
+                "scalars": {
+                  "type": "number"
+                },
+                "thresholded": {
+                  "type": "boolean"
+                },
+                "arithmetic": {
+                  "type": "string"
+                }
+              }
+            },
+            "role_floor": {
+              "type": "object",
+              "required": [
+                "role",
+                "below_predictor_line"
+              ],
+              "properties": {
+                "role": {
+                  "enum": [
+                    "encoder",
+                    "predictor",
+                    "scorer",
+                    "generator",
+                    "simulator"
+                  ]
+                },
+                "below_predictor_line": {
+                  "type": "boolean"
+                },
+                "lift": {
+                  "enum": [
+                    "multi_criterion_budget",
+                    "required_rejection",
+                    "stopping_rule",
+                    "none"
+                  ]
+                }
+              }
+            },
+            "alternatives_considered": {
+              "type": "array",
+              "minItems": 3,
+              "items": {
+                "type": "object",
+                "required": [
+                  "root",
+                  "binding_gate"
+                ],
+                "properties": {
+                  "root": {
+                    "enum": [
+                      "infer",
+                      "explain",
+                      "generate",
+                      "intervene"
+                    ]
+                  },
+                  "binding_gate": {
+                    "enum": [
+                      "role_floor",
+                      "grader",
+                      "yield",
+                      "action_absent_from_corpus"
+                    ]
+                  },
+                  "note": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "disposition": {
+              "enum": [
+                "PROCEED",
+                "CLOSE",
+                "ESCALATE"
+              ]
+            },
+            "item_template": {
+              "type": "object",
+              "required": [
+                "description",
+                "locator"
+              ],
+              "properties": {
+                "description": {
+                  "type": "string"
+                },
+                "locator": {
+                  "type": "string",
+                  "description": "where in the corpus this form of question is practised"
+                }
+              }
+            },
+            "branch_census": {
+              "type": "object",
+              "required": [
+                "chain_length",
+                "branch_points",
+                "branches_with_named_rejection",
+                "branches_per_episode"
+              ],
+              "properties": {
+                "chain_length": {
+                  "type": "integer"
+                },
+                "branch_points": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "branches_with_named_rejection": {
+                  "type": "integer"
+                },
+                "branches_per_episode": {
+                  "type": "integer"
+                },
+                "locators": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "depth_census": {
+              "type": "object",
+              "required": [
+                "claimed_channels",
+                "measured_depth",
+                "method"
+              ],
+              "properties": {
+                "claimed_channels": {
+                  "type": "integer"
+                },
+                "measured_depth": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "method": {
+                  "enum": [
+                    "leave_one_out",
+                    "not_measured"
+                  ]
+                },
+                "subset_wrong_conclusions": {
+                  "type": "integer"
+                },
+                "supply_at_this_depth": {
+                  "type": "integer"
+                },
+                "unmounted_channels": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "provenance": {
+          "type": "object",
+          "required": [
+            "referent",
+            "source",
+            "population",
+            "adjudicator",
+            "falsifier"
+          ],
+          "properties": {
+            "referent": {
+              "type": "string"
+            },
+            "source": {
+              "type": "string"
+            },
+            "population": {
+              "type": "string"
+            },
+            "adjudicator": {
+              "type": "string"
+            },
+            "falsifier": {
+              "type": "string"
+            }
+          }
+        },
+        "status": {
+          "enum": [
+            "DERIVED",
+            "RATIFIED",
+            "OVERRIDDEN",
+            "UNDEMONSTRATED"
+          ]
+        },
+        "override_reason": {
+          "type": "string"
+        }
+      }
+    },
+    "k": {
+      "type": "object",
+      "required": [
+        "value",
+        "provenance",
+        "status"
+      ],
+      "properties": {
+        "value": {},
+        "provenance": {
+          "type": "object",
+          "required": [
+            "referent",
+            "source",
+            "population",
+            "adjudicator",
+            "falsifier"
+          ],
+          "properties": {
+            "referent": {
+              "type": "string"
+            },
+            "source": {
+              "type": "string"
+            },
+            "population": {
+              "type": "string"
+            },
+            "adjudicator": {
+              "type": "string"
+            },
+            "falsifier": {
+              "type": "string"
+            }
+          }
+        },
+        "status": {
+          "enum": [
+            "DERIVED",
+            "RATIFIED",
+            "OVERRIDDEN",
+            "UNDEMONSTRATED"
+          ]
+        },
+        "override_reason": {
+          "type": "string"
+        }
+      }
+    },
+    "label_source": {
+      "type": "object",
+      "required": [
+        "value",
+        "provenance",
+        "status"
+      ],
+      "properties": {
+        "value": {},
+        "provenance": {
+          "type": "object",
+          "required": [
+            "referent",
+            "source",
+            "population",
+            "adjudicator",
+            "falsifier"
+          ],
+          "properties": {
+            "referent": {
+              "type": "string"
+            },
+            "source": {
+              "type": "string"
+            },
+            "population": {
+              "type": "string"
+            },
+            "adjudicator": {
+              "type": "string"
+            },
+            "falsifier": {
+              "type": "string"
+            }
+          }
+        },
+        "status": {
+          "enum": [
+            "DERIVED",
+            "RATIFIED",
+            "OVERRIDDEN",
+            "UNDEMONSTRATED"
+          ]
+        },
+        "override_reason": {
+          "type": "string"
+        }
+      }
+    },
+    "exposure_key": {
+      "type": "object",
+      "required": [
+        "value",
+        "provenance",
+        "status"
+      ],
+      "properties": {
+        "value": {},
+        "provenance": {
+          "type": "object",
+          "required": [
+            "referent",
+            "source",
+            "population",
+            "adjudicator",
+            "falsifier"
+          ],
+          "properties": {
+            "referent": {
+              "type": "string"
+            },
+            "source": {
+              "type": "string"
+            },
+            "population": {
+              "type": "string"
+            },
+            "adjudicator": {
+              "type": "string"
+            },
+            "falsifier": {
+              "type": "string"
+            }
+          }
+        },
+        "status": {
+          "enum": [
+            "DERIVED",
+            "RATIFIED",
+            "OVERRIDDEN",
+            "UNDEMONSTRATED"
+          ]
+        },
+        "override_reason": {
+          "type": "string"
+        }
+      }
+    },
+    "tool_inventory": {
+      "type": "object",
+      "required": [
+        "value",
+        "provenance",
+        "status"
+      ],
+      "properties": {
+        "value": {},
+        "provenance": {
+          "type": "object",
+          "required": [
+            "referent",
+            "source",
+            "population",
+            "adjudicator",
+            "falsifier"
+          ],
+          "properties": {
+            "referent": {
+              "type": "string"
+            },
+            "source": {
+              "type": "string"
+            },
+            "population": {
+              "type": "string"
+            },
+            "adjudicator": {
+              "type": "string"
+            },
+            "falsifier": {
+              "type": "string"
+            }
+          }
+        },
+        "status": {
+          "enum": [
+            "DERIVED",
+            "RATIFIED",
+            "OVERRIDDEN",
+            "UNDEMONSTRATED"
+          ]
+        },
+        "override_reason": {
+          "type": "string"
+        }
+      }
+    },
+    "delta": {
+      "type": "object",
+      "required": [
+        "value",
+        "provenance",
+        "status"
+      ],
+      "properties": {
+        "value": {},
+        "provenance": {
+          "type": "object",
+          "required": [
+            "referent",
+            "source",
+            "population",
+            "adjudicator",
+            "falsifier"
+          ],
+          "properties": {
+            "referent": {
+              "type": "string"
+            },
+            "source": {
+              "type": "string"
+            },
+            "population": {
+              "type": "string"
+            },
+            "adjudicator": {
+              "type": "string"
+            },
+            "falsifier": {
+              "type": "string"
+            }
+          }
+        },
+        "status": {
+          "enum": [
+            "DERIVED",
+            "RATIFIED",
+            "OVERRIDDEN",
+            "UNDEMONSTRATED"
+          ]
+        },
+        "override_reason": {
+          "type": "string"
+        }
+      }
+    },
+    "S": {
+      "type": "object",
+      "required": [
+        "value",
+        "provenance",
+        "status"
+      ],
+      "properties": {
+        "value": {},
+        "provenance": {
+          "type": "object",
+          "required": [
+            "referent",
+            "source",
+            "population",
+            "adjudicator",
+            "falsifier"
+          ],
+          "properties": {
+            "referent": {
+              "type": "string"
+            },
+            "source": {
+              "type": "string"
+            },
+            "population": {
+              "type": "string"
+            },
+            "adjudicator": {
+              "type": "string"
+            },
+            "falsifier": {
+              "type": "string"
+            }
+          }
+        },
+        "status": {
+          "enum": [
+            "DERIVED",
+            "RATIFIED",
+            "OVERRIDDEN",
+            "UNDEMONSTRATED"
+          ]
+        },
+        "override_reason": {
+          "type": "string"
+        }
+      }
+    },
+    "subject_set": {
+      "type": "object",
+      "required": [
+        "value",
+        "provenance",
+        "status"
+      ],
+      "properties": {
+        "value": {},
+        "provenance": {
+          "type": "object",
+          "required": [
+            "referent",
+            "source",
+            "population",
+            "adjudicator",
+            "falsifier"
+          ],
+          "properties": {
+            "referent": {
+              "type": "string"
+            },
+            "source": {
+              "type": "string"
+            },
+            "population": {
+              "type": "string"
+            },
+            "adjudicator": {
+              "type": "string"
+            },
+            "falsifier": {
+              "type": "string"
+            }
+          }
+        },
+        "status": {
+          "enum": [
+            "DERIVED",
+            "RATIFIED",
+            "OVERRIDDEN",
+            "UNDEMONSTRATED"
+          ]
+        },
+        "override_reason": {
+          "type": "string"
+        }
+      }
+    },
+    "supplied_by_human": {
+      "type": "object",
+      "properties": {
+        "budget": {
+          "type": "string"
+        },
+        "cost_of_action": {
+          "type": "string"
+        }
+      }
+    },
+    "candidates": {
+      "type": "array"
+    },
+    "frozen_hash": {
+      "type": "string"
+    },
+    "completeness": {
+      "type": "string"
+    }
+  }
+}

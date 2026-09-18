@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "power_record",
+  "type": "object",
+  "required": [
+    "chance",
+    "n",
+    "sigma_d",
+    "mde",
+    "delta",
+    "n_min",
+    "ruling",
+    "completeness"
+  ],
+  "properties": {
+    "chance": {
+      "type": "number"
+    },
+    "n": {
+      "type": "integer"
+    },
+    "sigma_d": {
+      "type": "number"
+    },
+    "mde": {
+      "type": "number"
+    },
+    "delta": {
+      "type": "number"
+    },
+    "n_min": {
+      "type": "integer"
+    },
+    "strata": {
+      "type": "object"
+    },
+    "items_filtered_on_outcome": {
+      "type": "boolean",
+      "description": "must be false, stratify"
+    },
+    "ruling": {
+      "enum": [
+        "RESOLVABLE",
+        "CLOSE_UNRESOLVABLE"
+      ]
+    },
+    "completeness": {
+      "type": "string"
+    }
+  }
+}
