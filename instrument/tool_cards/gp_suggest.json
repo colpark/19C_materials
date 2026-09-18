@@ -1,0 +1,21 @@
+{
+ "quantity_returned": "GP-UCB (RBF length 0.08 on Sb fraction, noise 0.05, beta 2) next index",
+ "code": "bench/classical.py::ucb_next",
+ "defining_paper": "Srinivas et al. 2010 GP-UCB",
+ "accuracy_on_scored_quantity": "n/a",
+ "what_it_is_not": "no prior knowledge",
+ "conventions": [
+  "hyperparameters fixed a priori, not fit"
+ ],
+ "served_checkpoint": {
+  "pin": "bench/classical.py",
+  "matches_adjudicating_composition": true
+ },
+ "disagreements": [
+  "none found: compared bench/classical.py::ucb_next against Srinivas et al. 2010 GP-UCB for returned quantity and conventions"
+ ],
+ "name": "gp_suggest",
+ "written_from": "code",
+ "versions": "mace-torch 0.3.16, matgl 4.0.3, pymatgen 2026.5.4, torch 2.14.0+cu130",
+ "completeness": "Card written from bench/classical.py::ucb_next; checked against Srinivas et al. 2010 GP-UCB; 1 disagreement(s) listed, none reconciled."
+}

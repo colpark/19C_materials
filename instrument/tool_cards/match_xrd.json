@@ -1,0 +1,21 @@
+{
+ "quantity_returned": "cosine similarity measured vs simulated on a common Q grid, max over rigid shift +-0.06 1/A",
+ "code": "bench/classical.py::match",
+ "defining_paper": "none (in-house)",
+ "accuracy_on_scored_quantity": "n/a",
+ "what_it_is_not": "not a Rietveld fit; no phase fractions",
+ "conventions": [
+  "measured baseline: subtract 10th percentile, clip, normalize"
+ ],
+ "served_checkpoint": {
+  "pin": "bench/classical.py",
+  "matches_adjudicating_composition": true
+ },
+ "disagreements": [
+  "substrate peaks not removed"
+ ],
+ "name": "match_xrd",
+ "written_from": "code",
+ "versions": "mace-torch 0.3.16, matgl 4.0.3, pymatgen 2026.5.4, torch 2.14.0+cu130",
+ "completeness": "Card written from bench/classical.py::match; checked against none (in-house); 1 disagreement(s) listed, none reconciled."
+}

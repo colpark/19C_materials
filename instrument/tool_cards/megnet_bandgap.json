@@ -1,0 +1,24 @@
+{
+ "quantity_returned": "MEGNet multi-fidelity band gap (eV) at fidelity pbe/gllb/hse/scan, clipped at 0, on the unrelaxed input structure",
+ "code": "bench/fm.py::megnet_gap; runtime/mcp/server.py::megnet_bandgap",
+ "defining_paper": "Chen et al., Learning properties of ordered and disordered materials from multi-fidelity data, Nat Comput Sci 2021",
+ "accuracy_on_scored_quantity": "none on EQE; gap is a necessary condition for absorption at the LED photon energy (checked at I4)",
+ "what_it_is_not": "not an optical absorption edge of a sputtered film; not EQE; not defect/disorder aware",
+ "conventions": [
+  "state_attr fidelity index 0=PBE,1=GLLB-SC,2=HSE,3=SCAN (matgl model card order assumed from load; not verified against training code)",
+  "prediction clipped at 0 by our wrapper",
+  "input is the MP (unrelaxed-by-us) structure, not the MACE-relaxed one"
+ ],
+ "served_checkpoint": {
+  "pin": "matgl hub materialyze/MEGNet-BandGap-mfi-MP-2019.4.1 snapshot 21979da3d95d41e51ab920d149ae745f910efe11",
+  "matches_adjudicating_composition": true
+ },
+ "disagreements": [
+  "the fidelity index ordering is taken from the model name/docs, not verified in the served checkpoint's training metadata",
+  "the Ni-Sb-O check returns 0.0 eV for NiSb2O6 (mp-505271), a phase the dataset labels photoactive under 3.2 eV light; the paper reports MAE ~0.3-0.5 eV on HSE, so this is outside documented accuracy for this phase"
+ ],
+ "name": "megnet_bandgap",
+ "written_from": "code",
+ "versions": "mace-torch 0.3.16, matgl 4.0.3, pymatgen 2026.5.4, torch 2.14.0+cu130",
+ "completeness": "Card written from bench/fm.py::megnet_gap; runtime/mcp/server.py::megnet_bandgap; checked against Chen et al., Learning properties of ordered and disordered materials from multi-fidelity data, Nat Comput Sci 2021; 2 disagreement(s) listed, none reconciled."
+}

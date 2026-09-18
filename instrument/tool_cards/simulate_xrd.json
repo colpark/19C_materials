@@ -1,0 +1,21 @@
+{
+ "quantity_returned": "pymatgen XRDCalculator Cu Ka powder pattern 10-90 deg 2theta mapped to Q (1/A), Gaussian broadened sigma 0.012 1/A, top 12 peaks",
+ "code": "bench/classical.py::simulate, sim_peaks",
+ "defining_paper": "pymatgen diffraction module",
+ "accuracy_on_scored_quantity": "n/a",
+ "what_it_is_not": "no texture, no thin-film preferred orientation, no substrate peaks",
+ "conventions": [
+  "measured Q converted nm^-1 -> 1/A by /10"
+ ],
+ "served_checkpoint": {
+  "pin": "pymatgen 2026.5.4",
+  "matches_adjudicating_composition": true
+ },
+ "disagreements": [
+  "measured patterns include FTO or Pt substrate peaks (D3 finding); the simulator has none, so cosine match is depressed by substrate lines"
+ ],
+ "name": "simulate_xrd",
+ "written_from": "code",
+ "versions": "mace-torch 0.3.16, matgl 4.0.3, pymatgen 2026.5.4, torch 2.14.0+cu130",
+ "completeness": "Card written from bench/classical.py::simulate, sim_peaks; checked against pymatgen diffraction module; 1 disagreement(s) listed, none reconciled."
+}

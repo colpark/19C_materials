@@ -1,0 +1,21 @@
+{
+ "quantity_returned": "top-20 peaks of the XRD pattern at the XRD point nearest in Sb fraction",
+ "code": "server.py::measure_xrd; classical.peaks",
+ "defining_paper": "S1 data readme",
+ "accuracy_on_scored_quantity": "n/a",
+ "what_it_is_not": "EQE samples (~29) and XRD points (29) are matched by nearest Sb fraction, not identical spots",
+ "conventions": [
+  "prominence 0.04, distance 8 grid points"
+ ],
+ "served_checkpoint": {
+  "pin": "data sha256 677fefa7",
+  "matches_adjudicating_composition": true
+ },
+ "disagreements": [
+  "184 of 196 episodes map two or more EQE samples to the same XRD point"
+ ],
+ "name": "measure_xrd",
+ "written_from": "code",
+ "versions": "mace-torch 0.3.16, matgl 4.0.3, pymatgen 2026.5.4, torch 2.14.0+cu130",
+ "completeness": "Card written from server.py::measure_xrd; classical.peaks; checked against S1 data readme; 1 disagreement(s) listed, none reconciled."
+}

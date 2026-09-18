@@ -11,3 +11,8 @@ Cu 92 phases, 8 ternary, 253s
     mp-5831 CuO6Sb2 sb 0.6667 ehull 0.0001 gap(pbe,hse) 0.021 0.017
     mp-554658 CuO6Sb2 sb 0.6667 ehull 0.0005 gap(pbe,hse) 0.017 0.021
     mp-1042691 Cu3O12Sb4 sb 0.5714 ehull 0.0331 gap(pbe,hse) 0.036 0.505
+La 67 phases, 9 ternary, 108s
+    mp-1104307 La3O3Sb sb 0.25 ehull 0.0 gap(pbe,hse) 0.779 2.216
+    mp-1190427 LaO4Sb sb 0.5 ehull 0.0 gap(pbe,hse) 2.002 4.372
+    mp-31418 LaO9Sb3 sb 0.75 ehull 0.0 gap(pbe,hse) 1.949 3.077
+    mp-542503 La9O5Sb5 sb 0.3571 ehull 0.0 gap(pbe,hse) 0.001 0.005

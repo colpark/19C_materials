@@ -1,0 +1,22 @@
+{
+ "quantity_returned": "MP structures (OPTIMADE) in M-Sb-O, M-O, Sb-O with <=80 sites: id, formula, nsites, Sb cation fraction",
+ "code": "bench/fm.py::chemsys_structures; server.py::list_phases",
+ "defining_paper": "Materials Project OPTIMADE endpoint",
+ "accuracy_on_scored_quantity": "n/a (lookup)",
+ "what_it_is_not": "no energies, no stability, no gaps",
+ "conventions": [
+  "cached on first query (env/cache/optimade)",
+  "User-Agent header required"
+ ],
+ "served_checkpoint": {
+  "pin": "env/cache/optimade/*.json snapshot 2026-09-17",
+  "matches_adjudicating_composition": true
+ },
+ "disagreements": [
+  "none found: compared bench/fm.py::chemsys_structures; server.py::list_phases against Materials Project OPTIMADE endpoint for returned quantity and conventions"
+ ],
+ "name": "list_phases",
+ "written_from": "code",
+ "versions": "mace-torch 0.3.16, matgl 4.0.3, pymatgen 2026.5.4, torch 2.14.0+cu130",
+ "completeness": "Card written from bench/fm.py::chemsys_structures; server.py::list_phases; checked against Materials Project OPTIMADE endpoint; 1 disagreement(s) listed, none reconciled."
+}

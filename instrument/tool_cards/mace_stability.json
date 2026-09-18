@@ -1,0 +1,25 @@
+{
+ "quantity_returned": "MACE-MP-0 medium relaxed energy per atom -> formation energy vs MACE elemental refs (O from relaxed O2 in a 12 A box) and e_above_hull vs MACE-relaxed MP phases of the system (binaries <=30 sites, ternaries <=80)",
+ "code": "bench/fm.py::mace_relax, formation_energy, ref_energy; runtime/mcp/server.py::mace_stability",
+ "defining_paper": "Batatia et al., A foundation model for atomistic materials chemistry (MACE-MP-0), arXiv 2401.00096",
+ "accuracy_on_scored_quantity": "none: the scored quantity is EQE; stability is a proxy for which phase forms (checked at I4)",
+ "what_it_is_not": "not DFT; no MP2020 anion/U corrections; no magnetism; no finite-temperature or kinetic (thin-film, 610-850 C anneal) effects; not an EQE predictor",
+ "conventions": [
+  "float64, FIRE + FrechetCellFilter, fmax 0.05 eV/A, max 150 steps (unconverged relaxations are not flagged)",
+  "O2 reference is a MACE molecule, not the fitted MP O2 correction",
+  "hull built only from MP phases in M-Sb-O (other elements' oxides missing -> lower bound, flagged)"
+ ],
+ "served_checkpoint": {
+  "pin": "~/.cache/mace/20231203mace128L1_epoch199model sha256 01bfe22100139f42...",
+  "matches_adjudicating_composition": true
+ },
+ "disagreements": [
+  "the literature MACE-MP-0 hull numbers are computed against MP-corrected DFT references; this card's hull uses MACE-only references, so absolute ehull differs from MP ehull",
+  "150-step cap: the paper relaxes to convergence; large cells may stop unconverged",
+  "binary polymorphs above 30 sites are excluded (A-02); the paper's hull has no such cap"
+ ],
+ "name": "mace_stability",
+ "written_from": "code",
+ "versions": "mace-torch 0.3.16, matgl 4.0.3, pymatgen 2026.5.4, torch 2.14.0+cu130",
+ "completeness": "Card written from bench/fm.py::mace_relax, formation_energy, ref_energy; runtime/mcp/server.py::mace_stability; checked against Batatia et al., A foundation model for atomistic materials chemistry (MACE-MP-0), arXiv 2401.00096; 3 disagreement(s) listed, none reconciled."
+}

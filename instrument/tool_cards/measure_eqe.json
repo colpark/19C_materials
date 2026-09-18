@@ -1,0 +1,21 @@
+{
+ "quantity_returned": "recorded EQE_pct of the chosen sample",
+ "code": "server.py::measure_eqe",
+ "defining_paper": "S1 (ACS Sustainable Chem Eng 2022) methods",
+ "accuracy_on_scored_quantity": "identity with the label (it is the label)",
+ "what_it_is_not": "no repeat noise is simulated",
+ "conventions": [
+  "duplicate sample rows dropped (first kept)"
+ ],
+ "served_checkpoint": {
+  "pin": "data sha256 677fefa7",
+  "matches_adjudicating_composition": true
+ },
+ "disagreements": [
+  "none found: compared server.py::measure_eqe against S1 (ACS Sustainable Chem Eng 2022) methods for returned quantity and conventions"
+ ],
+ "name": "measure_eqe",
+ "written_from": "code",
+ "versions": "mace-torch 0.3.16, matgl 4.0.3, pymatgen 2026.5.4, torch 2.14.0+cu130",
+ "completeness": "Card written from server.py::measure_eqe; checked against S1 (ACS Sustainable Chem Eng 2022) methods; 1 disagreement(s) listed, none reconciled."
+}

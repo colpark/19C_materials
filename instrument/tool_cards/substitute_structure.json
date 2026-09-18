@@ -1,0 +1,19 @@
+{
+ "quantity_returned": "copy of a listed structure with all sites of one element replaced",
+ "code": "server.py::substitute_structure",
+ "defining_paper": "none",
+ "accuracy_on_scored_quantity": "n/a",
+ "what_it_is_not": "no charge balancing, no relaxation (MACE relaxes on demand)",
+ "conventions": [],
+ "served_checkpoint": {
+  "pin": "runtime/mcp/server.py",
+  "matches_adjudicating_composition": true
+ },
+ "disagreements": [
+  "none found: compared server.py::substitute_structure against none for returned quantity and conventions"
+ ],
+ "name": "substitute_structure",
+ "written_from": "code",
+ "versions": "mace-torch 0.3.16, matgl 4.0.3, pymatgen 2026.5.4, torch 2.14.0+cu130",
+ "completeness": "Card written from server.py::substitute_structure; checked against none; 1 disagreement(s) listed, none reconciled."
+}
