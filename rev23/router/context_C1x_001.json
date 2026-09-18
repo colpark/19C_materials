@@ -1,0 +1,3 @@
+{"alt_fms": false, "outcomes_seen": false,
+ "alt_fms_reason": "the grader failure is split-half reliability of the per-cluster label (rho 0.357 < 0.5). The only alternative checkpoint class (MACE-MPA-0) left the hull contribution unchanged for C1 (decision R002 outcome), and a hull swap cannot change label reliability, which comes from run-to-run variance of the merit",
+ "source": "rev23/explain/c1x_summary.json; rev23/explain/p7_provisional_oracle.json (oracle headroom 0.094 < delta 0.169)"}

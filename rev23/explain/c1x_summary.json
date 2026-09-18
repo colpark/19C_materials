@@ -1,0 +1,23 @@
+{
+ "grader": {
+  "split_half_spearman": 0.357,
+  "n": 23,
+  "sign_agreement": 10,
+  "ruling": "FAIL",
+  "threshold": 0.5
+ },
+ "floors": {
+  "cls": 0.5526,
+  "fmv": 0.5596,
+  "policy": 0.5002,
+  "oracle": 0.6461,
+  "chance": 0.5561
+ },
+ "n_clusters": 26,
+ "features": [
+  "n stable mixed phases",
+  "share MEGNet HSE gap in [0.5,3.5]",
+  "cation-fraction span (A2)"
+ ],
+ "completeness": "26 tau-0.5 clusters over 176 unburned pooled episodes; LOCO logistic at zero cells"
+}

@@ -1,0 +1,114 @@
+{
+  "closure": "I4_FAIL",
+  "key": "I4_FAIL",
+  "candidate": "C1x",
+  "outcomes_seen": false,
+  "launched": [
+    {
+      "remedy": "advance_next_candidate",
+      "class": "autonomous",
+      "reentry": "portfolio",
+      "what": "start the next active candidate in the portfolio by priority",
+      "cost": {
+        "gpu_hours": 0,
+        "storage_gb": 0,
+        "tokens_m": 0,
+        "wall_hours": 0
+      },
+      "over_soft_ceiling": false,
+      "projected": {
+        "gpu_hours": 5.35,
+        "storage_gb": 8.83,
+        "tokens_m": 20.392,
+        "wall_hours": 15.05
+      }
+    }
+  ],
+  "carded": [
+    {
+      "remedy": "different_scored_quantity",
+      "class": "reserved",
+      "reentry": "D4",
+      "what": "move to a task whose scored quantity the FM's construct measures; a change of scientific question",
+      "cost": {
+        "gpu_hours": 0,
+        "storage_gb": 0,
+        "tokens_m": 0,
+        "wall_hours": 0
+      },
+      "reason": "deferred by standing ruling until A4; does not halt"
+    }
+  ],
+  "refused": [
+    {
+      "remedy": "swap_fm_checkpoint",
+      "class": "autonomous",
+      "reentry": "I2",
+      "what": "precompute the alternative checkpoint on the same structures, rebuild the composition, re-run lift.py",
+      "cost": {
+        "gpu_hours": 6,
+        "storage_gb": 20,
+        "tokens_m": 1,
+        "wall_hours": 4
+      },
+      "reason": "precondition not met: alt_fms"
+    },
+    {
+      "remedy": "accept_proxy_grader",
+      "class": "reserved",
+      "reentry": "I4",
+      "what": "accept a disclosed proxy grader; a judgment about what counts as evidence",
+      "cost": {
+        "gpu_hours": 0,
+        "storage_gb": 0,
+        "tokens_m": 0,
+        "wall_hours": 0
+      },
+      "reason": "denied by standing ruling (PI, 2026-09-19 (kickoff message of the rev 2.3 autonomous pass, RUN_LOG.md 2026-09-19))"
+    }
+  ],
+  "standing_applied": [],
+  "halt": false,
+  "guard_state": {
+    "depth": 0,
+    "reentry": {},
+    "failures": {},
+    "retired": [],
+    "launched_history": [
+      "advance_next_candidate"
+    ],
+    "completed": {}
+  },
+  "guard_delta": {
+    "reentry": {},
+    "launched": [
+      "advance_next_candidate"
+    ]
+  },
+  "envelope_after": {
+    "gpu_hours": {
+      "ceiling": 40,
+      "spent": 5.35,
+      "committed": 0.0
+    },
+    "storage_gb": {
+      "ceiling": 60,
+      "spent": 8.83,
+      "committed": 0.0
+    },
+    "tokens_m": {
+      "ceiling": 200,
+      "spent": 20.392,
+      "committed": 0.0
+    },
+    "wall_hours": {
+      "ceiling": 48,
+      "spent": 15.05,
+      "committed": 0.0
+    }
+  },
+  "amendments": [
+    "O1: advance_next_candidate re-enters portfolio for C1x"
+  ],
+  "completeness": "routed I4_FAIL as I4_FAIL for C1x: 1 launched, 1 carded to the human, 2 refused, 0 standing rulings applied, depth 0 of 3"
+}

@@ -116,3 +116,4 @@
   - I4 per geometry: all compositions PASS on lines; the XRD compositions FAIL on spreads (PI ruling; cls_xrd also significantly below chance there).
   - Tau separation flat 0.18–0.19; collapse undefined, conservative 0.5 (26 clusters).
 - **P4 final: PROCEED.** Binding axis: positive supply (26 clusters vs N_min 25). Channel lift: LIFT, approved by standing ruling.
+- C1x (parallel, zero cells): pooled grader split-half rho 0.357 → **I4 FAIL**. Oracle headroom 0.094 < delta 0.169; the feature policy is −0.052 vs always-classical. Decision 004: swap refused (precondition), proxy grader refused (PI deny), scored quantity deferred to A4, advance → C1. C1x CLOSED.

@@ -1,0 +1,23 @@
+{
+  "k": 1,
+  "candidates_per_item": 2.0,
+  "chance": 0.5,
+  "delta": 0.169,
+  "alpha": 0.05,
+  "power": 0.8,
+  "scope": "provisional",
+  "n_items": 26,
+  "n": 26,
+  "unit": "row",
+  "mean_paired_difference": 0.093507,
+  "sigma_item": 0.212512,
+  "inv_m": 1.0,
+  "sigma_d": 0.212512,
+  "sigma_d_source": "free_compositions",
+  "mde": 0.116762,
+  "n_min": 13,
+  "var_between_free": 0.0,
+  "licenses": "I2 to R4 only. R5 arms nothing on this record",
+  "ruling": "RESOLVABLE",
+  "completeness": "chance, sigma_d, MDE and N_min over 26 clustered units from 26 items at alpha 0.05, power 0.8, scope provisional, variance from free_compositions"
+}
