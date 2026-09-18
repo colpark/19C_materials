@@ -1,0 +1,275 @@
+[
+ {
+  "seed_id": "S0",
+  "title": "Seed 00: the guideline given to the user (verbatim, supplied 2026-09-17)",
+  "doi": null,
+  "pmcid_or_url": "discovery/seeds/seed00_guideline.md",
+  "pub_date": "2026-09-17",
+  "read_in_full": true,
+  "fulltext_file": "discovery/seeds/seed00_guideline.md",
+  "contribution": "Framing, not evidence: names where branches sit in materials workflows (inverse steps) and asserts that a densely measured combinatorial library is a replayable environment for intervene. Its claims are hypotheses to be tested against S1-S3, not counts.",
+  "facts": [
+   {
+    "fact": "Forward direction composition->structure->property->performance is the chain; I1 builds it as the mechanical floor; every branch sits on an inverse step where a measurement underdetermines the answer.",
+    "locator": "seed00 para 'The general anatomy'"
+   },
+   {
+    "fact": "Structure-solution branches: candidate phase set for comparison, EXAFS shells/paths, float vs fix CN, declare amorphous vs force a phase; EXAFS/Rietveld SI tables publish rejected models with R factors (found negatives).",
+    "locator": "seed00 'Five families' / Structure solution from spectra"
+   },
+   {
+    "fact": "Computational-screening branches are thresholds (E_hull 0/25/50 meV/atom, descriptor choice) and when to escalate MLIP->DFT (an intervene branch).",
+    "locator": "seed00 'Five families' / Computational screening"
+   },
+   {
+    "fact": "Multimodal constraint satisfaction (XRD+XAS on TiZnO wafer): candidates satisfying one modality and failing the other are rejected with a reason -> branch with native negative that a single modality cannot produce.",
+    "locator": "seed00 'Five families' / Multimodal constraint satisfaction"
+   },
+   {
+    "fact": "A densely measured combinatorial library is a replayable environment: hold out the map, ask where to measure next under a budget, reveal; solves selective labels for intervene.",
+    "locator": "seed00 'The asset I would not overlook'"
+   },
+   {
+    "fact": "Recommended next census: 20 EXAFS/Rietveld papers, count how many publish a rejected structural model with a number.",
+    "locator": "seed00 final paragraph"
+   }
+  ]
+ },
+ {
+  "seed_id": "S1",
+  "title": "Surveying Metal Antimonate Photoanodes for Solar Fuel Generation (Zhou, Wang, Kan, Lucana, Guevarra, Lai, Gregoire)",
+  "doi": "10.1021/acssuschemeng.2c05239",
+  "pmcid_or_url": "https://pubs.acs.org/doi/full/10.1021/acssuschemeng.2c05239 (not in PMC; CC-BY publisher HTML fetched via headless browser)",
+  "pub_date": "2022-11-22 online (received 2022-08-31, revised 2022-11-09, accepted 2022-11-10, issue 2022-12-05, ACS Sustainable Chem. Eng. 10(48):15898-15908); data CaltechDATA 10.22002/42gwd-8wg77 published 2022-11-09",
+  "read_in_full": true,
+  "read_scope_note": "Main text read in full incl. Table 1 and figure captions. Supporting Information PDF (Tables S1-S3, Figs S1-S6, EQE formula, phase-concentration method) could NOT be retrieved (Cloudflare 403) and is unread.",
+  "fulltext_file": "discovery/seeds/fulltext/S1_acssuschemeng.2c05239.txt (+ .html)",
+  "contribution": "The dataset source paper. Supplies: action (publish a phase list + commit follow-up stability/optical measurements to 4-5 of 19 phases), hit threshold definition, label provenance (EQE measured; phase labels human XRD-ICDD matching; mpid post-hoc MP mapping), ~10 branch points, multi-channel evidence (XRF+XRD+PEC; Pourbaix+CA+SEM+CV; PEC+UV-vis+XRD), and the published best phases (contamination).",
+  "facts": [
+   {
+    "fact": "Scope: 22 X-Sb-O composition libraries, 14 X elements (Mg, Al, Cr, Fe, Co, Ni, Cu, Zn, Y, Ag, In, La, Pb, Bi); 1402 distinct photoanode samples; 7010 PEC experiments = 5608 CAs (4 LEDs x 1402) + 1402 CVs.",
+    "locator": "Abstract; Experimental Methods / PEC Measurements"
+   },
+   {
+    "fact": "Per-library measurement budget: XRF 296 samples (4.5 mm grid); XRD 20-30 samples per library (3 or 4.5 mm grid); PEC 20-30 samples per library per electrolyte; UV-vis 1521 samples per library (select libraries).",
+    "locator": "Experimental Methods / Composition, Structure, and Optical Characterization; PEC Measurements; Results para 3"
+   },
+   {
+    "fact": "Photoactive ('hit') criteria: photocurrent > 1e-8 A AND photocurrent > dark current at 1.23 V vs RHE (to reject photoconductors). No EQE threshold is used; EQE is the figure of merit.",
+    "locator": "Results and Discussion, para on Figure 1c"
+   },
+   {
+    "fact": "Of 1402 samples at 3.2 eV: 1138 show photoactivity, 148 have dark > photo and are excluded, 264 show none -> 990 photoactive samples. (Local Fig1c csv reproduces 990/148/264.)",
+    "locator": "Figure 1 caption (c); Results 'Application of this methodology to the 990 samples'"
+   },
+   {
+    "fact": "Representative sample per phase = max EQE among samples whose phase concentration exceeds 80%; 19 photoactive phases; 169 max-EQE values (phase x anneal T x electrolyte x photon energy).",
+    "locator": "Results and Discussion, para after PEC screening; Table 1; Figure 3 text"
+   },
+   {
+    "fact": "Hit rate for broad spectral response: 9 of 19 phases active at 2.1 eV (47%) vs 4 of 49 (8.1%) in the group's prior survey of metal oxide photoanodes.",
+    "locator": "Results, paragraph after Figure 3/4 description"
+   },
+   {
+    "fact": "Best photoanodes reported: Sb-rich cubic AgSbO3 (*AgSbO3-c, y~0.79, 550 C, pH 10 SLF10) has highest EQE at 3.2 eV; InSbO4 (y~0.44-0.47, 700 C on Pt/Ti/Si) has highest EQE at 2.1 eV and is called 'most surprising'; Cr- and Pb-based (CrSbO4, Pb2Sb2O7, Pb2.5Sb1.5O6.75) highlighted for Pourbaix stability + broad spectral response; am-NiSbOz highest among amorphous.",
+    "locator": "Introduction last para; Figure 4 caption; Table 1; Results on InSbO4 and amorphous phases; Conclusions"
+   },
+   {
+    "fact": "Nine phases active at 2.1 eV: InSbO4, am-Ni-Sb-O, Pb2.5Sb1.5O6.75, CrSbO4, am-Co-Sb-O, CuSb2O6, NiSb2O6, CoSb2O6, Pb2Sb2O7.",
+    "locator": "Table 1 column v (2.1 eV)"
+   },
+   {
+    "fact": "Negatives: Y3SbO7 and La3Sb5O12 targeted for Pourbaix stability, synthesized, no photoactivity; rhombohedral AgSbO3 excluded for insufficient phase purity; In2O3(:Sb) photoactive but excluded as not a ternary antimonate.",
+    "locator": "Results para after Figure 2; Results on AgSbO3; Results on InSbO4"
+   },
+   {
+    "fact": "Phase labels: crystal structures identified by matching XRD patterns to ICDD PDF entries via Bruker EVA software (analyst-driven pattern matching = annotation derived from XRD, not measured truth); 'approximate phase concentrations' as function of composition (method in SI, unread).",
+    "locator": "Experimental Methods / Composition, Structure...; Results para 'Combinatorial XRF and XRD measurements'"
+   },
+   {
+    "fact": "mpid assignment: for AgSbO3-c and Pb2Sb2O7 the mp-ids correspond to XRD-identified structures; for CrSbO4 and InSbO4 (observed P42/mnm) the 'most structurally similar MP entries' were used (I-4m2 CrSbO4, P121/c1 InSbO4). mpid is a post-hoc mapping to Materials Project, a DFT database. In the local Fig3 csv mpid is blank for InSbO4, CrSbO4, Pb2.5Sb1.5O6.75, FeSbO4, amorphous phases; phasefrac is 100 (163 rows) or 98 (6 rows).",
+    "locator": "Figure 5 caption; local env/raw/antimonate/source_data_v2/Fig3_topEQE_Phasevs_LED_pH_annealT.csv"
+   },
+   {
+    "fact": "EQE = photocurrent normalized by separately measured LED incident power (Table S3); photocurrent = mean current over last two illumination cycles minus neighbouring dark; measured truth.",
+    "locator": "Experimental Methods / PEC Measurements"
+   },
+   {
+    "fact": "Branch: X element selection by chemical similarity to Mn, expanded 'under consultation of computational Pourbaix diagrams'; explicitly did NOT exclude In (scarcity) or Pb (toxicity).",
+    "locator": "Results and Discussion para 1"
+   },
+   {
+    "fact": "Branch: sacrificial hole acceptors (methanol pH 1/3, sulfite pH 7/10) chosen to avoid false negatives from lacking OER catalysis (rejected alternative: screening in plain OER electrolyte).",
+    "locator": "Results para 'A series of 20-30 compositions'"
+   },
+   {
+    "fact": "Branch: substrate by anneal T: FTO/glass for <=610 C, Pt/Ti/SiO2/Si above; consequence: InSbO4 700 C best phase could not be made on substrate suitable for both optical and PEC.",
+    "locator": "Experimental Methods / Combinatorial Synthesis; Results on InSbO4"
+   },
+   {
+    "fact": "Branch: Pb-Sb-O was the only system with two similar ICDD structures (Pb2Sb2O7 vs Pb2.5Sb1.5O6.75) to choose between.",
+    "locator": "Results para on Figure 2b"
+   },
+   {
+    "fact": "Branch/substituted tool: MP lacks the observed CrSbO4/InSbO4 polymorphs, so the nearest MP entries were substituted for Pourbaix analysis.",
+    "locator": "Figure 5 caption"
+   },
+   {
+    "fact": "Follow-up commitment (k): Pourbaix + 30 min stability CA + SEM performed on 4 systems (X = Ag, Cr, Pb, In; 5 phases incl. both Pb phases) out of 19 phases; optical Tauc on one In composition (In0.56Sb0.44Oz, 610 C).",
+    "locator": "Experimental Methods / PEC last para, Pourbaix Calculation; Figures 5-8"
+   },
+   {
+    "fact": "Evidence depth: phase-photoanode classification requires 'aggregation of XRF, XRD, and PEC data' (3 channels).",
+    "locator": "Results para after PEC screening"
+   },
+   {
+    "fact": "Evidence depth: stability conclusions combine DFT Pourbaix (MP) + 30 min CA + SEM + dark-current CV; e.g., Pb2.5Sb1.5O6.75 decay attributed to Pourbaix-predicted Pb corrosion with self-passivation inferred from no dark current + SEM; AgSbO3-c cathodic reduction at 0.6 V vs RHE from Pourbaix + CV dark onset.",
+    "locator": "Results on AgSbO3-c, CrSbO4, Pb phases; Figures 5-7"
+   },
+   {
+    "fact": "Evidence depth: InSbO4 visible activity explained by PEC + UV-vis Tauc (indirect-allowed tail to ~1.7 eV) + XRD peak shift indicating (In,Sb)O4 solubility; CrSbO4 solubility from XRD + EQE rising with Sb (Fig S4).",
+    "locator": "Results on InSbO4 and Figure 8 caption; Results on CrSbO4"
+   },
+   {
+    "fact": "CrSbO4 minimum Pourbaix decomposition energy 0.07 eV/atom; InSbO4 photocurrent +40% over 30 min in pH 1.",
+    "locator": "Results on CrSbO4; Results on InSbO4"
+   },
+   {
+    "fact": "Chain length ~12 operations: cosputter -> anneal -> XRF -> XRD -> ICDD phase ID -> SDC CA x4 LEDs + CV -> EQE -> criteria filter -> >80% phase representative/max-EQE -> Table/Figs -> Pourbaix -> stability CA/SEM/optical.",
+    "locator": "Experimental Methods; Results"
+   },
+   {
+    "fact": "Exposure key: article online 2022-11-22 (CC-BY); data deposited 2022-11-09; PEC measurements dated 2019-10 to 2020 (lsm_date in local csv).",
+    "locator": "ACS article history; CaltechDATA record 42gwd-8wg77; local XSbO_plates_info.csv"
+   }
+  ]
+ },
+ {
+  "seed_id": "S2",
+  "title": "On-the-fly closed-loop materials discovery via Bayesian active learning (Kusne, Yu, ... Takeuchi)",
+  "doi": "10.1038/s41467-020-19597-w",
+  "pmcid_or_url": "PMC7686338",
+  "pub_date": "2020-11-24 (received 2020-06-04, accepted 2020-10-13)",
+  "read_in_full": true,
+  "fulltext_file": "discovery/seeds/fulltext/S_PMC7686338.txt; SI S_PMC7686338_SI.txt (read, incl. Supp Fig 1 image)",
+  "contribution": "Canonical intervene example: k=1 measurement per iteration on a pre-synthesized spread, replayed post hoc over all 177 spots. Supplies iteration-lead effect sizes, the physics-prior question (DFT prior used only on Fe-Ga-Pd, not quantified), and a clear depth case (XRD insufficient to distinguish Sb-Te phases; electron diffraction needed).",
+  "facts": [
+   {
+    "fact": "Action: each iteration CAMEO selects ONE composition to measure by XRD (and the human computes dEg for it); after the run the discovered GST467 is fabricated into a photonic device. k = 1 per round.",
+    "locator": "Results para 'For this task...'; Fig. 2c caption; M1"
+   },
+   {
+    "fact": "Budget: live Ge-Sb-Te run found max dEg at iteration 19 (~10 h) vs 177 spots (>90 h); cycle 20-25 min; claimed 10-fold reduction in experiments.",
+    "locator": "Introduction last para; Results; Fig. 2c caption; M1a"
+   },
+   {
+    "fact": "Replay effect: CAMEO ~35-iteration maximum average lead over GP-UCB (100 simulations); ellipsometry prior accounts for 25 of the 35; within first 20 iterations 31% of CAMEO runs reach within 1% of optimum vs 10% GP-UCB.",
+    "locator": "Results para 'For this task'; Fig. 3a caption; Supp Fig. 10"
+   },
+   {
+    "fact": "Outcome: GST467 dEg 0.76 +/- 0.03 eV vs GST225 0.23 +/- 0.03 eV (~3x); dk 60-125% larger (1000-1500 nm); device up to 50% more states; >30,000 cycles; Tcp ~200 C vs ~140 C.",
+    "locator": "Results; Fig. 4; M2b"
+   },
+   {
+    "fact": "DFT/physics prior: AFLOW.org computed ternary hull tie-lines converted to region labels used as phase-mapping prior ONLY for Fe-Ga-Pd benchmark; DFT not used for Ge-Sb-Te (ellipsometry prior instead).",
+    "locator": "M1 para 1; M1b 'Importing external data'; Supp Fig. 2"
+   },
+   {
+    "fact": "DFT prior effect is asserted, not quantified: 'each level of increased physical knowledge further accelerates phase mapping'; no with/without-DFT curve in main text or Supp Fig. 1. Prior weight eps_e = 0.5 chosen because it improves early performance and WORSENS it near end of run ('prior can overwhelm knowledge gained from data').",
+    "locator": "M1a; M1c 'Phase mapping prior'; Supp Fig. 1"
+   },
+   {
+    "fact": "Benchmark Fe-Ga-Pd: 278 samples; comparisons random, sequential, 10% (28 samples) fixed design; CAMEO reaches ~97% FMI vs random ~90% near end; in optimization inset CAMEO lags early then beats GP-UCB.",
+    "locator": "M1e comparison methods; Supp Fig. 1a, Supp Fig. 4"
+   },
+   {
+    "fact": "Label sources: phase-map truth = expert-labelled phase regions (annotation), scored by FMI; dEg = human Tauc-Lorentz/Drude ellipsometry fitting with manual parameter inspection (model-derived, up to 20 min/spot); Fe-Ga-Pd remnant magnetization saturated at 10 V and 'hallucinated' with a squared-exponential to force a single optimum (modified truth).",
+    "locator": "M1f Phase mapping; M2e; M1e benchmark system; Supp Fig. 5"
+   },
+   {
+    "fact": "Branch points with reasons: switch phase-mapping->optimization at FMI>=80% convergence; R=1 top region; gamma=10 boundary emphasis; eps_e=0.5; D_threshold=0.07 to remove ~half of edges; first sample = composition centre ('most informative'); expected regions 5 (Fe-Ga-Pd) / 10 (Ge-Sb-Te); DFT vs ellipsometry prior per system; batch not considered.",
+    "locator": "M1; M1b; M1c; M1e"
+   },
+   {
+    "fact": "Branch with named rejected options: Sb-Te phase in GST467 identified as SbTe (Sb1Te1) over Sb2Te2 and Sb2Te3 via electron diffraction because XRD patterns are very similar.",
+    "locator": "M2c; M2d"
+   },
+   {
+    "fact": "Evidence depth: GST467 conclusion combines XRD phase map + ellipsometry dEg + HAADF-STEM + electron diffraction + device switching; XRD alone cannot separate SbTe/Sb2Te2/Sb2Te3.",
+    "locator": "Results; Fig. 3b, 4; M2c-d"
+   },
+   {
+    "fact": "Chain ~9 operations: load spread -> import priors (ICSD/AFLOW or ellipsometry) -> XRD measure -> background subtract -> GRENDEL phase map -> HEM propagation -> risk-min / per-region GP-UCB selection -> human dEg -> repeat; then TEM + device.",
+    "locator": "Fig. 1 caption; M1-M1e"
+   },
+   {
+    "fact": "Data/code: github KusneNIST/CAMEO_NComm, zenodo 10.5281/zenodo.3998287.",
+    "locator": "Data availability"
+   }
+  ]
+ },
+ {
+  "seed_id": "S3",
+  "title": "Benchmarking the acceleration of materials discovery by sequential learning (Rohr, Stein, Guevarra, Wang, Haber, Aykol, Suram, Gregoire)",
+  "doi": "10.1039/c9sc05999g",
+  "pmcid_or_url": "PMC8157525",
+  "pub_date": "2020-01-29 (received 2019-11-27, accepted 2020-01-27; ChemRxiv 2019-12-16)",
+  "read_in_full": true,
+  "fulltext_file": "discovery/seeds/fulltext/S_PMC8157525.txt; ESI S_PMC8157525_SI.txt (read)",
+  "contribution": "Effect-size prior for sequential selection over a fully measured library (same JCAP inkjet/SDC infrastructure as S1): acceleration factors 1-30x, ceiling ~20x, floor <0.05x; 'good' = top 1%. k=1 by design. Single-channel (composition -> overpotential), so evidence depth one.",
+  "facts": [
+   {
+    "fact": "Action: simulated serial selection; k = 1 per cycle ('single-selection learning commensurate with serial experimentation'); batch rejected because no general cost function for parallelization.",
+    "locator": "Sequential learning models para 1"
+   },
+   {
+    "fact": "Budget: 4 datasets x 2121 compositions (all unary-quaternary from 6 elements at 10 at%); 2 random initial points; 50 random initializations; plots to 700 (Fig 3) and 1800 cycles (Fig 5).",
+    "locator": "Synthesis and catalyst experiments; Sequential learning models; Simulations and aggregation; Fig. 3, 5"
+   },
+   {
+    "fact": "'Good' material = top 1 percentile of FOM (21 of 2121 catalysts per dataset).",
+    "locator": "Performance metrics (anyALM); Table 1; ESI Expectation Value Baselines"
+   },
+   {
+    "fact": "Acceleration factors: to reach 50% chance of any top catalyst RF 3x, GP/LE <2x; 90% chance: RF ~2x, GP/LE 3-5x; 10x acceleration beyond reach for 'any'. For finding 50%/90% of all top catalysts ~10x for many RF/GP runs, LE 4-6x.",
+    "locator": "Results para 'The accelerate factor (AF) data'"
+   },
+   {
+    "fact": "Range across 16 settings: any/all EF and AF 1-30x (except lambda=0); all-top improvements 3-10x routine; most pronounced near budget ~100 where >=half of top catalysts found; diminishing returns beyond.",
+    "locator": "Results para on Fig 5-7; Fig. 6, 7 captions"
+   },
+   {
+    "fact": "Ceiling ~20x; floor: EF/AF well below 0.05 for poor model/acquisition choices; pure exploration (lambda=0) decelerates discovery; exploitative settings never beat random for model building; exploration beats random for model only after 300->1000 cycles.",
+    "locator": "Discussion (ii)-(iii); Results on lambda=0; Conclusions"
+   },
+   {
+    "fact": "RF/GP: anyALM median >80% by 35-55 cycles; 80% of top catalysts by ~100 cycles (RF, GP) vs >200 (LE); deALM>0.5 after ~40 cycles (RF, GP) vs ~300 (LE).",
+    "locator": "Results paras on Fig 3 and Fig 4"
+   },
+   {
+    "fact": "Prior literature cited: SL gave 2-5x reduction in experiments (thermoelectrics, superconductors, steels); organic thin films >30x vs grid search.",
+    "locator": "Introduction para 1; Discussion"
+   },
+   {
+    "fact": "Label source: measured OER overpotential at 3 mA/cm2 in pH 13 by scanning droplet cell after 2 h aging (measured truth); random baseline by closed-form expectation.",
+    "locator": "Synthesis and catalyst experiments; ESI Expectation Value Baselines"
+   },
+   {
+    "fact": "Branch points with reasons: RF chosen for further benchmarking (performance + speed); lambda=0.5 recommended (balance, low variability); LE ill-suited to low budgets; 10 at% grid justified by prior finer-interval experiments; random chosen as baseline while noting it is not a common human strategy.",
+    "locator": "Introduction para 3; Results; Discussion"
+   },
+   {
+    "fact": "Evidence depth: single channel; authors state composition-activity trends are 'difficult to interpret without additional structural characterization'.",
+    "locator": "Synthesis and catalyst experiments, chemistry paragraph after Fig. 2"
+   },
+   {
+    "fact": "Workflow caveat: acceleration applies only to serial electrochemistry; batch synthesis is not accelerated, so whole-workflow AF < ~20x.",
+    "locator": "Discussion, penultimate para"
+   },
+   {
+    "fact": "Chain ~6 operations: inkjet print -> calcine 400 C 10 h -> 2 h aging -> SDC overpotential -> FOM -> simulated SL loop.",
+    "locator": "Synthesis and catalyst experiments; Sequential learning models"
+   }
+  ]
+ }
+]

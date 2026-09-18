@@ -18,3 +18,12 @@
   - Ni-Sb-O check: MACE ranks NiSb2O6 (mp-505271) as the most stable ternary, and that is the phase the dataset labels photoactive.
   - MEGNet predicts a gap of 0.0 eV for NiSb2O6. That is an I4 construct-validity flag.
 - 23:30 R1 PASS. Stub cell with opus-5, MCP connected, 7 calls, submitted the correct index. Found `ReadMcpResourceDirTool` in the native catalog and added it to the deny list. R4 will canary it.
+- 23:40 D1 dataset seeds S0-S3 read in full (`discovery/seeds/seed_ledger.json`, 56 facts with locators). S1's SI returned 403.
+  - Label source: EQE is measured truth. Phase labels are human XRD annotation and are not scored.
+  - Delta source: S3 reports 2-5× acceleration for finding any top candidate. S2 reports 31% vs 10% of runs within 1% of the optimum.
+- 23:45 LED map corrected from the file's LED_eV column: CA3 = 2.4 eV, CA4 = 2.1 eV (earlier 2.3/1.8 eV were wrong). The FM floors had not yet run, so no downstream number used the wrong values.
+- 23:50 D3: plate XRD-map similarity clusters by substrate (FTO vs Pt), not by chemistry. That is a referent failure.
+  - `tau.py` REFUSES: the curve is unbounded up to cut 0.99.
+  - Amendment A-01: the independent unit is the element system (categorical, 14 units). Cause: the XRD similarity measures the substrate, and the FM prior is a function of the element alone.
+- 23:55 D2 corpus frozen: 196 episodes, 7 excluded under E1 (answer in the S1 main text), 189 included, arm cohort of 100 (LED-stratified hash sample, 14 elements).
+- 00:05 P3 contamination probe (opus-5, no tools, 28 prompts per framing). Recall 3/28 within 0.05 (MAE 0.230), predict 4/28 (MAE 0.246). No memorization signal. Exposure is disclosed, not binding.

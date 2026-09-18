@@ -1,0 +1,506 @@
+[
+ {
+  "el": "Ag",
+  "rtech": "CA1",
+  "framing": "recall",
+  "truth_sb": 0.5634,
+  "sb_fraction": 0.5,
+  "phase": "AgSbO3",
+  "confidence": 0.25
+ },
+ {
+  "el": "Ag",
+  "rtech": "CA1",
+  "framing": "predict",
+  "truth_sb": 0.5634,
+  "sb_fraction": 0.55,
+  "phase": "AgSbO3",
+  "confidence": 0.45
+ },
+ {
+  "el": "Ag",
+  "rtech": "CA4",
+  "framing": "recall",
+  "truth_sb": 0.3843,
+  "sb_fraction": 0.5,
+  "phase": "AgSbO3",
+  "confidence": 0.2
+ },
+ {
+  "el": "Ag",
+  "rtech": "CA4",
+  "framing": "predict",
+  "truth_sb": 0.3843,
+  "sb_fraction": 0.4,
+  "phase": "AgSbO3",
+  "confidence": 0.4
+ },
+ {
+  "el": "Al",
+  "rtech": "CA1",
+  "framing": "recall",
+  "truth_sb": 0.7946,
+  "sb_fraction": 0.5,
+  "phase": "AlSbO4",
+  "confidence": 0.15
+ },
+ {
+  "el": "Al",
+  "rtech": "CA1",
+  "framing": "predict",
+  "truth_sb": 0.7946,
+  "sb_fraction": 0.55,
+  "phase": "AlSbO4",
+  "confidence": 0.4
+ },
+ {
+  "el": "Al",
+  "rtech": "CA4",
+  "framing": "recall",
+  "truth_sb": 0.8298,
+  "sb_fraction": 0.5,
+  "phase": "AlSbO4",
+  "confidence": 0.15
+ },
+ {
+  "el": "Al",
+  "rtech": "CA4",
+  "framing": "predict",
+  "truth_sb": 0.8298,
+  "sb_fraction": 0.5,
+  "phase": "AlSbO4",
+  "confidence": 0.35
+ },
+ {
+  "el": "Bi",
+  "rtech": "CA1",
+  "framing": "recall",
+  "truth_sb": 0.38554999999999995,
+  "sb_fraction": 0.5,
+  "phase": "BiSbO4",
+  "confidence": 0.25
+ },
+ {
+  "el": "Bi",
+  "rtech": "CA1",
+  "framing": "predict",
+  "truth_sb": 0.38554999999999995,
+  "sb_fraction": 0.5,
+  "phase": "BiSbO4",
+  "confidence": 0.4
+ },
+ {
+  "el": "Bi",
+  "rtech": "CA4",
+  "framing": "recall",
+  "truth_sb": 0.5486,
+  "sb_fraction": 0.5,
+  "phase": "BiSbO4",
+  "confidence": 0.2
+ },
+ {
+  "el": "Bi",
+  "rtech": "CA4",
+  "framing": "predict",
+  "truth_sb": 0.5486,
+  "sb_fraction": 0.5,
+  "phase": "BiSbO4",
+  "confidence": 0.4
+ },
+ {
+  "el": "Co",
+  "rtech": "CA1",
+  "framing": "recall",
+  "truth_sb": 0.8449,
+  "sb_fraction": 0.67,
+  "phase": "CoSb2O6",
+  "confidence": 0.3
+ },
+ {
+  "el": "Co",
+  "rtech": "CA1",
+  "framing": "predict",
+  "truth_sb": 0.8449,
+  "sb_fraction": 0.67,
+  "phase": "CoSb2O6",
+  "confidence": 0.5
+ },
+ {
+  "el": "Co",
+  "rtech": "CA4",
+  "framing": "recall",
+  "truth_sb": 0.4915,
+  "sb_fraction": 0.67,
+  "phase": "CoSb2O6",
+  "confidence": 0.25
+ },
+ {
+  "el": "Co",
+  "rtech": "CA4",
+  "framing": "predict",
+  "truth_sb": 0.4915,
+  "sb_fraction": 0.67,
+  "phase": "CoSb2O6",
+  "confidence": 0.45
+ },
+ {
+  "el": "Cr",
+  "rtech": "CA1",
+  "framing": "recall",
+  "truth_sb": 0.83085,
+  "sb_fraction": 0.5,
+  "phase": "CrSbO4",
+  "confidence": 0.3
+ },
+ {
+  "el": "Cr",
+  "rtech": "CA1",
+  "framing": "predict",
+  "truth_sb": 0.83085,
+  "sb_fraction": 0.6,
+  "phase": "CrSbO4",
+  "confidence": 0.45
+ },
+ {
+  "el": "Cr",
+  "rtech": "CA4",
+  "framing": "recall",
+  "truth_sb": 0.3272,
+  "sb_fraction": 0.55,
+  "phase": "CrSbO4",
+  "confidence": 0.2
+ },
+ {
+  "el": "Cr",
+  "rtech": "CA4",
+  "framing": "predict",
+  "truth_sb": 0.3272,
+  "sb_fraction": 0.6,
+  "phase": "CrSbO4",
+  "confidence": 0.45
+ },
+ {
+  "el": "Cu",
+  "rtech": "CA1",
+  "framing": "recall",
+  "truth_sb": 0.8889,
+  "sb_fraction": 0.67,
+  "phase": "CuSb2O6",
+  "confidence": 0.3
+ },
+ {
+  "el": "Cu",
+  "rtech": "CA1",
+  "framing": "predict",
+  "truth_sb": 0.8889,
+  "sb_fraction": 0.6,
+  "phase": "CuSb2O6",
+  "confidence": 0.4
+ },
+ {
+  "el": "Cu",
+  "rtech": "CA4",
+  "framing": "recall",
+  "truth_sb": 0.5513,
+  "sb_fraction": 0.67,
+  "phase": "CuSb2O6",
+  "confidence": 0.25
+ },
+ {
+  "el": "Cu",
+  "rtech": "CA4",
+  "framing": "predict",
+  "truth_sb": 0.5513,
+  "sb_fraction": 0.7,
+  "phase": "CuSb2O6",
+  "confidence": 0.4
+ },
+ {
+  "el": "Fe",
+  "rtech": "CA1",
+  "framing": "recall",
+  "truth_sb": 0.1607,
+  "sb_fraction": 0.5,
+  "phase": "FeSbO4",
+  "confidence": 0.3
+ },
+ {
+  "el": "Fe",
+  "rtech": "CA1",
+  "framing": "predict",
+  "truth_sb": 0.1607,
+  "sb_fraction": 0.6,
+  "phase": "FeSbO4",
+  "confidence": 0.45
+ },
+ {
+  "el": "Fe",
+  "rtech": "CA4",
+  "framing": "recall",
+  "truth_sb": 0.1634,
+  "sb_fraction": 0.5,
+  "phase": "FeSbO4",
+  "confidence": 0.25
+ },
+ {
+  "el": "Fe",
+  "rtech": "CA4",
+  "framing": "predict",
+  "truth_sb": 0.1634,
+  "sb_fraction": 0.6,
+  "phase": "FeSbO4",
+  "confidence": 0.55
+ },
+ {
+  "el": "In",
+  "rtech": "CA1",
+  "framing": "recall",
+  "truth_sb": 0.20779999999999998,
+  "sb_fraction": 0.5,
+  "phase": "InSbO4",
+  "confidence": 0.15
+ },
+ {
+  "el": "In",
+  "rtech": "CA1",
+  "framing": "predict",
+  "truth_sb": 0.20779999999999998,
+  "sb_fraction": 0.55,
+  "phase": "InSbO4",
+  "confidence": 0.35
+ },
+ {
+  "el": "In",
+  "rtech": "CA4",
+  "framing": "recall",
+  "truth_sb": 0.5333,
+  "sb_fraction": 0.5,
+  "phase": "InSbO4",
+  "confidence": 0.2
+ },
+ {
+  "el": "In",
+  "rtech": "CA4",
+  "framing": "predict",
+  "truth_sb": 0.5333,
+  "sb_fraction": 0.6,
+  "phase": "InSbO4",
+  "confidence": 0.35
+ },
+ {
+  "el": "La",
+  "rtech": "CA1",
+  "framing": "recall",
+  "truth_sb": 0.0879,
+  "sb_fraction": 0.5,
+  "phase": "LaSbO4",
+  "confidence": 0.2
+ },
+ {
+  "el": "La",
+  "rtech": "CA1",
+  "framing": "predict",
+  "truth_sb": 0.0879,
+  "sb_fraction": 0.75,
+  "phase": "LaSb3O9",
+  "confidence": 0.35
+ },
+ {
+  "el": "La",
+  "rtech": "CA4",
+  "framing": "recall",
+  "truth_sb": 0.082,
+  "sb_fraction": 0.75,
+  "phase": "LaSb3O9",
+  "confidence": 0.15
+ },
+ {
+  "el": "La",
+  "rtech": "CA4",
+  "framing": "predict",
+  "truth_sb": 0.082,
+  "sb_fraction": 0.75,
+  "phase": "LaSb3O9",
+  "confidence": 0.3
+ },
+ {
+  "el": "Mg",
+  "rtech": "CA1",
+  "framing": "recall",
+  "truth_sb": 0.7407,
+  "sb_fraction": 0.67,
+  "phase": "MgSb2O6",
+  "confidence": 0.25
+ },
+ {
+  "el": "Mg",
+  "rtech": "CA1",
+  "framing": "predict",
+  "truth_sb": 0.7407,
+  "sb_fraction": 0.67,
+  "phase": "MgSb2O6",
+  "confidence": 0.55
+ },
+ {
+  "el": "Mg",
+  "rtech": "CA4",
+  "framing": "recall",
+  "truth_sb": 0.1496,
+  "sb_fraction": 0.67,
+  "phase": "MgSb2O6",
+  "confidence": 0.2
+ },
+ {
+  "el": "Mg",
+  "rtech": "CA4",
+  "framing": "predict",
+  "truth_sb": 0.1496,
+  "sb_fraction": 0.67,
+  "phase": "MgSb2O6",
+  "confidence": 0.4
+ },
+ {
+  "el": "Ni",
+  "rtech": "CA1",
+  "framing": "recall",
+  "truth_sb": 0.4854,
+  "sb_fraction": 0.67,
+  "phase": "NiSb2O6",
+  "confidence": 0.25
+ },
+ {
+  "el": "Ni",
+  "rtech": "CA1",
+  "framing": "predict",
+  "truth_sb": 0.4854,
+  "sb_fraction": 0.63,
+  "phase": "NiSb2O6",
+  "confidence": 0.55
+ },
+ {
+  "el": "Ni",
+  "rtech": "CA4",
+  "framing": "recall",
+  "truth_sb": 0.4111,
+  "sb_fraction": 0.67,
+  "phase": "NiSb2O6",
+  "confidence": 0.2
+ },
+ {
+  "el": "Ni",
+  "rtech": "CA4",
+  "framing": "predict",
+  "truth_sb": 0.4111,
+  "sb_fraction": 0.65,
+  "phase": "NiSb2O6",
+  "confidence": 0.55
+ },
+ {
+  "el": "Pb",
+  "rtech": "CA1",
+  "framing": "recall",
+  "truth_sb": 0.54175,
+  "sb_fraction": 0.5,
+  "phase": "Pb2Sb2O7",
+  "confidence": 0.2
+ },
+ {
+  "el": "Pb",
+  "rtech": "CA1",
+  "framing": "predict",
+  "truth_sb": 0.54175,
+  "sb_fraction": 0.5,
+  "phase": "Pb2Sb2O7",
+  "confidence": 0.35
+ },
+ {
+  "el": "Pb",
+  "rtech": "CA4",
+  "framing": "recall",
+  "truth_sb": 0.30805,
+  "sb_fraction": 0.5,
+  "phase": "Pb2Sb2O7",
+  "confidence": 0.2
+ },
+ {
+  "el": "Pb",
+  "rtech": "CA4",
+  "framing": "predict",
+  "truth_sb": 0.30805,
+  "sb_fraction": 0.45,
+  "phase": "Pb2Sb2O7",
+  "confidence": 0.35
+ },
+ {
+  "el": "Y",
+  "rtech": "CA1",
+  "framing": "recall",
+  "truth_sb": 0.37775000000000003,
+  "sb_fraction": 0.5,
+  "phase": "YSbO4",
+  "confidence": 0.2
+ },
+ {
+  "el": "Y",
+  "rtech": "CA1",
+  "framing": "predict",
+  "truth_sb": 0.37775000000000003,
+  "sb_fraction": 0.5,
+  "phase": "YSbO4",
+  "confidence": 0.3
+ },
+ {
+  "el": "Y",
+  "rtech": "CA4",
+  "framing": "recall",
+  "truth_sb": 0.27144999999999997,
+  "sb_fraction": 0.5,
+  "phase": "YSbO4",
+  "confidence": 0.15
+ },
+ {
+  "el": "Y",
+  "rtech": "CA4",
+  "framing": "predict",
+  "truth_sb": 0.27144999999999997,
+  "sb_fraction": 0.7,
+  "phase": "YSb3O9",
+  "confidence": 0.25
+ },
+ {
+  "el": "Zn",
+  "rtech": "CA1",
+  "framing": "recall",
+  "truth_sb": 0.23625000000000002,
+  "sb_fraction": 0.67,
+  "phase": "ZnSb2O6",
+  "confidence": 0.25
+ },
+ {
+  "el": "Zn",
+  "rtech": "CA1",
+  "framing": "predict",
+  "truth_sb": 0.23625000000000002,
+  "sb_fraction": 0.65,
+  "phase": "ZnSb2O6",
+  "confidence": 0.6
+ },
+ {
+  "el": "Zn",
+  "rtech": "CA4",
+  "framing": "recall",
+  "truth_sb": 0.75225,
+  "sb_fraction": 0.67,
+  "phase": "ZnSb2O6",
+  "confidence": 0.2
+ },
+ {
+  "el": "Zn",
+  "rtech": "CA4",
+  "framing": "predict",
+  "truth_sb": 0.75225,
+  "sb_fraction": 0.67,
+  "phase": "ZnSb2O6",
+  "confidence": 0.5
+ }
+]

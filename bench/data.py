@@ -11,7 +11,7 @@ import pandas as pd
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RAW = os.path.join(ROOT, "env", "raw", "antimonate", "source_data_v2")
-LED_EV = {"CA1": 3.2, "CA2": 2.7, "CA3": 2.3, "CA4": 1.8}
+LED_EV = {"CA1": 3.2, "CA2": 2.7, "CA3": 2.4, "CA4": 2.1}   # from the LED_eV column of the source file
 
 
 def parse_udi(path):
