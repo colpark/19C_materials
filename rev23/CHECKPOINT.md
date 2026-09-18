@@ -1,8 +1,7 @@
-# Rev 2.3 autonomous pass: checkpoint
+# Rev 2.3 autonomous pass: checkpoint (COMPLETE)
 
-- **Restart point:** O1 on the pooled P7 provisional pass (`rev21/pool/power_provisional_fm_xrd.json`, RESOLVABLE, MDE 0.163).
-- **Done:**
-  - Skill vendored; audit shows 48 cases.
-  - Router settled by replaying decisions 001–003 through rev 2.3: `rev23/router/decision_R00*.json`. Envelope reconciled to measured spend; C1 depth 2 of 3.
-  - D5 standing rulings recorded: `rev23/D5_amendments.json`.
-- **Next:** main run in progress (rev23_main, 468 cells), then A2 blind hash, A3 score, A4 report. Restart: re-run run_batch with the same tag; existing cells are skipped.
+- **Terminal:** A4 NO CLAIM. The portfolio has no active candidate. Decision card: DECISIONS_NEEDED.md.
+- **Restart points for a next pass:**
+  - (a) O1 on the A4 closure with new libraries, if the PI approves request_new_libraries. Re-enters D2 → pool → tau → P3 → P7, using the unchanged harness (server_pool.py, pool_floors.py).
+  - (b) D4 with a different scored quantity, if the PI approves it: a new candidate. The harness and FM cache are reusable.
+- Reserve items (10) remain unburned. All other pooled items are burned (pilot or cohort).

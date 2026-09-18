@@ -137,6 +137,66 @@ REV2 = f"""
 <h2>Run 1 · skill rev1 (for the record)</h2>
 """
 
+
+# ---------------- rev 2.3 + rev 2.1 sections
+pct = lambda v: f"{100*v:.0f}%"
+S23 = J("rev23/adjudication/score_record.json"); P23 = J("rev23/adjudication/paired_rev23_main.json"); PW23 = J("rev23/supply/power_final.json")
+AX23 = J("rev23/supply/axis_ledger_final.json"); I4G = J("rev23/instrument/i4_geometry.json"); PR23 = J("rev23/supply/recall_probe/summary.json")
+C1X = J("rev23/explain/c1x_summary.json"); ENV23 = J("rev23/router/manifest_live.json")["envelope"]; SPL21 = J("rev21/pool/split.json")
+r23 = pd.DataFrame(J("rev23/adjudication/scores_rev23_main.json"))
+def forest():
+    items = [("All episodes", P23["all"][0])] + [(k.replace("=", ": ").replace("_", " ").replace("no flag insufficient negatives", "no flag (<4 neg.)"), v[0]) for k, v in P23.items() if k != "all"]
+    W, L, R_, T = 760, 280, 60, 18; H = T + 26 * len(items) + 34; lo, hi = -0.4, 0.4
+    x = lambda v: L + (min(max(v, lo), hi) - lo) / (hi - lo) * (W - L - R_)
+    mde = PW23["mde"]
+    s = [f'<svg viewBox="0 0 {W} {H}" role="img" aria-label="forced FM minus classical, cluster-level 95% intervals, by stratum" class="chart">',
+         f'<rect x="{x(-mde):.1f}" y="{T-8}" width="{x(mde)-x(-mde):.1f}" height="{H-T-26}" class="band"><title>|effect| at or below the final MDE {mde:.3f}: no claim possible</title></rect>']
+    for t in (-0.4, -0.2, 0, 0.2, 0.4):
+        s.append(f'<line x1="{x(t):.1f}" x2="{x(t):.1f}" y1="{T-8}" y2="{H-26}" class="{"zero" if t == 0 else "grid"}"/><text x="{x(t):.1f}" y="{H-10}" class="tick" text-anchor="middle">{t:+.1f}</text>')
+    for i, (lab, p) in enumerate(items):
+        y = T + 6 + i * 26; a, b = p["ci95_cluster"]; m = p["cluster_mean_diff"]
+        s.append(f'<text x="{L-12}" y="{y+4}" class="lab" text-anchor="end">{html.escape(lab)} (n={p["n_paired"]}, k={p["n_clusters"]})</text>')
+        s.append(f'<line x1="{x(a):.1f}" x2="{x(b):.1f}" y1="{y}" y2="{y}" stroke="var(--s2)" stroke-width="2" stroke-linecap="round"/>')
+        if a < lo: s.append(f'<text x="{x(lo)-2:.1f}" y="{y+4}" class="tick" text-anchor="end">◂</text>')
+        if b > hi: s.append(f'<text x="{x(hi)+2:.1f}" y="{y+4}" class="tick">▸</text>')
+        s.append(f'<circle cx="{x(m):.1f}" cy="{y}" r="{6 if i == 0 else 4.5}" fill="var(--s2)" stroke="var(--bg)" stroke-width="2"><title>{lab}: {m:+.3f} [{a:+.3f}, {b:+.3f}]</title></circle>')
+    s.append("</svg>"); return "".join(s)
+arm_rows = "".join(f'<tr><td>{n}</td><td class="num">{S23["process_metrics"][a]["mean"]:.3f}</td><td class="num">{pct(S23["process_metrics"][a]["share_any_xrd"])}</td><td class="num">{pct(S23["process_metrics"][a]["share_any_classical_tool"])}</td><td class="num">{pct(S23["process_metrics"][a]["share_any_fm_tool"])}</td><td class="num">{S23["process_metrics"][a]["mean_consultations"]:.1f}</td><td class="num">${S23["process_metrics"][a]["cost_usd"]:.0f}</td></tr>'
+                   for n, a in (("Bare", "bare"), ("Classical", "classical"), ("Forced FM consultation", "fm_forced")))
+sec = {(p["a"], p["b"]): p for p in P23["all"]}
+sec_rows = "".join(f'<tr><td>{a.replace("_"," ")} − {b.replace("_"," ")}</td><td class="num">{sec[(a,b)]["episode_mean_diff"]:+.3f}</td><td class="num">{sec[(a,b)]["cluster_mean_diff"]:+.3f}</td><td class="num">{sec[(a,b)]["ci95_cluster"][0]:+.3f} – {sec[(a,b)]["ci95_cluster"][1]:+.3f}</td></tr>'
+                   for a, b in [("fm_forced","classical"),("fm_forced","cls_xrd"),("fm_forced","cls_gp"),("fm_forced","chance"),("classical","cls_xrd"),("classical","cls_gp"),("bare","cls_gp"),("fm_forced","bare"),("classical","bare")])
+i4rows = "".join(f'<tr><td>{t["detail"]["composition"]}</td><td>{t["detail"]["geometry"]}</td><td class="num">{t["detail"]["minus_chance"]:+.3f}</td><td><span class="chip {"go" if t["detail"]["status"]=="PASS" else "close"}">{t["detail"]["status"]}</span></td></tr>' for t in I4G["tools"] if t["detail"]["composition"] in ("cls_gp","cls_xrd","fm_prior","fm_xrd"))
+pr = S23["primary_metric"]
+REV23 = f"""
+<h2 style="border-top:none;margin-top:40px">Rev 2.3 autonomous pass · restarted at O1 on the pooled P7 pass</h2>
+<div class="verdict">
+<div class="eyebrow" style="color:inherit;opacity:.7">Rev 2.3 result · A4 on 468 scored cells</div>
+<div class="big">No claim. Forcing the agent to consult MACE and MEGNet before every measurement moved it +{pr['cluster_mean_diff']:.3f}. That is clear of zero, but not clear of the effect the cohort can resolve.</div>
+<p>Forced-FM minus classical, over 26 independent clusters: <b>{pr['cluster_mean_diff']:+.3f}</b>, 95% CI {pr['ci95_cluster'][0]:+.3f} to {pr['ci95_cluster'][1]:+.3f}. The preregistered rule needs the interval to exclude zero <i>and</i> the effect to exceed the final MDE of {PW23['mde']:.3f}. The first holds and the second does not. The observed MDE, from the scored variance, is {S23['mde_detail']['observed_cluster']:.3f}, and the effect falls under that too. Every agent arm beats the EQE-only GP floor.</p>
+</div>
+<h3>What this pass did, in order</h3>
+<ul>
+<li><b>Settled the router.</b> Decisions 001–003 were replayed through rev 2.3, with each finished move reported at its measured cost. Decision 003 now launches only the pooling move, as rev 2.2 promised. Envelope at the end: {ENV23['tokens_m']['spent']:.0f} M tokens, {ENV23['gpu_hours']['spent']:.1f} GPU h, {ENV23['wall_hours']['spent']:.0f} wall h, all under the soft ceilings.</li>
+<li><b>Applied the PI's standing rulings.</b> Approved: the forced-consultation lift on the pooled cohort only. Denied: a budget change, a proxy grader, later data. Deferred to A4: a new scored quantity and new libraries.</li>
+<li><b>Recounted every axis on the pooled units before P4.</b> The low-signal band was declared first ({AX23['axes'][6]['raw'].split(':')[1].strip()}). The contamination probe found no memorization (recall {PR23['recall']['within_0_05']}/28 vs predict {PR23['predict']['within_0_05']}/28). Tau separation was flat, so the collapse cut is undefined and the conservative 26 clusters are kept. I4 per geometry is below: the XRD compositions FAIL on spreads. <b>P4 final: PROCEED</b>, bound by 26 clusters against N_min 25.</li>
+<li><b>R3 pilot (10 items × 3 arms, then burned), then P7 final.</b> MDE {PW23['mde']:.3f}, RESOLVABLE. Uptake of the FM channel: forced arm 10/10. R5: five gates armed with both controls run, including the consultation gate. A1 was preregistered before any cohort cell.</li>
+<li><b>C1x (when to trust the FM), in parallel at zero cells.</b> Its grader failed re-certification on the pool (split-half ρ {C1X['grader']['split_half_spearman']:.2f} &lt; 0.5). Even a perfect when-to-trust oracle gains only {C1X['floors']['oracle']-C1X['floors']['cls']:+.3f} over always-classical. Closed at I4.</li>
+</ul>
+<figure>{forest()}<figcaption>Forced-FM minus classical, cluster-level 95% intervals, overall and by preregistered stratum. The shaded band is ±MDE (0.163), inside which no claim can be made. Strata are reported, never filtered. Strata with only two clusters (spread geometry, two LED settings) have intervals that run off the scale (◂ ▸).</figcaption></figure>
+<div class="tw"><table><tr><th>Arm (156 episodes)</th><th>mean</th><th>any XRD</th><th>any classical tool</th><th>any FM tool</th><th>consultations / ep.</th><th>cost</th></tr>{arm_rows}</table></div>
+<div class="tw"><table><tr><th>Comparison</th><th>Δ episode</th><th>Δ cluster</th><th>cluster 95% CI</th></tr>{sec_rows}</table></div>
+<h3>I4 per geometry</h3>
+<div class="tw"><table><tr><th>Composition</th><th>Geometry</th><th>− chance</th><th>Status</th></tr>{i4rows}</table></div>
+<p>On three-cation spreads, the XRD-guided floor falls significantly below random allocation. It is recorded FAIL by PI ruling and not repaired in this pass, so the spread stratum has no certified XRD floor.</p>
+<h3>Decisions now due (deferred to A4)</h3>
+<ul><li><b>New libraries.</b> At the observed cluster spread, an effect of this size needs about 47 independent clusters, against 26 on hand. Every public JCAP PEC+XRD library the search found is already pooled.</li>
+<li><b>A different scored quantity.</b> Both FM tools stay proxies for photoresponse. A task scored on what they measure (stability, phase, gap) is the other way to give the FM channel a fair test. This one was surfaced by hand, because the A4 router table omits it (skill finding F10).</li></ul>
+
+<h2>Rev 2.1 pass · routing the rev2 closure</h2>
+<p>The router turned the cluster-bound closure into data acquisition. A sibling-library search read 94 deposits and admitted 33 JCAP/MEAD plates. Pooled under frozen rules, they added 22 new chemistries, and a fresh tau cut gave 26 independent clusters. The pooled floors reproduce rev2's to the last digit on every base episode. Swapping MACE-MP-0 for MACE-MPA-0 changed nothing. The pooled P7 moved from CLOSE (MDE 0.265) to RESOLVABLE (0.163). That is the number this pass ran on.</p>
+"""
+
 def pct(v): return f"{100*v:.0f}%"
 cp, g = clusterplot()
 pm = S["process_metrics"]; arms = {a["arm"]: a for a in S["arms"]}
@@ -201,8 +261,9 @@ details{{margin:10px 0}} summary{{cursor:pointer;color:var(--ink2);font-size:14p
 <div class="wrap">
 <div class="eyebrow">FM-advantage benchmark · materials instance · run of 2026-09-17/18</div>
 <h1 style="margin-top:10px">Do materials foundation models make an agent a better experimentalist?</h1>
-<p class="lede">An intervene-root benchmark on 22 combinatorial X–Sb–O photoanode libraries. The subject is claude-opus-5, and the question is where to spend 5 EQE and 5 XRD measurements. Three arms: environment only, plus classical tools, and plus MACE-MP-0 and MEGNet. Every arm is scored against mechanical floors and chance on 100 paired episodes. Run 1 used skill rev1. The rev2 redo restarts at D4 and closes before any cell.</p>
+<p class="lede">An intervene-root benchmark on combinatorial photoanode libraries with claude-opus-5 as the subject: where to spend scarce photoelectrochemical measurements, with and without the materials foundation models MACE and MEGNet. Four passes are kept, newest first. <b>Rev 2.3</b> ran 468 cells over 36 chemistries with the agent forced to consult the models, and ended in no claim. <b>Rev 2.1</b> routed the closure into pooled sibling libraries. <b>Rev2</b> closed at zero cells. <b>Run 1</b> spent 300 cells with the models optional.</p>
 
+{REV23}
 {REV2}
 <div class="verdict">
 <div class="eyebrow" style="color:inherit;opacity:.7">Run 1 result · A4</div>
