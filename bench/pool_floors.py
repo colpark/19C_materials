@@ -45,6 +45,8 @@ def all_episodes():
         for line in open(p):
             e = json.loads(line)
             ill = e.get("illum", {})
+            if "+W" in str(ill.get("source", "")):   # P-I2 literal: exactly one LED; 388 nm + white LED is two emitters (ruling R-P1)
+                continue
             led = ill.get("led_eV") or (1239.84 / ill["led_nm"] if ill.get("led_nm") else None)
             eps.append(dict(episode_id="P" + e["episode_id"], source="pool", plate_id=str(e["plate_id"]), chem=e["chem"],
                             elements=e["elements"], comp=e["comp"], merit=e["merit"], nearest_xrd=e["nearest_xrd"], led_eV=led))

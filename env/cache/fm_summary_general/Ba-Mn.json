@@ -1,0 +1,1494 @@
+{
+ "chem": "Ba-Mn",
+ "elements": [
+  "Ba",
+  "Mn"
+ ],
+ "n_phases": 134,
+ "rows": [
+  {
+   "id": "mp-1342",
+   "formula": "BaO",
+   "nsites": 2,
+   "ef_eV_atom": -2.5511,
+   "frac": {
+    "Ba": 1.0,
+    "Mn": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0
+  },
+  {
+   "id": "mp-1105",
+   "formula": "BaO2",
+   "nsites": 3,
+   "ef_eV_atom": -1.9094,
+   "frac": {
+    "Ba": 1.0,
+    "Mn": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0
+  },
+  {
+   "id": "mp-1006878",
+   "formula": "BaO2",
+   "nsites": 3,
+   "ef_eV_atom": -1.7956,
+   "frac": {
+    "Ba": 1.0,
+    "Mn": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.1137
+  },
+  {
+   "id": "mp-1008500",
+   "formula": "BaO",
+   "nsites": 4,
+   "ef_eV_atom": -2.5062,
+   "frac": {
+    "Ba": 1.0,
+    "Mn": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.045
+  },
+  {
+   "id": "mp-7487",
+   "formula": "BaO",
+   "nsites": 4,
+   "ef_eV_atom": -2.3941,
+   "frac": {
+    "Ba": 1.0,
+    "Mn": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.157
+  },
+  {
+   "id": "mp-1178514",
+   "formula": "BaO",
+   "nsites": 4,
+   "ef_eV_atom": -2.5128,
+   "frac": {
+    "Ba": 1.0,
+    "Mn": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0384
+  },
+  {
+   "id": "mp-1206655",
+   "formula": "BaO3",
+   "nsites": 8,
+   "ef_eV_atom": -0.8016,
+   "frac": {
+    "Ba": 1.0,
+    "Mn": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.6569
+  },
+  {
+   "id": "mp-1182169",
+   "formula": "BaO6",
+   "nsites": 14,
+   "ef_eV_atom": -0.8166,
+   "frac": {
+    "Ba": 1.0,
+    "Mn": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.032
+  },
+  {
+   "id": "mp-1182327",
+   "formula": "BaO4",
+   "nsites": 20,
+   "ef_eV_atom": -1.1877,
+   "frac": {
+    "Ba": 1.0,
+    "Mn": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0004
+  },
+  {
+   "id": "mp-1182433",
+   "formula": "BaO4",
+   "nsites": 20,
+   "ef_eV_atom": -1.1881,
+   "frac": {
+    "Ba": 1.0,
+    "Mn": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0
+  },
+  {
+   "id": "mp-1182511",
+   "formula": "BaO10",
+   "nsites": 22,
+   "ef_eV_atom": -0.5273,
+   "frac": {
+    "Ba": 1.0,
+    "Mn": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0127
+  },
+  {
+   "id": "mp-1182404",
+   "formula": "BaO10",
+   "nsites": 22,
+   "ef_eV_atom": -0.5193,
+   "frac": {
+    "Ba": 1.0,
+    "Mn": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0208
+  },
+  {
+   "id": "mp-1182576",
+   "formula": "BaO10",
+   "nsites": 22,
+   "ef_eV_atom": -0.4929,
+   "frac": {
+    "Ba": 1.0,
+    "Mn": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0472
+  },
+  {
+   "id": "mp-1214539",
+   "formula": "BaO5",
+   "nsites": 24,
+   "ef_eV_atom": -0.8015,
+   "frac": {
+    "Ba": 1.0,
+    "Mn": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.1886
+  },
+  {
+   "id": "mp-726415",
+   "formula": "BaO2",
+   "nsites": 24,
+   "ef_eV_atom": -1.8983,
+   "frac": {
+    "Ba": 1.0,
+    "Mn": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.011
+  },
+  {
+   "id": "mp-1182259",
+   "formula": "BaO2",
+   "nsites": 24,
+   "ef_eV_atom": -1.7058,
+   "frac": {
+    "Ba": 1.0,
+    "Mn": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.2036
+  },
+  {
+   "id": "mp-1182238",
+   "formula": "BaO2",
+   "nsites": 24,
+   "ef_eV_atom": -1.7153,
+   "frac": {
+    "Ba": 1.0,
+    "Mn": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.1941
+  },
+  {
+   "id": "mp-1182141",
+   "formula": "BaO2",
+   "nsites": 24,
+   "ef_eV_atom": -1.715,
+   "frac": {
+    "Ba": 1.0,
+    "Mn": 0.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.1943
+  },
+  {
+   "id": "mp-776658",
+   "formula": "BaO",
+   "skipped": "32 sites > cap 30"
+  },
+  {
+   "id": "mp-1182720",
+   "formula": "BaO10",
+   "skipped": "44 sites > cap 30"
+  },
+  {
+   "id": "mp-1198148",
+   "formula": "BaO10",
+   "skipped": "44 sites > cap 30"
+  },
+  {
+   "id": "mp-1198787",
+   "formula": "BaO6",
+   "skipped": "56 sites > cap 30"
+  },
+  {
+   "id": "mp-1178531",
+   "formula": "BaO",
+   "skipped": "64 sites > cap 30"
+  },
+  {
+   "id": "mp-1245311",
+   "formula": "BaO",
+   "skipped": "100 sites > cap 30"
+  },
+  {
+   "id": "mp-1245192",
+   "formula": "BaO",
+   "skipped": "100 sites > cap 30"
+  },
+  {
+   "id": "mp-1245276",
+   "formula": "BaO",
+   "skipped": "100 sites > cap 30"
+  },
+  {
+   "id": "mp-1244871",
+   "formula": "BaO",
+   "skipped": "100 sites > cap 30"
+  },
+  {
+   "id": "mp-1245298",
+   "formula": "BaO",
+   "skipped": "100 sites > cap 30"
+  },
+  {
+   "id": "mp-1238899",
+   "formula": "MnO",
+   "nsites": 2,
+   "ef_eV_atom": -0.7596,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0858
+  },
+  {
+   "id": "mp-1238773",
+   "formula": "MnO",
+   "nsites": 2,
+   "ef_eV_atom": -0.4828,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.3627
+  },
+  {
+   "id": "mp-25223",
+   "formula": "MnO2",
+   "nsites": 3,
+   "ef_eV_atom": -0.8063,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0134
+  },
+  {
+   "id": "mp-1221542",
+   "formula": "MnO2",
+   "nsites": 3,
+   "ef_eV_atom": -0.4259,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.3937
+  },
+  {
+   "id": "mp-796077",
+   "formula": "MnO2",
+   "nsites": 3,
+   "ef_eV_atom": -0.7947,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.025
+  },
+  {
+   "id": "mp-25424",
+   "formula": "MnO2",
+   "nsites": 3,
+   "ef_eV_atom": -0.7924,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0272
+  },
+  {
+   "id": "mp-1272141",
+   "formula": "MnO2",
+   "nsites": 3,
+   "ef_eV_atom": -0.8103,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0093
+  },
+  {
+   "id": "mp-19006",
+   "formula": "MnO",
+   "nsites": 4,
+   "ef_eV_atom": -0.7871,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0583
+  },
+  {
+   "id": "mp-999539",
+   "formula": "MnO",
+   "nsites": 4,
+   "ef_eV_atom": -0.7659,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0796
+  },
+  {
+   "id": "mp-510408",
+   "formula": "MnO2",
+   "nsites": 6,
+   "ef_eV_atom": -0.8007,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.019
+  },
+  {
+   "id": "mp-510732",
+   "formula": "MnO2",
+   "nsites": 6,
+   "ef_eV_atom": -0.6649,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.1548
+  },
+  {
+   "id": "mp-33009",
+   "formula": "MnO2",
+   "nsites": 6,
+   "ef_eV_atom": -0.7999,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0198
+  },
+  {
+   "id": "mp-1221574",
+   "formula": "MnO2",
+   "nsites": 6,
+   "ef_eV_atom": 0.6659,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 1.4855
+  },
+  {
+   "id": "mp-755671",
+   "formula": "MnO2",
+   "nsites": 6,
+   "ef_eV_atom": -0.7909,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0288
+  },
+  {
+   "id": "mp-1086672",
+   "formula": "MnO3",
+   "nsites": 8,
+   "ef_eV_atom": -0.3624,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.2524
+  },
+  {
+   "id": "mp-1232659",
+   "formula": "MnO",
+   "nsites": 8,
+   "ef_eV_atom": -0.7869,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0585
+  },
+  {
+   "id": "mp-2831286",
+   "formula": "MnO",
+   "nsites": 8,
+   "ef_eV_atom": -0.7657,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0798
+  },
+  {
+   "id": "mp-1303934",
+   "formula": "Mn2O3",
+   "nsites": 10,
+   "ef_eV_atom": -0.9268,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0105
+  },
+  {
+   "id": "mp-1306224",
+   "formula": "Mn2O3",
+   "nsites": 10,
+   "ef_eV_atom": -0.9254,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0119
+  },
+  {
+   "id": "mp-770543",
+   "formula": "Mn2O3",
+   "nsites": 10,
+   "ef_eV_atom": -0.9132,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0241
+  },
+  {
+   "id": "mp-1221594",
+   "formula": "MnO4",
+   "nsites": 10,
+   "ef_eV_atom": 0.1198,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.6116
+  },
+  {
+   "id": "mp-1271850",
+   "formula": "MnO2",
+   "nsites": 12,
+   "ef_eV_atom": -0.8075,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0122
+  },
+  {
+   "id": "mp-1371977",
+   "formula": "MnO2",
+   "nsites": 12,
+   "ef_eV_atom": -0.6609,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.1587
+  },
+  {
+   "id": "mp-19326",
+   "formula": "MnO2",
+   "nsites": 12,
+   "ef_eV_atom": -0.8053,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0143
+  },
+  {
+   "id": "mp-19395",
+   "formula": "MnO2",
+   "nsites": 12,
+   "ef_eV_atom": -0.8194,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0002
+  },
+  {
+   "id": "mp-1407587",
+   "formula": "MnO2",
+   "nsites": 12,
+   "ef_eV_atom": -0.7929,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0268
+  },
+  {
+   "id": "mp-25275",
+   "formula": "MnO2",
+   "nsites": 12,
+   "ef_eV_atom": -0.7769,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0427
+  },
+  {
+   "id": "mp-752536",
+   "formula": "Mn5O8",
+   "nsites": 13,
+   "ef_eV_atom": -0.8791,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0427
+  },
+  {
+   "id": "mp-18922",
+   "formula": "Mn5O8",
+   "nsites": 13,
+   "ef_eV_atom": -0.9218,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0
+  },
+  {
+   "id": "mp-18759",
+   "formula": "Mn3O4",
+   "nsites": 14,
+   "ef_eV_atom": -0.9662,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0
+  },
+  {
+   "id": "mp-1104282",
+   "formula": "Mn2O5",
+   "nsites": 14,
+   "ef_eV_atom": -0.2215,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.481
+  },
+  {
+   "id": "mp-644514",
+   "formula": "MnO2",
+   "nsites": 18,
+   "ef_eV_atom": -0.8015,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0182
+  },
+  {
+   "id": "mp-796336",
+   "formula": "MnO2",
+   "nsites": 18,
+   "ef_eV_atom": -0.8196,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0
+  },
+  {
+   "id": "mp-796340",
+   "formula": "MnO2",
+   "nsites": 18,
+   "ef_eV_atom": -0.8197,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0
+  },
+  {
+   "id": "mp-754430",
+   "formula": "Mn7O12",
+   "nsites": 19,
+   "ef_eV_atom": -0.8709,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0186
+  },
+  {
+   "id": "mp-1043363",
+   "formula": "Mn2O3",
+   "nsites": 20,
+   "ef_eV_atom": -0.7739,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.1634
+  },
+  {
+   "id": "mp-1045833",
+   "formula": "Mn9O13",
+   "nsites": 22,
+   "ef_eV_atom": -0.7739,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.1726
+  },
+  {
+   "id": "mp-1354190",
+   "formula": "MnO2",
+   "nsites": 24,
+   "ef_eV_atom": -0.7994,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0203
+  },
+  {
+   "id": "mp-755489",
+   "formula": "MnO2",
+   "nsites": 24,
+   "ef_eV_atom": -0.7861,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0335
+  },
+  {
+   "id": "mp-1046066",
+   "formula": "Mn5O7",
+   "nsites": 24,
+   "ef_eV_atom": -0.7715,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.1827
+  },
+  {
+   "id": "mp-1221945",
+   "formula": "Mn8O17",
+   "nsites": 25,
+   "ef_eV_atom": -0.6689,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.118
+  },
+  {
+   "id": "mp-20141",
+   "formula": "Mn3O4",
+   "nsites": 28,
+   "ef_eV_atom": -0.9222,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.044
+  },
+  {
+   "id": "mp-1194100",
+   "formula": "Mn3O4",
+   "nsites": 28,
+   "ef_eV_atom": -0.7934,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.1728
+  },
+  {
+   "id": "mp-1279995",
+   "formula": "Mn3O4",
+   "nsites": 28,
+   "ef_eV_atom": -0.9222,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.0441
+  },
+  {
+   "id": "mp-1180876",
+   "formula": "Mn3O4",
+   "nsites": 28,
+   "ef_eV_atom": -0.8089,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.1574
+  },
+  {
+   "id": "mp-638270",
+   "formula": "Mn3O4",
+   "nsites": 28,
+   "ef_eV_atom": -0.7942,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.1721
+  },
+  {
+   "id": "mp-1193728",
+   "formula": "Mn3O4",
+   "nsites": 28,
+   "ef_eV_atom": -0.7938,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.1724
+  },
+  {
+   "id": "mp-1180464",
+   "formula": "Mn3O4",
+   "nsites": 28,
+   "ef_eV_atom": -0.7937,
+   "frac": {
+    "Ba": 0.0,
+    "Mn": 1.0
+   },
+   "mixed": false,
+   "ehull_eV_atom": 0.1725
+  },
+  {
+   "id": "mp-1041066",
+   "formula": "MnO2",
+   "skipped": "36 sites > cap 30"
+  },
+  {
+   "id": "mp-1354468",
+   "formula": "MnO2",
+   "skipped": "36 sites > cap 30"
+  },
+  {
+   "id": "mp-1182678",
+   "formula": "Mn2O3",
+   "skipped": "40 sites > cap 30"
+  },
+  {
+   "id": "mp-771717",
+   "formula": "Mn2O3",
+   "skipped": "40 sites > cap 30"
+  },
+  {
+   "id": "mp-867971",
+   "formula": "Mn15O32",
+   "skipped": "47 sites > cap 30"
+  },
+  {
+   "id": "mp-776603",
+   "formula": "Mn15O32",
+   "skipped": "47 sites > cap 30"
+  },
+  {
+   "id": "mp-1350912",
+   "formula": "MnO2",
+   "skipped": "48 sites > cap 30"
+  },
+  {
+   "id": "mp-766493",
+   "formula": "Mn21O40",
+   "skipped": "61 sites > cap 30"
+  },
+  {
+   "id": "mp-849596",
+   "formula": "Mn21O40",
+   "skipped": "61 sites > cap 30"
+  },
+  {
+   "id": "mp-1222372",
+   "formula": "Mn20O43",
+   "skipped": "63 sites > cap 30"
+  },
+  {
+   "id": "mp-28338",
+   "formula": "Mn2O7",
+   "skipped": "72 sites > cap 30"
+  },
+  {
+   "id": "mp-705430",
+   "formula": "MnO2",
+   "skipped": "72 sites > cap 30"
+  },
+  {
+   "id": "mp-565203",
+   "formula": "Mn2O3",
+   "skipped": "80 sites > cap 30"
+  },
+  {
+   "id": "mp-1203190",
+   "formula": "Mn2O3",
+   "skipped": "80 sites > cap 30"
+  },
+  {
+   "id": "mp-1349371",
+   "formula": "Mn2O3",
+   "skipped": "80 sites > cap 30"
+  },
+  {
+   "id": "mp-1172875",
+   "formula": "Mn2O3",
+   "skipped": "80 sites > cap 30"
+  },
+  {
+   "id": "mp-510604",
+   "formula": "Mn2O3",
+   "skipped": "80 sites > cap 30"
+  },
+  {
+   "id": "mp-1204718",
+   "formula": "Mn2O3",
+   "skipped": "80 sites > cap 30"
+  },
+  {
+   "id": "mp-778470",
+   "formula": "Mn2O3",
+   "skipped": "160 sites > cap 30"
+  },
+  {
+   "id": "mp-1016852",
+   "formula": "BaMnO3",
+   "nsites": 5,
+   "ef_eV_atom": -1.6874,
+   "frac": {
+    "Ba": 0.5,
+    "Mn": 0.5
+   },
+   "mixed": true,
+   "ehull_eV_atom": 0.0846,
+   "megnet_gap_pbe_eV": 0.013,
+   "megnet_gap_hse_eV": 0.013
+  },
+  {
+   "id": "mp-27323",
+   "formula": "BaMn2O3",
+   "nsites": 6,
+   "ef_eV_atom": -1.3925,
+   "frac": {
+    "Ba": 0.3333,
+    "Mn": 0.6667
+   },
+   "mixed": true,
+   "ehull_eV_atom": 0.1017,
+   "megnet_gap_pbe_eV": 0.009,
+   "megnet_gap_hse_eV": 0.369
+  },
+  {
+   "id": "mp-753330",
+   "formula": "Ba2MnO4",
+   "nsites": 7,
+   "ef_eV_atom": -2.0195,
+   "frac": {
+    "Ba": 0.6667,
+    "Mn": 0.3333
+   },
+   "mixed": true,
+   "ehull_eV_atom": 0.0,
+   "megnet_gap_pbe_eV": 0.019,
+   "megnet_gap_hse_eV": 1.113
+  },
+  {
+   "id": "mp-1095090",
+   "formula": "BaMn2O5",
+   "nsites": 8,
+   "ef_eV_atom": -1.2828,
+   "frac": {
+    "Ba": 0.3333,
+    "Mn": 0.6667
+   },
+   "mixed": true,
+   "ehull_eV_atom": 0.1567,
+   "megnet_gap_pbe_eV": 0.019,
+   "megnet_gap_hse_eV": 0.438
+  },
+  {
+   "id": "mp-19156",
+   "formula": "BaMnO3",
+   "nsites": 10,
+   "ef_eV_atom": -1.7712,
+   "frac": {
+    "Ba": 0.5,
+    "Mn": 0.5
+   },
+   "mixed": true,
+   "ehull_eV_atom": 0.0008,
+   "megnet_gap_pbe_eV": 1.354,
+   "megnet_gap_hse_eV": 2.733
+  },
+  {
+   "id": "mp-1048511",
+   "formula": "Ba2Mn3O7",
+   "nsites": 12,
+   "ef_eV_atom": -1.3753,
+   "frac": {
+    "Ba": 0.4,
+    "Mn": 0.6
+   },
+   "mixed": true,
+   "ehull_eV_atom": 0.2541,
+   "megnet_gap_pbe_eV": 0.017,
+   "megnet_gap_hse_eV": 0.137
+  },
+  {
+   "id": "mp-1182375",
+   "formula": "BaMn4O8",
+   "nsites": 13,
+   "ef_eV_atom": -1.233,
+   "frac": {
+    "Ba": 0.2,
+    "Mn": 0.8
+   },
+   "mixed": true,
+   "ehull_eV_atom": 0.033,
+   "megnet_gap_pbe_eV": 0.355,
+   "megnet_gap_hse_eV": 1.02
+  },
+  {
+   "id": "mp-1048172",
+   "formula": "Ba2Mn3O8",
+   "nsites": 13,
+   "ef_eV_atom": -1.3057,
+   "frac": {
+    "Ba": 0.4,
+    "Mn": 0.6
+   },
+   "mixed": true,
+   "ehull_eV_atom": 0.2617,
+   "megnet_gap_pbe_eV": 0.049,
+   "megnet_gap_hse_eV": 0.335
+  },
+  {
+   "id": "mp-1041312",
+   "formula": "BaMn4O8",
+   "nsites": 13,
+   "ef_eV_atom": -1.0081,
+   "frac": {
+    "Ba": 0.2,
+    "Mn": 0.8
+   },
+   "mixed": true,
+   "ehull_eV_atom": 0.2579,
+   "megnet_gap_pbe_eV": 0.268,
+   "megnet_gap_hse_eV": 1.567
+  },
+  {
+   "id": "mp-541150",
+   "formula": "BaMn4O8",
+   "nsites": 13,
+   "ef_eV_atom": -1.2334,
+   "frac": {
+    "Ba": 0.2,
+    "Mn": 0.8
+   },
+   "mixed": true,
+   "ehull_eV_atom": 0.0327,
+   "megnet_gap_pbe_eV": 0.314,
+   "megnet_gap_hse_eV": 0.887
+  },
+  {
+   "id": "mp-18840",
+   "formula": "BaMnO3",
+   "nsites": 15,
+   "ef_eV_atom": -1.7713,
+   "frac": {
+    "Ba": 0.5,
+    "Mn": 0.5
+   },
+   "mixed": true,
+   "ehull_eV_atom": 0.0007,
+   "megnet_gap_pbe_eV": 1.019,
+   "megnet_gap_hse_eV": 2.515
+  },
+  {
+   "id": "mp-1228224",
+   "formula": "BaMn5O11",
+   "nsites": 17,
+   "ef_eV_atom": -0.9431,
+   "frac": {
+    "Ba": 0.1667,
+    "Mn": 0.8333
+   },
+   "mixed": true,
+   "ehull_eV_atom": 0.2029,
+   "megnet_gap_pbe_eV": 0.777,
+   "megnet_gap_hse_eV": 2.22
+  },
+  {
+   "id": "mp-1214669",
+   "formula": "Ba2Mn5O10",
+   "nsites": 17,
+   "ef_eV_atom": -1.3423,
+   "frac": {
+    "Ba": 0.2857,
+    "Mn": 0.7143
+   },
+   "mixed": true,
+   "ehull_eV_atom": 0.0979,
+   "megnet_gap_pbe_eV": 0.245,
+   "megnet_gap_hse_eV": 0.959
+  },
+  {
+   "id": "mp-1099904",
+   "formula": "Ba2Mn2O5",
+   "nsites": 18,
+   "ef_eV_atom": -1.7665,
+   "frac": {
+    "Ba": 0.5,
+    "Mn": 0.5
+   },
+   "mixed": true,
+   "ehull_eV_atom": 0.0296,
+   "megnet_gap_pbe_eV": 0.022,
+   "megnet_gap_hse_eV": 0.15
+  },
+  {
+   "id": "mp-1214549",
+   "formula": "Ba3MnO5",
+   "nsites": 18,
+   "ef_eV_atom": -2.1367,
+   "frac": {
+    "Ba": 0.75,
+    "Mn": 0.25
+   },
+   "mixed": true,
+   "ehull_eV_atom": 0.001,
+   "megnet_gap_pbe_eV": 0.12,
+   "megnet_gap_hse_eV": 0.82
+  },
+  {
+   "id": "mp-30153",
+   "formula": "BaMn3O6",
+   "nsites": 20,
+   "ef_eV_atom": -1.3258,
+   "frac": {
+    "Ba": 0.25,
+    "Mn": 0.75
+   },
+   "mixed": true,
+   "ehull_eV_atom": 0.0389,
+   "megnet_gap_pbe_eV": 0.158,
+   "megnet_gap_hse_eV": 1.325
+  },
+  {
+   "id": "mp-35078",
+   "formula": "BaMnO3",
+   "nsites": 20,
+   "ef_eV_atom": -1.7609,
+   "frac": {
+    "Ba": 0.5,
+    "Mn": 0.5
+   },
+   "mixed": true,
+   "ehull_eV_atom": 0.0111,
+   "megnet_gap_pbe_eV": 0.89,
+   "megnet_gap_hse_eV": 2.174
+  },
+  {
+   "id": "mp-1205336",
+   "formula": "BaMnO3",
+   "nsites": 20,
+   "ef_eV_atom": -1.7713,
+   "frac": {
+    "Ba": 0.5,
+    "Mn": 0.5
+   },
+   "mixed": true,
+   "ehull_eV_atom": 0.0007,
+   "megnet_gap_pbe_eV": 1.335,
+   "megnet_gap_hse_eV": 2.711
+  },
+  {
+   "id": "mp-1238580",
+   "formula": "BaMn2O8",
+   "nsites": 22,
+   "ef_eV_atom": -0.9319,
+   "frac": {
+    "Ba": 0.3333,
+    "Mn": 0.6667
+   },
+   "mixed": true,
+   "ehull_eV_atom": 0.115,
+   "megnet_gap_pbe_eV": 1.312,
+   "megnet_gap_hse_eV": 4.109
+  },
+  {
+   "id": "mp-554123",
+   "formula": "BaMn2O8",
+   "nsites": 22,
+   "ef_eV_atom": -0.7603,
+   "frac": {
+    "Ba": 0.3333,
+    "Mn": 0.6667
+   },
+   "mixed": true,
+   "ehull_eV_atom": 0.2865,
+   "megnet_gap_pbe_eV": 1.99,
+   "megnet_gap_hse_eV": 3.244
+  },
+  {
+   "id": "mp-1048508",
+   "formula": "BaMn4O7",
+   "nsites": 24,
+   "ef_eV_atom": -0.9715,
+   "frac": {
+    "Ba": 0.2,
+    "Mn": 0.8
+   },
+   "mixed": true,
+   "ehull_eV_atom": 0.3304,
+   "megnet_gap_pbe_eV": 0.15,
+   "megnet_gap_hse_eV": 1.675
+  },
+  {
+   "id": "mp-504545",
+   "formula": "Ba2MnO3",
+   "nsites": 24,
+   "ef_eV_atom": -2.0003,
+   "frac": {
+    "Ba": 0.6667,
+    "Mn": 0.3333
+   },
+   "mixed": true,
+   "ehull_eV_atom": 0.0315,
+   "megnet_gap_pbe_eV": 2.054,
+   "megnet_gap_hse_eV": 1.714
+  },
+  {
+   "id": "mp-27443",
+   "formula": "Ba2MnO3",
+   "nsites": 24,
+   "ef_eV_atom": -2.0003,
+   "frac": {
+    "Ba": 0.6667,
+    "Mn": 0.3333
+   },
+   "mixed": true,
+   "ehull_eV_atom": 0.0316,
+   "megnet_gap_pbe_eV": 2.116,
+   "megnet_gap_hse_eV": 1.689
+  },
+  {
+   "id": "mp-1214463",
+   "formula": "BaMnO4",
+   "nsites": 24,
+   "ef_eV_atom": -1.4454,
+   "frac": {
+    "Ba": 0.5,
+    "Mn": 0.5
+   },
+   "mixed": true,
+   "ehull_eV_atom": 0.0313,
+   "megnet_gap_pbe_eV": 1.98,
+   "megnet_gap_hse_eV": 3.534
+  },
+  {
+   "id": "mp-675227",
+   "formula": "BaMnO3",
+   "nsites": 25,
+   "ef_eV_atom": -1.772,
+   "frac": {
+    "Ba": 0.5,
+    "Mn": 0.5
+   },
+   "mixed": true,
+   "ehull_eV_atom": 0.0,
+   "megnet_gap_pbe_eV": 0.951,
+   "megnet_gap_hse_eV": 2.175
+  },
+  {
+   "id": "mp-19188",
+   "formula": "Ba3Mn2O8",
+   "nsites": 26,
+   "ef_eV_atom": -1.7983,
+   "frac": {
+    "Ba": 0.6,
+    "Mn": 0.4
+   },
+   "mixed": true,
+   "ehull_eV_atom": 0.0055,
+   "megnet_gap_pbe_eV": 2.074,
+   "megnet_gap_hse_eV": 3.066
+  },
+  {
+   "id": "mp-1215039",
+   "formula": "BaMn2O4",
+   "nsites": 28,
+   "ef_eV_atom": -1.2049,
+   "frac": {
+    "Ba": 0.3333,
+    "Mn": 0.6667
+   },
+   "mixed": true,
+   "ehull_eV_atom": 0.3166,
+   "megnet_gap_pbe_eV": 0.012,
+   "megnet_gap_hse_eV": 0.017
+  },
+  {
+   "id": "mp-757501",
+   "formula": "BaMnO3",
+   "nsites": 30,
+   "ef_eV_atom": -1.7682,
+   "frac": {
+    "Ba": 0.5,
+    "Mn": 0.5
+   },
+   "mixed": true,
+   "ehull_eV_atom": 0.0038,
+   "megnet_gap_pbe_eV": 0.958,
+   "megnet_gap_hse_eV": 2.438
+  },
+  {
+   "id": "mp-19267",
+   "formula": "BaMnO3",
+   "nsites": 30,
+   "ef_eV_atom": -1.7714,
+   "frac": {
+    "Ba": 0.5,
+    "Mn": 0.5
+   },
+   "mixed": true,
+   "ehull_eV_atom": 0.0006,
+   "megnet_gap_pbe_eV": 1.353,
+   "megnet_gap_hse_eV": 2.735
+  },
+  {
+   "id": "mp-18791",
+   "formula": "Ba4Mn3O10",
+   "nsites": 34,
+   "ef_eV_atom": -1.8908,
+   "frac": {
+    "Ba": 0.5714,
+    "Mn": 0.4286
+   },
+   "mixed": true,
+   "ehull_eV_atom": 0.0,
+   "megnet_gap_pbe_eV": 0.745,
+   "megnet_gap_hse_eV": 1.419
+  },
+  {
+   "id": "mp-694888",
+   "formula": "Ba8Mn8O21",
+   "nsites": 37,
+   "ef_eV_atom": -1.8012,
+   "frac": {
+    "Ba": 0.5,
+    "Mn": 0.5
+   },
+   "mixed": true,
+   "ehull_eV_atom": 0.0,
+   "megnet_gap_pbe_eV": 0.537,
+   "megnet_gap_hse_eV": 1.235
+  },
+  {
+   "id": "mp-1228093",
+   "formula": "BaMn6O12",
+   "nsites": 38,
+   "ef_eV_atom": -1.1621,
+   "frac": {
+    "Ba": 0.1429,
+    "Mn": 0.8571
+   },
+   "mixed": true,
+   "ehull_eV_atom": 0.0,
+   "megnet_gap_pbe_eV": 1.14,
+   "megnet_gap_hse_eV": 2.494
+  },
+  {
+   "id": "mp-760130",
+   "formula": "Ba8Mn8O23",
+   "nsites": 39,
+   "ef_eV_atom": -1.7854,
+   "frac": {
+    "Ba": 0.5,
+    "Mn": 0.5
+   },
+   "mixed": true,
+   "ehull_eV_atom": 0.0,
+   "megnet_gap_pbe_eV": 0.874,
+   "megnet_gap_hse_eV": 1.833
+  },
+  {
+   "id": "mp-557535",
+   "formula": "BaMnO3",
+   "nsites": 40,
+   "ef_eV_atom": -1.7719,
+   "frac": {
+    "Ba": 0.5,
+    "Mn": 0.5
+   },
+   "mixed": true,
+   "ehull_eV_atom": 0.0001,
+   "megnet_gap_pbe_eV": 0.992,
+   "megnet_gap_hse_eV": 2.555
+  },
+  {
+   "id": "mp-759718",
+   "formula": "Ba5Mn5O14",
+   "nsites": 48,
+   "ef_eV_atom": -1.7927,
+   "frac": {
+    "Ba": 0.5,
+    "Mn": 0.5
+   },
+   "mixed": true,
+   "ehull_eV_atom": 0.0,
+   "megnet_gap_pbe_eV": 0.871,
+   "megnet_gap_hse_eV": 1.967
+  },
+  {
+   "id": "mp-1228782",
+   "formula": "BaMn8O16",
+   "nsites": 50,
+   "ef_eV_atom": -1.0979,
+   "frac": {
+    "Ba": 0.1111,
+    "Mn": 0.8889
+   },
+   "mixed": true,
+   "ehull_eV_atom": 0.0,
+   "megnet_gap_pbe_eV": 1.128,
+   "megnet_gap_hse_eV": 2.682
+  },
+  {
+   "id": "mp-30895",
+   "formula": "Ba6Mn5O16",
+   "nsites": 54,
+   "ef_eV_atom": -1.8491,
+   "frac": {
+    "Ba": 0.5455,
+    "Mn": 0.4545
+   },
+   "mixed": true,
+   "ehull_eV_atom": 0.0,
+   "megnet_gap_pbe_eV": 0.864,
+   "megnet_gap_hse_eV": 1.988
+  },
+  {
+   "id": "mp-1199857",
+   "formula": "BaMnO2",
+   "nsites": 64,
+   "ef_eV_atom": -1.6696,
+   "frac": {
+    "Ba": 0.5,
+    "Mn": 0.5
+   },
+   "mixed": true,
+   "ehull_eV_atom": 0.1027,
+   "megnet_gap_pbe_eV": 0.595,
+   "megnet_gap_hse_eV": 1.668
+  },
+  {
+   "id": "mp-766233",
+   "formula": "BaMn4O8",
+   "nsites": 78,
+   "ef_eV_atom": -1.2432,
+   "frac": {
+    "Ba": 0.2,
+    "Mn": 0.8
+   },
+   "mixed": true,
+   "ehull_eV_atom": 0.0228,
+   "megnet_gap_pbe_eV": 0.068,
+   "megnet_gap_hse_eV": 1.608
+  }
+ ],
+ "model": "MACE medium float64; MEGNet-BandGap-mfi-MP-2019.4.1"
+}

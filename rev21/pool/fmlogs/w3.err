@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "/home/aid1/Documents/6_19C_materials/bench/precompute_general.py", line 59, in <module>
+    t = time.time(); s = summary(chem)
+                         ^^^^^^^^^^^^^
+  File "/home/aid1/Documents/6_19C_materials/bench/precompute_general.py", line 31, in summary
+    s = fm.to_structure(r); m = fm.mace_relax(s)
+                                ^^^^^^^^^^^^^^^^
+  File "/home/aid1/Documents/6_19C_materials/bench/fm.py", line 103, in mace_relax
+    c = _cache_get("mace" + MACE_TAG, h)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aid1/Documents/6_19C_materials/bench/fm.py", line 92, in _cache_get
+    return json.load(open(p)) if os.path.exists(p) else None
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/aid1/.local/share/uv/python/cpython-3.12.13-linux-aarch64-gnu/lib/python3.12/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "/home/aid1/.local/share/uv/python/cpython-3.12.13-linux-aarch64-gnu/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aid1/.local/share/uv/python/cpython-3.12.13-linux-aarch64-gnu/lib/python3.12/json/decoder.py", line 341, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 3249 (char 3248)

@@ -15,3 +15,7 @@
 - **P-E3:** exclude ADMIT_NEEDS_XRF plates (no composition).
 - **Budget:** B_EQE = 3 per episode, as in the rev2 manifest. **Not re-derived for pooled plates.** The per-item budget is reserved to the user.
 - **Channel definitions:** the FM channel (MACE-MP-0 medium hull, MEGNet gap) and classical channels are unchanged. Phases are those of the plate's cation set plus O from MP via OPTIMADE: ternary/quaternary ≤ 80 sites, binaries ≤ 30 sites (A-02).
+
+## Rulings after the loader reported (no rule changed)
+- **R-P1:** the 3 episodes lit by "Doric LEDc2 388+W35" (an LED plus a white LED) are EXCLUDED under the literal P-I2, "exactly one LED". Admitting them would widen the definition after the count (refusal 9). This loses Cu-V (its only episode). Pooled supply: 89 episodes, 22 new chemistries, 36 in total. The admitted variant is reported as a sensitivity check only.
+- **R-P2:** the loader's measurement rulings stand as recorded in `pool_ledger.json`: XRF raster renumbering on 3046/3050/3051/3199, line interpolation, the 1 mm edge tolerance, negative photocurrents kept (clipped at 0 by the score, as in the base), and a fixed bias or CV merit within an episode.

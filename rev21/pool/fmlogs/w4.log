@@ -1,0 +1,14 @@
+cuequivariance or cuequivariance_torch is not available. Cuequivariance acceleration will be disabled.
+Using Materials Project MACE for MACECalculator with /home/aid1/.cache/mace/20231203mace128L1_epoch199model
+Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
+Ba-Mn 134 phases, 39 mixed-cation, 830s
+Ca-Mn 171 phases, 87 mixed-cation, 716s
+Ge-Mn 90 phases, 9 mixed-cation, 167s
+Mg-Mn 202 phases, 107 mixed-cation, 357s
+Mn-Sb 132 phases, 18 mixed-cation, 34s
+Mn-Sr 116 phases, 31 mixed-cation, 163s
+Mn-Y 101 phases, 13 mixed-cation, 27s
+Ca-Co-Mn 323 phases, 179 mixed-cation, 210s
+Ca-Fe-Mn 413 phases, 191 mixed-cation, 251s
+Y-Sb 77 phases, 9 mixed-cation, 0s
+Zn-Sb 93 phases, 28 mixed-cation, 0s
