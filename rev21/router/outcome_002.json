@@ -1,0 +1,29 @@
+{
+ "move": "swap_fm_checkpoint",
+ "decision": "decision_002",
+ "candidate": "C1",
+ "succeeded": false,
+ "evidence": {
+  "fm_prior_mpa0": [
+   -0.101998,
+   0.013679
+  ],
+  "fm_xrd_mpa0": [
+   -0.045535,
+   0.057582
+  ]
+ },
+ "reading": "MACE-MPA-0 reproduces MACE-MP-0's rulings (CLOSE, LIFT); the hull contributes +0.013 under both checkpoints. The binding content is the gap channel and the construct (PROXY), not the potential. A second swap to another uMLIP is not taken: the same hull construct would be re-measured.",
+ "guard_state": {
+  "depth": 2,
+  "reentry": {
+   "D2": 1,
+   "D4": 1,
+   "I2": 1
+  },
+  "failures": {
+   "swap_fm_checkpoint": 1
+  },
+  "retired": []
+ }
+}

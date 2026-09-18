@@ -92,3 +92,4 @@
   - Carded: change_role_scorer_lift (prereg after outcomes), different_scored_quantity.
   - C1 depth 2 of 3.
 - MPA-0 precompute started: 4 workers. Three initially failed on a concurrent checkpoint download and were restarted.
+- 11:07 Decision 002 outcome: swap to MACE-MPA-0 FAILED. fm_prior −0.044 CLOSE, fm_xrd +0.006 LIFT. Recorded against the move (1 of 2 failures). Not re-attempted: the hull contributes +0.013 under both checkpoints.

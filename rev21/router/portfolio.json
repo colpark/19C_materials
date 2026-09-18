@@ -49,7 +49,9 @@
     "D4": 1,
     "I2": 1
    },
-   "failures": {},
+   "failures": {
+    "swap_fm_checkpoint": 1
+   },
    "retired": []
   }
  }

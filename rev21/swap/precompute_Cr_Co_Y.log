@@ -1,0 +1,19 @@
+cuequivariance or cuequivariance_torch is not available. Cuequivariance acceleration will be disabled.
+Using medium MPA-0 model as default MACE-MP model, to use previous (before 3.10) default model please specify 'medium' as model argument
+Using Materials Project MACE for MACECalculator with /home/aid1/.cache/mace/macempa0mediummodel
+Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
+Cr 144 phases, 8 ternary, 791s
+    mp-33857 CrO4Sb sb 0.5 ehull 0.0 gap(pbe,hse) 1.445 1.713
+    mp-756024 CrO6Sb2 sb 0.6667 ehull 0.057 gap(pbe,hse) 0.0 0.749
+    mp-755493 CrO4Sb sb 0.5 ehull 0.0722 gap(pbe,hse) 1.551 1.975
+    mp-771316 Cr5O16Sb3 sb 0.375 ehull 0.09 gap(pbe,hse) 0.073 1.982
+Co 128 phases, 22 ternary, 549s
+    mp-33332 Co5O8Sb sb 0.1667 ehull 0.0 gap(pbe,hse) 0.059 0.826
+    mp-21908 CoO6Sb2 sb 0.6667 ehull 0.0 gap(pbe,hse) 0.454 0.369
+    mp-1299486 Co5O8Sb sb 0.1667 ehull 0.0001 gap(pbe,hse) 0.022 0.944
+    mp-1275116 Co5O8Sb sb 0.1667 ehull 0.0002 gap(pbe,hse) 0.007 0.388
+Y 77 phases, 9 ternary, 43s
+    mp-981511 O7SbY3 sb 0.25 ehull 0.0 gap(pbe,hse) 2.663 3.635
+    mp-1207765 O4SbY sb 0.5 ehull 0.0 gap(pbe,hse) 2.596 2.973
+    mp-1207793 O12Sb5Y3 sb 0.625 ehull 0.0 gap(pbe,hse) 2.621 3.389
+    mp-777749 O7Sb2Y2 sb 0.5 ehull 0.0795 gap(pbe,hse) 1.675 1.811

@@ -1,0 +1,29 @@
+cuequivariance or cuequivariance_torch is not available. Cuequivariance acceleration will be disabled.
+Using medium MPA-0 model as default MACE-MP model, to use previous (before 3.10) default model please specify 'medium' as model argument
+Using Materials Project MACE for MACECalculator with /home/aid1/.cache/mace/macempa0mediummodel
+Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
+Bi 120 phases, 6 ternary, 591s
+    mp-23018 BiO4Sb sb 0.5 ehull 0.0 gap(pbe,hse) 2.549 3.059
+    mp-30304 Bi3O7Sb sb 0.25 ehull 0.0 gap(pbe,hse) 2.007 2.268
+    mp-1214312 Bi12O20Sb sb 0.0769 ehull 0.0348 gap(pbe,hse) 1.742 1.68
+    mp-755382 BiO3Sb sb 0.5 ehull 0.0898 gap(pbe,hse) 1.895 3.323
+Cu 92 phases, 8 ternary, 235s
+    mp-5831 CuO6Sb2 sb 0.6667 ehull 0.0 gap(pbe,hse) 0.021 0.017
+    mp-1188790 CuO6Sb2 sb 0.6667 ehull 0.0002 gap(pbe,hse) 0.022 0.017
+    mp-554658 CuO6Sb2 sb 0.6667 ehull 0.0003 gap(pbe,hse) 0.017 0.021
+    mp-1042691 Cu3O12Sb4 sb 0.5714 ehull 0.0387 gap(pbe,hse) 0.036 0.505
+La 67 phases, 9 ternary, 174s
+    mp-1104307 La3O3Sb sb 0.25 ehull 0.0 gap(pbe,hse) 0.779 2.216
+    mp-31419 LaO12Sb5 sb 0.8333 ehull 0.0 gap(pbe,hse) 2.572 2.984
+    mp-1190427 LaO4Sb sb 0.5 ehull 0.0 gap(pbe,hse) 2.002 4.372
+    mp-31418 LaO9Sb3 sb 0.75 ehull 0.0 gap(pbe,hse) 1.949 3.077
+Pb 77 phases, 5 ternary, 202s
+    mp-20727 O6PbSb2 sb 0.6667 ehull 0.0 gap(pbe,hse) 1.611 2.692
+    mp-633099 O7Pb2Sb2 sb 0.5 ehull 0.01 gap(pbe,hse) 1.839 2.499
+    mp-647520 O7Pb2Sb2 sb 0.5 ehull 0.0539 gap(pbe,hse) 0.159 0.487
+    mp-1186948 O3PbSb sb 0.5 ehull 0.1777 gap(pbe,hse) 0.186 0.597
+Ni 88 phases, 4 ternary, 168s
+    mp-505271 NiO6Sb2 sb 0.6667 ehull 0.0 gap(pbe,hse) 0.0 0.044
+    mp-1190650 Ni2O7Sb2 sb 0.5 ehull 0.2853 gap(pbe,hse) 2.088 2.147
+    mp-21275 NiO4Sb2 sb 0.6667 ehull 0.3304 gap(pbe,hse) 2.271 3.591
+    mp-1186113 NiO3Sb sb 0.5 ehull 0.8985 gap(pbe,hse) 0.67 1.452
