@@ -11,3 +11,20 @@
   3. the Sb-fraction span of those phases.
 - **Chance:** predict the base rate (leave-one-out).
 - **Disclosure:** the orchestrator saw per-chemistry effects in the rev2 report (Al, Mg help; Co, Fe hurt) before this declaration. The features above are chosen from FM-channel content, not from those labels, and are not revised after the computation.
+
+## Amendment C1x-A1 (2026-09-18, before any pooled floor exists)
+
+- **Cause:** the delta slot was UNDEMONSTRATED (no seed gives an acted-on effect for a sign call).
+- **Change:** C1x is graded by the **consequence** of its call, in C1's units.
+  - **Item:** one chemistry.
+  - **Decision:** trust the FM channel (run fm_xrd) or not (run cls_xrd).
+  - **Realized value:** the mean over that chemistry's episodes of the chosen composition's floor score, at B=3.
+- **Delta:** 0.169, inherited from C1's manifest in the same units and from the same seed source (S3, 2× acceleration). **No new delta is introduced.**
+- **Floors:**
+  - always-classical (cls_xrd)
+  - always-FM (fm_xrd)
+  - the predeclared feature logistic, choosing per chemistry, leave-one-chemistry-out
+- **Ceiling:** the adaptive oracle, the per-chemistry max of the two.
+- **Chance:** a random choice per chemistry (the mean of the two).
+- **Resolution:** paired over chemistries; P7 via power.py on (policy value − always-classical), cluster = chemistry.
+- **Grader:** the mechanical ablation floors. Split-half certified at rho 0.70 on the base set, and re-certified on the pooled set with the same 0.5 threshold.
