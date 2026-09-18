@@ -3,3 +3,16 @@ Al 170 phases, 9 ternary, 4s
     mp-1214826 Al5O16Sb3 sb 0.375 ehull 0.0376 gap(pbe,hse) 2.38 3.739
     mp-1261047 AlO3Sb sb 0.5 ehull 0.0644 gap(pbe,hse) 2.991 4.128
     mp-1374707 AlO3Sb sb 0.5 ehull 0.282 gap(pbe,hse) 0.33 2.313
+cuequivariance or cuequivariance_torch is not available. Cuequivariance acceleration will be disabled.
+Using Materials Project MACE for MACECalculator with /home/aid1/.cache/mace/20231203mace128L1_epoch199model
+Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
+Mg 114 phases, 39 ternary, 444s
+    mp-3653 MgO6Sb2 sb 0.6667 ehull 0.0 gap(pbe,hse) 1.995 2.816
+    mp-27219 MgO4Sb2 sb 0.6667 ehull 0.0 gap(pbe,hse) 2.938 3.341
+    mp-676305 Mg4O9Sb2 sb 0.3333 ehull 0.0 gap(pbe,hse) 1.841 4.234
+    mp-1042244 MgO4Sb2 sb 0.6667 ehull 0.1088 gap(pbe,hse) 2.119 3.298
+Ag 73 phases, 8 ternary, 0s
+    mp-545999 AgO3Sb sb 0.5 ehull 0.0 gap(pbe,hse) 0.776 1.778
+    mp-540872 AgO3Sb sb 0.5 ehull 0.0001 gap(pbe,hse) 1.168 0.629
+    mp-1202934 Ag3O4Sb sb 0.25 ehull 0.0166 gap(pbe,hse) 0.399 0.086
+    mp-677054 AgO3Sb sb 0.5 ehull 0.0272 gap(pbe,hse) 0.251 0.431

@@ -1,0 +1,69 @@
+{
+ "registered_at": "2026-09-18T01:05",
+ "amendments": [],
+ "records": {
+  "primary_metric": {
+   "value": "realized value = max measured EQE / max EQE on the line (clipped at 0), per episode; comparison fm vs classical, paired per episode; inference at the element-cluster level (14 clusters, cluster means, t with df=13)",
+   "amendment_chain": []
+  },
+  "secondary_metrics": {
+   "value": [
+    "fm vs bare",
+    "classical vs bare",
+    "each agent arm vs the strongest mechanical floor (read from instrument/floors.csv)",
+    "each arm vs chance (exact expected best-of-5 random)"
+   ],
+   "amendment_chain": []
+  },
+  "metric_order": {
+   "value": [
+    "primary (fm - classical, cluster level)",
+    "fm - strongest floor",
+    "classical - bare",
+    "vs chance"
+   ],
+   "amendment_chain": []
+  },
+  "chance_baseline": {
+   "value": "bench/floors.py::chance, exact expectation under random allocation of 5 EQE without replacement",
+   "amendment_chain": []
+  },
+  "coverage_rule": {
+   "value": "a cell that crashed, timed out or measured zero EQE is a coverage failure, excluded from the pair and counted, never scored zero; realized value is computed from measured EQE whether or not submit was called",
+   "amendment_chain": []
+  },
+  "repair_budget": {
+   "value": "zero retries per cell (gate G2); a harness failure affecting all arms of an episode drops that episode from all arms and is reported",
+   "amendment_chain": []
+  },
+  "label_protocol": {
+   "value": "labels = EQE maps in Fig1c_allEQE_withcriteria.csv; opened by adjudication/score.py only after blind hashes are written (gate G3)",
+   "amendment_chain": []
+  },
+  "strata": {
+   "value": [
+    "LED (CA1-CA4)",
+    "low_signal (max EQE < 0.01%)",
+    "FM-arm FM-tool use (>=1 FM call vs none) -- descriptive only, it is post-treatment",
+    "literature-named systems (Ag, In) vs others"
+   ],
+   "amendment_chain": []
+  },
+  "predictions": {
+   "value": [
+    "if FM tools carry value, fm - classical > 0 and rises in episodes where the FM arm actually called FM tools",
+    "advantage should vanish in the low_signal stratum",
+    "depth prediction: advantage absent where the EQE-only floor already reaches 1.0"
+   ],
+   "amendment_chain": []
+  },
+  "claim_rule": {
+   "value": "a directional claim only when the cluster-level 95% CI excludes 0 AND |effect| > MDE from supply/power_record.json; otherwise report no-claim with MDE",
+   "amendment_chain": []
+  }
+ },
+ "item_ledger": {
+  "burned": [],
+  "note": "pilot items (r3_step1, r3_step2) are outside the arm cohort; no scored element changed in response to them, so none burned"
+ }
+}
