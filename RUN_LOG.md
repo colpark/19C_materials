@@ -94,3 +94,8 @@
 - MPA-0 precompute started: 4 workers. Three initially failed on a concurrent checkpoint download and were restarted.
 - 11:07 Decision 002 outcome: swap to MACE-MPA-0 FAILED. fm_prior −0.044 CLOSE, fm_xrd +0.006 LIFT. Recorded against the move (1 of 2 failures). Not re-attempted: the hull contributes +0.013 under both checkpoints.
 - 11:29 Decision 003 VOIDED (stale envelope commitments). Envelope reconciled to measured spend. Re-routed: pool_libraries_new_tau launched; search and explain re-launches satisfied without new spend; C1 depth 3 of 3.
+- Pooled loader: 33 plates, 92 episodes, 23 new chemistries, validation 92/92.
+  - R-P1: 3 combined-LED episodes excluded under the literal P-I2. Supply is now 89 episodes, 22 new chemistries, 36 in total.
+- General FM precompute: 14 of 37 summaries, then 3 workers crashed on a concurrent-write race (1 corrupt MACE cache file).
+  - Cache writes are now atomic (write + rename); the corrupt file was deleted.
+  - Restarted for the remaining 23 chemistries.

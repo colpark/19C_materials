@@ -49,7 +49,7 @@ def chemsys_structures(elements):
         recs.append(dict(id=x["id"], formula=a["chemical_formula_reduced"], nsites=a["nsites"],
                          lattice=a["lattice_vectors"], species=a["species_at_sites"],
                          cart=a["cartesian_site_positions"]))
-    json.dump(recs, open(path, "w"))
+    _atomic_dump(recs, path)
     return recs
 
 
@@ -92,9 +92,15 @@ def _cache_get(kind, h):
     return json.load(open(p)) if os.path.exists(p) else None
 
 
+def _atomic_dump(obj, path):
+    tmp = f"{path}.{os.getpid()}.tmp"
+    with open(tmp, "w") as f: json.dump(obj, f)
+    os.replace(tmp, path)          # concurrent workers: last writer wins, readers never see a partial file
+
+
 def _cache_put(kind, h, obj):
     os.makedirs(os.path.join(CACHE, kind), exist_ok=True)
-    json.dump(obj, open(os.path.join(CACHE, kind, h + ".json"), "w"))
+    _atomic_dump(obj, os.path.join(CACHE, kind, h + ".json"))
 
 
 def mace_relax(s: Structure, steps=150, fmax=0.05):
