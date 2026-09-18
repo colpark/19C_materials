@@ -28,3 +28,12 @@
 - **Chance:** a random choice per chemistry (the mean of the two).
 - **Resolution:** paired over chemistries; P7 via power.py on (policy value − always-classical), cluster = chemistry.
 - **Grader:** the mechanical ablation floors. Split-half certified at rho 0.70 on the base set, and re-certified on the pooled set with the same 0.5 threshold.
+
+## Amendment C1x-A2 (PI, 2026-09-19; before any pooled explain floor exists)
+
+- **Cause:** feature 3, "Sb-fraction span", is undefined on chemistries without Sb or with three or more cations.
+- **Change:** feature 3 becomes the **cation-fraction span**: the maximum pairwise distance (0.5 × L1 over cation fractions) among the stable mixed-cation phases (ehull ≤ 50 meV/atom). It is 0 when there are fewer than two such phases. On a 2-cation line it equals the old Sb-fraction span.
+- **Also:**
+  - The unit is the tau-0.5 cluster (26 on the pooled set). Its label is the mean over the cluster's episodes.
+  - Features are averaged over the chemistries in a cluster, weighted by episode count.
+  - The grader is re-certified split-half on the pool at the same 0.5 threshold.
