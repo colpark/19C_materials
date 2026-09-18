@@ -126,7 +126,7 @@
 - Main run: 468/468 cells, 0 failures. A2: blind files hashed and committed before labels open.
 - A3 scored: 468/468 cells, 0 coverage failures.
   - Arm means: bare 0.569, classical 0.562, fm_forced 0.592.
-  - Floors: cls_gp 0.459, cls_xrd 0.484, chance 0.442.
+  - Floors: cls_gp 0.4625, cls_xrd 0.488, fm_xrd 0.486, chance 0.442 (corrected from the ledger; an earlier line typed from memory).
 - **A4: NO CLAIM.** Primary fm_forced − classical = +0.062 at cluster level, CI [+0.002, +0.121]. The CI excludes 0, but 0.062 < final MDE 0.163 (observed MDE 0.084).
   - All arms beat cls_gp at cluster level.
   - fm_forced beats chance and cls_gp; vs cls_xrd the CI crosses 0.

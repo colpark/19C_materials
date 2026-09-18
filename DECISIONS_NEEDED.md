@@ -10,7 +10,7 @@ The run is **not halted** (halt_on: none). The pass ended in a terminal state: A
 
 1. **request_new_libraries** (card from decision 005). This is the only move that adds independent clusters.
    - Rev 2.3 used 26 tau-0.5 clusters, and all public JCAP/MEAD PEC+XRD libraries found by the search are already pooled.
-   - Reaching the effect size seen here (0.06) at 80% power needs roughly 150–200 clusters by the observed cluster SD (0.15). Alternatively, relax the claim rule to the observed MDE.
+   - Reaching the effect size seen here (0.062) at 80% power needs about **47 clusters** by the observed cluster SD (0.147), against 26 on hand. That is computed from the scored variance, with t at df = k − 1.
 2. **different_scored_quantity** (deferred until A4). It is surfaced by hand: the router's A4 table omits it (SKILL_FINDINGS F10).
    - Both FM channels stay PROXY for EQE and photocurrent.
    - A task scored on a quantity MACE or MEGNet measures (phase stability, identity or band gap) would give the FM channel construct validity. That is a change of scientific question.
