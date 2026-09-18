@@ -1,0 +1,13 @@
+{
+ "var_between_share": 0.205,
+ "n_min_clusters": 25,
+ "n_clusters": 26,
+ "items_bound": true,
+ "unburned_supply": false,
+ "unburned_supply_reason": "only the 10 reserve items remain unburned",
+ "sibling_libraries_found": true,
+ "heterogeneity_detected": true,
+ "explain_grader_available": false,
+ "outcomes_seen": true,
+ "source": "rev23/adjudication/score_record.json (A4 NO_CLAIM: effect 0.062 < final MDE 0.163; CI excludes 0)"
+}

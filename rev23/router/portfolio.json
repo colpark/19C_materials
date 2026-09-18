@@ -3,10 +3,10 @@
   {
    "id": "C1",
    "shape": "intervene / choose next measurement (lifted: forced FM consultation)",
-   "status": "active",
+   "status": "resolved",
    "resolving_power": 0.0,
    "cost_class": 3,
-   "note": "closed at rev2 P7 provisional; being routed"
+   "note": "A4 NO_CLAIM (rev 2.3): fm_forced-classical +0.062 CI[+0.002,+0.121] < final MDE 0.163"
   },
   {
    "id": "C1x",
