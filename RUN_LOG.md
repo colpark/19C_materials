@@ -17,3 +17,4 @@
 - 23:08 FM channels run on the GB10 GPU: MACE-MP-0 medium (float64, FIRE relaxation with cell filter) and MEGNet-BandGap-mfi.
   - Ni-Sb-O check: MACE ranks NiSb2O6 (mp-505271) as the most stable ternary, and that is the phase the dataset labels photoactive.
   - MEGNet predicts a gap of 0.0 eV for NiSb2O6. That is an I4 construct-validity flag.
+- 23:30 R1 PASS. Stub cell with opus-5, MCP connected, 7 calls, submitted the correct index. Found `ReadMcpResourceDirTool` in the native catalog and added it to the deny list. R4 will canary it.
