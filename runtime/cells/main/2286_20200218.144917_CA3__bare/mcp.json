@@ -1,0 +1,16 @@
+{
+ "mcpServers": {
+  "env": {
+   "command": "/home/aid1/Documents/6_19C_materials/env/.venv/bin/python",
+   "args": [
+    "/home/aid1/Documents/6_19C_materials/runtime/mcp/server.py",
+    "--episode",
+    "2286_20200218.144917_CA3",
+    "--arm",
+    "bare",
+    "--out",
+    "/home/aid1/Documents/6_19C_materials/runtime/cells/main/2286_20200218.144917_CA3__bare"
+   ]
+  }
+ }
+}

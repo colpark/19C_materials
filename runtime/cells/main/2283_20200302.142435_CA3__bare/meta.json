@@ -1,0 +1,22 @@
+{
+ "wall_s": 21.6,
+ "exit_code": 0,
+ "timed_out": false,
+ "init_model": "claude-opus-5",
+ "init_tools": [
+  "mcp__env__episode_info",
+  "mcp__env__measure_eqe",
+  "mcp__env__measure_xrd",
+  "mcp__env__submit"
+ ],
+ "init_mcp": [
+  {
+   "name": "env",
+   "status": "connected",
+   "source": "dynamic"
+  }
+ ],
+ "result_subtype": "success",
+ "num_turns": 8,
+ "cost_usd": 0.10788500000000001
+}
