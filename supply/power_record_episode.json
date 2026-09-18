@@ -1,0 +1,46 @@
+{
+  "k": 5,
+  "candidates_per_item": 28.5,
+  "chance": 0.175439,
+  "delta": 0.17,
+  "alpha": 0.05,
+  "power": 0.8,
+  "n": 100,
+  "mean_paired_difference": -0.00865,
+  "sigma_d": 0.287677,
+  "mde": 0.080596,
+  "n_min": 23,
+  "strata": {
+    "CA1": {
+      "n": 24,
+      "mean_paired_difference": 0.000591,
+      "sigma_d": 0.342714,
+      "mde": 0.195989,
+      "n_min": 32
+    },
+    "CA2": {
+      "n": 26,
+      "mean_paired_difference": -0.038588,
+      "sigma_d": 0.166543,
+      "mde": 0.091505,
+      "n_min": 8
+    },
+    "CA3": {
+      "n": 26,
+      "mean_paired_difference": -0.006868,
+      "sigma_d": 0.368635,
+      "mde": 0.202542,
+      "n_min": 37
+    },
+    "CA4": {
+      "n": 24,
+      "mean_paired_difference": 0.01261,
+      "sigma_d": 0.243582,
+      "mde": 0.139298,
+      "n_min": 17
+    }
+  },
+  "note": "Strata are reported, never filtered. Removing items where the compositions do not separate selects on the outcome variable.",
+  "ruling": "RESOLVABLE",
+  "completeness": "chance, sigma_d, MDE and N_min over 100 clustered units at alpha 0.05, power 0.8, across 4 strata"
+}

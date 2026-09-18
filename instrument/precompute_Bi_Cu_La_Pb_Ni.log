@@ -16,3 +16,13 @@ La 67 phases, 9 ternary, 108s
     mp-1190427 LaO4Sb sb 0.5 ehull 0.0 gap(pbe,hse) 2.002 4.372
     mp-31418 LaO9Sb3 sb 0.75 ehull 0.0 gap(pbe,hse) 1.949 3.077
     mp-542503 La9O5Sb5 sb 0.3571 ehull 0.0 gap(pbe,hse) 0.001 0.005
+Pb 77 phases, 5 ternary, 128s
+    mp-20727 O6PbSb2 sb 0.6667 ehull 0.0 gap(pbe,hse) 1.611 2.692
+    mp-633099 O7Pb2Sb2 sb 0.5 ehull 0.0 gap(pbe,hse) 1.839 2.499
+    mp-647520 O7Pb2Sb2 sb 0.5 ehull 0.0494 gap(pbe,hse) 0.159 0.487
+    mp-1186948 O3PbSb sb 0.5 ehull 0.168 gap(pbe,hse) 0.186 0.597
+Ni 88 phases, 4 ternary, 104s
+    mp-505271 NiO6Sb2 sb 0.6667 ehull 0.0 gap(pbe,hse) 0.0 0.044
+    mp-1190650 Ni2O7Sb2 sb 0.5 ehull 0.2688 gap(pbe,hse) 2.088 2.147
+    mp-21275 NiO4Sb2 sb 0.6667 ehull 0.2844 gap(pbe,hse) 2.271 3.591
+    mp-1186113 NiO3Sb sb 0.5 ehull 0.8299 gap(pbe,hse) 0.67 1.452

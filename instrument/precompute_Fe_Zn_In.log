@@ -6,3 +6,13 @@ Fe 194 phases, 11 ternary, 315s
     mp-505009 FeO6Sb2 sb 0.6667 ehull 0.0 gap(pbe,hse) 1.298 1.276
     mp-674490 FeO4Sb sb 0.5 ehull 0.0016 gap(pbe,hse) 1.589 2.08
     mp-1225088 FeO4Sb sb 0.5 ehull 0.0144 gap(pbe,hse) 1.771 1.661
+Zn 93 phases, 28 ternary, 348s
+    mp-3188 O6Sb2Zn sb 0.6667 ehull 0.0 gap(pbe,hse) 1.037 1.97
+    mp-675797 O12Sb2Zn7 sb 0.2222 ehull 0.0118 gap(pbe,hse) 0.719 1.949
+    mp-5388 O4Sb2Zn sb 0.6667 ehull 0.0152 gap(pbe,hse) 2.817 4.233
+    mp-1215862 O12Sb2Zn7 sb 0.2222 ehull 0.0173 gap(pbe,hse) 0.822 2.084
+In 64 phases, 4 ternary, 46s
+    mp-1212067 InO4Sb sb 0.5 ehull 0.0 gap(pbe,hse) 1.878 2.201
+    mp-674374 In11O24Sb3 sb 0.2143 ehull 0.0 gap(pbe,hse) 0.887 1.912
+    mp-28617 In3O12Sb5 sb 0.625 ehull 0.0176 gap(pbe,hse) 2.041 2.774
+    mp-1184765 InO3Sb sb 0.5 ehull 0.4106 gap(pbe,hse) 0.181 0.0

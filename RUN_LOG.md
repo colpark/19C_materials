@@ -38,3 +38,18 @@
 - 00:58 R4 grant verified from the model side (the init event): each arm's catalog matches its declaration, and 48 of 48 canaries are absent.
 - 01:00 R5 gates armed with both controls: G1 EQE budget, G2 no-retry, G3 blind hash.
 - 01:02 R8 symmetry table. The only differences are function count and tool descriptions, both ruled part of the intended treatment.
+- 01:40 FM precompute finished for all 14 systems.
+- I1 floors over 189 included episodes (`instrument/floors.csv`, code hash 4a2211d5):
+
+  | Composition | Mean realized value |
+  |---|---|
+  | chance | 0.592 |
+  | cls_gp (strongest) | 0.719 |
+  | cls_xrd | 0.696 |
+  | fm_prior | 0.715 |
+  | fm_xrd | 0.699 |
+
+- I2 channel count: the FM channels add no mechanical lift. fm_xrd vs cls_xrd is +0.003, and fm_prior vs cls_gp is -0.004.
+- I4 construct validity: PASS on proxies. MACE puts 36 of 36 observed top-EQE crystalline phases within 50 meV of the hull. MEGNet gives a gap at or below the photon energy for 30 of 36. The FM prior's location error is 0.249 vs 0.285 for a uniform guess.
+- P7: sigma_d = 0.110 at the cluster level, MDE 0.089 (t, df 13), below delta 0.17, so RESOLVABLE. The episode-level MDE is 0.081.
+- P4: C1 rules PROCEED, with positive supply (14 clusters) as the binding axis.

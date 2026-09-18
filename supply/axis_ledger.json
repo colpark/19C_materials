@@ -1,0 +1,58 @@
+{
+ "candidate": "C1",
+ "branch": "intervene / choose next measurement",
+ "axes": [
+  {
+   "axis": "positive_supply",
+   "raw": 189,
+   "clustered": 14,
+   "unit": "element system",
+   "band": "clusters >=10 PROCEED, 5-9 ESCALATE, <5 CLOSE (declared after the D2 count was seen: disclosed)",
+   "status": "PASS"
+  },
+  {
+   "axis": "negative_supply",
+   "raw": "~5300 counterfactual outcomes (every unmeasured composition's EQE recorded)",
+   "clustered": 14,
+   "status": "PASS",
+   "note": "intervene negatives = actions not taken, with outcome; complete by construction"
+  },
+  {
+   "axis": "contamination_exposure",
+   "raw": "189/189 predate subject; 7 text-level excluded",
+   "clustered": "14/14 exposed at figure level",
+   "status": "DISCLOSED",
+   "note": "recall probe 3/28 vs predict 4/28: no memorization signal"
+  },
+  {
+   "axis": "tool_coverage",
+   "raw": "14/14 systems have >=4 MACE-evaluated ternary MP phases (In 4, Ni 4 lowest); all env/classical tools cover all",
+   "clustered": 14,
+   "status": "PASS"
+  },
+  {
+   "axis": "cluster_structure",
+   "raw": 189,
+   "clustered": 14,
+   "overstatement_pct": 1250,
+   "status": "REPORTED",
+   "note": "inference at cluster level"
+  },
+  {
+   "axis": "split_integrity",
+   "raw": "no model is fit on these labels; MEGNet/MACE trained on MP DFT (structures/energies), never on EQE",
+   "clustered": "n/a",
+   "status": "PASS"
+  },
+  {
+   "axis": "unprocessable_units",
+   "raw": "0 max<=0; 1 tie; 38 low-signal (max EQE<0.01%) kept as stratum",
+   "clustered": 14,
+   "status": "PASS"
+  }
+ ],
+ "ruling": "PROCEED",
+ "binding_axis": "positive_supply (14 clusters; the cluster-level MDE 0.089 is the resolution limit)",
+ "definition_widened": false,
+ "completeness": "All seven axes counted for C1 over 189 included episodes and 14 element clusters; C2-C5 closed at D4 shape gates before axis counting (refusal 17)."
+}

@@ -1,0 +1,21 @@
+{
+ "level": "element cluster (binding unit, A-01)",
+ "n": 14,
+ "sigma_d": 0.11,
+ "mde_z": 0.0824,
+ "mde_t": 0.0891,
+ "delta": 0.17,
+ "n_min_clusters": 4,
+ "chance": 0.5868,
+ "floor_share_of_ceiling": {
+  "cls_gp": 0.7397,
+  "fm_prior": 0.731,
+  "ceiling": 1.0,
+  "headroom_above_strongest_floor": 0.2603
+ },
+ "ruling": "RESOLVABLE",
+ "items_filtered_on_outcome": false,
+ "completeness": "Cluster-level sigma_d, MDE (z and t, df=13) and N_min over 14 element clusters of the 100-episode cohort, from the free paired floor difference fm_prior - cls_gp; episode-level record in power_record_episode.json.",
+ "mde": 0.0891,
+ "n_min": 4
+}

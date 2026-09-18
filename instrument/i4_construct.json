@@ -1,0 +1,706 @@
+{
+ "details": {
+  "a": [
+   {
+    "el": "Ag",
+    "phase": "*AgSbO3-c",
+    "result": "unparseable"
+   },
+   {
+    "el": "Ag",
+    "phase": "*AgSbO3-c",
+    "result": "unparseable"
+   },
+   {
+    "el": "Al",
+    "phase": "*AlSbO4",
+    "led": "2.7 eV",
+    "mp": "mp-676861",
+    "ehull": 0.0,
+    "on_hull_50meV": true
+   },
+   {
+    "el": "Al",
+    "phase": "*AlSbO4",
+    "led": "3.2 eV",
+    "mp": "mp-676861",
+    "ehull": 0.0,
+    "on_hull_50meV": true
+   },
+   {
+    "el": "Bi",
+    "phase": "Bi3SbO7",
+    "led": "3.2 eV",
+    "mp": "mp-30304",
+    "ehull": 0.0,
+    "on_hull_50meV": true
+   },
+   {
+    "el": "Bi",
+    "phase": "am-Bi-Sb-O",
+    "result": "amorphous: no crystal to test"
+   },
+   {
+    "el": "Co",
+    "phase": "*CoSb2O6",
+    "led": "2.1 eV",
+    "mp": "mp-21908",
+    "ehull": 0.0,
+    "on_hull_50meV": true
+   },
+   {
+    "el": "Co",
+    "phase": "*CoSb2O6",
+    "led": "2.4 eV",
+    "mp": "mp-21908",
+    "ehull": 0.0,
+    "on_hull_50meV": true
+   },
+   {
+    "el": "Co",
+    "phase": "*CoSb2O6",
+    "led": "2.7 eV",
+    "mp": "mp-21908",
+    "ehull": 0.0,
+    "on_hull_50meV": true
+   },
+   {
+    "el": "Co",
+    "phase": "*CoSb2O6",
+    "led": "3.2 eV",
+    "mp": "mp-21908",
+    "ehull": 0.0,
+    "on_hull_50meV": true
+   },
+   {
+    "el": "Co",
+    "phase": "am-Co-Sb-O",
+    "result": "amorphous: no crystal to test"
+   },
+   {
+    "el": "Co",
+    "phase": "am-Co-Sb-O",
+    "result": "amorphous: no crystal to test"
+   },
+   {
+    "el": "Co",
+    "phase": "am-Co-Sb-O",
+    "result": "amorphous: no crystal to test"
+   },
+   {
+    "el": "Co",
+    "phase": "am-Co-Sb-O",
+    "result": "amorphous: no crystal to test"
+   },
+   {
+    "el": "Cr",
+    "phase": "*CrSbO4",
+    "led": "2.1 eV",
+    "mp": "mp-33857",
+    "ehull": 0.0,
+    "on_hull_50meV": true
+   },
+   {
+    "el": "Cr",
+    "phase": "*CrSbO4",
+    "led": "2.4 eV",
+    "mp": "mp-33857",
+    "ehull": 0.0,
+    "on_hull_50meV": true
+   },
+   {
+    "el": "Cr",
+    "phase": "*CrSbO4",
+    "led": "2.7 eV",
+    "mp": "mp-33857",
+    "ehull": 0.0,
+    "on_hull_50meV": true
+   },
+   {
+    "el": "Cr",
+    "phase": "*CrSbO4",
+    "led": "3.2 eV",
+    "mp": "mp-33857",
+    "ehull": 0.0,
+    "on_hull_50meV": true
+   },
+   {
+    "el": "Cu",
+    "phase": "CuSb2O6",
+    "led": "2.1 eV",
+    "mp": "mp-1188790",
+    "ehull": 0.0,
+    "on_hull_50meV": true
+   },
+   {
+    "el": "Cu",
+    "phase": "CuSb2O6",
+    "led": "2.4 eV",
+    "mp": "mp-1188790",
+    "ehull": 0.0,
+    "on_hull_50meV": true
+   },
+   {
+    "el": "Cu",
+    "phase": "CuSb2O6",
+    "led": "2.7 eV",
+    "mp": "mp-1188790",
+    "ehull": 0.0,
+    "on_hull_50meV": true
+   },
+   {
+    "el": "Cu",
+    "phase": "CuSb2O6",
+    "led": "3.2 eV",
+    "mp": "mp-1188790",
+    "ehull": 0.0,
+    "on_hull_50meV": true
+   },
+   {
+    "el": "Fe",
+    "phase": "FeSbO4",
+    "led": "2.4 eV",
+    "mp": "mp-761281",
+    "ehull": 0.0,
+    "on_hull_50meV": true
+   },
+   {
+    "el": "Fe",
+    "phase": "FeSbO4",
+    "led": "2.7 eV",
+    "mp": "mp-761281",
+    "ehull": 0.0,
+    "on_hull_50meV": true
+   },
+   {
+    "el": "Fe",
+    "phase": "FeSbO4",
+    "led": "3.2 eV",
+    "mp": "mp-761281",
+    "ehull": 0.0,
+    "on_hull_50meV": true
+   },
+   {
+    "el": "In",
+    "phase": "InSbO4",
+    "led": "2.1 eV",
+    "mp": "mp-1212067",
+    "ehull": 0.0,
+    "on_hull_50meV": true
+   },
+   {
+    "el": "In",
+    "phase": "InSbO4",
+    "led": "2.4 eV",
+    "mp": "mp-1212067",
+    "ehull": 0.0,
+    "on_hull_50meV": true
+   },
+   {
+    "el": "In",
+    "phase": "InSbO4",
+    "led": "2.7 eV",
+    "mp": "mp-1212067",
+    "ehull": 0.0,
+    "on_hull_50meV": true
+   },
+   {
+    "el": "In",
+    "phase": "InSbO4",
+    "led": "3.2 eV",
+    "mp": "mp-1212067",
+    "ehull": 0.0,
+    "on_hull_50meV": true
+   },
+   {
+    "el": "Mg",
+    "phase": "MgSb2O6",
+    "led": "2.7 eV",
+    "mp": "mp-3653",
+    "ehull": 0.0,
+    "on_hull_50meV": true
+   },
+   {
+    "el": "Mg",
+    "phase": "MgSb2O6",
+    "led": "3.2 eV",
+    "mp": "mp-3653",
+    "ehull": 0.0,
+    "on_hull_50meV": true
+   },
+   {
+    "el": "Ni",
+    "phase": "NiSb2O6",
+    "led": "2.1 eV",
+    "mp": "mp-505271",
+    "ehull": 0.0,
+    "on_hull_50meV": true
+   },
+   {
+    "el": "Ni",
+    "phase": "NiSb2O6",
+    "led": "2.4 eV",
+    "mp": "mp-505271",
+    "ehull": 0.0,
+    "on_hull_50meV": true
+   },
+   {
+    "el": "Ni",
+    "phase": "NiSb2O6",
+    "led": "2.7 eV",
+    "mp": "mp-505271",
+    "ehull": 0.0,
+    "on_hull_50meV": true
+   },
+   {
+    "el": "Ni",
+    "phase": "NiSb2O6",
+    "led": "3.2 eV",
+    "mp": "mp-505271",
+    "ehull": 0.0,
+    "on_hull_50meV": true
+   },
+   {
+    "el": "Ni",
+    "phase": "am-Ni-Sb-O",
+    "result": "amorphous: no crystal to test"
+   },
+   {
+    "el": "Ni",
+    "phase": "am-Ni-Sb-O",
+    "result": "amorphous: no crystal to test"
+   },
+   {
+    "el": "Ni",
+    "phase": "am-Ni-Sb-O",
+    "result": "amorphous: no crystal to test"
+   },
+   {
+    "el": "Ni",
+    "phase": "am-Ni-Sb-O",
+    "result": "amorphous: no crystal to test"
+   },
+   {
+    "el": "Pb",
+    "phase": "Pb2.5Sb1.5O6.75",
+    "led": "2.1 eV",
+    "result": "not in MP system (no structure to evaluate)"
+   },
+   {
+    "el": "Pb",
+    "phase": "Pb2.5Sb1.5O6.75",
+    "led": "2.4 eV",
+    "result": "not in MP system (no structure to evaluate)"
+   },
+   {
+    "el": "Pb",
+    "phase": "Pb2.5Sb1.5O6.75",
+    "led": "2.7 eV",
+    "result": "not in MP system (no structure to evaluate)"
+   },
+   {
+    "el": "Pb",
+    "phase": "Pb2.5Sb1.5O6.75",
+    "led": "3.2 eV",
+    "result": "not in MP system (no structure to evaluate)"
+   },
+   {
+    "el": "Pb",
+    "phase": "Pb2Sb2O7",
+    "led": "2.1 eV",
+    "mp": "mp-633099",
+    "ehull": 0.0,
+    "on_hull_50meV": true
+   },
+   {
+    "el": "Pb",
+    "phase": "Pb2Sb2O7",
+    "led": "2.4 eV",
+    "mp": "mp-633099",
+    "ehull": 0.0,
+    "on_hull_50meV": true
+   },
+   {
+    "el": "Pb",
+    "phase": "Pb2Sb2O7",
+    "led": "2.7 eV",
+    "mp": "mp-633099",
+    "ehull": 0.0,
+    "on_hull_50meV": true
+   },
+   {
+    "el": "Pb",
+    "phase": "Pb2Sb2O7",
+    "led": "3.2 eV",
+    "mp": "mp-633099",
+    "ehull": 0.0,
+    "on_hull_50meV": true
+   },
+   {
+    "el": "Pb",
+    "phase": "PbSb2O6",
+    "led": "3.2 eV",
+    "mp": "mp-20727",
+    "ehull": 0.0,
+    "on_hull_50meV": true
+   },
+   {
+    "el": "Zn",
+    "phase": "Zn2.33Sb0.67O4",
+    "led": "2.7 eV",
+    "result": "not in MP system (no structure to evaluate)"
+   },
+   {
+    "el": "Zn",
+    "phase": "Zn2.33Sb0.67O4",
+    "led": "3.2 eV",
+    "result": "not in MP system (no structure to evaluate)"
+   },
+   {
+    "el": "Zn",
+    "phase": "ZnSb2O6",
+    "led": "2.4 eV",
+    "mp": "mp-3188",
+    "ehull": 0.0,
+    "on_hull_50meV": true
+   },
+   {
+    "el": "Zn",
+    "phase": "ZnSb2O6",
+    "led": "2.7 eV",
+    "mp": "mp-3188",
+    "ehull": 0.0,
+    "on_hull_50meV": true
+   },
+   {
+    "el": "Zn",
+    "phase": "ZnSb2O6",
+    "led": "3.2 eV",
+    "mp": "mp-3188",
+    "ehull": 0.0,
+    "on_hull_50meV": true
+   },
+   {
+    "el": "Zn",
+    "phase": "am-Zn-Sb-O",
+    "result": "amorphous: no crystal to test"
+   },
+   {
+    "el": "Zn",
+    "phase": "am-Zn-Sb-O",
+    "result": "amorphous: no crystal to test"
+   },
+   {
+    "el": "Zn",
+    "phase": "am-Zn-Sb-O",
+    "result": "amorphous: no crystal to test"
+   }
+  ],
+  "b": [
+   {
+    "el": "Al",
+    "phase": "*AlSbO4",
+    "led_eV": 2.7,
+    "mp": "mp-676861",
+    "gap_hse": 3.65,
+    "absorbs": false
+   },
+   {
+    "el": "Al",
+    "phase": "*AlSbO4",
+    "led_eV": 3.2,
+    "mp": "mp-676861",
+    "gap_hse": 3.65,
+    "absorbs": false
+   },
+   {
+    "el": "Bi",
+    "phase": "Bi3SbO7",
+    "led_eV": 3.2,
+    "mp": "mp-30304",
+    "gap_hse": 2.268,
+    "absorbs": true
+   },
+   {
+    "el": "Co",
+    "phase": "*CoSb2O6",
+    "led_eV": 2.1,
+    "mp": "mp-21908",
+    "gap_hse": 0.369,
+    "absorbs": true
+   },
+   {
+    "el": "Co",
+    "phase": "*CoSb2O6",
+    "led_eV": 2.4,
+    "mp": "mp-21908",
+    "gap_hse": 0.369,
+    "absorbs": true
+   },
+   {
+    "el": "Co",
+    "phase": "*CoSb2O6",
+    "led_eV": 2.7,
+    "mp": "mp-21908",
+    "gap_hse": 0.369,
+    "absorbs": true
+   },
+   {
+    "el": "Co",
+    "phase": "*CoSb2O6",
+    "led_eV": 3.2,
+    "mp": "mp-21908",
+    "gap_hse": 0.369,
+    "absorbs": true
+   },
+   {
+    "el": "Cr",
+    "phase": "*CrSbO4",
+    "led_eV": 2.1,
+    "mp": "mp-33857",
+    "gap_hse": 1.713,
+    "absorbs": true
+   },
+   {
+    "el": "Cr",
+    "phase": "*CrSbO4",
+    "led_eV": 2.4,
+    "mp": "mp-33857",
+    "gap_hse": 1.713,
+    "absorbs": true
+   },
+   {
+    "el": "Cr",
+    "phase": "*CrSbO4",
+    "led_eV": 2.7,
+    "mp": "mp-33857",
+    "gap_hse": 1.713,
+    "absorbs": true
+   },
+   {
+    "el": "Cr",
+    "phase": "*CrSbO4",
+    "led_eV": 3.2,
+    "mp": "mp-33857",
+    "gap_hse": 1.713,
+    "absorbs": true
+   },
+   {
+    "el": "Cu",
+    "phase": "CuSb2O6",
+    "led_eV": 2.1,
+    "mp": "mp-1188790",
+    "gap_hse": 0.017,
+    "absorbs": true
+   },
+   {
+    "el": "Cu",
+    "phase": "CuSb2O6",
+    "led_eV": 2.4,
+    "mp": "mp-1188790",
+    "gap_hse": 0.017,
+    "absorbs": true
+   },
+   {
+    "el": "Cu",
+    "phase": "CuSb2O6",
+    "led_eV": 2.7,
+    "mp": "mp-1188790",
+    "gap_hse": 0.017,
+    "absorbs": true
+   },
+   {
+    "el": "Cu",
+    "phase": "CuSb2O6",
+    "led_eV": 3.2,
+    "mp": "mp-1188790",
+    "gap_hse": 0.017,
+    "absorbs": true
+   },
+   {
+    "el": "Fe",
+    "phase": "FeSbO4",
+    "led_eV": 2.4,
+    "mp": "mp-761281",
+    "gap_hse": 0.838,
+    "absorbs": true
+   },
+   {
+    "el": "Fe",
+    "phase": "FeSbO4",
+    "led_eV": 2.7,
+    "mp": "mp-761281",
+    "gap_hse": 0.838,
+    "absorbs": true
+   },
+   {
+    "el": "Fe",
+    "phase": "FeSbO4",
+    "led_eV": 3.2,
+    "mp": "mp-761281",
+    "gap_hse": 0.838,
+    "absorbs": true
+   },
+   {
+    "el": "In",
+    "phase": "InSbO4",
+    "led_eV": 2.1,
+    "mp": "mp-1212067",
+    "gap_hse": 2.201,
+    "absorbs": false
+   },
+   {
+    "el": "In",
+    "phase": "InSbO4",
+    "led_eV": 2.4,
+    "mp": "mp-1212067",
+    "gap_hse": 2.201,
+    "absorbs": true
+   },
+   {
+    "el": "In",
+    "phase": "InSbO4",
+    "led_eV": 2.7,
+    "mp": "mp-1212067",
+    "gap_hse": 2.201,
+    "absorbs": true
+   },
+   {
+    "el": "In",
+    "phase": "InSbO4",
+    "led_eV": 3.2,
+    "mp": "mp-1212067",
+    "gap_hse": 2.201,
+    "absorbs": true
+   },
+   {
+    "el": "Mg",
+    "phase": "MgSb2O6",
+    "led_eV": 2.7,
+    "mp": "mp-3653",
+    "gap_hse": 2.816,
+    "absorbs": false
+   },
+   {
+    "el": "Mg",
+    "phase": "MgSb2O6",
+    "led_eV": 3.2,
+    "mp": "mp-3653",
+    "gap_hse": 2.816,
+    "absorbs": true
+   },
+   {
+    "el": "Ni",
+    "phase": "NiSb2O6",
+    "led_eV": 2.1,
+    "mp": "mp-505271",
+    "gap_hse": 0.044,
+    "absorbs": true
+   },
+   {
+    "el": "Ni",
+    "phase": "NiSb2O6",
+    "led_eV": 2.4,
+    "mp": "mp-505271",
+    "gap_hse": 0.044,
+    "absorbs": true
+   },
+   {
+    "el": "Ni",
+    "phase": "NiSb2O6",
+    "led_eV": 2.7,
+    "mp": "mp-505271",
+    "gap_hse": 0.044,
+    "absorbs": true
+   },
+   {
+    "el": "Ni",
+    "phase": "NiSb2O6",
+    "led_eV": 3.2,
+    "mp": "mp-505271",
+    "gap_hse": 0.044,
+    "absorbs": true
+   },
+   {
+    "el": "Pb",
+    "phase": "Pb2Sb2O7",
+    "led_eV": 2.1,
+    "mp": "mp-633099",
+    "gap_hse": 2.499,
+    "absorbs": false
+   },
+   {
+    "el": "Pb",
+    "phase": "Pb2Sb2O7",
+    "led_eV": 2.4,
+    "mp": "mp-633099",
+    "gap_hse": 2.499,
+    "absorbs": false
+   },
+   {
+    "el": "Pb",
+    "phase": "Pb2Sb2O7",
+    "led_eV": 2.7,
+    "mp": "mp-633099",
+    "gap_hse": 2.499,
+    "absorbs": true
+   },
+   {
+    "el": "Pb",
+    "phase": "Pb2Sb2O7",
+    "led_eV": 3.2,
+    "mp": "mp-633099",
+    "gap_hse": 2.499,
+    "absorbs": true
+   },
+   {
+    "el": "Pb",
+    "phase": "PbSb2O6",
+    "led_eV": 3.2,
+    "mp": "mp-20727",
+    "gap_hse": 2.692,
+    "absorbs": true
+   },
+   {
+    "el": "Zn",
+    "phase": "ZnSb2O6",
+    "led_eV": 2.4,
+    "mp": "mp-3188",
+    "gap_hse": 1.97,
+    "absorbs": true
+   },
+   {
+    "el": "Zn",
+    "phase": "ZnSb2O6",
+    "led_eV": 2.7,
+    "mp": "mp-3188",
+    "gap_hse": 1.97,
+    "absorbs": true
+   },
+   {
+    "el": "Zn",
+    "phase": "ZnSb2O6",
+    "led_eV": 3.2,
+    "mp": "mp-3188",
+    "gap_hse": 1.97,
+    "absorbs": true
+   }
+  ]
+ },
+ "summary": {
+  "mace_on_hull": "36 of 36 observed top-EQE crystalline phases (with an MP structure) within 50 meV/atom of the MACE hull",
+  "mace_untestable": 20,
+  "megnet_absorbs": "30 of 36 have MEGNet HSE gap <= the photon energy at which they were top-EQE",
+  "location": {
+   "mean_abs_err_fm_prior": 0.2488,
+   "mean_abs_err_uniform": 0.285
+  },
+  "ruling": {
+   "mace_stability": "PASS",
+   "megnet_bandgap": "PASS",
+   "fm_prior_location": "PASS",
+   "note": "construct validity on a proxy: stability/gap are necessary conditions for photoactivity, not EQE itself"
+  }
+ },
+ "completeness": "56 annotated (element, phase, LED) rows tested for MACE, 36 for MEGNet, 196 episodes for location."
+}
