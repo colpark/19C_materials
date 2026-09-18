@@ -1,0 +1,14 @@
+{"t": 1789758931.0794997, "n": 1, "tool": "episode_info", "args": {}, "receipt": "f2aecadf0189", "result": "<large>"}
+{"t": 1789758935.3910933, "n": 2, "tool": "list_phases", "args": {}, "receipt": "ed3f2928f3ef", "result": "<large>"}
+{"t": 1789758938.7765071, "n": 3, "tool": "mace_stability", "args": {"phase_id": "mp-504509"}, "receipt": "387e4de07ea8", "result": {"id": "mp-504509", "formula": "VFeO4", "formation_energy_eV_atom": -1.0081, "e_above_hull_eV_atom": 0.0}}
+{"t": 1789758941.603154, "n": 4, "tool": "megnet_bandgap", "args": {"phase_id": "mp-504509", "fidelity": "hse"}, "receipt": "a3129afdd615", "result": {"id": "mp-504509", "gap_eV": 2.75, "fidelity": "hse"}}
+{"t": 1789758946.1002905, "n": 5, "tool": "record_consultation", "args": {"index": 34, "receipts": ["387e4de07ea8", "a3129afdd615"]}, "receipt": "1ffcce6eae2c", "result": {"ok": true, "index": 34, "cleared_to_measure": 34}}
+{"t": 1789758946.1065602, "n": 6, "tool": "measure_eqe", "args": {"index": 34}, "receipt": "9c46c7baf2e2", "result": {"index": 34, "cation_fractions": {"Fe": 0.3919, "Ni": 0.1843, "V": 0.4238}, "merit": 2.8e-06, "merit_name": "photocurrent_A", "budget_remaining": 2}}
+{"t": 1789758950.144334, "n": 7, "tool": "substitute_structure", "args": {"phase_id": "mp-504509", "from_element": "Fe", "to_element": "Ni"}, "receipt": "96644ffcd3f2", "result": {"id": "hyp-befef5ae", "formula": "VNiO4", "nsites": 36}}
+{"t": 1789758954.3830695, "n": 8, "tool": "megnet_bandgap", "args": {"phase_id": "hyp-befef5ae", "fidelity": "hse"}, "receipt": "2eeab9e48829", "result": {"id": "hyp-befef5ae", "gap_eV": 0.541, "fidelity": "hse"}}
+{"t": 1789758958.6237788, "n": 9, "tool": "record_consultation", "args": {"index": 158, "receipts": ["2eeab9e48829"]}, "receipt": "36bccf377a22", "result": {"ok": true, "index": 158, "cleared_to_measure": 158}}
+{"t": 1789758958.6324356, "n": 10, "tool": "measure_eqe", "args": {"index": 158}, "receipt": "b8fad3f008fc", "result": {"index": 158, "cation_fractions": {"Fe": 0.5256, "Ni": 0.1803, "V": 0.2941}, "merit": 1.72e-06, "merit_name": "photocurrent_A", "budget_remaining": 1}}
+{"t": 1789758963.170483, "n": 11, "tool": "megnet_bandgap", "args": {"phase_id": "mp-25279", "fidelity": "hse"}, "receipt": "1d8d5994e634", "result": {"id": "mp-25279", "gap_eV": 2.833, "fidelity": "hse"}}
+{"t": 1789758966.616706, "n": 12, "tool": "record_consultation", "args": {"index": 89, "receipts": ["1d8d5994e634"]}, "receipt": "d2b521e5b2e7", "result": {"ok": true, "index": 89, "cleared_to_measure": 89}}
+{"t": 1789758966.6316462, "n": 13, "tool": "measure_eqe", "args": {"index": 89}, "receipt": "bc61aa76c155", "result": {"index": 89, "cation_fractions": {"Fe": 0.2615, "Ni": 0.1741, "V": 0.5644}, "merit": 3.24e-06, "merit_name": "photocurrent_A", "budget_remaining": 0}}
+{"t": 1789758971.5012572, "n": 14, "tool": "submit", "args": {"best_index": 89}, "receipt": "b5be02f22412", "result": {"ok": true, "merit_measured": 3, "xrd_measured": 0}}

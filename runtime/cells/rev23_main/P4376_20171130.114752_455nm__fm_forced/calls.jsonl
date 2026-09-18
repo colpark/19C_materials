@@ -1,0 +1,6 @@
+{"t": 1789759177.7137036, "n": 1, "tool": "episode_info", "args": {}, "receipt": "dcb34c5e7007", "result": "<large>"}
+{"t": 1789759182.6311574, "n": 2, "tool": "list_phases", "args": {}, "receipt": "fc08aaf18722", "result": "<large>"}
+{"t": 1789759188.2212894, "n": 3, "tool": "megnet_bandgap", "args": {"args": [], "phase_id": "mp-613", "fidelity": "hse"}, "receipt": "6d759407c06a", "result": {"error": "ValueError: unknown phase id mp-613"}}
+{"t": 1789759191.8835475, "n": 4, "tool": "record_consultation", "args": {"index": 1, "receipts": ["6d759407c06a"]}, "receipt": "45f62f446361", "result": {"error": "no valid FM receipt since the previous merit measurement; call mace_stability or megnet_bandgap first and cite its receipt"}}
+{"t": 1789759194.7731946, "n": 5, "tool": "megnet_bandgap", "args": {"args": [], "phase_id": "mp-504846", "fidelity": "hse"}, "receipt": "43f27800d7f2", "result": {"error": "ValueError: unknown phase id mp-504846"}}
+{"t": 1789759197.5895088, "n": 6, "tool": "mace_stability", "args": {"args": [], "phase_id": "BiVO4"}, "receipt": "45eb01ffba34", "result": {"error": "ValueError: unknown phase id BiVO4"}}
