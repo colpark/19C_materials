@@ -1,0 +1,251 @@
+{
+ "tau": {
+  "value": "element system (categorical); 14 units",
+  "status": "amended",
+  "override_reason": "A-01: XRD-map similarity clusters by substrate (FTO vs Pt); tau.py refused an unbounded curve",
+  "provenance": {
+   "referent": "independent unit for clustering episodes",
+   "source": "discovery/tau/plate_cut_curve.csv + tau.py REFUSE; bench/floors.py::fm_prior depends only on (element, LED)",
+   "population": "22 plates, 196 episodes",
+   "adjudicator": "plate XRD cosine at 8 cuts (rejected: substrate referent)",
+   "falsifier": "two same-element plates whose paired floor differences are uncorrelated would show element is too coarse; measure at P6"
+  }
+ },
+ "decision_shape": {
+  "value": {
+   "root": "intervene",
+   "subtype": {
+    "name": "choose the next measurement under a budget (EQE and XRD), realized value of the best measured composition",
+    "derived": false
+   },
+   "grader": {
+    "kind": "replayable environment: full measured EQE map per episode (CaltechDATA 42gwd-8wg77), revealed per query",
+    "in_tool_inventory": true,
+    "certification_stage": "I4/I5 (runtime/mcp/server.py measure_eqe returns the recorded value; known-input and negative controls)"
+   },
+   "yield_per_unit": {
+    "scalars": 1,
+    "thresholded": false,
+    "arithmetic": "one graded realized value per episode = max measured EQE / max EQE on the line in [0,1]; 5 per-round values recorded as secondary"
+   },
+   "role_floor": {
+    "role": "simulator (the environment answers an action the agent chose); FM tools act as scorer on agent-built hypotheses (substitute_structure -> mace_stability / megnet_bandgap)",
+    "below_predictor_line": true
+   },
+   "alternatives_considered": [
+    {
+     "root": "infer",
+     "binding_gate": "Gate 1 role floor",
+     "note": "predicting the best composition (pick 1 of M) sits on the predictor line; the seeds' action is committing measurements (S1 commits PEC/stability to 5 phases; S2, S3 one measurement per iteration), so the realized value, not the prediction, is the governed decision"
+    },
+    {
+     "root": "explain",
+     "binding_gate": "Gate 2 grader",
+     "note": "phase-identity labels are analyst XRD annotation in Bruker EVA (S1 methods), and the mpid mapping is a post-hoc nearest-structure mapping; no certified judge; answers also sit in S1 Fig. 3"
+    },
+    {
+     "root": "generate",
+     "binding_gate": "Gate 2 grader",
+     "note": "no oracle predicts EQE for a designed composition or structure; MEGNet gap is not EQE (I4)"
+    }
+   ],
+   "disposition": "PROCEED",
+   "item_template": {
+    "description": "one M-Sb-O composition line, conditions (substrate, anneal T, pH, photon energy), ~29 candidates by Sb fraction; 5 EQE + 5 XRD measurements; submit best measured index with rejections",
+    "locator": "runtime/prompt.md, runtime/mcp/server.py"
+   },
+   "branch_census": {
+    "chain_length": "S1 ~12 steps (deposit, anneal, XRF, XRD, PEC at 4 LEDs x 3 pH, phase ID, down-select, Pourbaix, stability, SEM); S2 ~9; S3 ~6",
+    "branch_points": "S1 ~10, S2 ~9, S3 ~5 (seed_ledger.json facts)",
+    "branches_with_named_rejection": "S1: excluded phases and substituted MP entries named; S2: SbTe vs Sb2Te2/Sb2Te3 named and settled by electron diffraction",
+    "branches_per_episode": "10 sequential choices (5 EQE + 5 XRD), so multi-turn",
+    "locators": [
+     "discovery/seeds/seed_ledger.json",
+     "discovery/census/CENSUS_RESULT.md"
+    ]
+   },
+   "depth_census": {
+    "claimed_channels": [
+     "XRF composition",
+     "XRD",
+     "PEC/EQE",
+     "(stability: Pourbaix, CA, SEM)"
+    ],
+    "measured_depth": "measured at I2 by leave-one-out over the fixed compositions: EQE-only (cls_gp) vs +XRD (cls_xrd) vs +FM (fm_xrd, fm_prior); see instrument/i2_channels.json",
+    "method": "leave-one-out on mechanical compositions",
+    "supply_at_this_depth": "all 189 included episodes carry XRD and EQE at every point",
+    "unmounted_channels": [
+     "XRF raw spectra (composition given directly)",
+     "optical absorption (not in deposit for 22 plates)"
+    ]
+   }
+  },
+  "status": "derived",
+  "provenance": {
+   "referent": "root and subtype of the governed decision",
+   "source": "discovery/seeds/seed_ledger.json (S1 Results/Conclusions, S2 Methods, S3 Methods) + references/shape.md gates",
+   "population": "4 seeds read in full, 30 census papers",
+   "adjudicator": "infer (Gate 1), explain (Gate 2), generate (Gate 2)",
+   "falsifier": "an S1-S3 passage showing practitioners publish a prediction without committing a measurement would move the root to infer"
+  }
+ },
+ "k": {
+  "value": 1,
+  "status": "derived",
+  "provenance": {
+   "referent": "candidates committed per round",
+   "source": "seed_ledger.json S2 (one XRD per iteration), S3 (k=1 by design, batch rejected)",
+   "population": "S2, S3 methods",
+   "adjudicator": "S1 commits 5 phases at down-select (k=5, a different action)",
+   "falsifier": "a seed passage showing batch rounds measured as the norm for PEC screening would differ from k=1"
+  }
+ },
+ "budget_per_episode": {
+  "value": {
+   "eqe": 5,
+   "xrd": 5
+  },
+  "status": "declared at I1 authoring (bench/floors.py B_EQE,B_XRD) before any count; not re-tuned",
+  "provenance": {
+   "referent": "measurements an agent may spend per episode",
+   "source": "bench/floors.py B_EQE=5, B_XRD=5 (written before P2)",
+   "population": "~29 candidates per line -> 17% of the line",
+   "adjudicator": "S2 optimum at 19/177 (11%), S3 budgets ~5% of 2121",
+   "falsifier": "a budget at which chance reaches the ceiling (no headroom), read at P2"
+  }
+ },
+ "label_source": {
+  "value": "measured truth: EQE_pct per sample (photocurrent, LED power) in Fig1c_allEQE_withcriteria.csv; phase labels are annotation and are NOT scored",
+  "status": "derived",
+  "provenance": {
+   "referent": "what the score is computed from",
+   "source": "seed_ledger.json S1 methods (EQE from photocurrent and LED power) + env/raw/.../Fig1c_ allEQE_withcriteria.csv",
+   "population": "5608 EQE rows, 1402 samples",
+   "adjudicator": "phase labels: analyst EVA/ICDD annotation, mpid post-hoc",
+   "falsifier": "a re-measurement of the same sample differing beyond the between-sample spread would indict EQE as the truth"
+  }
+ },
+ "exposure_key": {
+  "value": "CaltechDATA deposition 2022-11-09, article online 2022-11-22; all units predate claude-opus-5 cutoff; text-level answers excluded (E1), figure-level disclosed; recall probe shows no memorization (recall MAE 0.230 vs predict 0.246)",
+  "status": "derived",
+  "provenance": {
+   "referent": "whether the answer was visible to the subject",
+   "source": "CaltechDATA record 42gwd-8wg77 metadata; supply/recall_probe/responses.json",
+   "population": "189 included episodes, 14 elements x 2 LEDs probed",
+   "adjudicator": "predict-framed probe (no citation)",
+   "falsifier": "recall-framed accuracy exceeding predict-framed accuracy on a rerun"
+  }
+ },
+ "tool_inventory": {
+  "value": {
+   "env": [
+    "episode_info",
+    "measure_eqe",
+    "measure_xrd",
+    "submit"
+   ],
+   "classical": [
+    "list_phases (MP via OPTIMADE)",
+    "substitute_structure",
+    "simulate_xrd (pymatgen)",
+    "match_xrd",
+    "gp_suggest (GP-UCB)"
+   ],
+   "fm": [
+    "mace_stability (MACE-MP-0 medium, relaxed E and e_above_hull)",
+    "megnet_bandgap (MEGNet-BandGap-mfi-MP-2019.4.1)"
+   ],
+   "readiness": "all run locally on GB10 (R1 PASS with env tools; FM channels executed in precompute)",
+   "not_in_inventory": [
+    "DFT",
+    "EQE simulator",
+    "EXAFS fitting (larch) with raw spectra"
+   ]
+  },
+  "status": "derived",
+  "provenance": {
+   "referent": "tools that exist and run",
+   "source": "runtime/mcp/server.py, bench/fm.py, bench/classical.py; instrument/precompute_*.log",
+   "population": "14 element systems",
+   "adjudicator": "classical-only arm (same tools minus FM)",
+   "falsifier": "a tool call that fails or returns an error on an agent-built input at R2/R3"
+  }
+ },
+ "delta": {
+  "value": 0.17,
+  "status": "derived",
+  "provenance": {
+   "referent": "smallest effect practitioners act on, in realized-value units",
+   "source": "seed_ledger.json S3 (2-5x acceleration to find any top catalyst) translated as E[best of 10 random]-E[best of 5 random] via bench/floors.py::chance over 196 episodes = 0.171 mean",
+   "population": "196 episodes",
+   "adjudicator": "S2: 31% vs 10% runs within 1% of optimum at 20 iterations",
+   "falsifier": "a practitioner source whose measured acted-on gain falls below 0.17 in these units (e.g. 1.2x acceleration)"
+  }
+ },
+ "S": {
+  "value": 100,
+  "status": "derived from supplied budget",
+  "provenance": {
+   "referent": "paired episodes per arm",
+   "source": "supplied_by_human.budget=300 agent episodes / 3 agent arms",
+   "population": "arm cohort in corpus_ledger.json",
+   "adjudicator": "n_min from power.py at P7",
+   "falsifier": "measured cost per episode making 300 unaffordable"
+  }
+ },
+ "subject_set": {
+  "value": [
+   "claude-opus-5"
+  ],
+  "status": "supplied",
+  "provenance": {
+   "referent": "subject models",
+   "source": "RUN_LOG.md entry 22:40 (plan-mode AskUserQuestion answer: Opus 5)",
+   "population": "one subject",
+   "adjudicator": "Sonnet 5 offered and declined",
+   "falsifier": "init event model field differing from claude-opus-5 at R4"
+  }
+ },
+ "supplied_by_human": {
+  "budget": "~300 agent episodes (user, plan-mode Q&A 2026-09-17)",
+  "cost_of_action": "not supplied; delta taken from seeds (override invited)"
+ },
+ "candidates": [
+  {
+   "id": "C1",
+   "family": "combinatorial multimodal library (seed00 'asset I would not overlook')",
+   "shape": "intervene / choose next measurement",
+   "disposition": "PROCEED"
+  },
+  {
+   "id": "C2",
+   "family": "multimodal constraint satisfaction (XRD x EQE phase attribution)",
+   "shape": "explain / hypothesis set",
+   "disposition": "CLOSE",
+   "binding_gate": "Gate 2 grader: labels are analyst annotation; answers in S1 Fig. 3"
+  },
+  {
+   "id": "C3",
+   "family": "structure solution from EXAFS/Rietveld with found negatives",
+   "shape": "explain / hypothesis set under frozen likelihood (re-fit)",
+   "disposition": "CLOSE",
+   "binding_gate": "Gate 2 grader + negative supply: 4/30 papers publish a numbered rejected model, 2/30 also deposit raw data (census)"
+  },
+  {
+   "id": "C4",
+   "family": "computational screening thresholds",
+   "shape": "infer / pick k of M",
+   "disposition": "CLOSE",
+   "binding_gate": "Gate 1 (on predictor line); lift 'escalate MLIP->DFT' needs a DFT grader not in inventory (Gate 2)"
+  },
+  {
+   "id": "C5",
+   "family": "synthesis optimization; battery post-mortem",
+   "shape": "intervene / explain",
+   "disposition": "CLOSE",
+   "binding_gate": "supply: no replayable episodes in any reachable corpus (seed00 'almost entirely unpublished')"
+  }
+ ],
+ "completeness": "All 11 required slots carry a value and five provenance fields; decision shape ruled over 4 roots for C1 and over C1-C5; tau amended (A-01). Budget/B declared before P2; cost of action not supplied.",
+ "frozen_hash": "c40cbec648bff14cf6d0546d7f4b7b728e76f27a81379143cb4b0b11da789dfd"
+}

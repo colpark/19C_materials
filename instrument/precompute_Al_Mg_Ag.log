@@ -1,0 +1,5 @@
+Al 170 phases, 9 ternary, 4s
+    mp-676861 AlO4Sb sb 0.5 ehull 0.0 gap(pbe,hse) 2.465 3.65
+    mp-1214826 Al5O16Sb3 sb 0.375 ehull 0.0376 gap(pbe,hse) 2.38 3.739
+    mp-1261047 AlO3Sb sb 0.5 ehull 0.0644 gap(pbe,hse) 2.991 4.128
+    mp-1374707 AlO3Sb sb 0.5 ehull 0.282 gap(pbe,hse) 0.33 2.313

@@ -10,6 +10,7 @@ from pymatgen.analysis.phase_diagram import PhaseDiagram, PDEntry
 from pymatgen.core import Composition
 
 OUT = os.path.join(fm.CACHE, "fm_summary")
+BINARY_MAX_SITES = 30   # amendment A-02: hull ground states of the binary oxides sit in cells <= 30 sites
 os.makedirs(OUT, exist_ok=True)
 
 
@@ -20,8 +21,9 @@ def system_summary(M):
     entries, rows = [], []
     for sysl in ([M, "Sb", "O"], [M, "O"], ["Sb", "O"]):
         for r in fm.chemsys_structures(sysl):
-            if r["nsites"] > fm.MAX_SITES:
-                rows.append(dict(id=r["id"], formula=r["formula"], skipped=f"{r['nsites']} sites")); continue
+            cap = fm.MAX_SITES if len(sysl) == 3 else BINARY_MAX_SITES
+            if r["nsites"] > cap:
+                rows.append(dict(id=r["id"], formula=r["formula"], skipped=f"{r['nsites']} sites > cap {cap}")); continue
             s = fm.to_structure(r)
             m = fm.mace_relax(s)
             if "energy_per_atom_eV" not in m:

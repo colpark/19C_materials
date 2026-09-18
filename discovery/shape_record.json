@@ -1,0 +1,68 @@
+{
+ "root": "intervene",
+ "subtype": {
+  "name": "choose the next measurement under a budget (EQE and XRD), realized value of the best measured composition",
+  "derived": false
+ },
+ "grader": {
+  "kind": "replayable environment: full measured EQE map per episode (CaltechDATA 42gwd-8wg77), revealed per query",
+  "in_tool_inventory": true,
+  "certification_stage": "I4/I5 (runtime/mcp/server.py measure_eqe returns the recorded value; known-input and negative controls)"
+ },
+ "yield_per_unit": {
+  "scalars": 1,
+  "thresholded": false,
+  "arithmetic": "one graded realized value per episode = max measured EQE / max EQE on the line in [0,1]; 5 per-round values recorded as secondary"
+ },
+ "role_floor": {
+  "role": "simulator (the environment answers an action the agent chose); FM tools act as scorer on agent-built hypotheses (substitute_structure -> mace_stability / megnet_bandgap)",
+  "below_predictor_line": true
+ },
+ "alternatives_considered": [
+  {
+   "root": "infer",
+   "binding_gate": "Gate 1 role floor",
+   "note": "predicting the best composition (pick 1 of M) sits on the predictor line; the seeds' action is committing measurements (S1 commits PEC/stability to 5 phases; S2, S3 one measurement per iteration), so the realized value, not the prediction, is the governed decision"
+  },
+  {
+   "root": "explain",
+   "binding_gate": "Gate 2 grader",
+   "note": "phase-identity labels are analyst XRD annotation in Bruker EVA (S1 methods), and the mpid mapping is a post-hoc nearest-structure mapping; no certified judge; answers also sit in S1 Fig. 3"
+  },
+  {
+   "root": "generate",
+   "binding_gate": "Gate 2 grader",
+   "note": "no oracle predicts EQE for a designed composition or structure; MEGNet gap is not EQE (I4)"
+  }
+ ],
+ "disposition": "PROCEED",
+ "item_template": {
+  "description": "one M-Sb-O composition line, conditions (substrate, anneal T, pH, photon energy), ~29 candidates by Sb fraction; 5 EQE + 5 XRD measurements; submit best measured index with rejections",
+  "locator": "runtime/prompt.md, runtime/mcp/server.py"
+ },
+ "branch_census": {
+  "chain_length": "S1 ~12 steps (deposit, anneal, XRF, XRD, PEC at 4 LEDs x 3 pH, phase ID, down-select, Pourbaix, stability, SEM); S2 ~9; S3 ~6",
+  "branch_points": "S1 ~10, S2 ~9, S3 ~5 (seed_ledger.json facts)",
+  "branches_with_named_rejection": "S1: excluded phases and substituted MP entries named; S2: SbTe vs Sb2Te2/Sb2Te3 named and settled by electron diffraction",
+  "branches_per_episode": "10 sequential choices (5 EQE + 5 XRD), so multi-turn",
+  "locators": [
+   "discovery/seeds/seed_ledger.json",
+   "discovery/census/CENSUS_RESULT.md"
+  ]
+ },
+ "depth_census": {
+  "claimed_channels": [
+   "XRF composition",
+   "XRD",
+   "PEC/EQE",
+   "(stability: Pourbaix, CA, SEM)"
+  ],
+  "measured_depth": "measured at I2 by leave-one-out over the fixed compositions: EQE-only (cls_gp) vs +XRD (cls_xrd) vs +FM (fm_xrd, fm_prior); see instrument/i2_channels.json",
+  "method": "leave-one-out on mechanical compositions",
+  "supply_at_this_depth": "all 189 included episodes carry XRD and EQE at every point",
+  "unmounted_channels": [
+   "XRF raw spectra (composition given directly)",
+   "optical absorption (not in deposit for 22 plates)"
+  ]
+ }
+}
