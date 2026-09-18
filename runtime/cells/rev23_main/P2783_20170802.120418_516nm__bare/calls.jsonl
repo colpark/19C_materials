@@ -1,0 +1,5 @@
+{"t": 1789760184.5648139, "n": 1, "tool": "episode_info", "args": {}, "receipt": "672f1da9e087", "result": "<large>"}
+{"t": 1789760195.0639172, "n": 2, "tool": "measure_eqe", "args": {"index": 3}, "receipt": "4fe531586375", "result": {"index": 3, "cation_fractions": {"Bi": 0.3584, "Cu": 0.2077, "V": 0.4338}, "merit": 9e-07, "merit_name": "photocurrent_A", "budget_remaining": 2}}
+{"t": 1789760195.0766988, "n": 3, "tool": "measure_eqe", "args": {"index": 56}, "receipt": "3a29aee1c7a8", "result": {"index": 56, "cation_fractions": {"Bi": 0.0944, "Cu": 0.4428, "V": 0.4628}, "merit": 1.34e-06, "merit_name": "photocurrent_A", "budget_remaining": 1}}
+{"t": 1789760198.3771524, "n": 4, "tool": "measure_eqe", "args": {"index": 50}, "receipt": "b0d05f5f28dc", "result": {"index": 50, "cation_fractions": {"Bi": 0.0876, "Cu": 0.5772, "V": 0.3353}, "merit": 5.3e-07, "merit_name": "photocurrent_A", "budget_remaining": 0}}
+{"t": 1789760203.3210142, "n": 5, "tool": "submit", "args": {"best_index": 56}, "receipt": "f21c2daf27a3", "result": {"ok": true, "merit_measured": 3, "xrd_measured": 0}}

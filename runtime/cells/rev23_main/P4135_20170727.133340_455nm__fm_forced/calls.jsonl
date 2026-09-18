@@ -1,0 +1,12 @@
+{"t": 1789759459.3038929, "n": 1, "tool": "episode_info", "args": {}, "receipt": "9a8cb6f25ce1", "result": "<large>"}
+{"t": 1789759461.3872702, "n": 2, "tool": "list_phases", "args": {}, "receipt": "7a278a49f53d", "result": "<large>"}
+{"t": 1789759468.0059724, "n": 3, "tool": "megnet_bandgap", "args": {"phase_id": "mp-18748", "fidelity": "hse"}, "receipt": "0f653b89aa89", "result": {"id": "mp-18748", "gap_eV": 0.023, "fidelity": "hse"}}
+{"t": 1789759473.2718294, "n": 4, "tool": "record_consultation", "args": {"index": 146, "receipts": ["0f653b89aa89"]}, "receipt": "fdfa12eb9f25", "result": {"ok": true, "index": 146, "cleared_to_measure": 146}}
+{"t": 1789759473.2780485, "n": 5, "tool": "measure_eqe", "args": {"index": 146}, "receipt": "e2e9fe66e111", "result": {"index": 146, "cation_fractions": {"Ca": 0.1525, "Co": 0.2108, "Mn": 0.6367}, "merit": 0.0, "merit_name": "photocurrent_A", "budget_remaining": 2}}
+{"t": 1789759476.577252, "n": 6, "tool": "megnet_bandgap", "args": {"phase_id": "mp-19395", "fidelity": "hse"}, "receipt": "a747f3dacb6b", "result": {"id": "mp-19395", "gap_eV": 2.489, "fidelity": "hse"}}
+{"t": 1789759480.2220848, "n": 7, "tool": "record_consultation", "args": {"index": 21, "receipts": ["a747f3dacb6b"]}, "receipt": "b88f4234c030", "result": {"ok": true, "index": 21, "cleared_to_measure": 21}}
+{"t": 1789759480.354641, "n": 8, "tool": "measure_eqe", "args": {"index": 21}, "receipt": "5293b8a542fa", "result": {"index": 21, "cation_fractions": {"Ca": 0.1379, "Co": 0.7014, "Mn": 0.1607}, "merit": -6e-08, "merit_name": "photocurrent_A", "budget_remaining": 1}}
+{"t": 1789759482.5960226, "n": 9, "tool": "megnet_bandgap", "args": {"phase_id": "mp-19395", "fidelity": "pbe"}, "receipt": "d9789a165a30", "result": {"id": "mp-19395", "gap_eV": 0.682, "fidelity": "pbe"}}
+{"t": 1789759485.8699894, "n": 10, "tool": "record_consultation", "args": {"index": 80, "receipts": ["d9789a165a30"]}, "receipt": "b489b5fbd56a", "result": {"ok": true, "index": 80, "cleared_to_measure": 80}}
+{"t": 1789759485.876612, "n": 11, "tool": "measure_eqe", "args": {"index": 80}, "receipt": "54a943f2c27f", "result": {"index": 80, "cation_fractions": {"Ca": 0.5529, "Co": 0.2247, "Mn": 0.2224}, "merit": -1.6e-07, "merit_name": "photocurrent_A", "budget_remaining": 0}}
+{"t": 1789759489.143613, "n": 12, "tool": "submit", "args": {"best_index": 146}, "receipt": "c709bc6f186b", "result": {"ok": true, "merit_measured": 3, "xrd_measured": 0}}

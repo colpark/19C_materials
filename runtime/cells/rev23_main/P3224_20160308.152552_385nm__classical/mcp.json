@@ -1,0 +1,23 @@
+{
+ "mcpServers": {
+  "env": {
+   "command": "/home/aid1/Documents/6_19C_materials/env/.venv/bin/python",
+   "args": [
+    "/home/aid1/Documents/6_19C_materials/runtime/mcp/server_pool.py",
+    "--episode",
+    "P3224_20160308.152552_385nm",
+    "--arm",
+    "classical",
+    "--out",
+    "/home/aid1/Documents/6_19C_materials/runtime/cells/rev23_main/P3224_20160308.152552_385nm__classical"
+   ],
+   "env": {
+    "FMAB_PROMPT": "runtime/prompt_pool.md",
+    "FMAB_B_EQE": "3",
+    "FMAB_SERVER": "runtime/mcp/server_pool.py",
+    "HOME": "/home/aid1",
+    "PATH": "/home/aid1/.cargo/bin:/home/aid1/.local/bin:/home/aid1/.local/bin:/usr/local/cuda/bin:/opt/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin"
+   }
+  }
+ }
+}

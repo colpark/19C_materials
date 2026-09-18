@@ -1,0 +1,28 @@
+{
+ "cmd": [
+  "claude",
+  "-p",
+  "--model",
+  "claude-opus-5",
+  "--strict-mcp-config",
+  "--mcp-config",
+  "/home/aid1/Documents/6_19C_materials/runtime/cells/rev23_main/2297_20200302.142608_CA3__fm_forced/mcp.json",
+  "--allowedTools",
+  "mcp__env",
+  "--disallowedTools",
+  "Task,Agent,Bash,CronCreate,CronDelete,CronList,DesignSync,Edit,EnterWorktree,ExitWorktree,ListAgents,Monitor,NotebookEdit,PushNotification,Read,RemoteTrigger,ReportFindings,ScheduleWakeup,SendMessage,Skill,TaskOutput,TaskStop,TaskCreate,TaskGet,TaskList,TaskUpdate,ToolSearch,WebFetch,WebSearch,Workflow,Write,Glob,Grep,ListMcpResourcesTool,ReadMcpResourceTool,ReadMcpResourceDirTool,Artifact,ArtifactComments,ArtifactData,AskUserQuestion,EnterPlanMode,ExitPlanMode",
+  "--output-format",
+  "stream-json",
+  "--verbose",
+  "--max-turns",
+  "60"
+ ],
+ "prompt_sha256": "1402f6f2f600e9fc028b28b559a658765288f9da4b3b009f88fd6527b8281baf",
+ "prompt_bytes": 1185,
+ "prompt_path": "/home/aid1/Documents/6_19C_materials/runtime/prompt_pool.md",
+ "server": "/home/aid1/Documents/6_19C_materials/runtime/mcp/server_pool.py",
+ "model": "claude-opus-5",
+ "arm": "fm_forced",
+ "episode": "2297_20200302.142608_CA3",
+ "labels_opened": false
+}

@@ -7,3 +7,4 @@
 {"t": 1789759193.8540757, "n": 7, "tool": "measure_eqe", "args": {"index": 11}, "receipt": "78ab28085c78", "result": {"index": 11, "cation_fractions": {"Nb": 0.516, "V": 0.484}, "merit": 5.66e-06, "merit_name": "photocurrent_A", "budget_remaining": 2}}
 {"t": 1789759194.0410967, "n": 8, "tool": "measure_eqe", "args": {"index": 9}, "receipt": "c1226acfecd7", "result": {"index": 9, "cation_fractions": {"Nb": 0.7185, "V": 0.2815}, "merit": 1.63e-06, "merit_name": "photocurrent_A", "budget_remaining": 1}}
 {"t": 1789759196.5120668, "n": 9, "tool": "measure_eqe", "args": {"index": 0}, "receipt": "1899dea74cae", "result": {"index": 0, "cation_fractions": {"Nb": 0.5042, "V": 0.4958}, "merit": 6.7e-06, "merit_name": "photocurrent_A", "budget_remaining": 0}}
+{"t": 1789759200.8638566, "n": 10, "tool": "submit", "args": {"best_index": 0}, "receipt": "cea8992a328e", "result": {"ok": true, "merit_measured": 3, "xrd_measured": 5}}
