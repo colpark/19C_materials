@@ -1,0 +1,39 @@
+[
+ {
+  "index": 0,
+  "cation_fractions": {
+   "Ni": 0.8888,
+   "Sb": 0.1112
+  },
+  "merit": 0.00070881,
+  "merit_name": "EQE_pct",
+  "budget_remaining": 2,
+  "receipt": "45d325b9c297"
+ },
+ {
+  "index": 1,
+  "cation_fractions": {
+   "Ni": 0.8717,
+   "Sb": 0.1283
+  },
+  "merit": 0.00166843,
+  "merit_name": "EQE_pct",
+  "budget_remaining": 1,
+  "receipt": "638e22eb4645"
+ },
+ {
+  "index": 2,
+  "cation_fractions": {
+   "Ni": 0.8543,
+   "Sb": 0.1457
+  },
+  "merit": 0.00436191,
+  "merit_name": "EQE_pct",
+  "budget_remaining": 0,
+  "receipt": "e1a2f74eda4f"
+ },
+ {
+  "error": "merit budget exhausted",
+  "receipt": "5bd1dd6ac439"
+ }
+]

@@ -1,0 +1,21 @@
+{
+ "uptake": {
+  "bare": {
+   "used": 0,
+   "episodes": 10,
+   "share": 0.0
+  },
+  "classical": {
+   "used": 0,
+   "episodes": 10,
+   "share": 0.0
+  },
+  "fm_forced": {
+   "used": 10,
+   "episodes": 10,
+   "share": 1.0
+  }
+ },
+ "band": 0.8,
+ "channel": "FM tools (mace_stability, megnet_bandgap)"
+}

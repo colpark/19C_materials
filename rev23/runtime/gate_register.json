@@ -1,0 +1,77 @@
+{
+ "gates": [
+  {
+   "id": "G1_merit_budget",
+   "named_threat": "spending more merit measurements than B_EQE inflates realized value",
+   "must_fire_control": {
+    "input": "4th measure_eqe on classical arm, B_EQE=3 (rev23/runtime/g1/*/g1.json)",
+    "fired": true
+   },
+   "must_not_fire_control": {
+    "input": "3rd measure_eqe (same probe)",
+    "fired": false
+   },
+   "duplicates_platform_protection": false,
+   "armed": true
+  },
+  {
+   "id": "G2_no_retry",
+   "named_threat": "re-running a cell after seeing its outcome",
+   "must_fire_control": {
+    "input": "re-run rev23_r1/synthetic__stub",
+    "fired": true
+   },
+   "must_not_fire_control": {
+    "input": "fresh pilot cells ran (30)",
+    "fired": false
+   },
+   "duplicates_platform_protection": false,
+   "armed": true
+  },
+  {
+   "id": "G3_blind_hash",
+   "named_threat": "blind file changed after labels open",
+   "must_fire_control": {
+    "input": "appended blind file",
+    "fired": true
+   },
+   "must_not_fire_control": {
+    "input": "unchanged blind file",
+    "fired": false
+   },
+   "duplicates_platform_protection": false,
+   "armed": true
+  },
+  {
+   "id": "G4_forced_consultation",
+   "named_threat": "the lifted FM arm measuring without consulting the FM channel (grant read as use)",
+   "must_fire_control": {
+    "input": "measure_eqe with no consultation (R2)",
+    "fired": true
+   },
+   "must_not_fire_control": {
+    "input": "measure_eqe after FM receipt + verdict (R2)",
+    "fired": false
+   },
+   "duplicates_platform_protection": false,
+   "real_prior_failure": "run 1: FM arm called its models in 19/100 episodes",
+   "armed": true
+  },
+  {
+   "id": "G5_final_power_record",
+   "named_threat": "arming on a provisional power record",
+   "must_fire_control": {
+    "input": "rev21/pool/power_provisional_fm_xrd.json (scope provisional)",
+    "fired": true
+   },
+   "must_not_fire_control": {
+    "input": "rev23/supply/power_final.json",
+    "fired": false
+   },
+   "duplicates_platform_protection": false,
+   "armed": true
+  }
+ ],
+ "power_record": "rev23/supply/power_final.json (scope final, RESOLVABLE)",
+ "completeness": "5 gates, both controls each; G4 derives from a real prior failure (run-1 uptake 19/100)"
+}

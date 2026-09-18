@@ -118,3 +118,8 @@
 - **P4 final: PROCEED.** Binding axis: positive supply (26 clusters vs N_min 25). Channel lift: LIFT, approved by standing ruling.
 - C1x (parallel, zero cells): pooled grader split-half rho 0.357 → **I4 FAIL**. Oracle headroom 0.094 < delta 0.169; the feature policy is −0.052 vs always-classical. Decision 004: swap refused (precondition), proxy grader refused (PI deny), scored quantity deferred to A4, advance → C1. C1x CLOSED.
 - Lifted-arm server (server_pool.py): R1 PASS (stub, catalog = 4 env tools). R2 PASS on a burned episode: forced-consultation gate fires without a consultation, rejects a forged receipt, passes after an FM receipt plus verdict, and re-arms after each measurement.
+- R3 pilot (10 items × 3 arms, burned): 30/30 cells, 0 failures. Uptake of the FM channel: fm_forced 10/10, bare 0, classical 0.
+- P7 final pass (`power.py --scope final`): pilot projection MDE 0.112; the record keeps the larger, 0.163 ≤ delta 0.169. **RESOLVABLE**.
+- R4: catalogs match in all 3 arms; 50/50 canaries absent; model claude-opus-5.
+- R5: G1–G5 armed with both controls. G1's controls were run with a real probe after first being asserted; the correction is recorded.
+- R6: emitted prompt hash = declared. R8: symmetry ruled, uptake row route = LIFT use (enforced by G4).

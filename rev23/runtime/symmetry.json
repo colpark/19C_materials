@@ -1,0 +1,77 @@
+{
+ "per_arm": [
+  {
+   "arm": "bare",
+   "prompt_bytes": 1185,
+   "function_count": 4,
+   "max_turns": 60,
+   "timeout_s": 1500,
+   "presentation": "identical task prompt; tool descriptions from MCP docstrings",
+   "reference_material": "none",
+   "uptake_fm_channel": 0.0
+  },
+  {
+   "arm": "classical",
+   "prompt_bytes": 1185,
+   "function_count": 9,
+   "max_turns": 60,
+   "timeout_s": 1500,
+   "presentation": "identical task prompt; tool descriptions from MCP docstrings",
+   "reference_material": "none",
+   "uptake_fm_channel": 0.0
+  },
+  {
+   "arm": "fm_forced",
+   "prompt_bytes": 1185,
+   "function_count": 12,
+   "max_turns": 60,
+   "timeout_s": 1500,
+   "presentation": "identical task prompt; tool descriptions from MCP docstrings",
+   "reference_material": "none",
+   "uptake_fm_channel": 1.0
+  }
+ ],
+ "arm_symmetry": [
+  {
+   "field": "prompt_bytes",
+   "differs": false
+  },
+  {
+   "field": "function_count",
+   "differs": true,
+   "values": {
+    "bare": 4,
+    "classical": 9,
+    "fm_forced": 12
+   },
+   "ruling": "intended treatment: bare env(4) \u2282 classical +5 \u2282 fm_forced +3 (MACE, MEGNet, record_consultation)"
+  },
+  {
+   "field": "measure_eqe description",
+   "differs": true,
+   "ruling": "fm_forced's measure_eqe description states the forced-consultation rule; this is the lift itself (PI standing approval), not a confound"
+  },
+  {
+   "field": "uptake of the FM channel (pilot)",
+   "differs": true,
+   "values": {
+    "bare": 0.0,
+    "classical": 0.0,
+    "fm_forced": 1.0
+   },
+   "band": 0.8,
+   "route": "fm_forced 1.0 \u2265 band: the grant is a use (LIFT route, enforced by G4). bare/classical hold no FM grant (0 by design). The comparison is per-protocol for the lifted arm, with no ITT framing needed"
+  },
+  {
+   "field": "output cap / turns / timeout / reference material",
+   "differs": false
+  },
+  {
+   "field": "episode order and concurrency",
+   "differs": false,
+   "ruling": "arms interleaved per episode, fixed shuffle, 4 workers"
+  }
+ ],
+ "all_ruled": true,
+ "completeness": "R8 over 3 arms from 30 pilot cells, uptake row with route"
+}

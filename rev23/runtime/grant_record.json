@@ -1,0 +1,363 @@
+{
+ "verified_from": "model_side",
+ "verified_from_detail": "system/init stream event of all 30 R3 pilot cells",
+ "model_side_catalog": [
+  {
+   "arm": "bare",
+   "cells": 10,
+   "tools": [
+    "mcp__env__episode_info",
+    "mcp__env__measure_eqe",
+    "mcp__env__measure_xrd",
+    "mcp__env__submit"
+   ],
+   "matches_declared": true,
+   "distinct_catalogs": 1
+  },
+  {
+   "arm": "classical",
+   "cells": 10,
+   "tools": [
+    "mcp__env__episode_info",
+    "mcp__env__gp_suggest",
+    "mcp__env__list_phases",
+    "mcp__env__match_xrd",
+    "mcp__env__measure_eqe",
+    "mcp__env__measure_xrd",
+    "mcp__env__simulate_xrd",
+    "mcp__env__submit",
+    "mcp__env__substitute_structure"
+   ],
+   "matches_declared": true,
+   "distinct_catalogs": 1
+  },
+  {
+   "arm": "fm_forced",
+   "cells": 10,
+   "tools": [
+    "mcp__env__episode_info",
+    "mcp__env__gp_suggest",
+    "mcp__env__list_phases",
+    "mcp__env__mace_stability",
+    "mcp__env__match_xrd",
+    "mcp__env__measure_eqe",
+    "mcp__env__measure_xrd",
+    "mcp__env__megnet_bandgap",
+    "mcp__env__record_consultation",
+    "mcp__env__simulate_xrd",
+    "mcp__env__submit",
+    "mcp__env__substitute_structure"
+   ],
+   "matches_declared": true,
+   "distinct_catalogs": 1
+  }
+ ],
+ "subtraction_passes": 1,
+ "canaries": [
+  {
+   "arm": "bare",
+   "capability": "Bash",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "bare",
+   "capability": "Read",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "bare",
+   "capability": "Write",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "bare",
+   "capability": "Edit",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "bare",
+   "capability": "WebFetch",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "bare",
+   "capability": "WebSearch",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "bare",
+   "capability": "Task",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "bare",
+   "capability": "Agent",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "bare",
+   "capability": "Glob",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "bare",
+   "capability": "Grep",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "bare",
+   "capability": "ReadMcpResourceDirTool",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "bare",
+   "capability": "ListMcpResourcesTool",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "bare",
+   "capability": "ReadMcpResourceTool",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "bare",
+   "capability": "mcp__env__record_consultation",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "bare",
+   "capability": "mcp__env__mace_stability",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "bare",
+   "capability": "mcp__env__megnet_bandgap",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "bare",
+   "capability": "mcp__env__list_phases",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "bare",
+   "capability": "mcp__env__match_xrd",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "bare",
+   "capability": "mcp__env__substitute_structure",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "bare",
+   "capability": "mcp__env__simulate_xrd",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "bare",
+   "capability": "mcp__env__gp_suggest",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "classical",
+   "capability": "Bash",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "classical",
+   "capability": "Read",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "classical",
+   "capability": "Write",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "classical",
+   "capability": "Edit",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "classical",
+   "capability": "WebFetch",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "classical",
+   "capability": "WebSearch",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "classical",
+   "capability": "Task",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "classical",
+   "capability": "Agent",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "classical",
+   "capability": "Glob",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "classical",
+   "capability": "Grep",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "classical",
+   "capability": "ReadMcpResourceDirTool",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "classical",
+   "capability": "ListMcpResourcesTool",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "classical",
+   "capability": "ReadMcpResourceTool",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "classical",
+   "capability": "mcp__env__record_consultation",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "classical",
+   "capability": "mcp__env__mace_stability",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "classical",
+   "capability": "mcp__env__megnet_bandgap",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "fm_forced",
+   "capability": "Bash",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "fm_forced",
+   "capability": "Read",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "fm_forced",
+   "capability": "Write",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "fm_forced",
+   "capability": "Edit",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "fm_forced",
+   "capability": "WebFetch",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "fm_forced",
+   "capability": "WebSearch",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "fm_forced",
+   "capability": "Task",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "fm_forced",
+   "capability": "Agent",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "fm_forced",
+   "capability": "Glob",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "fm_forced",
+   "capability": "Grep",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "fm_forced",
+   "capability": "ReadMcpResourceDirTool",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "fm_forced",
+   "capability": "ListMcpResourcesTool",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  },
+  {
+   "arm": "fm_forced",
+   "capability": "ReadMcpResourceTool",
+   "excluded": true,
+   "canary_result": "absent_from_model_catalog"
+  }
+ ],
+ "auxiliary_models": [],
+ "models": [
+  "claude-opus-5"
+ ],
+ "completeness": "30 pilot cells; 50/50 canaries absent; model(s) ['claude-opus-5']"
+}

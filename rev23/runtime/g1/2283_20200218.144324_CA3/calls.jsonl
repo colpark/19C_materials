@@ -1,0 +1,4 @@
+{"t": 1789757799.6391947, "n": 1, "tool": "measure_eqe", "args": {"index": 0}, "receipt": "45d325b9c297", "result": {"index": 0, "cation_fractions": {"Ni": 0.8888, "Sb": 0.1112}, "merit": 0.00070881, "merit_name": "EQE_pct", "budget_remaining": 2}}
+{"t": 1789757799.6429477, "n": 2, "tool": "measure_eqe", "args": {"index": 1}, "receipt": "638e22eb4645", "result": {"index": 1, "cation_fractions": {"Ni": 0.8717, "Sb": 0.1283}, "merit": 0.00166843, "merit_name": "EQE_pct", "budget_remaining": 1}}
+{"t": 1789757799.6445813, "n": 3, "tool": "measure_eqe", "args": {"index": 2}, "receipt": "e1a2f74eda4f", "result": {"index": 2, "cation_fractions": {"Ni": 0.8543, "Sb": 0.1457}, "merit": 0.00436191, "merit_name": "EQE_pct", "budget_remaining": 0}}
+{"t": 1789757799.6583645, "n": 4, "tool": "measure_eqe", "args": {"index": 3}, "receipt": "5bd1dd6ac439", "result": {"error": "merit budget exhausted"}}
